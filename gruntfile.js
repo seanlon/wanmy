@@ -10,7 +10,7 @@ module.exports = function(grunt) {
           optimization: 2
         },
         files: {
-          "css/css/custom.css": "less/custom.less" ,// destination file and source file
+          "css/custom.css": "less/custom.less" ,// destination file and source file
         
         }
       }
