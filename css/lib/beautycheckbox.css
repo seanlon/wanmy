@@ -21,7 +21,7 @@
       width: 30px;
       height: 30px;
       left: 0;
-      margin-left: -10px;
+      margin-left: 10px;
       border: 1px solid #cccccc;
       border-radius: 3px;
       background-color: #fff;
@@ -36,7 +36,7 @@
     height: 30px;
     left: 0;
     top: 0;
-    margin-left: -10px;
+    margin-left: 10px;
     margin-top: -5px;
     padding-left: 3px;
     padding-top: 5px;
@@ -50,7 +50,9 @@
       outline-offset: -2px; }
     .checkbox input[type="checkbox"]:checked + label::after {
       font-family: 'FontAwesome';
-      content: "\f00c";    content: "\f00c"; 
+      content: "\f00c";   
+        font-family: 'icomoon'; 
+        content: "\e686";
 
     }
     .checkbox input[type="checkbox"]:disabled + label {
