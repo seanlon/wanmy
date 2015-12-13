@@ -289,6 +289,12 @@ a.view-more-btn:hover {
 .bg-midnight-blue {
     background-color: #000;
 }
+
+
+.bg-empty {
+      min-height:400px;
+}
+
 .background {
     position: absolute;
     left: 0;
@@ -405,12 +411,18 @@ a.view-more-btn:hover {
 
 
 }
+
+
 .header-11-sub {
     padding-top: 110px;
     padding-bottom: 200px;
+    padding-bottom: 150px;
     color: #bdc3c7;
     position: relative;
-    margin-top: -60px;
+    //margin-top: -60px;
+
+
+
     .additional-links {
         opacity: 50;
         filter: alpha(opacity=5000);
@@ -485,12 +497,29 @@ a.view-more-btn:hover {
             display: block;
         }
     }
+    
     .background {
         background-image: url(../img/Image.png);
         opacity: 30;
         filter: alpha(opacity=3000);
         opacity: 0.3;
         filter: alpha(opacity=30);
+
+         &.mountain-empty {
+            background-image: url(../img/mountain.png) ;
+            background-repeat:no-repeat ; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+
+            width:100%;
+            filter: alpha(opacity=9000);
+            opacity: 0.9;
+            filter: alpha(opacity=90);
+        }
+
+
     }
     h3 {
         font-weight: normal;
@@ -740,6 +769,7 @@ header {
             }
      }
 
+   
      .filter-search{
          border-bottom:solid 2px #e6e9e9 ;
             min-height:150px;
@@ -839,6 +869,31 @@ input[type=checkbox].heart-checkbox{
     &:checked + label:before { letter-spacing: 5px; }
 }
 
+.common-click-feature-hover{
+              zoom: 1;
+            filter: alpha(opacity=50);
+            opacity: 0.5;
+
+}
+.common-click-feature{
+    -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -ms-transition: opacity 1s ease-in-out;
+        -o-transition: opacity 1s ease-in-out;
+        transition: opacity 1s ease-in-out;
+        cursor:pointer;
+
+}
+.common-border-bottom{
+  border-bottom:solid 2px #a1a1a1;  
+}
+
+ .border-bottom-separator{
+    .common-border-bottom(); 
+    padding-bottom: 100px;
+    border-bottom-width:1px;
+ }
+
 .pagination-wrapper{
     .pagination-block{
          display:inline-block;
@@ -848,11 +903,111 @@ input[type=checkbox].heart-checkbox{
          padding: 10px;
         margin-right:20px;
         color:#979797;
+        .common-click-feature();
+    
+ 
         &.active{ 
          border :#696969 solid 2px;
          color:#000;
         }
+
+        &:hover{
+            .common-click-feature-hover();
+        }
     }
 
 }
+
+
+.bg-color-blue{
+    background-color:#2e71f0 !important;
+}
+.book-now-block{ 
+    background-color: #fff; 
+    display: block;
+    width:100%; 
+    min-height: 350px;
+    border-radius:10px;
+    box-shadow: 0px  1px 3px #ececec;
+
+    padding:20px;
+    padding-top:40px;padding-bottom:40px;
+
+    .price-text{
+        color:#2269ef;
+    }
+    .form-control{
+        height:50px; 
+        border: 1px solid #ccc;
+    }
+    .btn{
+            height:50px;
+            font-weight:bold;font-size:14px;
+            &.blue{
+                background-color:#2e71f0;
+            }
+    }
+}
+
+.full-bold{
+    font-weight:800;
+}
+//DETAILS PAGE
+.section-details{
+    h5{
+    color:#595f64;
+    line-height: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
+    }
+
+    h3 {
+    color:#3c3d41;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    line-height: normal;
+    }
+
+    .common-row{
+           margin-bottom: 110px; 
+    }
+
+    &.summary{
+        min-height: 150px; 
+     
+    }
+
+    &.review{ 
+        .row{
+               .common-row();
+        }
+
+         .row-pagination{ 
+            margin-bottom:55px;
+        }
+    }
+    &.content{ 
+    background-color: #f9f9f9; 
+      min-height: 150px; 
+    .gallery-row{ 
+         margin-top:55px;    
+         margin-bottom:55px;  
+    }
+      .gallery-block{
+        .owl-item{  
+           margin-right:40px;  
+            img{ 
+            border-radius: 8px;      
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+        }
+       
+      }
+    }
+
+
+}
+
 
