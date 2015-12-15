@@ -9,20 +9,23 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
     <title>want.my</title>
-    <link rel="stylesheet" href="css/lib/bootstrap.css">
+    <link rel="stylesheet" href="css/lib/bootstrap.css"> 
     <link rel="stylesheet" href="css/lib/fontawesome.css">
     <link rel="stylesheet" href="css/lib/beautycheckbox.css">
     <link rel="stylesheet" href="css/lib/nouislider.min.css">
-    <link rel="stylesheet" href="css/lib/owlcarousel.css">
+    <link rel="stylesheet" href="css/lib/owlcarousel.css"> 
+    <link rel="stylesheet" type="text/css" href="http://kylemitofsky.com/libraries/libraries/datepicker.css">
     <link rel="stylesheet" type="text/css" href="css/custom.css">
     <!--Places form-->
     <!--/Places form-->
     <!--typehead-->
     <!--need to be on top-->
-    <script src="js/lib/jquery.js"></script>
-    <script src="js/lib/bootstrap.js"></script>
+    <script src="js/lib/jquery.js"></script> 
+    <script src="js/lib/bootstrap.js"></script> 
     <script src="js/lib/nouislider.min.js"></script>
-    <script src="js/lib/owlcarousel.js"></script>
+<script src="js/lib/owlcarousel.js"></script> 
+  <script type='text/javascript' src="http://kylemitofsky.com/libraries/libraries/bootstrap-datepicker.js"></script>
+
     <!--need to be on top-->
     <script src="typeahead/demo/assets/js/jquery.mockjax.js"></script>
     <script src="typeahead/src/bootstrap-typeahead.js"></script>
@@ -30,6 +33,22 @@
 </head>
 
 <body>
+<!-- 
+  <div class="well">
+    <div class="row">
+        <div class="col-xs-6">
+            <label class="control-label" for="dpd1">Check in: </label>
+            <input class="form-control" type="text" id="dpd1x" />
+        </div>
+        <div class="col-xs-6">
+            <label class="control-label" for="dpd2">Check out: </label>
+            <input class="form-control" type="text" id="dpd2" />
+        </div>
+    </div>
+</div> -->
+
+
+
 
       <!-- header  -->
       <nav class="navbar navbar-default navbar-static-top">
@@ -99,7 +118,7 @@
                         <h5>Date: </h5>
                         <form role="form">
                             <div class="form-group">
-                                <input type="text" placeholder="mm/dd/yyyy" class="form-control" id="pwd">
+                                <input id="dpd1" type="text" placeholder="mm/dd/yyyy" class="form-control" id="pwd">
                             </div>
                             <button type="button" class="  blue btn-block btn btn-primary">Book </button>
                         </form>
@@ -263,10 +282,40 @@
                </div>
             </div>
          </div>
-      </footer>
-    [FOOTER HERE]
-    <script>
+      </footer> 
+ 
+    
+   
+    <script> 
+
     $(window).load(function() {
+
+        var nowTemp = new Date();
+var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+ 
+var checkin = $('#dpd1').datepicker({
+  onRender: function(date) {
+    return date.valueOf() < now.valueOf() ? 'disabled' : '';
+  }
+}).on('changeDate', function(ev) {
+  if (ev.date.valueOf() > checkout.date.valueOf()) {
+    var newDate = new Date(ev.date)
+    newDate.setDate(newDate.getDate() + 1);
+    checkout.setValue(newDate);
+  }
+  checkin.hide();
+  $('#dpd2')[0].focus();
+}).data('datepicker');
+var checkout = $('#dpd2').datepicker({
+  onRender: function(date) {
+    return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
+  }
+}).on('changeDate', function(ev) {
+  checkout.hide();
+}).data('datepicker');
+
+
+
         $(document).ready(function() {
             $("#owl-gallery").owlCarousel({
                 navigation: false,
@@ -274,6 +323,7 @@
                 lazyLoad: true,
                 autoPlay: 5000, //Set AutoPlay to 3 seconds
             });
+ 
         });
     });
 
