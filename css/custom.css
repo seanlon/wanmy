@@ -803,7 +803,7 @@ a.view-more-btn:hover {
     color: #fff;
     margin-bottom: 15px;
     font-weight: 300;
-    font-family: Montserrat-Bold;
+    
     font-size: 36px;
     line-height: 55px
 }
@@ -1163,23 +1163,7 @@ input[type=checkbox].heart-checkbox:checked+label:before {
 .bg-color-blue {
     background-color: #2e71f0 !important
 }
-.book-now-block {
-    background-color: #fff;
-    display: block;
-    width: 100%;
-    min-height: 350px;
-    border-radius: 10px;
-    box-shadow: 0 1px 3px #ececec;
-    padding: 20px;
-    padding-top: 40px;
-    padding-bottom: 40px
-}
-.book-now-block .price-text {
-    color: #2269ef
-}
-.book-now-block .alt-text {
-    color: #4e4e4e
-}
+
 .full-bold {
     font-weight: 800
 }
@@ -1195,7 +1179,7 @@ input[type=checkbox].heart-checkbox:checked+label:before {
     margin-bottom: 25px;
     line-height: normal
 }
-.section-details .form-control {
+/*.section-details .form-control {
     height: 50px;
     border: 1px solid #ccc
 }
@@ -1203,7 +1187,7 @@ input[type=checkbox].heart-checkbox:checked+label:before {
     height: 50px;
     font-weight: bold;
     font-size: 14px
-}
+}*/
 .section-details .btn.blue {
     background-color: #2e71f0
 }
@@ -1461,3 +1445,76 @@ button:hover
     line-height: 1.42857143;
     color: #000;
 }
+
+
+.profile-nav {    }
+.navbar-nav>li>a.usernavprofile {padding:15px 5px 5px 5px;}
+
+.navbar-nav>li>a.usernavprofile:hover{ background:none;}
+.usernavprofile img { margin-left:10px;  }
+
+.nav>li>a:hover { background:none;}
+
+
+@media (min-width: 768px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+ }
+ 
+ .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background-color: none;
+ }
+ 
+ .dropdown-menu { margin:0;top: 59px;}
+ .dropdown-menu>li>a {
+    display: block;
+    padding: 20px;
+ }
+
+/*payment*/
+
+.payment-page{
+    padding-top: 70px; background: #fafafa;
+}
+
+.billing .form-control{ height:36px;
+    background-color: #fff;
+    color: #565a5c;}
+	.form-control {border-radius: 2px;}
+	
+	label {
+     font-weight: normal; 
+    color: #565a5c;
+}
+.input-pay {    border: 1px solid #c4c4c4;}
+.billing img{    border: 1px solid #c4c4c4;}
+.paddingzero { padding:0;}
+.billing h3 {font-size: 32px;
+    font-weight: normal;color: #565a5c;}
+	
+	.btn-pay { height:42px;}
+	
+	
+	.book-now-block {
+    background-color: #fff;
+    display: block;
+    width: 100%;
+    min-height: 350px;
+    border: 1px solid #dce0e0;
+    background-color: #fff;
+    border-radius: 0;
+}
+.book-now-block img { border-radius: 0;}
+
+.productdetail { padding:20px; border-radius: 0;}
+.productdetail h3{     font-size: 18px;
+    font-weight: bold;    margin-bottom: 5px;}
+.productdetail p{font-size: 14px;
+    line-height: 1.43;
+    color: #000; font-family:Arial, Helvetica, sans-serif;}
+
+p.totalprice{ font-size: 24px;font-weight: normal;line-height: 1.43;
+    color: #000;}
+
+
