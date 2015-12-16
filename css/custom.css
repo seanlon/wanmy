@@ -534,7 +534,7 @@ a.overlay {
     z-index: 11px
 }
 .content-title {
-    margin: 60px 0 60px 0
+        margin: 10px 0 60px 0;
 }
 .content-title h3 {
     font-size: 36px
@@ -1020,9 +1020,9 @@ a.view-more-btn:hover {
     float: left
 }
 .container-filter .filter-search {
-    border-bottom: solid 2px #e6e9e9;
-    min-height: 150px;
-    margin-top: 75px
+    border-bottom: solid 1px #e6e9e9;
+   min-height: 100px;
+    margin-top: 25px;
 }
 .container-filter .filter-search .checkbox {
     margin-right: 10px;
@@ -1040,8 +1040,8 @@ a.view-more-btn:hover {
     margin-top: 16px
 }
 .container-filter .slider-filter {
-    min-height: 150px;
-    margin-top: 75px
+        min-height: 120px;
+    margin-top: 35px;
 }
 .container-filter .slider-filter label {
     font-weight: bold
@@ -1053,9 +1053,9 @@ a.view-more-btn:hover {
     margin-top: 18px
 }
 .noUi-horizontal .noUi-handle {
-    height: 33px;
-    width: 33px;
-    top: -15px;
+        height: 24px;
+    width: 24px;
+    top: -10px;
     border-radius: 50%;
     cursor: pointer;
     box-shadow: 0 2px 5px #ebebeb, 0 3px 6px -3px #bbb
@@ -1086,7 +1086,7 @@ a.view-more-btn:hover {
 .heart-wrapper {
     position: absolute;
     top: 5px;
-    left: 205px
+    left: 235px
 }
 input[type=checkbox].heart-checkbox {
     display: none
@@ -1100,7 +1100,7 @@ input[type=checkbox].heart-checkbox+label:before {
 input[type=checkbox].heart-checkbox+label:before {
     content: "\f004";
     color: #9b9b9b;
-    -webkit-text-stroke: .5px white;
+    -webkit-text-stroke: .1px white;
     text-shadow: 1px 1px 0 #fff, px 0 0 #fff, 1px -1px 0 #fff, 0 1px 0 #fff, 1px 1px 0 #fff
 }
 input[type=checkbox].heart-checkbox+label:before {
@@ -1408,8 +1408,8 @@ input[type=checkbox].heart-checkbox:checked+label:before {
     width: 500px;
     height: 40px;
     border: none;
-    -webkit-box-shadow: 0;
-    box-shadow: 0
+   -webkit-box-shadow: none;
+    box-shadow: none;
 }
 @media screen and (max-width: 768px) {
     .side-collapse-container {
@@ -1436,4 +1436,30 @@ input[type=checkbox].heart-checkbox:checked+label:before {
 }
 .navbar-toggle .icon-bar {
     background-color: #000
+}
+
+
+
+
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+}
+
+.pagination>li>a {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #000;
 }
