@@ -335,13 +335,10 @@ input[type=radio]:focus,
 .bottom-footer p a {
     color: #999
 }
-a { text-decoration:none;}
-a:hover {
-    color: #ccc;
-    text-decoration: none;
-}
+a:hover,
 a:active {
-    text-decoration: none;
+    color: #ccc;
+    text-decoration: none
 }
 .currency {
     background: #1f1f21;
@@ -421,8 +418,8 @@ input.form-control.name-form {
     color: #fff
 }
 .landing-content {
-    padding: 40px 0;border-top: solid 1px #e6e9e9;
-}
+    padding: 40px 0;
+    border-top: solid 1px #e6e9e9
 }
 .landing-content a {
     color: #333;
@@ -436,9 +433,7 @@ input.form-control.name-form {
     margin-bottom: 40px
 }
 @media (max-width: 991px) {
-    .portfolio-item {
-        margin-left: 40px
-    }
+    
 }
 .price {
     opacity: .79;
@@ -537,7 +532,7 @@ a.overlay {
     z-index: 11px
 }
 .content-title {
-    margin:10px 0 60px 0;
+        margin: 10px 0 60px 0;
 }
 .content-title h3 {
     font-size: 36px
@@ -679,6 +674,12 @@ a.view-more-btn:hover {
     background-image: url("../../../common-files/icons/menu-icon-header-8.png");
     margin-top: 36px
 }
+.header-11 .navbar .btn.btn-primary {
+    background-color: #3276b1
+}
+.header-11 .navbar .nav>li:first-child {
+    margin-left: 0
+}
 .header-11 .navbar .btn.btn-primary:hover,
 .header-11 .navbar .btn.btn-primary:focus {
     background-color: #45b39d
@@ -718,7 +719,6 @@ a.view-more-btn:hover {
     filter: alpha(opacity=50);
     font-size: 12px;
     font-weight: normal;
-    color: #bdc3c7;
     color: #7f8c8d
 }
 .header-11-sub .additional-links a {
@@ -1019,13 +1019,14 @@ a.view-more-btn:hover {
 }
 .container-filter .filter-search {
     border-bottom: solid 1px #e6e9e9;
-    min-height: 90px;
-    margin-top: 15px;
+   min-height: 100px;
+    margin-top: 25px;
 }
 .container-filter .filter-search .checkbox {
-margin-right: 10px;
+    margin-right: 10px;
     background-color: #edefed;
-    border: 1px solid #dce0e0;padding: 5px 20px;    
+    border: 1px solid #dce0e0;
+    padding: 5px 20px
 }
 @media (max-width: 991px) {
     .container-filter .filter-search .checkbox {
@@ -1037,8 +1038,8 @@ margin-right: 10px;
     margin-top: 16px
 }
 .container-filter .slider-filter {
-    min-height: 170px;
-   padding-top: 40px;
+        min-height: 120px;
+    margin-top: 35px;
 }
 .container-filter .slider-filter label {
     font-weight: bold
@@ -1050,7 +1051,7 @@ margin-right: 10px;
     margin-top: 18px
 }
 .noUi-horizontal .noUi-handle {
-    height: 24px;
+        height: 24px;
     width: 24px;
     top: -10px;
     border-radius: 50%;
@@ -1083,7 +1084,7 @@ margin-right: 10px;
 .heart-wrapper {
     position: absolute;
     top: 5px;
-        right: 24px;
+    left: 235px
 }
 input[type=checkbox].heart-checkbox {
     display: none
@@ -1097,7 +1098,7 @@ input[type=checkbox].heart-checkbox+label:before {
 input[type=checkbox].heart-checkbox+label:before {
     content: "\f004";
     color: #9b9b9b;
-    -webkit-text-stroke: .5px white;
+    -webkit-text-stroke: .1px white;
     text-shadow: 1px 1px 0 #fff, px 0 0 #fff, 1px -1px 0 #fff, 0 1px 0 #fff, 1px 1px 0 #fff
 }
 input[type=checkbox].heart-checkbox+label:before {
@@ -1316,9 +1317,6 @@ input[type=checkbox].heart-checkbox:checked+label:before {
     text-align: center;
     width: 442px
 }
-.modal-signin .form-control {
-    border: 1px solid #ccc
-}
 .modal-signup h3 {
     margin-top: 0
 }
@@ -1383,19 +1381,83 @@ input[type=checkbox].heart-checkbox:checked+label:before {
 .btn:focus {
     outline: none
 }
-.footer-grey { background:#edefed;}
-.footer-grey a {color: #565a5c;}
-.footer-grey .bottom-footer p a {
-    color: #565a5c;
+.footer-grey {
+    background: #edefed
 }
-.navbar-white {border-bottom: 1px solid #dce0e0;height: 61px;    padding: 0;}
+.footer-grey a {
+    color: #565a5c
+}
+.footer-grey .bottom-footer p a {
+    color: #565a5c
+}
+.navbar-white {
+    border-bottom: 1px solid #dce0e0;
+    height: 61px;
+    padding: 0
+}
 .navbar-nav>li>a {
     padding-top: 19px;
-    color: #565a5c;
+    color: #565a5c
 }
-.search-white-nav {    position: absolute;
+.search-white-nav {
+    position: absolute;
     top: 9px;
     left: 91px;
     width: 500px;
     height: 40px;
-    border: none;-webkit-box-shadow: 0;box-shadow: 0;}
+    border: none;
+   -webkit-box-shadow: none;
+    box-shadow: none;
+}
+@media screen and (max-width: 768px) {
+    .side-collapse-container {
+        width: 100%;
+        position: relative;
+        left: 0;
+        transition: left .4s
+    }
+    .side-collapse-container.out {
+        left: 200px
+    }
+    .side-collapse {
+        top: 50px;
+        bottom: 0;
+        left: 0;
+        width: 200px;
+        position: fixed;
+        overflow: hidden;
+        transition: width .4s
+    }
+    .side-collapse.in {
+        width: 0
+    }
+}
+.navbar-toggle .icon-bar {
+    background-color: #000
+}
+
+
+
+
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+}
+
+.pagination>li>a {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #000;
+}
