@@ -433,9 +433,7 @@ input.form-control.name-form {
     margin-bottom: 40px
 }
 @media (max-width: 991px) {
-    .portfolio-item {
-        margin-left: 40px
-    }
+    
 }
 .price {
     opacity: .79;
