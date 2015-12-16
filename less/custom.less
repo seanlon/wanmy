@@ -40,10 +40,14 @@ input[type=file]:focus, input[type=checkbox]:focus, input[type=radio]:focus,
         }
     }
 }
-a:hover {
+
+a{
+    &:hover, &:active {
     color: #CCC;
     text-decoration: none;
+    }
 }
+
 .currency {
  
          background: #1F1F21;
@@ -75,6 +79,7 @@ a:hover {
             }
             & > a:hover {
                 color: #2E71F0;
+
             }
             & > a.nav-cta {
                 border: 1px solid #EEEEEE;
@@ -130,7 +135,8 @@ input.form-control.name-form {
     color: #FFF;
 }
 .landing-content {
-    padding: 40px 0;
+   // padding: 40px 0;
+      padding: 40px 0;border-top: solid 1px #e6e9e9;
     a {
         color: #333;
         -webkit-transition: all 0.3s ease-out;
@@ -396,25 +402,64 @@ a.view-more-btn:hover {
             margin-top: 36px;
         }
     }
+ .navbar .btn.btn-primary{
 
-    .navbar .btn.btn-primary:hover,.navbar .btn.btn-primary:focus {
-        background-color: #45b39d;
-    }
-    .navbar .btn.btn-primary:active,.navbar .btn.btn-primary.active {
-        background-color: #138871;
-    }
-    .navbar .nav &>li:active a,.navbar .nav &>li.active a {
-        color: #16a085;
-    }
-    .navbar .nav &>li:active a:hover,.navbar .nav &>li.active a:hover,.navbar .nav &>li:active a:focus,.navbar .nav &>li.active a:focus,.navbar .nav &>li:active a.active,.navbar .nav &>li.active a.active {
-        color: #16a085;
-    }
-    .navbar .nav &>li &>a:hover,.navbar .nav &>li &>a:focus,.navbar .nav &>li &>a.active {
-        color: #16a085;
-    }
+  background-color: #3276b1;
+ }
+    // .navbar .btn.btn-primary:hover,.navbar .btn.btn-primary:focus {
+    //     background-color: #45b39d;
+    // }
+    // .navbar .btn.btn-primary:active,.navbar .btn.btn-primary.active {
+    //     background-color: #138871;
+    // }
+    // .navbar .nav &>li:active a,.navbar .nav &>li.active a {
+    //     color: #16a085;
+    // }
+    // .navbar .nav &>li:active a:hover,.navbar .nav &>li.active a:hover,.navbar .nav &>li:active a:focus,.navbar .nav &>li.active a:focus,.navbar .nav &>li:active a.active,.navbar .nav &>li.active a.active {
+    //     color: #16a085;
+    // }
+    // .navbar .nav &>li &>a:hover,.navbar .nav &>li &>a:focus,.navbar .nav &>li &>a.active {
+    //     color: #16a085;
+    // }
+
+ .navbar .nav>li:first-child {
+     margin-left: 0
+ }
 
 
+.navbar .btn.btn-primary:hover, .navbar .btn.btn-primary:focus {
+     background-color: #45b39d
 }
+
+.navbar .btn.btn-primary:active,  .navbar .btn.btn-primary.active {
+     background-color: #138871
+}
+
+ 
+}
+
+.navbar .nav .header-11{
+    &>li:active a,
+    &>li.active a {
+        color: #16a085
+    }
+    &>li:active a:hover,
+    &>li.active a:hover,
+    &>li:active a:focus,
+    &>li.active a:focus,
+    &>li:active a.active,
+    &>li.active a.active {
+         color: #16a085
+    }
+    &>li .header-11>a:hover,
+    &>li .header-11>a:focus,
+    &>li .header-11>a.active {
+         color: #16a085
+    } 
+}
+
+   
+
 
 
 .header-11-sub {
@@ -434,7 +479,7 @@ a.view-more-btn:hover {
         filter: alpha(opacity=50);
         font-size: 12px;
         font-weight: normal;
-        color: #bdc3c7;
+        // color: #bdc3c7;
         color: #7f8c8d;
         a {
             text-decoration: underline;
@@ -1125,9 +1170,9 @@ input[type=checkbox].heart-checkbox{
      text-align: center; width: 442px;
      
      }
-         .modal-signin .form-control {
-     border: 1px solid #CCC;
- }
+// .modal-signin .form-control {
+//       border: 1px solid #CCC;
+//  }
  
  .modal-signup h3{margin-top: 0;}
  .modal-signin h3{margin-top: 0;}
@@ -1210,3 +1255,24 @@ input[type=checkbox].heart-checkbox{
  .btn:focus {
    outline: none;
  }
+
+
+.footer-grey { background:#edefed;}
+.footer-grey a {color: #565a5c;}
+.footer-grey .bottom-footer p a {
+    color: #565a5c;
+}
+.navbar-white {border-bottom: 1px solid #dce0e0;height: 61px;    padding: 0;}
+.navbar-nav>li>a {
+    padding-top: 19px;
+    color: #565a5c;
+}
+.search-white-nav {    position: absolute;
+    top: 9px;
+    left: 91px;
+    width: 500px;
+    height: 40px;
+    border: none;-webkit-box-shadow: 0;box-shadow: 0;
+}
+
+
