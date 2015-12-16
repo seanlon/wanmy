@@ -27,7 +27,7 @@
       <!--/typehead-->
    </head>
    <body>
-      <nav class="navbar navbar-default navbar-static-top">
+    <!--   <nav class="navbar navbar-default navbar-static-top">
          <div class="container">
             <div class="navbar-header">
                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -44,10 +44,48 @@
                   <li><a href="#">Login</a></li>
                   <li><a href="#" class="nav-cta">Sign Up</a></li>
                </ul>
+            </div> 
+         </div>
+      </nav> 
+      -->
+   <!-- header  -->
+  <nav class="navbar navbar-white  navbar-static-top">
+         <div class="container">
+            <div class="navbar-header">
+            
+
+                <button data-toggle="collapse-side" 
+                data-target=".side-collapse" 
+                data-target-2=".side-collapse-container" 
+                type="button" 
+                class="navbar-toggle pull-left">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+
+               <a class="navbar-brand" href="#"><img src="img/dummylogo.png" width="30"></a>
+               <input type="text" class="hidden form-control search-white-nav" id="" placeholder="Search">
             </div>
+            <div id="navbar" class="navbar-collapse   side-collapse in">
+               <nav role="navigation" class="navbar-collapse">
+               <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#">Become a Mechant</a></li> 
+               <li><a href="#">Login</a></li>
+                  <li><a href="#" >Sign Up</a></li>
+
+               </ul>
+                 </nav>
+            </div>  
+
+          
             <!--/.nav-collapse -->
          </div>
       </nav>
+  
+    <!-- /header  -->
+<div class="side-collapse-container">  
       <section class="header-11-sub bg-midnight-blue">
          <div class="background">
             &nbsp;
@@ -281,7 +319,30 @@
             </div>
          </div>
       </footer>
+  
+  </div>    
+ <!-- /side-collapse-container  -->
       <script>
+
+function initResponsiveHeader() {
+        var sideslider = $('[data-toggle=collapse-side]');
+        var sel = sideslider.attr('data-target');
+        var sel2 = sideslider.attr('data-target-2');
+        sideslider.click(function(event) {
+            $(sel).toggleClass('in');
+            $(sel2).toggleClass('out');
+        });
+
+    }
+
+
+
+    $(window).load(function() {
+        $(document).ready(function() { 
+        initResponsiveHeader(); 
+
+        });
+    });
          $(function() {
              function displayResult(item) {
                  $('.alert').show().html('You selected <strong>' + item.value + '</strong>: <strong>' + item.text + '</strong>');
