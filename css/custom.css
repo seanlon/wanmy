@@ -323,6 +323,10 @@ input[type=radio]:focus,
 .landing-page-search {
     padding-top: 80px
 }
+
+
+
+
 .terms-footer {
     margin-right: 40px
 }
@@ -427,7 +431,7 @@ input.form-control.name-form {
     transition: all .3s ease-out
 }
 .landing-content a:hover {
-    color: #2e71f0
+  /*  color: #2e71f0*/
 }
 .portfolio-item {
     margin-bottom: 40px
@@ -454,48 +458,70 @@ input.form-control.name-form {
 }
 .overlay-bg {
     position: absolute;
-    width: 570px;
-    height: 731px;
+    width:100%;
+    /*width: 570px;
+    height: 731px;*/
     background: #000
 }
 .multi-select-block .block {
     width: 30%
 }
 .overlay-big-left img {
-    opacity: 60;
-    filter: alpha(opacity=6000);
-    opacity: .6
+    opacity: 950;
+    filter: alpha(opacity=95000);
+    opacity: .95;
+ 
+    @media (max-width: 991px) { 
+        height:357px ;  width:100%;
+    } 
 }
 .overlay-right-top-bg {
     position: absolute;
-    width: 570px;
-    height: 357px;
-    background: #000
+    width:100%;
+    /*width: 570px; 
+    height: 357px;*/
+    background: #000;
+
+
 }
 .overlay-right-top img {
-    opacity: 60;
-    filter: alpha(opacity=6000);
-    opacity: .6
+    opacity: 950;
+    filter: alpha(opacity=95000);
+    opacity: .95
 }
 .overlay-right-bottom-bg {
-    position: absolute;
-    width: 570px;
-    height: 362px;
+    position: absolute;  
+    width:100%;
+    /*width: 570px;
+    height: 362px;*/
     background: #000;
     margin-top: 13px
 }
 .overlay-right-bottom img {
-    opacity: 60;
-    filter: alpha(opacity=6000);
-    opacity: .6;
+    opacity: 950;
+    filter: alpha(opacity=95000);
+    opacity: .95;
     margin-top: 13px
 }
 .text-overlay.big-left {
     position: absolute;
     top: 300px;
     left: 180px;
-    z-index: 999
+    z-index: 999; 
+  
 }
+
+@media (max-width: 768px) {  
+    .text-overlay.big-left {
+
+    top: auto;
+    margin-top: 10%;
+    left: 25%; 
+
+    }
+}
+
+
 .text-overlay.big-left a {
     color: #fff;
     text-decoration: none;
@@ -505,8 +531,18 @@ input.form-control.name-form {
     position: absolute;
     top: 170px;
     left: 230px;
-    z-index: 999
+    z-index: 999;
 }
+
+@media (max-width: 768px) { 
+ .text-overlay.top-right {
+ 
+    top: auto;
+    margin-top: 10%;
+    left: 25%; 
+     }
+}
+
 .text-overlay.top-right a {
     color: #fff;
     text-decoration: none;
@@ -516,8 +552,18 @@ input.form-control.name-form {
     position: absolute;
     top: 530px;
     left: 230px;
-    z-index: 999
+    z-index: 999; 
 }
+
+@media (max-width: 768px) {
+     .text-overlay.bottom-right {
+            
+        top: auto;
+        margin-top: 10%;
+            left: 25%; 
+    } 
+}
+
 .text-overlay.bottom-right a {
     color: #fff;
     text-decoration: none;
@@ -1239,10 +1285,29 @@ input[type=checkbox].heart-checkbox:checked+label:before {
     filter: alpha(opacity=50);
     opacity: .5
 }
+@media (max-width: 991px) {
+    .portfolio-item { 
+        margin-left:auto;
+        margin-right:auto;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+ }  
+
+@media (max-width: 768px) {
+    .portfolio-item {
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom: 20px;
+        padding-right: 80px;
+        padding-left: 80px;
+    }
+ }   
 @media (max-width: 480px) {
     .portfolio-item {
         margin-bottom: 20px;
-        padding-left: 80px
+        padding-right: 80px;
+        padding-left: 80px;
     }
     input.form-control.places-form {
         width: 100%
@@ -1534,3 +1599,24 @@ p.totalprice{ font-size: 24px;font-weight: normal;line-height: 1.43;
     border-bottom-color: rgba(0,0,0,.2);
     content: '';
 }
+
+
+.title-style-1{
+    font-weight:800;
+}
+.title-style-2{
+    font-weight:200;
+    font-style: italic;
+}
+
+
+@media(max-width: 991px) {
+.landing-page-search input,.landing-page-search .btn{
+    display: block;
+    margin-right: auto !important;
+    margin-left: auto !important;   
+}       
+}
+
+
+
