@@ -52,7 +52,7 @@
                      <li><a href="#">Become a Mechant</a></li>
                      
                      <li class="dropdown">
-              <a href="#" class="dropdown-toggle usernavprofile" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sarah <img src="https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg" width="30" class="img-circle profile-nav"/></a>
+              <a href="#"  onmouseover="javascript:stickDropdown(this);" class="dropdown-toggle usernavprofile"  data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sarah <img src="https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg" width="30" class="img-circle profile-nav"/></a>
               <ul class="dropdown-menu">
                 <li><a href="#">Edit Profile</a></li>
                 <li><a href="#">Invite Friends</a></li>
@@ -501,6 +501,11 @@ Jan 27, 2016</p>
       </div>
       <!-- /side-collapse-container  -->
       <script>
+            function stickDropdown(_elem){
+               $(_elem).parent().removeClass('open').addClass('open');
+         }
+
+
          function initResponsiveHeader() {
                  var sideslider = $('[data-toggle=collapse-side]');
                  var sel = sideslider.attr('data-target');
