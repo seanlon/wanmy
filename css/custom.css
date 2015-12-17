@@ -1518,3 +1518,19 @@ p.totalprice{ font-size: 24px;font-weight: normal;line-height: 1.43;
     color: #000;}
 
 
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+    background-color:transparent;
+
+}
+
+.dropdown-menu:before {
+    position: absolute;
+    top: -7px;
+    right: 15px;
+    display: inline-block;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #ccc;
+    border-left: 7px solid transparent;
+    border-bottom-color: rgba(0,0,0,.2);
+    content: '';
+}
