@@ -998,7 +998,9 @@ a.view-more-btn:hover {
         margin: 9px 0
     }
     .header-11-sub .background {
-        background: #f6f6f2
+        background: #f6f6f2;
+        
+    background-image: url(../img/Image.png);
     }
     .header-11-sub .signup-form form input[type="text"],
     .header-11-sub .signup-form form input[type="password"] {
