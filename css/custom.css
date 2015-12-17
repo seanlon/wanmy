@@ -454,40 +454,43 @@ input.form-control.name-form {
 }
 .overlay-bg {
     position: absolute;
-    width: 570px;
-    height: 731px;
+    width:100%;
+    /*width: 570px;
+    height: 731px;*/
     background: #000
 }
 .multi-select-block .block {
     width: 30%
 }
 .overlay-big-left img {
-    opacity: 60;
-    filter: alpha(opacity=6000);
-    opacity: .6
+    opacity: 950;
+    filter: alpha(opacity=95000);
+    opacity: .95
 }
 .overlay-right-top-bg {
     position: absolute;
-    width: 570px;
-    height: 357px;
+    width:100%;
+    /*width: 570px; 
+    height: 357px;*/
     background: #000
 }
 .overlay-right-top img {
-    opacity: 60;
-    filter: alpha(opacity=6000);
-    opacity: .6
+    opacity: 950;
+    filter: alpha(opacity=95000);
+    opacity: .95
 }
 .overlay-right-bottom-bg {
-    position: absolute;
-    width: 570px;
-    height: 362px;
+    position: absolute;  
+    width:100%;
+    /*width: 570px;
+    height: 362px;*/
     background: #000;
     margin-top: 13px
 }
 .overlay-right-bottom img {
-    opacity: 60;
-    filter: alpha(opacity=6000);
-    opacity: .6;
+    opacity: 950;
+    filter: alpha(opacity=95000);
+    opacity: .95;
     margin-top: 13px
 }
 .text-overlay.big-left {
@@ -1533,4 +1536,13 @@ p.totalprice{ font-size: 24px;font-weight: normal;line-height: 1.43;
     border-left: 7px solid transparent;
     border-bottom-color: rgba(0,0,0,.2);
     content: '';
+}
+
+
+.title-style-1{
+    font-weight:800;
+}
+.title-style-2{
+    font-weight:200;
+    font-style: italic;
 }
