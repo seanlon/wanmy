@@ -999,7 +999,7 @@ a.view-more-btn:hover {
     }
     .header-11-sub .background {
         background: #f6f6f2;
-        
+
     background-image: url(../img/Image.png);
     }
     .header-11-sub .signup-form form input[type="text"],
@@ -1620,5 +1620,16 @@ p.totalprice{ font-size: 24px;font-weight: normal;line-height: 1.43;
 }       
 }
 
+@media(max-width: 768px) { 
+     .container>.navbar-header {
+    margin-right: -15px;
+    margin-left: -15px;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    opacity: .7;
 
+}
+}
 
