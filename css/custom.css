@@ -320,6 +320,11 @@ input[type=radio]:focus,
     width: 100%;
     height: 260px
 }
+.navbar-none  {    margin-top: -64px;}
+.landing-nav .navbar-nav>li>a {
+    padding-top: 19px;
+    color: #FFF;
+}
 .landing-page-search {
     padding-top: 80px
 }
@@ -706,10 +711,8 @@ a.view-more-btn:hover {
     color: #16a085
 }
 .header-11-sub {
-    padding-top: 110px;
-    padding-bottom: 200px;
-    padding-bottom: 150px;
-    color: #bdc3c7;
+    padding-top: 58px;
+    padding-bottom: 58px;
     position: relative
 }
 .header-11-sub .additional-links {
@@ -1164,21 +1167,45 @@ input[type=checkbox].heart-checkbox:checked+label:before {
     background-color: #2e71f0 !important
 }
 
-.full-bold {
-    font-weight: 800
+.review-name {
+
 }
-.section-details h5 {
-    color: #595f64;
-    line-height: 25px;
+.section-details p {
+	font-family:Arial, Helvetica, sans-serif;
+        font-size: 14px;
+    line-height: 1.43;
+    color: #565a5c;
     margin-top: 0;
     margin-bottom: 0
 }
 .section-details h3 {
     color: #3c3d41;
     margin-top: 0;
-    margin-bottom: 25px;
-    line-height: normal
+       margin-bottom: 6.25px;
+    line-height: normal;
+	    font-size: 24px;
 }
+
+.section-details p {
+	font-size: 14px;
+    line-height: 1.43;
+    color: #000;
+	}
+	
+	
+	.btn-contact {   background-color: #2e71f0;color: #fff;
+    color: #fff;padding: 4px 12px;
+    font-size: 12px; width:100px;}
+	
+	h3.title-detailspage { margin-bottom:40px;}
+	
+	
+	.testimonials {    width: 555px;    border: 1px solid #c4c4c4; border-radius:2px;}
+	.btn-testimonials {    background-color: #2e71f0;color: #fff;
+    border-color: #204d74;}
+	
+	.merchant-info { padding-left:40px;}
+	
 /*.section-details .form-control {
     height: 50px;
     border: 1px solid #ccc
@@ -1198,7 +1225,7 @@ input[type=checkbox].heart-checkbox:checked+label:before {
     min-height: 150px
 }
 .section-details.review .row {
-    margin-bottom: 110px
+   /* margin-bottom: 40px;*/
 }
 .section-details.review .row-half-space {
     margin-bottom: 55px
@@ -1467,7 +1494,7 @@ button:hover
  }
  
  .dropdown-menu { margin:0;top: 59px;}
- .dropdown-menu>li>a {
+ .profile-nav-dropdown>li>a {
     display: block;
     padding: 20px;
  }
@@ -1494,6 +1521,11 @@ button:hover
     font-weight: normal;color: #565a5c;}
 	
 	.btn-pay { height:42px;}
+	
+	
+	.merchant-details {    padding-left: 50px;}
+	
+	.book-widget-detail-page { position:absolute; top: -80px;}
 	
 	
 	.book-now-block {
@@ -1534,3 +1566,4 @@ p.totalprice{ font-size: 24px;font-weight: normal;line-height: 1.43;
     border-bottom-color: rgba(0,0,0,.2);
     content: '';
 }
+
