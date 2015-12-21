@@ -44,7 +44,21 @@
                <span class="icon-bar"></span>
                </button>
                <a class="navbar-brand" href="#"><img src="img/dummylogo.png" width="30"></a>
-               <input type="text" class="form-control search-white-nav" id="" placeholder="Search">
+               
+                 
+                 
+  
+  <form class="form-inline search-white-nav">
+  <div class="form-group">
+   <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+  </div>
+  <div class="form-group">
+               <input type="text" class="form-control search-nav" id="" placeholder="Search">
+  </div>
+</form>
+
+               
+               
             </div>
             <div id="navbar" class="navbar-collapse   side-collapse in">
                <nav role="navigation" class="navbar-collapse">
@@ -525,27 +539,9 @@
               });
           });
          
-          $(function() {
-              function displayResult(item) {
-                  $('.alert').show().html('You selected <strong>' + item.value + '</strong>: <strong>' + item.text + '</strong>');
-              }
-              $('#demo6').typeahead({
-                  source: [
-                      'Genting',
-                      'Zoo Negara',
-                      'Tioman',
-                      'Petronas Towers',
-                      'Batu Caves',
-                      'Gunung Mulu',
-                      'Mount Kinabalu',
-                      'Bako Park',
-                      'Sunway Lagoon',
-                      'Pangkor island'
-                  ],
-                  onSelect: displayResult
-              });
+
          
-          });
+
           
       </script>
    </body>
