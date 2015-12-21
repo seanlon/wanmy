@@ -323,10 +323,6 @@ input[type=radio]:focus,
 .landing-page-search {
     padding-top: 80px
 }
-
-
-
-
 .terms-footer {
     margin-right: 40px
 }
@@ -431,7 +427,7 @@ input.form-control.name-form {
     transition: all .3s ease-out
 }
 .landing-content a:hover {
-  /*  color: #2e71f0*/
+    color: #2e71f0
 }
 .portfolio-item {
     margin-bottom: 40px
@@ -458,70 +454,48 @@ input.form-control.name-form {
 }
 .overlay-bg {
     position: absolute;
-    width:100%;
-    /*width: 570px;
-    height: 731px;*/
+    width: 570px;
+    height: 731px;
     background: #000
 }
 .multi-select-block .block {
     width: 30%
 }
 .overlay-big-left img {
-    opacity: 950;
-    filter: alpha(opacity=95000);
-    opacity: .95;
- 
-    @media (max-width: 991px) { 
-        height:357px ;  width:100%;
-    } 
+    opacity: 60;
+    filter: alpha(opacity=6000);
+    opacity: .6
 }
 .overlay-right-top-bg {
     position: absolute;
-    width:100%;
-    /*width: 570px; 
-    height: 357px;*/
-    background: #000;
-
-
+    width: 570px;
+    height: 357px;
+    background: #000
 }
 .overlay-right-top img {
-    opacity: 950;
-    filter: alpha(opacity=95000);
-    opacity: .95
+    opacity: 60;
+    filter: alpha(opacity=6000);
+    opacity: .6
 }
 .overlay-right-bottom-bg {
-    position: absolute;  
-    width:100%;
-    /*width: 570px;
-    height: 362px;*/
+    position: absolute;
+    width: 570px;
+    height: 362px;
     background: #000;
     margin-top: 13px
 }
 .overlay-right-bottom img {
-    opacity: 950;
-    filter: alpha(opacity=95000);
-    opacity: .95;
+    opacity: 60;
+    filter: alpha(opacity=6000);
+    opacity: .6;
     margin-top: 13px
 }
 .text-overlay.big-left {
     position: absolute;
     top: 300px;
     left: 180px;
-    z-index: 999; 
-  
+    z-index: 999
 }
-
-@media (max-width: 768px) {  
-    .text-overlay.big-left {
-
-    top: auto;
-    margin-top: 10%;
-    left: 25%; 
-
-    }
-}
-
-
 .text-overlay.big-left a {
     color: #fff;
     text-decoration: none;
@@ -531,18 +505,8 @@ input.form-control.name-form {
     position: absolute;
     top: 170px;
     left: 230px;
-    z-index: 999;
+    z-index: 999
 }
-
-@media (max-width: 768px) { 
- .text-overlay.top-right {
- 
-    top: auto;
-    margin-top: 10%;
-    left: 25%; 
-     }
-}
-
 .text-overlay.top-right a {
     color: #fff;
     text-decoration: none;
@@ -552,18 +516,8 @@ input.form-control.name-form {
     position: absolute;
     top: 530px;
     left: 230px;
-    z-index: 999; 
+    z-index: 999
 }
-
-@media (max-width: 768px) {
-     .text-overlay.bottom-right {
-            
-        top: auto;
-        margin-top: 10%;
-            left: 25%; 
-    } 
-}
-
 .text-overlay.bottom-right a {
     color: #fff;
     text-decoration: none;
@@ -752,10 +706,8 @@ a.view-more-btn:hover {
     color: #16a085
 }
 .header-11-sub {
-    padding-top: 110px;
-    padding-bottom: 200px;
-    padding-bottom: 150px;
-    color: #bdc3c7;
+    padding-top: 58px;
+    padding-bottom: 58px;
     position: relative
 }
 .header-11-sub .additional-links {
@@ -998,9 +950,7 @@ a.view-more-btn:hover {
         margin: 9px 0
     }
     .header-11-sub .background {
-        background: #f6f6f2;
-
-    background-image: url(../img/Image.png);
+        background: #f6f6f2
     }
     .header-11-sub .signup-form form input[type="text"],
     .header-11-sub .signup-form form input[type="password"] {
@@ -1212,21 +1162,45 @@ input[type=checkbox].heart-checkbox:checked+label:before {
     background-color: #2e71f0 !important
 }
 
-.full-bold {
-    font-weight: 800
+.review-name {
+
 }
-.section-details h5 {
-    color: #595f64;
-    line-height: 25px;
+.section-details p {
+	font-family:Arial, Helvetica, sans-serif;
+        font-size: 14px;
+    line-height: 1.43;
+    color: #565a5c;
     margin-top: 0;
     margin-bottom: 0
 }
 .section-details h3 {
     color: #3c3d41;
     margin-top: 0;
-    margin-bottom: 25px;
-    line-height: normal
+       margin-bottom: 6.25px;
+    line-height: normal;
+	    font-size: 24px;
 }
+
+.section-details p {
+	font-size: 14px;
+    line-height: 1.43;
+    color: #000;
+	}
+	
+	
+	.btn-contact {   background-color: #2e71f0;color: #fff;
+    color: #fff;padding: 4px 12px;
+    font-size: 12px; width:100px;}
+	
+	h3.title-detailspage { margin-bottom:40px;}
+	
+	
+	.testimonials {    width: 555px;    border: 1px solid #c4c4c4; border-radius:2px;}
+	.btn-testimonials {    background-color: #2e71f0;color: #fff;
+    border-color: #204d74;}
+	
+	.merchant-info { padding-left:40px;}
+	
 /*.section-details .form-control {
     height: 50px;
     border: 1px solid #ccc
@@ -1246,7 +1220,7 @@ input[type=checkbox].heart-checkbox:checked+label:before {
     min-height: 150px
 }
 .section-details.review .row {
-    margin-bottom: 110px
+   /* margin-bottom: 40px;*/
 }
 .section-details.review .row-half-space {
     margin-bottom: 55px
@@ -1287,29 +1261,10 @@ input[type=checkbox].heart-checkbox:checked+label:before {
     filter: alpha(opacity=50);
     opacity: .5
 }
-@media (max-width: 991px) {
-    .portfolio-item { 
-        margin-left:auto;
-        margin-right:auto;
-        padding-right: 10%;
-        padding-left: 10%;
-    }
- }  
-
-@media (max-width: 768px) {
-    .portfolio-item {
-        margin-left:auto;
-        margin-right:auto;
-        margin-bottom: 20px;
-        padding-right: 80px;
-        padding-left: 80px;
-    }
- }   
 @media (max-width: 480px) {
     .portfolio-item {
         margin-bottom: 20px;
-        padding-right: 80px;
-        padding-left: 80px;
+        padding-left: 80px
     }
     input.form-control.places-form {
         width: 100%
@@ -1534,7 +1489,7 @@ button:hover
  }
  
  .dropdown-menu { margin:0;top: 59px;}
- .dropdown-menu>li>a {
+ .profile-nav-dropdown>li>a {
     display: block;
     padding: 20px;
  }
@@ -1561,6 +1516,11 @@ button:hover
     font-weight: normal;color: #565a5c;}
 	
 	.btn-pay { height:42px;}
+	
+	
+	.merchant-details {    padding-left: 50px;}
+	
+	.book-widget-detail-page { position:absolute; top: -80px;}
 	
 	
 	.book-now-block {
@@ -1600,38 +1560,5 @@ p.totalprice{ font-size: 24px;font-weight: normal;line-height: 1.43;
     border-left: 7px solid transparent;
     border-bottom-color: rgba(0,0,0,.2);
     content: '';
-}
-
-
-.title-style-1{
-    font-weight:800;
-}
-.title-style-2{
-    font-weight:200;
-    font-style: italic;
-}
-
-
-@media(max-width: 991px) {
-.landing-page-search input,.landing-page-search .btn{
-    display: block;
-    margin-right: auto !important;
-    margin-left: auto !important;   
-}       
-}
-
-@media(max-width: 768px) { 
-     .container>.navbar-header {
-    margin-right: -15px;
-    margin-left: -15px;
-    position: fixed;
-    top: 0;
-    background-color: white;
-    width: 100%;
-    opacity: .85;
-    border-bottom: solid 1px grey;
-    padding-bottom: 10px;
-
-}
 }
 

@@ -10,15 +10,12 @@
       <title>want.my</title>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
       <link href="navbar-static-top.css" rel="stylesheet">
-
-      <link rel="stylesheet" href="css/lib/fontawesome.css">
       <link rel="stylesheet" type="text/css" href="css/custom.css">
-      <!--Places form 
+      <!--Places form-->
       <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
       <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.js"></script>
       <script src="js/places-form.js"></script>
       <script src="js/ngAutocomplete.js"></script>
-      -->
       <!--/Places form-->
       <!--typehead-->
       <!--need to be on top-->
@@ -96,8 +93,8 @@
          <div class="container">
             <div class="row">
                <div class="col-sm-12 text-center">
-                  <h3><span class="title-style-1">We help you to</span> <span class="title-style-2">discover</span> <span class="title-style-1">and</span><br> 
-                    <span class="title-style-2"> book</span><span class="title-style-1"> amazing things to do</span>
+                  <h3>We help you to discover and<br>
+                     book amazing things to do
                   </h3>
                   <p>
                      Buy experinces not things
@@ -107,7 +104,7 @@
                         <div class="form-group">
                            <input type="text" class="form-control places-form" id="Autocomplete"  ng-autocomplete="result1" placeholder="Where do you want to go?">
                         </div>
-                        <div class="form-group"  >
+                        <div class="form-group" ng-controller='DefaultCtrl'>
                            <input type="text" id="demo6" class="form-control name-form"  auto-complete ui-items="names" ng-model="selected" placeholder="Search Names" autocomplete="off" >
                         </div>
                         <button type="submit" class="btn btn-default search-btn">Search</button>
@@ -120,209 +117,118 @@
       </section>
       <div class="container landing-content">
          <!-- Projects Row -->
-          <div class="row">
-                  <div class="col-md-12 text-right content-title">
-                     <h4> 12 attractions, Petaling Jaya</h4>
-                  </div>
-                  <div class="col-xs-12 col-sm-6 col-md-3 portfolio-item">
-                     <p class="price">RM 999</p>
-                     <p class="heart-wrapper ">
-                        <input id="heart8" type="checkbox" class="heart-checkbox" />
-                        <label for="heart8"> </label>
-                     </p>
-                     <a href="#"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/nuraika/128.jpg" class="img-circle user-thumb" width="52" /></a>
-                     <a href="#">
-                     <img class="" src="img/1.png" width="262" alt="">
-                     </a>
-                     <h4>
-                        <a href="#">Genting Highlands</a>
-                     </h4>
-                     <a href="#">
-                        <p>Kuala Lumpur, Malaysia
-                        </p>
-                        <p class="star-rating">
-                           <span class="icon-star selected"></span>
-                           <span class="icon-star"></span>
-                           <span class="icon-star"></span>
-                           <span class="icon-star"></span>
-                           <span class="icon-star"></span>
-                        </p>
-                     </a>
-                     <p></p>
-                  </div>
-                  <div class="col-xs-12 col-sm-6 col-md-3 portfolio-item">
-                     <p class="price">RM 999</p>
-                     <p class="heart-wrapper ">
-                        <input id="heart2" type="checkbox" class="heart-checkbox" />
-                        <label for="heart2"> </label>
-                     </p>
-                     <a href="#"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/liang/128.jpg" class="img-circle user-thumb" width="52" /></a>
-                     <a href="#">
-                     <img class="" src="img/2.png" width="262" alt="">
-                     </a>
-                     <h4>
-                        <a href="#">Genting Highlands</a>
-                     </h4>
-                     <a href="#">
-                        <p>Kuala Lumpur, Malaysia</p>
-                        <p class="star-rating">
-                           <span class="icon-star selected"></span>
-                           <span class="icon-star selected"></span>
-                           <span class="icon-star"></span>
-                           <span class="icon-star"></span>
-                           <span class="icon-star"></span>
-                        </p>
-                     </a>
-                  </div>
-                  <div class="col-xs-12 col-sm-6 col-md-3 portfolio-item">
-                     <p class="price">RM 999</p>
-                     <p class="heart-wrapper ">
-                        <input id="heart3" type="checkbox" class="heart-checkbox" />
-                        <label for="heart3"> </label>
-                     </p>
-                     <a href="#"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/rickyyean/128.jpg" class="img-circle user-thumb" width="52" /></a>
-                     <a href="#">
-                     <img class="" src="img/3.png" width="262" alt="">
-                     </a>
-                     <h4>
-                        <a href="#">Genting Highlands</a>
-                     </h4>
-                     <a href="#">
-                        <p>Kuala Lumpur, Malaysia</p>
-                        <p class="star-rating">
-                           <span class="icon-star selected"></span>
-                           <span class="icon-star selected"></span>
-                           <span class="icon-star selected"></span>
-                           <span class="icon-star"></span>
-                           <span class="icon-star  "></span>
-                        </p>
-                     </a>
-                  </div>
-                  <div class="col-xs-12 col-sm-6 col-md-3 portfolio-item">
-                     <p class="price">RM 999</p>
-                     <p class="heart-wrapper ">
-                        <input id="heart4" type="checkbox" class="heart-checkbox" />
-                        <label for="heart4"> </label>
-                     </p>
-                     <a href="#"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/jeanniehuang/128.jpg" class="img-circle user-thumb" width="52" /></a>
-                     <a href="#">
-                     <img class="" src="img/4.png" width="262" alt="">
-                     </a>
-                     <h4>
-                        <a href="#">Genting Highlands</a>
-                     </h4>
-                     <a href="#">
-                        <p>Kuala Lumpur, Malaysia</p>
-                        <p class="star-rating">
-                           <span class="icon-star selected"></span>
-                           <span class="icon-star selected"></span>
-                           <span class="icon-star selected"></span>
-                           <span class="icon-star selected"></span>
-                           <span class="icon-star  "></span>
-                        </p>
-                     </a>
-                  </div>
-               </div>
-               <!-- /.row -->
-               <!-- Projects Row -->
-               <div class="row">
-                  <div class="col-xs-12 col-sm-6 col-md-3 portfolio-item">
-                     <p class="price">RM 999</p>
-                     <p class="heart-wrapper ">
-                        <input id="heart5" type="checkbox" class="heart-checkbox" />
-                        <label for="heart5"> </label>
-                     </p>
-                     <a href="#"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/andrea211087/128.jpg" class="img-circle user-thumb" width="52" /></a>
-                     <a href="#">
-                     <img class="" src="img/5.png" width="262" alt="">
-                     </a>
-                     <h4>
-                        <a href="#">Genting Highlands</a>
-                     </h4>
-                     <a href="#">
-                        <p>Kuala Lumpur, Malaysia</p>
-                        <p class="star-rating">
-                           <span class="icon-star selected"></span>
-                           <span class="icon-star selected"></span>
-                           <span class="icon-star selected"></span>
-                           <span class="icon-star selected"></span>
-                           <span class="icon-star selected"></span>
-                        </p>
-                     </a>
-                  </div>
-                  <div class="col-xs-12 col-sm-6 col-md-3 portfolio-item">
-                     <p class="price">RM 999</p>
-                     <p class="heart-wrapper ">
-                        <input id="heart6" type="checkbox" class="heart-checkbox" />
-                        <label for="heart6"> </label>
-                     </p>
-                     <a href="#"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/chloepark/128.jpg" class="img-circle user-thumb" width="52" /></a>
-                     <a href="#">
-                     <img class="" src="img/6.png" width="262" alt="">
-                     </a>
-                     <h4>
-                        <a href="#">Genting Highlands</a>
-                     </h4>
-                     <a href="#">
-                        <p>Kuala Lumpur, Malaysia</p>
-                        <p class="star-rating">
-                           <span class="icon-star selected"></span>
-                           <span class="icon-star selected"></span>
-                           <span class="icon-star selected"></span>
-                           <span class="icon-star selected"></span>
-                           <span class="icon-star  "></span>
-                        </p>
-                     </a>
-                  </div>
-                  <div class="col-xs-12 col-sm-6 col-md-3 portfolio-item">
-                     <p class="price">RM 999</p>
-                     <p class="heart-wrapper ">
-                        <input id="heart7" type="checkbox" class="heart-checkbox" />
-                        <label for="heart7"> </label>
-                     </p>
-                     <a href="#"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/kirstyllee/128.jpg" class="img-circle user-thumb" width="52" /></a>
-                     <a href="#">
-                     <img class="" src="img/7.png" width="262" alt="">
-                     </a>
-                     <h4>
-                        <a href="#">Genting Highlands</a>
-                     </h4>
-                     <a href="#">
-                        <p>Kuala Lumpur, Malaysia</p>
-                        <p class="star-rating">
-                           <span class="icon-star selected"></span>
-                           <span class="icon-star selected"></span>
-                           <span class="icon-star selected"></span>
-                           <span class="icon-star selected"></span>
-                           <span class="icon-star  "></span>
-                        </p>
-                     </a>
-                  </div>
-                  <div class="col-xs-12 col-sm-6 col-md-3 portfolio-item">
-                     <p class="price">RM 999</p>
-                     <p class="heart-wrapper ">
-                        <input id="heart1" type="checkbox" class="heart-checkbox" />
-                        <label for="heart1"> </label>
-                     </p>
-                     <a href="#"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/wintopia/128.jpg" class="img-circle user-thumb" width="52" /></a>
-                     <a href="#">
-                     <img class="" src="img/8.png" width="262" alt="">
-                     </a>
-                     <h4>
-                        <a href="#">Genting Highlands</a>
-                     </h4>
-                     <a href="#">
-                        <p>Kuala Lumpur, Malaysia</p>
-                        <p class="star-rating">
-                           <span class="icon-star selected"></span>
-                           <span class="icon-star selected"></span>
-                           <span class="icon-star selected"></span>
-                           <span class="icon-star selected"></span>
-                           <span class="icon-star  "></span>
-                        </p>
-                     </a>
-                  </div>
-
+         <div class="row">
+            <div class="col-md-12 text-center content-title">
+               <h3>Now trending in Kuala Lumpur</h3>
+            </div>
+            <div class="col-md-3 portfolio-item">
+               <p class="price">RM 999</p>
+               <a href="#"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/nuraika/128.jpg" class="img-circle user-thumb" width="52"/></a>
+               <a href="#">
+               <img class="img-responsive" src="img/1.png" width="262" alt="">
+               </a>
+               <h4>
+                  <a href="#">Genting Highlands</a>
+               </h4>
+               <a href="#">
+                  <p>Kuala Lumpur, Malaysia</p>
+               </a>
+            </div>
+            <div class="col-md-3 portfolio-item">
+               <p class="price">RM 999</p>
+               <a href="#"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/liang/128.jpg" class="img-circle user-thumb" width="52"/></a>
+               <a href="#">
+               <img class="img-responsive" src="img/2.png" width="262" alt="">
+               </a>
+               <h4>
+                  <a href="#">Genting Highlands</a>
+               </h4>
+               <a href="#">
+                  <p>Kuala Lumpur, Malaysia</p>
+               </a>
+            </div>
+            <div class="col-md-3 portfolio-item">
+               <p class="price">RM 999</p>
+               <a href="#"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/rickyyean/128.jpg" class="img-circle user-thumb" width="52"/></a>
+               <a href="#">
+               <img class="img-responsive" src="img/3.png" width="262" alt="">
+               </a>
+               <h4>
+                  <a href="#">Genting Highlands</a>
+               </h4>
+               <a href="#">
+                  <p>Kuala Lumpur, Malaysia</p>
+               </a>
+            </div>
+            <div class="col-md-3 portfolio-item">
+               <p class="price">RM 999</p>
+               <a href="#"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/jeanniehuang/128.jpg" class="img-circle user-thumb" width="52"/></a>
+               <a href="#">
+               <img class="img-responsive" src="img/4.png" width="262" alt="">
+               </a>
+               <h4>
+                  <a href="#">Genting Highlands</a>
+               </h4>
+               <a href="#">
+                  <p>Kuala Lumpur, Malaysia</p>
+               </a>
+            </div>
+         </div>
+         <!-- /.row -->
+         <!-- Projects Row -->
+         <div class="row">
+            <div class="col-md-3 portfolio-item">
+               <p class="price">RM 999</p>
+               <a href="#"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/andrea211087/128.jpg" class="img-circle user-thumb" width="52"/></a>
+               <a href="#">
+               <img class="img-responsive" src="img/5.png" width="262" alt="">
+               </a>
+               <h4>
+                  <a href="#">Genting Highlands</a>
+               </h4>
+               <a href="#">
+                  <p>Kuala Lumpur, Malaysia</p>
+               </a>
+            </div>
+            <div class="col-md-3 portfolio-item">
+               <p class="price">RM 999</p>
+               <a href="#"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/chloepark/128.jpg" class="img-circle user-thumb" width="52"/></a>
+               <a href="#">
+               <img class="img-responsive" src="img/6.png" width="262" alt="">
+               </a>
+               <h4>
+                  <a href="#">Genting Highlands</a>
+               </h4>
+               <a href="#">
+                  <p>Kuala Lumpur, Malaysia</p>
+               </a>
+            </div>
+            <div class="col-md-3 portfolio-item">
+               <p class="price">RM 999</p>
+               <a href="#"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/kirstyllee/128.jpg" class="img-circle user-thumb" width="52"/></a>
+               <a href="#">
+               <img class="img-responsive" src="img/7.png" width="262" alt="">
+               </a>
+               <h4>
+                  <a href="#">Genting Highlands</a>
+               </h4>
+               <a href="#">
+                  <p>Kuala Lumpur, Malaysia</p>
+               </a>
+            </div>
+            <div class="col-md-3 portfolio-item">
+               <p class="price">RM 999</p>
+               <a href="#"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/wintopia/128.jpg" class="img-circle user-thumb" width="52"/></a>
+               <a href="#">
+               <img class="img-responsive" src="img/8.png" width="262" alt="">
+               </a>
+               <h4>
+                  <a href="#">Genting Highlands</a>
+               </h4>
+               <a href="#">
+                  <p>Kuala Lumpur, Malaysia</p>
+               </a>
+            </div>
             <div class="col-md-12 text-center view-more">
                <a href="#" class="view-more-btn">Discover More</a>
             </div>
@@ -338,7 +244,7 @@
                </div>
                <div class="overlay-bg"></div>
                <a href="#"  class="overlay-big-left">
-               <img class="img-responsive center-block" src="img/9.png" width="570" alt="">
+               <img class="img-responsive" src="img/9.png" width="570" alt="">
                </a>
             </div>
             <div class="col-md-6 portfolio-item">
@@ -348,7 +254,7 @@
                </div>
                <div class="overlay-right-top-bg"></div>
                <a class="overlay-right-top" href="#">
-               <img class="img-responsive  center-block" src="img/10.png" width="570" alt="">
+               <img class="img-responsive" src="img/10.png" width="570" alt="">
                </a>
                <!--Bottom Right Image-->
                <div class="text-overlay bottom-right">
@@ -356,7 +262,7 @@
                </div>
                <div class="overlay-right-bottom-bg"></div>
                <a class="overlay-right-bottom" href="#">
-               <img class="img-responsive  center-block" src="img/11.png" width="570" alt="">
+               <img class="img-responsive" src="img/11.png" width="570" alt="">
                </a>
             </div>
             <!--Discover More-->

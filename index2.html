@@ -7,146 +7,120 @@
       <meta name="description" content="">
       <meta name="author" content="">
       <link rel="icon" href="../../favicon.ico">
-      <title>Result</title>
-      <link rel="stylesheet" href="css/lib/bootstrap.css">
+      <title>want.my</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+      <link href="navbar-static-top.css" rel="stylesheet">
+
       <link rel="stylesheet" href="css/lib/fontawesome.css">
-      <link rel="stylesheet" href="css/lib/beautycheckbox.css">
-      <link rel="stylesheet" href="css/lib/nouislider.min.css">
       <link rel="stylesheet" type="text/css" href="css/custom.css">
-      <!--Places form-->
+      <!--Places form 
+      <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.js"></script>
+      <script src="js/places-form.js"></script>
+      <script src="js/ngAutocomplete.js"></script>
+      -->
       <!--/Places form-->
       <!--typehead-->
       <!--need to be on top-->
-      <script src="js/lib/jquery.js"></script>
-      <script src="js/lib/bootstrap.js"></script>
-      <script src="js/lib/nouislider.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
       <!--need to be on top-->
       <script src="typeahead/demo/assets/js/jquery.mockjax.js"></script>
       <script src="typeahead/src/bootstrap-typeahead.js"></script>
       <!--/typehead-->
    </head>
    <body>
-      <!-- header  -->
-      <nav class="navbar navbar-white  navbar-static-top">
+    <!--   <nav class="navbar navbar-default navbar-static-top">
          <div class="container">
             <div class="navbar-header">
-               <button data-toggle="collapse-side" 
-                  data-target=".side-collapse" 
-                  data-target-2=".side-collapse-container" 
-                  type="button" 
-                  class="navbar-toggle pull-left">
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+               <span class="sr-only">Toggle navigation</span>
                <span class="icon-bar"></span>
                <span class="icon-bar"></span>
                <span class="icon-bar"></span>
                </button>
+               <a class="navbar-brand" href="#"><img src="img/Want_logo_white.png" width="80"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+               <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#">Become a Mechant</a></li>
+                  <li><a href="#">Login</a></li>
+                  <li><a href="#" class="nav-cta">Sign Up</a></li>
+               </ul>
+            </div> 
+         </div>
+      </nav> 
+      -->
+   <!-- header  -->
+  <nav class="navbar navbar-white  navbar-static-top">
+         <div class="container">
+            <div class="navbar-header">
+            
+
+                <button data-toggle="collapse-side" 
+                data-target=".side-collapse" 
+                data-target-2=".side-collapse-container" 
+                type="button" 
+                class="navbar-toggle pull-left">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+
                <a class="navbar-brand" href="#"><img src="img/dummylogo.png" width="30"></a>
-               <input type="text" class="form-control search-white-nav" id="" placeholder="Search">
+               <input type="text" class="hidden form-control search-white-nav" id="" placeholder="Search">
             </div>
             <div id="navbar" class="navbar-collapse   side-collapse in">
                <nav role="navigation" class="navbar-collapse">
-                  <ul class="nav navbar-nav navbar-right">
-                     <li><a href="#">Become a Mechant</a></li>
-                     
-                     <li class="dropdown">
-              <a href="#"  onmouseover="javascript:stickDropdown(this);"   class="dropdown-toggle usernavprofile"  data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sarah <img src="https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg" width="30" class="img-circle profile-nav"/></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Edit Profile</a></li>
-                <li><a href="#">Invite Friends</a></li>
-                <li><a href="#">Account Settings</a></li>
-                <li><a href="#">Log Out</a></li>
-              </ul>
-            </li>
-            
-                     
-                  </ul>
-               </nav>
-            </div>
+               <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#">Become a Mechant</a></li> 
+               <li><a href="#">Login</a></li>
+                  <li><a href="#" >Sign Up</a></li>
+
+               </ul>
+                 </nav>
+            </div>  
+
+          
             <!--/.nav-collapse -->
          </div>
       </nav>
-      <!-- /header  -->
-      <div class="side-collapse-container">
-         <div class="search-box-wrapper">
-            <div class="container container-filter ">
-               <div class="row row-filter   filter-search">
-                  <div class="col-md-12  ">
-                     <div class="col-md-2 col-sm-12 col-xs-12 text-left pull-left ">
-                        <h5>Category </h5>
-                     </div>
-                     <div class="col-md-10 col-sm-12 col-xs-12">
-                        <div class="checkbox checkbox-default">
-                           <span class="text-label">
-                           Adventure</span>
-                           <input id="checkbox2" type="checkbox" checked="">
-                           <label for="checkbox2">
-                           </label>
+  
+    <!-- /header  -->
+<div class="side-collapse-container">  
+      <section class="header-11-sub bg-midnight-blue">
+         <div class="background">
+            &nbsp;
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12 text-center">
+                  <h3><span class="title-style-1">We help you to</span> <span class="title-style-2">discover</span> <span class="title-style-1">and</span><br> 
+                    <span class="title-style-2"> book</span><span class="title-style-1"> amazing things to do</span>
+                  </h3>
+                  <p>
+                     Buy experinces not things
+                  </p>
+                  <div ng-controller="TestCtrl">
+                     <form class="form-inline landing-page-search">
+                        <div class="form-group">
+                           <input type="text" class="form-control places-form" id="Autocomplete"  ng-autocomplete="result1" placeholder="Where do you want to go?">
                         </div>
-                        <div class="checkbox checkbox-default">
-                           <span class="text-label">
-                           Discover</span>
-                           <input id="checkbox3" type="checkbox" checked="">
-                           <label for="checkbox3">
-                           </label>
+                        <div class="form-group"  >
+                           <input type="text" id="demo6" class="form-control name-form"  auto-complete ui-items="names" ng-model="selected" placeholder="Search Names" autocomplete="off" >
                         </div>
-                        <div class="checkbox checkbox-default"><span class="text-label">
-                           Flying</span>
-                           <input id="checkbox4" type="checkbox" checked="">
-                           <label for="checkbox4"   >
-                           </label>
-                        </div>
-                        <div class="checkbox checkbox-default">
-                           <span class="text-label">
-                           Tickets</span>
-                           <input id="checkbox5" type="checkbox" checked="">
-                           <label for="checkbox5">
-                           </label>
-                        </div>
-                        <div class="checkbox checkbox-default"><span class="text-label">
-                           Tour</span>
-                           <input id="checkbox6" type="checkbox" checked="">
-                           <label for="checkbox6">
-                           </label>
-                        </div>
-                        <div class="checkbox checkbox-default">
-                           <span class="text-label">
-                           Watersport</span>
-                           <input id="checkbox7" type="checkbox" checked="">
-                           <label for="checkbox7">
-                           </label>
-                        </div>
-                     </div>
+                        <button type="submit" class="btn btn-default search-btn">Search</button>
+                     </form>
                   </div>
-               </div>
-               <div class="row row-filter  slider-filter">
-                  <div class="col-md-12   ">
-                     <div class="col-md-2 col-sm-12 col-xs-12 text-left pull-left  ">
-                        <h5>Price Range </h5>
-                     </div>
-                     <div class="col-md-10 col-sm-12 col-xs-12">
-                        <h5>          </h5>
-                        <div class="slider" id="slider1"></div>
-                        <span class="example-val" id="slider1-span"></span>
-                        <div id="nonlinear"></div>
-                        <span class="example-val" id="lower-value"></span>
-                        <span id="lower-offset"></span>
-                        <span class="example-val" id="upper-value"></span>
-                        <span id="upper-offset"></span>
-                     </div>
-                     <div class="col-md-2 col-sm-12 col-xs-12"> </div>
-                     <div class="label-description col-md-10 col-sm-12 col-xs-12">
-                        <h5> </h5>
-                        <label class="pull-left">RM500</label>
-                        <label class="pull-right">RM5,000</label>
-                     </div>
-                  </div>
+                  <br>
                </div>
             </div>
          </div>
-         <!-- full-box-border -->
-         <div class="container-result">
-            <div class="container landing-content">
-               <!-- Projects Row -->
-               <div class="row">
+      </section>
+      <div class="container landing-content">
+         <!-- Projects Row -->
+          <div class="row">
                   <div class="col-md-12 text-right content-title">
                      <h4> 12 attractions, Petaling Jaya</h4>
                   </div>
@@ -348,141 +322,141 @@
                         </p>
                      </a>
                   </div>
-                  <div class="col-md-12 text-center view-more">
-                     <nav>
-                        <ul class="pagination">
-                           <li>
-                              <a href="#" aria-label="Previous">
-                              <span aria-hidden="true">&laquo;</span>
-                              </a>
-                           </li>
-                           <li><a href="#">1</a></li>
-                           <li><a href="#">2</a></li>
-                           <li><a href="#">3</a></li>
-                           <li><a href="#">4</a></li>
-                           <li><a href="#">5</a></li>
-                           <li>
-                              <a href="#" aria-label="Next">
-                              <span aria-hidden="true">&raquo;</span>
-                              </a>
-                           </li>
-                        </ul>
-                     </nav>
-                  </div>
-                  <!-- /.row -->
+
+            <div class="col-md-12 text-center view-more">
+               <a href="#" class="view-more-btn">Discover More</a>
+            </div>
+         </div>
+         <!-- /.row -->
+         <div class="row">
+            <div class="col-md-12 text-center content-title">
+               <h3>Discover</h3>
+            </div>
+            <div class="col-md-6 portfolio-item">
+               <div class="text-overlay big-left">
+                  <a href="#">Perhentian Island</a>
+               </div>
+               <div class="overlay-bg"></div>
+               <a href="#"  class="overlay-big-left">
+               <img class="img-responsive center-block" src="img/9.png" width="570" alt="">
+               </a>
+            </div>
+            <div class="col-md-6 portfolio-item">
+               <!--Top Right Image-->
+               <div class="text-overlay top-right">
+                  <a href="#">Yoda Island</a>
+               </div>
+               <div class="overlay-right-top-bg"></div>
+               <a class="overlay-right-top" href="#">
+               <img class="img-responsive  center-block" src="img/10.png" width="570" alt="">
+               </a>
+               <!--Bottom Right Image-->
+               <div class="text-overlay bottom-right">
+                  <a href="#">Mount Kinabalu</a>
+               </div>
+               <div class="overlay-right-bottom-bg"></div>
+               <a class="overlay-right-bottom" href="#">
+               <img class="img-responsive  center-block" src="img/11.png" width="570" alt="">
+               </a>
+            </div>
+            <!--Discover More-->
+            <div class="col-md-12 text-center view-more">
+               <a href="#" class="view-more-btn">Discover More</a>
+            </div>
+         </div>
+      </div>
+      <footer class="footer-2 footer">
+         <div class="container">
+            <div class="col-md-3">
+               <div class="btn-group">
+                  <button type="button" class="btn btn-default dropdown-toggle currency" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  MYR <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                     <li><a href="#">USD</a></li>
+                     <li><a href="#">SGD</a></li>
+                     <li><a href="#">INR</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-md-7">
+               <div class="col-md-2">
+                  <a href="#">About</a>
+               </div>
+               <div class="col-md-2">
+                  <a href="#">Contact</a>
+               </div>
+               <div class="col-md-3">
+                  <a href="#">Become a Vendor</a>
+               </div>
+               <div class="col-md-2">
+                  <a href="#">Blog</a>
+               </div>
+               <div class="col-md-2">
+                  <a href="#">FAQs</a>
+               </div>
+            </div>
+            <div class="col-md-2">
+               <a href=""><img src="img/Facebook.png" width="42"></a>
+               <a href=""><img src="img/Twitter.png" width="42"></a>
+               <a href=""> <img src="img/Instagram.png" width="42"></a>
+            </div>
+         </div>
+         <div class="container">
+            <div class="col-md-12 bottom-footer">
+               <div class="col-md-6">
+                  <p class="pull-left"><a href="#" class="terms-footer">Terms and conditions </a>	<a href="#">Privacy policy</a></p>
+               </div>
+               <div class="col-md-6">
+                  <p class="pull-right">© 2016 want.my All rights reserved</p>
                </div>
             </div>
          </div>
-         <footer class="footer-2 footer footer-grey">
-            <div class="container">
-               <div class="col-md-3">
-                  <div class="btn-group">
-                     <button type="button" class="btn btn-default dropdown-toggle currency" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                     MYR <span class="caret"></span>
-                     </button>
-                     <ul class="dropdown-menu">
-                        <li><a href="#">USD</a></li>
-                        <li><a href="#">SGD</a></li>
-                        <li><a href="#">INR</a></li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="col-md-7">
-                  <div class="col-md-2">
-                     <a href="#">About</a>
-                  </div>
-                  <div class="col-md-2">
-                     <a href="#">Contact</a>
-                  </div>
-                  <div class="col-md-3">
-                     <a href="#">Become a Vendor</a>
-                  </div>
-                  <div class="col-md-2">
-                     <a href="#">Blog</a>
-                  </div>
-                  <div class="col-md-2">
-                     <a href="#">FAQs</a>
-                  </div>
-               </div>
-               <div class="col-md-2">
-                  <a href=""><img src="img/Facebook.png" width="42"></a>
-                  <a href=""><img src="img/Twitter.png" width="42"></a>
-                  <a href=""> <img src="img/Instagram.png" width="42"></a>
-               </div>
-            </div>
-            <div class="container">
-               <div class="col-md-12 bottom-footer">
-                  <div class="col-md-6">
-                     <p class="pull-left"><a href="#" class="terms-footer">Terms and conditions </a>   <a href="#">Privacy policy</a></p>
-                  </div>
-                  <div class="col-md-6">
-                     <p class="pull-right">© 2016 want.my All rights reserved</p>
-                  </div>
-               </div>
-            </div>
-         </footer>
-      </div>
-      <!-- /side-collapse-container  -->
-      <script>    
+      </footer>
+  
+  </div>    
+ <!-- /side-collapse-container  -->
+      <script>
 
-         function stickDropdown(_elem){
-               $(_elem).parent().removeClass('open').addClass('open');
-         }
+function initResponsiveHeader() {
+        var sideslider = $('[data-toggle=collapse-side]');
+        var sel = sideslider.attr('data-target');
+        var sel2 = sideslider.attr('data-target-2');
+        sideslider.click(function(event) {
+            $(sel).toggleClass('in');
+            $(sel2).toggleClass('out');
+        });
 
-         function initResponsiveHeader() {
-                 var sideslider = $('[data-toggle=collapse-side]');
-                 var sel = sideslider.attr('data-target');
-                 var sel2 = sideslider.attr('data-target-2');
-                 sideslider.click(function(event) {
-                     $(sel).toggleClass('in');
-                     $(sel2).toggleClass('out');
-                 }); 
-         }
-         
-             $(document).ready(function() {
-         
-                 initResponsiveHeader();
-         
-                 var nonLinearSlider = document.getElementById('nonlinear');
-                 noUiSlider.create(nonLinearSlider, {
-                     connect: true,
-                     behaviour: 'tap',
-                     start: [500, 4000],
-                     range: {
-                         // Starting at 500, step the value by 500,
-                         // until 4000 is reached. From there, step by 1000.
-                         'min': [0],
-                         '10%': [500, 500],
-                         '50%': [4000, 1000],
-                         'max': [10000]
-                     }
-                 });
+    }
+
+
+
+    $(window).load(function() {
+        $(document).ready(function() { 
+        initResponsiveHeader(); 
+
+        });
+    });
+         $(function() {
+             function displayResult(item) {
+                 $('.alert').show().html('You selected <strong>' + item.value + '</strong>: <strong>' + item.text + '</strong>');
+             }
+             $('#demo6').typeahead({
+                 source: [
+                     'Genting',
+                     'Zoo Negara',
+                     'Tioman',
+                     'Petronas Towers',
+                     'Batu Caves',
+                     'Gunung Mulu',
+                     'Mount Kinabalu',
+                     'Bako Park',
+                     'Sunway Lagoon',
+                     'Pangkor island'],
+                 onSelect: displayResult
              });
          
-         
-         
-             $(function() {
-                 function displayResult(item) {
-                     $('.alert').show().html('You selected <strong>' + item.value + '</strong>: <strong>' + item.text + '</strong>');
-                 }
-                 $('#demo6').typeahead({
-                     source: [
-                         'Genting',
-                         'Zoo Negara',
-                         'Tioman',
-                         'Petronas Towers',
-                         'Batu Caves',
-                         'Gunung Mulu',
-                         'Mount Kinabalu',
-                         'Bako Park',
-                         'Sunway Lagoon',
-                         'Pangkor island'
-                     ],
-                     onSelect: displayResult
-                 });
-         
-             });
-             
+         });
       </script>
    </body>
 </html>
