@@ -185,8 +185,11 @@
          .available-select-box {background-color: #FFF;
          padding: 70px 20px; border-radius:2px;
          border: #dce0e0 1px solid;}
-		 
-		 .main .form-control {        border: 1px solid #c4c4c4;}
+         .main .form-control {        border: 1px solid #c4c4c4;}
+		 .btn-next {background: #2d5be3; color:#FFF;    padding: 10px 20px;margin-right: 154px;}
+		 .btn-back {    color: #2d5be3;
+    font-weight: bold;}
+	.next-bottom { margin-bottom:20px;}
       </style>
       <!--For debugging and intergration-->
    </head>
@@ -247,145 +250,128 @@
       <!-- /header  -->
       <div class="container">
       <div class="row">
-      <div class="col-sm-3 col-md-2 sidebar">
-         <ul class="nav nav-sidebar">
-            <li class="sidebar-title"><a href="#">Listing</a></li>
-            <li class="active"><a href="#">Basics <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Descriptions</a></li>
-            <li><a href="#">Location</a></li>
-            <li><a href="#">Photos</a></li>
-         </ul>
-         <ul class="nav nav-sidebar">
-            <li class="sidebar-title"><a href="#">Booking</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Availibility</a></li>
-         </ul>
-      </div>
-      <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-      
-      
-                      <!--Basic section-->
-         <div class="row">
-                  <div class="col-xs-10 col-md-10">
-               <h4>Help travelers find the right fit	</h4>
-               <p>
-People searching on Airbnb can filter by listing basics to find a space that matches their needs.</p>
-               
-            </div>
-
-                  <div class="col-xs-10 col-md-10">
-
-<h4>Places</h4>
-<form>
-<div class="form-group form">
-    <label for="">Sample</label>
-    <input type="text" class="form-control" id="" placeholder="">
-  </div>
-  <div class="form-group">
-    <label for="">Sample</label>
-    <input type="text" class="form-control" id="" placeholder="">
-  </div>
-<div class="form-group form">
-
-                                 <div class="col-md-4 paddingzero">
-                                    <select class="form-control">
-                                       <option>Sample</option>
-                                       <option>-</option>
-                                    </select>
-                                 </div>
-                                 <div class="col-md-4">
-                                    <select class="form-control">
-                                       <option>Sample</option>
-                                       <option>-</option>
-                                    </select>
-                                 </div>
-                                 <div class="col-md-4 paddingzero">
-                                    <select class="form-control">
-                                       <option>Sample</option>
-                                       <option>-</option>
-                                    </select>
-                                 </div>
-
-                           </div>  
-  
-</form>
-
-
-
-                  </div>
-               </div>
-                              <hr>
-               <div class="row">
-                  <div class="col-xs-6">
-                     <a href="#" class="">Back</a>
-                  </div>
-                  <div class="col-xs-6">
-                     <a href="#" class="btn btn-success pull-right">See Next</a>
-                  </div>
-               </div>
-
-         
-         
-                               <!--Description section-->
-         <div class="row">
-                  <div class="col-xs-10 col-md-10">
-               <h4>Tell travelers about your space</h4>
-               <p>
-Every space on Airbnb is unique. Highlight what makes your listing welcoming so that it stands out to guests who want to stay in your area.</p>
-               
-            </div>
-
-                  <div class="col-xs-10 col-md-10">
-
-<h4>Places</h4>
-<form>
-<div class="form-group form">
-    <label for="">Name</label>
-    <input type="text" class="form-control" id="" placeholder="">
-  </div>
-  <div class="form-group">
-    <label for="">Summary</label>
-<textarea class="form-control" rows="3"></textarea>  </div>
-  
-  
-</form>
-
-
-
-                  </div>
-               </div>
-         
-         
-         
-         
+         <div class="col-sm-3 col-md-2 sidebar">
+            <ul class="nav nav-sidebar">
+               <li class="sidebar-title"><a href="#">Listing</a></li>
+               <li class="active"><a href="#">Basics <span class="sr-only">(current)</span></a></li>
+               <li><a href="#">Descriptions</a></li>
+               <li><a href="#">Location</a></li>
+               <li><a href="#">Photos</a></li>
+            </ul>
+            <ul class="nav nav-sidebar">
+               <li class="sidebar-title"><a href="#">Booking</a></li>
+               <li><a href="#">Pricing</a></li>
+               <li><a href="#">Availibility</a></li>
+            </ul>
+         </div>
+         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <!--Basic section-->
+            <div class="row">
+               <div class="col-xs-10 col-md-10">
+                  <h4>Help travelers find the right fit	</h4>
+                  <p>
+                     People searching on Airbnb can filter by listing basics to find a space that matches their needs.
+                  </p>
                <hr>
-               <div class="row">
-                  <div class="col-xs-6">
-                     <a href="#" class="">Back</a>
-                  </div>
-                  <div class="col-xs-6">
-                     <a href="#" class="btn btn-success pull-right">See Next</a>
-                  </div>
+
                </div>
-      
-      
-      
-      
-      <!--Photos-->
-         <div class="row">
-            <div class="col-xs-12 col-sm-12 col-lg-12">
-               <h4>Photos can bring your space to life</h4>
-               <p> Add photos of areas guests have access to. You can always come back later and add more.</p>
-               <form>
-                  <div class="form-group">
-                     <div class="fileUpload btn btn-large btn-upload">
-                        <span>Upload</span>
-                        <input type="file" class="upload" />
+               <div class="col-xs-10 col-md-10">
+                  <h4>Places</h4>
+                  <form>
+                     <div class="form-group form">
+                        <label for="">Sample</label>
+                        <input type="text" class="form-control" id="" placeholder="">
                      </div>
-                  </div>
-                  <hr>
-               </form>
+                     <div class="form-group">
+                        <label for="">Sample</label>
+                        <input type="text" class="form-control" id="" placeholder="">
+                     </div>
+                     <div class="form-group form">
+                        <div class="col-md-4 paddingzero">
+                           <select class="form-control">
+                              <option>Sample</option>
+                              <option>-</option>
+                           </select>
+                        </div>
+                        <div class="col-md-4">
+                           <select class="form-control">
+                              <option>Sample</option>
+                              <option>-</option>
+                           </select>
+                        </div>
+                        <div class="col-md-4 paddingzero">
+                           <select class="form-control">
+                              <option>Sample</option>
+                              <option>-</option>
+                           </select>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+
             </div>
+            <hr>
+
+            <div class="row">
+               <div class="col-xs-12 next-bottom paddingzero">
+               <div class="col-xs-6">
+                  <a href="#" class="btn-back">Back</a>
+               </div>
+               <div class="col-xs-6">
+                  <a href="#" class="btn btn-next btn-large pull-right">See Next</a>
+               </div>
+</div>
+            </div>
+            <!--Description section-->
+            <div class="row">
+               <div class="col-xs-10 col-md-10">
+                  <h4>Tell travelers about your space</h4>
+                  <p>
+                     Every space on Airbnb is unique. Highlight what makes your listing welcoming so that it stands out to guests who want to stay in your area.
+                  </p>
+                                 <hr>
+
+               </div>
+               <div class="col-xs-10 col-md-10">
+                  <h4>Places</h4>
+                  <form>
+                     <div class="form-group form">
+                        <label for="">Name</label>
+                        <input type="text" class="form-control" id="" placeholder="">
+                     </div>
+                     <div class="form-group">
+                        <label for="">Summary</label>
+                        <textarea class="form-control" rows="3"></textarea>  
+                     </div>
+                  </form>
+               </div>
+            </div>
+            <hr>
+            <div class="row">               <div class="col-xs-12 next-bottom paddingzero">
+               <div class="col-xs-6">
+                  <a href="#" class="btn-back">Back</a>
+               </div>
+               <div class="col-xs-6">
+                  <a href="#" class="btn btn-next btn-large pull-right">See Next</a>
+               </div>
+               </div>
+</div>
+            <!--Photos-->
+            <div class="row">
+               <div class="col-xs-12 col-sm-12 col-lg-12">
+                  <h4>Photos can bring your space to life</h4>
+                  <p> Add photos of areas guests have access to. You can always come back later and add more.</p>
+                  <hr>
+                  <form>
+                     <div class="form-group">
+                        <div class="fileUpload btn btn-large btn-upload">
+                           <span>Upload</span>
+                           <input type="file" class="upload" />
+                        </div>
+                     </div>
+                     <hr>
+                  </form>
+               </div>
             </div>
             <div class="row">
                <div class="col-xs-6 col-md-3">
@@ -393,16 +379,12 @@ Every space on Airbnb is unique. Highlight what makes your listing welcoming so 
                   <img src="http://placehold.it/201x250">
                   </a>
                </div>
-              <div class="col-xs-6 col-md-3">
-                  <a href="#" class="thumbnail">
-                  <img src="http://placehold.it/201x250">
-                  </a>
-               </div>
                <div class="col-xs-6 col-md-3">
                   <a href="#" class="thumbnail">
                   <img src="http://placehold.it/201x250">
                   </a>
                </div>
+               
                <div class="col-xs-6 col-md-3">
                   <div class="fileUpload box-upload">
                      <span><a href="">Upload</a></span>
@@ -411,179 +393,159 @@ Every space on Airbnb is unique. Highlight what makes your listing welcoming so 
                </div>
             </div>
             <hr>
+            <div class="row">               <div class="col-xs-12 next-bottom paddingzero">
+               <div class="col-xs-6">
+                  <a href="#" class="btn-back">Back</a>
+               </div>
+               <div class="col-xs-6">
+                  <a href="#" class="btn btn-next btn-large pull-right">See Next</a>
+               </div>
+               </div>
+</div>
+            <!--photo section-->
             <div class="row">
+               <div class="col-xs-12 col-sm-12 col-lg-12">
+                  <h4>Show guests when they can book</h4>
+                  <p> You can always manually update your calendar to block dates or make them available. Start by selecting the option that best describes your hosting plans.</p>
+               </div>
+            </div>
+            <hr>
+            <!--row-->
+            <div class="row">
+               <div class="col-xs-6 col-md-3 available-select-box text-center">
+                  <a href="#">
+                     <!--temporary icon--><span class="glyphicon glyphicon-calendar" aria-hidden="true" style="font-size: 60px;
+                        color: #CCC;"></span> <!--temporary icon-->
+                     <h6>Always Available</h6>
+                     <p>A completely open calendar</p>
+                  </a>
+               </div>
+            </div>
+            <hr>
+            <div class="row">               <div class="col-xs-12 next-bottom paddingzero">
                <div class="col-xs-6">
-                  <a href="#">Back</a>
+                  <a href="#" class="btn-back">Back</a>
                </div>
                <div class="col-xs-6">
-                  <a href="#" class="btn btn-success pull-right">Next</a>
+                  <a href="#" class="btn btn-next btn-large pull-right">See Next</a>
+               </div>
+               </div>
+</div>
+            <!--Location section-->
+            <div class="row">
+               <div class="col-xs-12 col-sm-12 col-lg-12">
+                  <h4>Help guests find your place</h4>
+                  <p>Travelers will use this information to find a place that’s in the right spot.</p>
                </div>
             </div>
-         <!--photo section-->
-         <div class="row">
-            <div class="col-xs-12 col-sm-12 col-lg-12">
-               <h4>Show guests when they can book</h4>
-               <p> You can always manually update your calendar to block dates or make them available. Start by selecting the option that best describes your hosting plans.</p>
-               
-            </div>
-         </div><!--row-->
-         
-         <div class="row">
-                  <div class="col-xs-6 col-md-3 available-select-box text-center">
-                     <a href="#">
-                        <!--temporary icon--><span class="glyphicon glyphicon-calendar" aria-hidden="true" style="font-size: 60px;
-                           color: #CCC;"></span> <!--temporary icon-->
-                        <h6>Always Available</h6>
-                        <p>A completely open calendar</p>
-                     </a>
-                  </div>
+            <hr>
+            <!--row-->
+            <div class="row">
+               <div class="col-xs-6 col-md-3">
+                 <p> Level 12 Casa Indah 2 Condo, Petaling Jaya, Selangor 47810, Malaysia
+                  <a href="#">Edit Address</a></p>
+                  <br>
+                  <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="574" height="300" src="https://maps.google.com/maps?hl=en&q=neo damansara&ie=UTF8&t=roadmap&z=16&iwloc=B&output=embed">
+                     <div><small><a href="http://embedgooglemaps.com">
+                        embedgooglemaps.com
+                        embed google map
+                        embed google maps
+                        google maps karte erstellen
+                        </a></small>
+                     </div>
+                     <div><small><a href="http://premiumlinkgenerator.com">premium link generator for 2016</a></small></div>
+                  </iframe>
                </div>
-         
+            </div>
+            <hr>
+            <div class="row">               <div class="col-xs-12 next-bottom paddingzero">
+               <div class="col-xs-6">
+                  <a href="#" class="btn-back">Back</a>
+               </div>
+               <div class="col-xs-6">
+                  <a href="#" class="btn btn-next btn-large pull-right">See Next</a>
+               </div>
+               </div>
+</div>
+            <!--Basic section-->
+            <div class="row">
+               <div class="col-xs-10 col-md-10">
+                  <h4>Set a nightly price for your space</h4>
+                  <p>
+                     You can set a price to reflect the space, amenities, and hospitality you’ll be providing.
+                  </p>
+               </div>
                <hr>
-               <div class="row">
-                  <div class="col-xs-6">
-                     <a href="#">Back</a>
+               <div class="col-xs-10 col-md-10">
+                  <h4>Places</h4>
+                  <form>
+                     <div class="form-group form">
+                        <label for="">Sample</label>
+                        <input type="text" class="form-control" id="" placeholder="">
+                     </div>
+                     <div class="form-group">
+                        <label for="">Sample</label>
+                        <input type="text" class="form-control" id="" placeholder="">
+                     </div>
+                     <div class="form-group form">
+                  <form class="form-inline">
+                  <div class="form-group">
+                  <label class="sr-only" for="exampleInputAmount">Nightly Price</label>
+                  <div class="input-group">
+                  <div class="input-group-addon">RM</div>
+                  <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
                   </div>
-                  <div class="col-xs-6">
-                     <a href="#" class="btn btn-success pull-right">Next</a>
                   </div>
+                  </form>
+                  </div>
+                  <div class="form-group form">
+                     <div class="col-md-4 paddingzero">
+                        <form class="form-inline">
+                           <div class="form-group">
+                              <label class="sr-only" for="">Weekly discount</label>
+                              <div class="input-group">
+                                 <input type="text" class="form-control" id="" placeholder="Amount">
+                                 <div class="input-group-addon">%</div>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                     <div class="col-md-4 paddingzero">
+                        <form class="form-inline">
+                           <div class="form-group">
+                              <label class="sr-only" for="">Weekly discount</label>
+                              <div class="input-group">
+                                 <input type="text" class="form-control" id="" placeholder="Amount">
+                                 <div class="input-group-addon">%</div>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+                  </form>
                </div>
-               
-               
-               
-                <!--Location section-->
-         <div class="row">
-            <div class="col-xs-12 col-sm-12 col-lg-12">
-               <h4>Help guests find your place</h4>
-               <p>Travelers will use this information to find a place that’s in the right spot.
-</p>
-               
             </div>
-         </div><!--row-->
-         
-         <div class="row">
-                  <div class="col-xs-6 col-md-3">
-Level 12 Casa Indah 2 Condo, Petaling Jaya, Selangor 47810, Malaysia
-Edit Address
-
-<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="574" height="300" src="https://maps.google.com/maps?hl=en&q=neo damansara&ie=UTF8&t=roadmap&z=16&iwloc=B&output=embed"><div><small><a href="http://embedgooglemaps.com">
-									embedgooglemaps.com
-									embed google map
-									embed google maps
-									google maps karte erstellen
-									
-									
-							</a></small></div><div><small><a href="http://premiumlinkgenerator.com">premium link generator for 2016</a></small></div></iframe>
-
-
+            <hr>
+            <div class="row">
+               <div class="col-xs-10 col-md-10">
+                  <h4>Additional Pricing Options</h4>
+                  <hr>
+                  <div class="checkbox">
+                     <label>
+                     <input type="checkbox" value="">
+                     Cleaning fee
+                     </label>
+                  </div>
+                  <div class="checkbox disabled">
+                     <label>
+                     <input type="checkbox" value="" disabled>
+                     Additional guests
+                     </label>
                   </div>
                </div>
-         
-               <hr>
-               <div class="row">
-                  <div class="col-xs-6">
-                     <a href="#">Back</a>
-                  </div>
-                  <div class="col-xs-6">
-                     <a href="#" class="btn btn-success pull-right">See Next</a>
-                  </div>
-               </div>
-               
-               
-               
-                                     <!--Basic section-->
-         <div class="row">
-                  <div class="col-xs-10 col-md-10">
-               <h4>Set a nightly price for your space</h4>
-               <p>
-You can set a price to reflect the space, amenities, and hospitality you’ll be providing.</p>
-               
             </div>
-
-                  <div class="col-xs-10 col-md-10">
-
-<h4>Places</h4>
-<form>
-<div class="form-group form">
-    <label for="">Sample</label>
-    <input type="text" class="form-control" id="" placeholder="">
-  </div>
-  <div class="form-group">
-    <label for="">Sample</label>
-    <input type="text" class="form-control" id="" placeholder="">
-  </div>
-<div class="form-group form">
-
-<form class="form-inline">
-  <div class="form-group">
-    <label class="sr-only" for="exampleInputAmount">Nightly Price</label>
-    <div class="input-group">
-      <div class="input-group-addon">RM</div>
-      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
-    </div>
-  </div>
-</form>
-
-  </div>
-<div class="form-group form">
-                                 <div class="col-md-4 paddingzero">
-
-<form class="form-inline">
-  <div class="form-group">
-    <label class="sr-only" for="">Weekly discount</label>
-    <div class="input-group">
-      <input type="text" class="form-control" id="" placeholder="Amount">
-      <div class="input-group-addon">%</div>
-    </div>
-  </div>
-</form>
-
-                                 </div>
-                                 <div class="col-md-4 paddingzero">
-                                    
-                                    <form class="form-inline">
-  <div class="form-group">
-    <label class="sr-only" for="">Weekly discount</label>
-    <div class="input-group">
-      <input type="text" class="form-control" id="" placeholder="Amount">
-      <div class="input-group-addon">%</div>
-    </div>
-  </div>
-</form>
-
-                                    
-                                    
-                                 </div>
-
-                           </div>  
-  
-</form>
-
-
-
-                  </div>
-                  
-                  
-                  <div class="col-xs-10 col-md-10">
-               <h4>Set a nightly price for your space</h4>
-               <p>
-You can set a price to reflect the space, amenities, and hospitality you’ll be providing.</p>
-               
-            </div>
-                  
-                  
-                  
-                  
-                  
-               </div>
-
-         
-         
-            
-            
-            
-         </div> <!--main-->
-         
+         </div>
+         <!--main-->
       </div>
       <!-- /side-collapse-container  -->
       <script>
