@@ -7,7 +7,7 @@
       <meta name="description" content="">
       <meta name="author" content="">
       <link rel="icon" href="../../favicon.ico">
-      <title>Payment</title>
+      <title>Dashboard</title>
       <link rel="stylesheet" href="css/lib/bootstrap.css">
       <link rel="stylesheet" href="css/lib/bootstrap-select.css">
       <link rel="stylesheet" href="css/lib/fontawesome.css">
@@ -21,6 +21,105 @@
       <script src="js/lib/bootstrap-select.js"></script>
       <!--For debugging and intergration-->
       <style>
+         /*
+         * Global add-ons
+         */
+         .sub-header {
+         padding-bottom: 10px;
+         border-bottom: 1px solid #eee;
+         }
+         /*
+         * Top navigation
+         * Hide default border to remove 1px line.
+         */
+         .navbar-fixed-top {
+         border: 0;
+         }
+         /*
+         * Sidebar
+         */
+         /* Hide for mobile, show later */
+         .sidebar {
+         display: none;
+         background:#F5F5F5;
+         }
+         @media (min-width: 768px) {
+         .sidebar {
+         position: fixed;
+         top: 101px;
+         bottom: 0;
+         left: 0;
+         z-index: 1000;
+         display: block;
+         padding: 20px;
+         overflow-x: hidden;
+         overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+         background-color: #f5f5f5;
+         border-right: 1px solid #eee;
+         }
+         }
+         /* Sidebar navigation */
+         .nav-sidebar {
+         margin-right: -21px; /* 20px padding + 1px border */
+         margin-bottom: 20px;
+         margin-left: -20px;
+         }
+         .nav-sidebar > li > a {
+         padding-right: 20px;
+         padding-left: 20px;
+         }
+         .nav-sidebar > .active > a,
+         .nav-sidebar > .active > a:hover,
+         .nav-sidebar > .active > a:focus {
+         color: #fff;
+         background-color: #428bca;
+         }
+         /*
+         * Main content
+         */
+         .main {
+         padding: 20px;    margin-top: 101px;
+         }
+         @media (min-width: 768px) {
+         .main {
+         padding-right: 40px;
+         padding-left: 40px;
+         }
+         }
+         .main .page-header {
+         margin-top: 0;
+         }
+         /*
+         * Placeholder dashboard ideas
+         */
+         .placeholders {
+         margin-bottom: 30px;
+         text-align: center;
+         }
+         .placeholders h4 {
+         margin-bottom: 0;
+         }
+         .placeholder {
+         margin-bottom: 20px;
+         }
+         .placeholder img {
+         display: inline-block;
+         border-radius: 50%;
+         }
+         .nav-sidebar > .active > a {
+         color: #000;
+         font-weight: bold;
+         background-color: #EDEFED;
+         }
+         .nav-sidebar > li > a {color: #6d7275;}
+         li.sidebar-title a{color: #b2b5b7;}
+         /*-----------------------------------------------------------------------*/
+         .navbar-white-fixed {
+         border-bottom: 1px solid #dce0e0;
+         height: 61px;
+         padding: 0;
+         background: #FFF;
+         }
          ul.sidebar {padding:0;}
          ul.sidebar li{ list-style:none;margin: 10px 0; }
          ul.sidebar li a{ color:#adadad;}
@@ -45,18 +144,55 @@
          padding-top: 40px;
          background: #fafafa;
          }
-         .nav-second-profile {    background: #DBDDDE; padding-top:0;}
+         .nav-second-profile {    background: #DBDDDE; padding-top:0; margin-top: 61px;min-height: 40px; z-index:10}
          .nav-second-profile li.active {font-weight: bold; color:#000;}
          .nav-second-profile .navbar-nav>li>a {
-         padding-top: 15px;
-         color: #777;
+         padding-top:8px;
+         padding-bottom:8px;
+         color: #777;z-index: 10;
          }
+         /*dashboard pages*/
+         .add-photo-box {box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.1);border: 1px solid #dce0e0;
+         background-color: #fff;
+         border-radius: 0;padding: 62px 10px 52px; width:200px; height:250px}
+         .btn-upload {border-color: #c4c4c4;
+         background: white;
+         color: #565a5c;padding: 9px 27px;
+         font-size: 16px;}
+         .fileUpload {
+         position: relative;
+         overflow: hidden;
+         margin: 10px;
+         }
+         .fileUpload input.upload {
+         position: absolute;
+         top: 0;
+         right: 0;
+         margin: 0;
+         padding: 0;
+         font-size: 20px;
+         cursor: pointer;
+         opacity: 0;
+         filter: alpha(opacity=0);
+         }
+         .box-upload {width: 201px;
+         height: 250px;
+         margin: 0;border: 1px solid #dce0e0;
+         background-color: #fff;
+         box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.1);
+         }
+         .box-upload a{ padding: 120px 0px;}
+         .available-select-box {background-color: #FFF;
+         padding: 70px 20px; border-radius:2px;
+         border: #dce0e0 1px solid;}
+		 
+		 .main .form-control {        border: 1px solid #c4c4c4;}
       </style>
       <!--For debugging and intergration-->
    </head>
    <body>
       <!-- header  -->
-      <nav class="navbar navbar-white  navbar-static-top">
+      <nav class="navbar navbar-white-fixed navbar-fixed-top ">
          <div class="container">
             <div class="navbar-header">
                <button data-toggle="collapse-side" 
@@ -98,143 +234,356 @@
          </div>
       </nav>
       <!-- Second navbar -->
-      <nav class="navbar navbar-static-top nav-second-profile">
+      <nav class="navbar navbar-fixed-top nav-second-profile">
          <div class="container">
             <div id="" class="">
                <ul class="nav navbar-nav">
-                  <li><a href="#">Dashboard</a></li>
-                  <li><a href="#">Inbox</a></li>
-                  <li><a href="#">Listing</a></li>
-                  <li><a href="#">Trips</a></li>
-                  <li class="active"><a href="#">Profile</a></li>
-                  <li><a href="#">Accounts</a></li>
+                  <li><a href="#">Places, for traveller in Kuala Lumpur</a></li>
                </ul>
             </div>
             <!--/.nav-collapse -->
          </div>
       </nav>
       <!-- /header  -->
-      <div class="side-collapse-container">
-         <section class="header-11-sub profile-page">
-            <div class="container">
-               <div class="row ">
-                  <div class="col-md-3">
-                     <ul class="sidebar">
-                        <li><a href="">Edit Profile</a></li>
-                        <li><a href="">Photo Symbol Video</a></li>
-                        <li><a href="">Trust and Verification</a></li>
-                        <li><a href="">Reviews</a></li>
-                        <li><a href="">References</a></li>
-                     </ul>
-                     <a href="" class="btn btn-block btn-viewprofile">View Profile</a>
+      <div class="container">
+      <div class="row">
+      <div class="col-sm-3 col-md-2 sidebar">
+         <ul class="nav nav-sidebar">
+            <li class="sidebar-title"><a href="#">Listing</a></li>
+            <li class="active"><a href="#">Basics <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Descriptions</a></li>
+            <li><a href="#">Location</a></li>
+            <li><a href="#">Photos</a></li>
+         </ul>
+         <ul class="nav nav-sidebar">
+            <li class="sidebar-title"><a href="#">Booking</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Availibility</a></li>
+         </ul>
+      </div>
+      <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+      
+      
+                      <!--Basic section-->
+         <div class="row">
+                  <div class="col-xs-10 col-md-10">
+               <h4>Help travelers find the right fit	</h4>
+               <p>
+People searching on Airbnb can filter by listing basics to find a space that matches their needs.</p>
+               
+            </div>
+
+                  <div class="col-xs-10 col-md-10">
+
+<h4>Places</h4>
+<form>
+<div class="form-group form">
+    <label for="">Sample</label>
+    <input type="text" class="form-control" id="" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="">Sample</label>
+    <input type="text" class="form-control" id="" placeholder="">
+  </div>
+<div class="form-group form">
+
+                                 <div class="col-md-4 paddingzero">
+                                    <select class="form-control">
+                                       <option>Sample</option>
+                                       <option>-</option>
+                                    </select>
+                                 </div>
+                                 <div class="col-md-4">
+                                    <select class="form-control">
+                                       <option>Sample</option>
+                                       <option>-</option>
+                                    </select>
+                                 </div>
+                                 <div class="col-md-4 paddingzero">
+                                    <select class="form-control">
+                                       <option>Sample</option>
+                                       <option>-</option>
+                                    </select>
+                                 </div>
+
+                           </div>  
+  
+</form>
+
+
+
                   </div>
-                  <div class="col-md-9">
-                     <div class="profile-details">
-                        <form class="form-horizontal profile-form">
-                           <div class="form-group">
-                              <label for="" class="col-sm-2 control-label">First name</label>
-                              <div class="col-sm-10">
-                                 <input type="text" class="form-control" id="" placeholder="">
-                              </div>
-                           </div>
-                           <div class="form-group">
-                              <label for="" class="col-sm-2 control-label">Last Name</label>
-                              <div class="col-sm-10">
-                                 <input type="text" class="form-control" id="" placeholder="">
-                              </div>
-                           </div>
-                           <div class="form-group">
-                              <label for="" class="col-sm-2 control-label">I Am</label>
-                              <div class="col-sm-10">
-                                 <select class="form-control">
-                                    <option>Male</option>
-                                    <option>Female</option>
-                                 </select>
-                              </div>
-                           </div>
-                           <div class="form-group birthdate">
-                              <label for="" class="col-sm-2 control-label">Birth Date</label>
-                              <div class="col-sm-10">
-                                 <div class="col-md-3 paddingzero">
-                                    <select class="form-control">
-                                       <option>Day</option>
-                                       <option>-</option>
-                                    </select>
-                                 </div>
-                                 <div class="col-md-3 paddingzero">
-                                    <select class="form-control">
-                                       <option>Month</option>
-                                       <option>-</option>
-                                    </select>
-                                 </div>
-                                 <div class="col-md-3 paddingzero">
-                                    <select class="form-control">
-                                       <option>Year</option>
-                                       <option>-</option>
-                                    </select>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="form-group">
-                              <div class="col-sm-offset-2 col-sm-10">
-                                 <button type="submit" class="btn btn-default">Save</button>
-                              </div>
-                           </div>
-                        </form>
+               </div>
+                              <hr>
+               <div class="row">
+                  <div class="col-xs-6">
+                     <a href="#" class="">Back</a>
+                  </div>
+                  <div class="col-xs-6">
+                     <a href="#" class="btn btn-success pull-right">See Next</a>
+                  </div>
+               </div>
+
+         
+         
+                               <!--Description section-->
+         <div class="row">
+                  <div class="col-xs-10 col-md-10">
+               <h4>Tell travelers about your space</h4>
+               <p>
+Every space on Airbnb is unique. Highlight what makes your listing welcoming so that it stands out to guests who want to stay in your area.</p>
+               
+            </div>
+
+                  <div class="col-xs-10 col-md-10">
+
+<h4>Places</h4>
+<form>
+<div class="form-group form">
+    <label for="">Name</label>
+    <input type="text" class="form-control" id="" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="">Summary</label>
+<textarea class="form-control" rows="3"></textarea>  </div>
+  
+  
+</form>
+
+
+
+                  </div>
+               </div>
+         
+         
+         
+         
+               <hr>
+               <div class="row">
+                  <div class="col-xs-6">
+                     <a href="#" class="">Back</a>
+                  </div>
+                  <div class="col-xs-6">
+                     <a href="#" class="btn btn-success pull-right">See Next</a>
+                  </div>
+               </div>
+      
+      
+      
+      
+      <!--Photos-->
+         <div class="row">
+            <div class="col-xs-12 col-sm-12 col-lg-12">
+               <h4>Photos can bring your space to life</h4>
+               <p> Add photos of areas guests have access to. You can always come back later and add more.</p>
+               <form>
+                  <div class="form-group">
+                     <div class="fileUpload btn btn-large btn-upload">
+                        <span>Upload</span>
+                        <input type="file" class="upload" />
                      </div>
                   </div>
-               </div>
+                  <hr>
+               </form>
             </div>
-         </section>
-         <footer class="footer-2 footer">
-            <div class="container">
-               <div class="col-md-3">
-                  <div class="btn-group">
-                     <button type="button" class="btn btn-default dropdown-toggle currency" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                     MYR <span class="caret"></span>
-                     </button>
-                     <ul class="dropdown-menu">
-                        <li><a href="#">USD</a></li>
-                        <li><a href="#">SGD</a></li>
-                        <li><a href="#">INR</a></li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="col-md-7">
-                  <div class="col-md-2">
-                     <a href="#">About</a>
-                  </div>
-                  <div class="col-md-2">
-                     <a href="#">Contact</a>
-                  </div>
-                  <div class="col-md-3">
-                     <a href="#">Become a Vendor</a>
-                  </div>
-                  <div class="col-md-2">
-                     <a href="#">Blog</a>
-                  </div>
-                  <div class="col-md-2">
-                     <a href="#">FAQs</a>
-                  </div>
-               </div>
-               <div class="col-md-2">
-                  <a href=""><img src="img/Facebook.png" width="42"></a>
-                  <a href=""><img src="img/Twitter.png" width="42"></a>
-                  <a href=""> <img src="img/Instagram.png" width="42"></a>
-               </div>
             </div>
-            <div class="container">
-               <div class="col-md-12 bottom-footer">
-                  <div class="col-md-6">
-                     <p class="pull-left"><a href="#" class="terms-footer">Terms and conditions </a>   <a href="#">Privacy policy</a></p>
-                  </div>
-                  <div class="col-md-6">
-                     <p class="pull-right">© 2016 want.my All rights reserved</p>
+            <div class="row">
+               <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail">
+                  <img src="http://placehold.it/201x250">
+                  </a>
+               </div>
+              <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail">
+                  <img src="http://placehold.it/201x250">
+                  </a>
+               </div>
+               <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail">
+                  <img src="http://placehold.it/201x250">
+                  </a>
+               </div>
+               <div class="col-xs-6 col-md-3">
+                  <div class="fileUpload box-upload">
+                     <span><a href="">Upload</a></span>
+                     <input type="file" class="upload" />
                   </div>
                </div>
             </div>
-         </footer>
-         <!-- full-box-border -->
+            <hr>
+            <div class="row">
+               <div class="col-xs-6">
+                  <a href="#">Back</a>
+               </div>
+               <div class="col-xs-6">
+                  <a href="#" class="btn btn-success pull-right">Next</a>
+               </div>
+            </div>
+         <!--photo section-->
+         <div class="row">
+            <div class="col-xs-12 col-sm-12 col-lg-12">
+               <h4>Show guests when they can book</h4>
+               <p> You can always manually update your calendar to block dates or make them available. Start by selecting the option that best describes your hosting plans.</p>
+               
+            </div>
+         </div><!--row-->
+         
+         <div class="row">
+                  <div class="col-xs-6 col-md-3 available-select-box text-center">
+                     <a href="#">
+                        <!--temporary icon--><span class="glyphicon glyphicon-calendar" aria-hidden="true" style="font-size: 60px;
+                           color: #CCC;"></span> <!--temporary icon-->
+                        <h6>Always Available</h6>
+                        <p>A completely open calendar</p>
+                     </a>
+                  </div>
+               </div>
+         
+               <hr>
+               <div class="row">
+                  <div class="col-xs-6">
+                     <a href="#">Back</a>
+                  </div>
+                  <div class="col-xs-6">
+                     <a href="#" class="btn btn-success pull-right">Next</a>
+                  </div>
+               </div>
+               
+               
+               
+                <!--Location section-->
+         <div class="row">
+            <div class="col-xs-12 col-sm-12 col-lg-12">
+               <h4>Help guests find your place</h4>
+               <p>Travelers will use this information to find a place that’s in the right spot.
+</p>
+               
+            </div>
+         </div><!--row-->
+         
+         <div class="row">
+                  <div class="col-xs-6 col-md-3">
+Level 12 Casa Indah 2 Condo, Petaling Jaya, Selangor 47810, Malaysia
+Edit Address
+
+<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="574" height="300" src="https://maps.google.com/maps?hl=en&q=neo damansara&ie=UTF8&t=roadmap&z=16&iwloc=B&output=embed"><div><small><a href="http://embedgooglemaps.com">
+									embedgooglemaps.com
+									embed google map
+									embed google maps
+									google maps karte erstellen
+									
+									
+							</a></small></div><div><small><a href="http://premiumlinkgenerator.com">premium link generator for 2016</a></small></div></iframe>
+
+
+                  </div>
+               </div>
+         
+               <hr>
+               <div class="row">
+                  <div class="col-xs-6">
+                     <a href="#">Back</a>
+                  </div>
+                  <div class="col-xs-6">
+                     <a href="#" class="btn btn-success pull-right">See Next</a>
+                  </div>
+               </div>
+               
+               
+               
+                                     <!--Basic section-->
+         <div class="row">
+                  <div class="col-xs-10 col-md-10">
+               <h4>Set a nightly price for your space</h4>
+               <p>
+You can set a price to reflect the space, amenities, and hospitality you’ll be providing.</p>
+               
+            </div>
+
+                  <div class="col-xs-10 col-md-10">
+
+<h4>Places</h4>
+<form>
+<div class="form-group form">
+    <label for="">Sample</label>
+    <input type="text" class="form-control" id="" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="">Sample</label>
+    <input type="text" class="form-control" id="" placeholder="">
+  </div>
+<div class="form-group form">
+
+<form class="form-inline">
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputAmount">Nightly Price</label>
+    <div class="input-group">
+      <div class="input-group-addon">RM</div>
+      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+    </div>
+  </div>
+</form>
+
+  </div>
+<div class="form-group form">
+                                 <div class="col-md-4 paddingzero">
+
+<form class="form-inline">
+  <div class="form-group">
+    <label class="sr-only" for="">Weekly discount</label>
+    <div class="input-group">
+      <input type="text" class="form-control" id="" placeholder="Amount">
+      <div class="input-group-addon">%</div>
+    </div>
+  </div>
+</form>
+
+                                 </div>
+                                 <div class="col-md-4 paddingzero">
+                                    
+                                    <form class="form-inline">
+  <div class="form-group">
+    <label class="sr-only" for="">Weekly discount</label>
+    <div class="input-group">
+      <input type="text" class="form-control" id="" placeholder="Amount">
+      <div class="input-group-addon">%</div>
+    </div>
+  </div>
+</form>
+
+                                    
+                                    
+                                 </div>
+
+                           </div>  
+  
+</form>
+
+
+
+                  </div>
+                  
+                  
+                  <div class="col-xs-10 col-md-10">
+               <h4>Set a nightly price for your space</h4>
+               <p>
+You can set a price to reflect the space, amenities, and hospitality you’ll be providing.</p>
+               
+            </div>
+                  
+                  
+                  
+                  
+                  
+               </div>
+
+         
+         
+            
+            
+            
+         </div> <!--main-->
+         
       </div>
       <!-- /side-collapse-container  -->
       <script>
