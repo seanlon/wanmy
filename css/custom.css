@@ -408,6 +408,9 @@ input.form-control.name-form {
     border-left: 1px solid #ccc;
     width: 250px
 }
+.full-height{
+    height:100%;
+}
 .search-btn {
     background: #2e71f0;
     color: #fff;

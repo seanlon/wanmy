@@ -1,0 +1,119 @@
+
+.not-ready-display{
+    position: fixed;
+    bottom:100000px;
+    margin-top:-100000px;
+}
+
+.close-icon{
+    cursor: pointer;
+    position: fixed;
+    right: 25px;
+    top: 5px;
+    color: white;
+    font-size: 50px;
+    z-index: 99;
+    opacity: .5;
+}
+
+
+#owl-gallery-fullscreen .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+
+    display: block;
+    width: 75%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:30px;
+}
+
+.owl-gallery-fullscreen{
+
+    background-color: rgba(0,0,0,.9);
+    position: fixed;
+    height: 100%;
+}
+.fullscreen-gallery-overlay{
+
+ 
+    position: fixed;
+    top: 0;
+    height: 100%;
+    z-index:9999;
+
+}
+
+
+.owl-gallery-fullscreen .owl-controls {
+    position: relative;
+    margin-top:100px;
+}
+
+.owl-gallery-fullscreen .owl-controls .item-link {
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 40px;
+    margin: 0 2px;
+    border-bottom: 4px solid #ccc;
+    outline: none;
+}
+
+.owl-gallery-fullscreen .owl-controls .item-link:focus {
+    -webkit-box-shadow: 0 0 8px #cc4895;
+    -moz-box-shadow: 0 0 8px #cc4895;
+    box-shadow: 0 0 8px #cc4895;
+    outline: none;
+}
+
+.owl-gallery-fullscreen .owl-controls .active .item-link {
+    border-bottom: 4px solid #cc4895;
+}
+
+.owl-gallery-fullscreen .owl-controls .owl-page span {
+    display: none;
+}
+
+.owl-gallery-fullscreen .prev-owl,
+.owl-gallery-fullscreen .next-owl {
+    position:fixed;
+    top: 35%;
+    display: block;
+   /*   width: 30px;
+    height: 30px;
+  border-radius: 50%;
+    background-color: #c0c0c0;
+    outline: none;*/
+}
+
+.owl-controls{
+    height:70px;
+}
+ 
+
+.owl-gallery-fullscreen .prev-owl.fa,
+.owl-gallery-fullscreen .next-owl.fa {
+        font-size:125px;
+        color:white;
+        margin-top:15px;
+
+   }
+
+.owl-gallery-fullscreen .prev-owl:focus,
+.owl-gallery-fullscreen .next-owl:focus {
+    -webkit-box-shadow: 0 0 8px #cc4895;
+    -moz-box-shadow: 0 0 8px #cc4895;
+    box-shadow: 0 0 8px #cc4895;
+}
+
+.owl-gallery-fullscreen .prev-owl {
+    left: 24px;
+}
+
+.owl-gallery-fullscreen .next-owl {
+    right: 24px;
+}
