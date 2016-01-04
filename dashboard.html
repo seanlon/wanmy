@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Test">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link rel="icon" href="../../favicon.ico">
+      <title>Payment</title>
+      <link rel="stylesheet" href="css/lib/bootstrap.css">
+      <link rel="stylesheet" href="css/lib/bootstrap-select.css">
+      <link rel="stylesheet" href="css/lib/fontawesome.css">
+      <link rel="stylesheet" type="text/css" href="css/custom.css">
+      <!--Places form-->
+      <!--/Places form-->
+      <!--typehead-->
+      <!--need to be on top-->
+      <script src="js/lib/jquery.js"></script>
+      <script src="js/lib/bootstrap.js"></script>
+      <script src="js/lib/bootstrap-select.js"></script>
+      <!--For debugging and intergration-->
+      <style>
+         ul.sidebar {padding:0;}
+         ul.sidebar li{ list-style:none;margin: 10px 0; }
+         ul.sidebar li a{ color:#adadad;}
+         .profile-details {background-color: #FFF;
+         border:1px solid #e6e6e6; padding:40px 20px;}
+         .profile-form input {background-color: #FFF;
+         border:1px solid #adadad;
+         }
+         .profile-form select {background-color: #FFF;
+         border:1px solid #adadad; width:100px;
+         }
+         .btn-viewprofile { width:200px;color: #333;
+         background-color: #FFF;
+         border-color: #adadad; margin-top:20px;}
+         .birthdate .dropdown-menu {
+         top: 33px;
+         }
+         .profile-details .dropdown-toggle {
+         width: 130px;
+         }
+         .profile-page {
+         padding-top: 40px;
+         background: #fafafa;
+         }
+         .nav-second-profile {    background: #DBDDDE; padding-top:0;}
+         .nav-second-profile li.active {font-weight: bold; color:#000;}
+         .nav-second-profile .navbar-nav>li>a {
+         padding-top: 15px;
+         color: #777;
+         }
+      </style>
+      <!--For debugging and intergration-->
+   </head>
+   <body>
+      <!-- header  -->
+      <nav class="navbar navbar-white  navbar-static-top">
+         <div class="container">
+            <div class="navbar-header">
+               <button data-toggle="collapse-side" 
+                  data-target=".side-collapse" 
+                  data-target-2=".side-collapse-container" 
+                  type="button" 
+                  class="navbar-toggle pull-left">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand" href="#"><img src="img/dummylogo.png" width="30"></a>
+               <form class="form-inline search-white-nav">
+                  <div class="form-group">
+                     <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                  </div>
+                  <div class="form-group">
+                     <input type="text" class="form-control search-nav" id="" placeholder="Search">
+                  </div>
+               </form>
+            </div>
+            <div id="navbar" class="navbar-collapse   side-collapse in">
+               <nav role="navigation" class="navbar-collapse">
+                  <ul class="nav navbar-nav navbar-right">
+                     <li><a href="#">Become a Mechant</a></li>
+                     <li class="dropdown">
+                        <a href="#"  onmouseover="javascript:stickDropdown(this);" class="dropdown-toggle usernavprofile"  data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sarah <img src="https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg" width="30" class="img-circle profile-nav"/></a>
+                        <ul class="dropdown-menu profile-nav-dropdown">
+                           <li><a href="#">Edit Profile</a></li>
+                           <li><a href="#">Invite Friends</a></li>
+                           <li><a href="#">Account Settings</a></li>
+                           <li><a href="#">Log Out</a></li>
+                        </ul>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+            <!--/.nav-collapse -->
+         </div>
+      </nav>
+      <!-- Second navbar -->
+      <nav class="navbar navbar-static-top nav-second-profile">
+         <div class="container">
+            <div id="" class="">
+               <ul class="nav navbar-nav">
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Inbox</a></li>
+                  <li><a href="#">Listing</a></li>
+                  <li><a href="#">Trips</a></li>
+                  <li class="active"><a href="#">Profile</a></li>
+                  <li><a href="#">Accounts</a></li>
+               </ul>
+            </div>
+            <!--/.nav-collapse -->
+         </div>
+      </nav>
+      <!-- /header  -->
+      <div class="side-collapse-container">
+         <section class="header-11-sub profile-page">
+            <div class="container">
+               <div class="row ">
+                  <div class="col-md-3">
+                     <ul class="sidebar">
+                        <li><a href="">Edit Profile</a></li>
+                        <li><a href="">Photo Symbol Video</a></li>
+                        <li><a href="">Trust and Verification</a></li>
+                        <li><a href="">Reviews</a></li>
+                        <li><a href="">References</a></li>
+                     </ul>
+                     <a href="" class="btn btn-block btn-viewprofile">View Profile</a>
+                  </div>
+                  <div class="col-md-9">
+                     <div class="profile-details">
+                        <form class="form-horizontal profile-form">
+                           <div class="form-group">
+                              <label for="" class="col-sm-2 control-label">First name</label>
+                              <div class="col-sm-10">
+                                 <input type="text" class="form-control" id="" placeholder="">
+                              </div>
+                           </div>
+                           <div class="form-group">
+                              <label for="" class="col-sm-2 control-label">Last Name</label>
+                              <div class="col-sm-10">
+                                 <input type="text" class="form-control" id="" placeholder="">
+                              </div>
+                           </div>
+                           <div class="form-group">
+                              <label for="" class="col-sm-2 control-label">I Am</label>
+                              <div class="col-sm-10">
+                                 <select class="form-control">
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                 </select>
+                              </div>
+                           </div>
+                           <div class="form-group birthdate">
+                              <label for="" class="col-sm-2 control-label">Birth Date</label>
+                              <div class="col-sm-10">
+                                 <div class="col-md-3 paddingzero">
+                                    <select class="form-control">
+                                       <option>Day</option>
+                                       <option>-</option>
+                                    </select>
+                                 </div>
+                                 <div class="col-md-3 paddingzero">
+                                    <select class="form-control">
+                                       <option>Month</option>
+                                       <option>-</option>
+                                    </select>
+                                 </div>
+                                 <div class="col-md-3 paddingzero">
+                                    <select class="form-control">
+                                       <option>Year</option>
+                                       <option>-</option>
+                                    </select>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="form-group">
+                              <div class="col-sm-offset-2 col-sm-10">
+                                 <button type="submit" class="btn btn-default">Save</button>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <footer class="footer-2 footer">
+            <div class="container">
+               <div class="col-md-3">
+                  <div class="btn-group">
+                     <button type="button" class="btn btn-default dropdown-toggle currency" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     MYR <span class="caret"></span>
+                     </button>
+                     <ul class="dropdown-menu">
+                        <li><a href="#">USD</a></li>
+                        <li><a href="#">SGD</a></li>
+                        <li><a href="#">INR</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-md-7">
+                  <div class="col-md-2">
+                     <a href="#">About</a>
+                  </div>
+                  <div class="col-md-2">
+                     <a href="#">Contact</a>
+                  </div>
+                  <div class="col-md-3">
+                     <a href="#">Become a Vendor</a>
+                  </div>
+                  <div class="col-md-2">
+                     <a href="#">Blog</a>
+                  </div>
+                  <div class="col-md-2">
+                     <a href="#">FAQs</a>
+                  </div>
+               </div>
+               <div class="col-md-2">
+                  <a href=""><img src="img/Facebook.png" width="42"></a>
+                  <a href=""><img src="img/Twitter.png" width="42"></a>
+                  <a href=""> <img src="img/Instagram.png" width="42"></a>
+               </div>
+            </div>
+            <div class="container">
+               <div class="col-md-12 bottom-footer">
+                  <div class="col-md-6">
+                     <p class="pull-left"><a href="#" class="terms-footer">Terms and conditions </a>   <a href="#">Privacy policy</a></p>
+                  </div>
+                  <div class="col-md-6">
+                     <p class="pull-right">© 2016 want.my All rights reserved</p>
+                  </div>
+               </div>
+            </div>
+         </footer>
+         <!-- full-box-border -->
+      </div>
+      <!-- /side-collapse-container  -->
+      <script>
+         function stickDropdown(_elem){
+            $(_elem).parent().removeClass('open').addClass('open');
+         }
+         
+         
+         function initResponsiveHeader() {
+              var sideslider = $('[data-toggle=collapse-side]');
+              var sel = sideslider.attr('data-target');
+              var sel2 = sideslider.attr('data-target-2');
+              sideslider.click(function(event) {
+                  $(sel).toggleClass('in');
+                  $(sel2).toggleClass('out');
+              });
+         
+          }
+         
+          $(window).load(function() {
+              $(document).ready(function() {
+         
+              initResponsiveHeader();
+              
+                  $('select').selectpicker({
+                      liveSearch: false,
+                      maxOptions: 1
+                  });
+         
+              });
+          });
+         
+         
+         
+         
+          
+      </script>
+   </body>
+</html>
