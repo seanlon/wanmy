@@ -452,12 +452,14 @@
 function activateFullScreen(_isShow){
    if(_isShow){
         $(".fullscreen-gallery-overlay").removeClass('not-ready-display');  
-       $(".fullscreen-gallery-overlay").show();   
+       $(".fullscreen-gallery-overlay").show();  
+      $("body").removeClass('no-scroll').addClass('no-scroll');    
         
    }
    else{
       $(".fullscreen-gallery-overlay").addClass('not-ready-display');   
        $(".fullscreen-gallery-overlay").hide();;  
+      $("body").removeClass('no-scroll');   
    }
 
 }
