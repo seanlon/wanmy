@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
+<head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="description" content="">
       <meta name="author" content="">
       <link rel="icon" href="../../favicon.ico">
-      <title>Profile</title>
+      <title>Listings</title>
       <link rel="stylesheet" href="css/lib/bootstrap.css">
       <link rel="stylesheet" href="css/lib/bootstrap-select.css">
       <link rel="stylesheet" href="css/lib/fontawesome.css">
@@ -24,7 +24,7 @@
          ul.sidebar {padding:0;}
          ul.sidebar li{ list-style:none;margin: 10px 0; }
          ul.sidebar li a{ color:#adadad;}
-         .profile-details {background-color: #FFF;
+         .listing-details {background-color: #FFF;
          border:1px solid #e6e6e6; padding:40px 20px;}
          .profile-form input {background-color: #FFF;
          border:1px solid #adadad;
@@ -51,6 +51,23 @@
          padding-top: 15px;
          color: #777;
          }
+		 
+		 
+		 /*Listings*/
+		 
+		 h5.panel-title {
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #000;
+    line-height: 26px;margin-left: 15px;
+}
+		 
+		 .header-11-sub p {color: #000;font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;}
+	
+	.btn-list {    background: #2d5be3; color:#FFF; border-color:#2d5be3}
+		 
       </style>
       <!--For debugging and intergration-->
    </head>
@@ -118,70 +135,105 @@
          <section class="header-11-sub profile-page">
             <div class="container">
                <div class="row ">
-                  <div class="col-md-3">
-                     <ul class="sidebar">
-                        <li><a href="">Edit Profile</a></li>
-                        <li><a href="">Photo Symbol Video</a></li>
-                        <li><a href="">Trust and Verification</a></li>
-                        <li><a href="">Reviews</a></li>
-                        <li><a href="">References</a></li>
-                     </ul>
-                     <a href="" class="btn btn-block btn-viewprofile">View Profile</a>
+                 <div class="col-md-3">
+                   <ul class="sidebar">
+                        <li><a href="">Your Listings</a></li>
+                        
+                        
+
+
+                        
+                        <li><a href="">Your Reservations</a></li>
+                        <li><a href="">Reservation Requirements</a></li>
+                        <li><a href="">Add New Listings</a></li>
+                    </ul>
+                    <a href="" class="btn btn-block btn-viewprofile">Add New Listings</a>
                   </div>
                   <div class="col-md-9">
-                     <div class="profile-details">
-                        <form class="form-horizontal profile-form">
-                           <div class="form-group">
-                              <label for="" class="col-sm-2 control-label">First name</label>
-                              <div class="col-sm-10">
-                                 <input type="text" class="form-control" id="" placeholder="">
-                              </div>
-                           </div>
-                           <div class="form-group">
-                              <label for="" class="col-sm-2 control-label">Last Name</label>
-                              <div class="col-sm-10">
-                                 <input type="text" class="form-control" id="" placeholder="">
-                              </div>
-                           </div>
-                           <div class="form-group">
-                              <label for="" class="col-sm-2 control-label">I Am</label>
-                              <div class="col-sm-10">
-                                 <select class="form-control">
-                                    <option>Male</option>
-                                    <option>Female</option>
-                                 </select>
-                              </div>
-                           </div>
-                           <div class="form-group birthdate">
-                              <label for="" class="col-sm-2 control-label">Birth Date</label>
-                              <div class="col-sm-10">
-                                 <div class="col-md-3 paddingzero">
-                                    <select class="form-control">
-                                       <option>Day</option>
-                                       <option>-</option>
-                                    </select>
-                                 </div>
-                                 <div class="col-md-3 paddingzero">
-                                    <select class="form-control">
-                                       <option>Month</option>
-                                       <option>-</option>
-                                    </select>
-                                 </div>
-                                 <div class="col-md-3 paddingzero">
-                                    <select class="form-control">
-                                       <option>Year</option>
-                                       <option>-</option>
-                                    </select>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="form-group">
-                              <div class="col-sm-offset-2 col-sm-10">
-                                 <button type="submit" class="btn btn-default">Save</button>
-                              </div>
-                           </div>
-                        </form>
-                     </div>
+
+                     
+                                          <div class="panel panel-default">
+                                           <div class="panel-heading"> <h5 class="panel-title">Unlisted</h5> </div> <div class="panel-body">
+                                          
+                                          
+                                          
+                                          <div class="row">
+  <div class="col-md-12">
+  <div class="col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="http://placehold.it/200x200" alt="...">
+    </a>
+  </div>
+  
+   <div class="col-md-7">
+<h5>Room, for traveller in Kuala Lumpur</h5>
+<p>Manage Listing and Calendar</p>
+  </div>
+
+   <div class="col-md-2">
+
+  <div class="dropdown">
+  <button class="btn btn-default" type="button" id="" data-toggle="dropdown">
+    Dropdown
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Unlisted</a></li>
+    <li><a href="#">Listed</a></li>
+  </ul>
+</div>
+
+  </div>
+
+  
+  
+
+  
+  
+  
+  </div>
+  <hr>
+<div class="col-md-12">
+  <div class="col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="http://placehold.it/200x200" alt="...">
+    </a>
+  </div>
+  
+   <div class="col-md-7">
+<h5>Room, for traveller in Kuala Lumpur</h5>
+<p>Manage Listing and Calendar</p>
+  </div>
+
+   <div class="col-md-2">
+
+  
+  <button class="btn btn-default btn-list" type="button">
+    6 Steps to list
+  </button>
+
+  </div>
+
+  
+  
+
+  
+  
+  
+  </div>
+
+
+</div>
+                                          
+                                          
+                                          
+                                          
+                                          
+                                          
+                                          </div> </div>
+
+                        
+
                   </div>
                </div>
             </div>
