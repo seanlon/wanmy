@@ -1407,7 +1407,8 @@ input[type=checkbox].heart-checkbox:checked+label:before {
 .navbar-white {
     border-bottom: 1px solid #dce0e0;
     height: 61px;
-    padding: 0
+    padding: 0;
+	    background: #FFF;
 }
 .navbar-nav>li>a {
     padding-top: 19px;
@@ -1416,7 +1417,7 @@ input[type=checkbox].heart-checkbox:checked+label:before {
 .search-white-nav {
     position: absolute;
     top: 13px;
-    left: 91px;
+    left: 191px;
     width: 500px;
     height: 40px;
 
@@ -1581,3 +1582,13 @@ p.totalprice{ font-size: 24px;font-weight: normal;line-height: 1.43;
     content: '';
 }
 
+
+
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 0;
+    font-size: 18px;
+    margin-top: -20px;
+    line-height: 20px;
+}
