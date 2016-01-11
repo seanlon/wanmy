@@ -51,6 +51,35 @@
          padding-top: 15px;
          color: #777;
          }
+		 
+		 .profile-photo p{ font-size: 14px;     color: #333; font-family:Arial, Helvetica, sans-serif;}
+		 
+		 
+		 	.btn-profile {
+    position: relative;
+    overflow: hidden;
+}
+.btn-profile input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+.profileholder { background:#fafafa;padding: 10px;}
+.remove-profile { position:absolute;    position: absolute;
+    top: 10px;
+    left: 178px;
+    color: red;}
+		 
       </style>
       <!--For debugging and intergration-->
    </head>
@@ -128,7 +157,30 @@
                      </ul>
                      <a href="" class="btn btn-block btn-viewprofile">View Profile</a>
                   </div>
+                  
                   <div class="col-md-9">
+                  <div class="panel panel-default profile-photo">
+  <div class="panel-heading">Profile Photo</div>
+  <div class="panel-body">
+    
+                  <div class="col-md-3 profileholder">
+                  <a class="remove-profile" href="#"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
+    <img src="http://placehold.it/150x150" class="img-circle">
+   </div> 
+   
+    <div class="col-md-9">
+    <p>Clear frontal face photos are an important way for hosts and guests to learn about each other. It’s not much fun to host a landscape! Please upload a photo that clearly shows your face.</p>
+     
+     <span class="btn btn-default btn-profile">
+    Upload a file form your computer <input type="file">
+</span>
+     
+
+   </div> 
+    
+  </div>
+</div>
+
                      <div class="profile-details">
                         <form class="form-horizontal profile-form">
                            <div class="form-group">
