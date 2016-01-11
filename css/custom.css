@@ -427,7 +427,8 @@ input.form-control.name-form {
 }
 .landing-content {
     padding: 40px 0;
-    border-top: solid 1px #e6e9e9
+    border-top: solid 1px #e6e9e9;
+	    background: #FFF;
 }
 .landing-content a {
     color: #333;
