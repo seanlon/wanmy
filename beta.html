@@ -15,20 +15,20 @@
       <link rel="stylesheet" href="assets/samples/sample-04/css/style.css">
       <style>
          /*new style*/
-        
          /*new style*/
          /*existing style*/
-		  .header-10 {
+         .header-10 {
          background:#FFF;
          }   
-		 .header-10 .navbar .brand 		 { margin-top: -9px;}
-		 .header-10 .navbar .nav > li > a {    color: #000;}
-		 
-		 .content-8 {
-    padding-top: 40px;
-    padding-bottom: 80px;
-}
-		 
+         .header-10 .navbar .brand 		 { margin-top: -9px;}
+         .header-10 .navbar .nav > li > a {    color: #000;}
+         .content-8 {
+         padding-top: 40px;
+         padding-bottom: 80px;
+         }
+         .content-7 {
+         padding-top: 100px;
+         }
          .product-card p.price {
          background: rgba(60,63,64,0.9);
          width: 100px;
@@ -63,7 +63,7 @@
          }
          .product-card h4 {margin-bottom: 0;}
          .content-23 {
-          height: 514px;
+         height: 514px;
          }
          .content-23 #bgVideo > video {/*height:0; width:0;*/}
          .background {opacity: 0.5;}
@@ -76,11 +76,32 @@
          .header-10 .navbar .brand {
          padding-top: 0;
          }
-		 .content-23 #bgVideo > video {
-    position: absolute !important;
-    top: -140px !important;
-		 }
-		 
+         .content-23 #bgVideo > video {
+         position: absolute !important;
+         top: -140px !important;
+         }
+         .location-search { }
+         .global-search { width:500px;    margin-left: -118px;
+         border-left: 1px solid #CCC;}
+         .input-group-btn{
+         position: static;}
+         .dropdown-menu{
+         }
+         .input-group-btn .drop-places { border-radius: 1px; background: #FFF;}
+         .input-group-btn .drop-places:hover, active{ background: #FFF;}
+         .btn-default .caret {
+         border-top-color: #CCC;
+         }		 
+         .location-search .dropdown-menu {
+         background-color: #FFF;
+         border-radius: 0;
+         }
+         .location-search .dropdown-menu li > a:hover, .dropdown-menu li > a:active, .dropdown-menu li > a:focus {
+         color: #000;
+         }
+         .location-search .open > .dropdown-menu {
+         margin-top: 0px !important;    text-align: left;    width: 308px;
+         }
          /*existing style*/
       </style>
    </head>
@@ -236,7 +257,7 @@
                   </div>
                   <div class="collapse navbar-collapse pull-right">
                      <ul class="nav pull-left">
-                        <li><a href="#">Become a Mechant
+                        <li><a href="#">Become a Merchant
                            </a>
                         </li>
                         <li><a href="#">Login</a></li>
@@ -256,11 +277,23 @@
                         book amazing things to do
                      </h1>
                      <form class="form-inline">
-                        <div class="form-group">
-                           <input type="text" class="form-control" id="" placeholder="Places">
+                        <div class="col-xs-4 col-xs-offset-1 location-search">
+                           <div class="input-group">
+                              <input type="text" class="form-control " placeholder="Search for places">
+                              <div class="input-group-btn">
+                                 <button type="button" class="btn btn-default dropdown-toggle drop-places" data-toggle="dropdown">
+                                 <span class="caret"></span>
+                                 </button>
+                                 <ul id="color-dropdown-menu" class="dropdown-menu dropdown-menu-right" role="menu">
+                                    <li class="input"><a href="#">Kuala Lumpur</a></li>
+                                    <li class="input"><a href="#">Perhentian</a></li>
+                                    <li class="input"><a href="#">Sarawak</a></li>
+                                 </ul>
+                              </div>
+                           </div>
                         </div>
                         <div class="form-group">
-                           <input type="text" class="form-control" id="" placeholder="Names">
+                           <input type="text" class="form-control global-search" id="" placeholder="Search for interest">
                         </div>
                         <button type="submit" class="btn btn-success btn-search">Search</button>
                      </form>
@@ -384,15 +417,13 @@
          </section>
          <!-- content-8  -->
          <style>
-		 .text-overlay .wide-left a{
-    position: absolute;
-    top: 300px;
-    left: 180px;
-    z-index: 999;
-}
-		 </style>
-         
-         
+            .text-overlay .wide-left a{
+            position: absolute;
+            top: 300px;
+            left: 180px;
+            z-index: 999;
+            }
+         </style>
          <!--<section class="content-8 v-center">
             <div>
                <div class="container">
@@ -401,7 +432,7 @@
                      
                      <div class="col-lg-9">
                      
-					<div class="wide-left">
+            <div class="wide-left">
                      <a href="#">Perhentian Island</a>
                   </div>
                   <div class="overlay-bg"></div>
@@ -421,7 +452,7 @@
                   </div>
                </div>
             </div>
-         </section>-->
+            </section>-->
          <!-- footer-3 -->
          <footer class="footer-3">
             <div class="container">
