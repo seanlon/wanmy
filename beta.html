@@ -36,12 +36,12 @@
          color: #fff;
          font-size: 18px;
          position: absolute;
-         top: 180px;
+         top: 267px;
          }
          .user-thumb {
          position: absolute;
-         top: 220px;
-         left: 205px;
+             top: 320px;
+    left: 295px;
          }
          .product-card {
          margin-bottom: 20px;
@@ -72,7 +72,7 @@
          border-radius: 1px;
          }
          .btn-search{    border-radius: 1px;
-         margin-left: -4px;}
+         margin-left: -4px;background: #FF5722;}
          .header-10 .navbar .brand {
          padding-top: 0;
          }
@@ -335,16 +335,74 @@
             </div>
          </section>
          <!-- content-7  -->
-         <section class="content-7 v-center">
+         <section class="content-7">
             <div>
+            <style>
+			
+			.trending-list { width:235px; display:inline;}
+			.trending-list a{ border-bottom: 2px dashed #F4511E;
+    color: #F4511E;}
+			.select-trending {border-bottom: 1px dashed #30a0ff;}
+			
+			ul.dropdown-menu {
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 1px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    z-index: 999; width:200px;
+			}
+			.trending-list .dropdown-menu > li > a {
+    border-bottom: 1px solid rgba(0,0,0,.15);
+    color: #000; text-align:left;
+}
+			
+			section * {
+    z-index: inherit;
+}
+
+/*explore landing user center*/
+.user-thumb-center { border:2px solid #FFF;}
+   .explore-center-detail { position:absolute; top: 130px;
+    left: 140px;}
+   .explore-center-detail a{ text-align:center; color:#FFF;}
+   .explore-center-detail .text-over-center-user{ font-size:14px; line-height:20px;}
+   .explore-center-detail .text-over-center-place{ font-size:24px;line-height:26px;}
+/*explore landing user center*/
+
+			</style>
+            
                <div class="container">
-                  <h3>Now trending in Kuala Lumpur</h3>
+                  <h3>Now trending in <div class="dropdown trending-list"> <a href="" data-toggle="dropdown" class="select-trending">Kuala Lumpur <span class="caret"></span></a>
+                  
+                   
+  
+  <ul class="dropdown-menu" aria-labelledby="">
+    <li><a href="">Johor</a></li>
+    <li><a href="">Kedah</a></li>
+    <li><a href="">Kelantan</a></li>
+    <li><a href="">Melaka</a></li>
+    <li><a href="">Negeri Sembilan</a></li>
+    <li><a href="">Pahang</a></li>
+    <li><a href="">Perak</a></li>
+    <li><a href="">Perlis</a></li>
+    <li><a href="">Pulau Pinang</a></li>
+    <li><a href="">Sabah</a></li>
+    <li><a href="">Sarawak</a></li>
+    <li><a href="">Selangor</a></li>
+    <li><a href="">Terengganu</a></li>
+    <li><a href="">Labuan</a></li>
+  </ul>
+</div></h3>
                   <div class="row">
-                     <div class="col-sm-12 col-md-4 col-lg-3 product-card">
+                     <div class="col-sm-6 col-md-4 col-lg-4 product-card">
                         <p class="price">RM 999</p>
                         <a href="#"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/nuraika/128.jpg" class="img-circle user-thumb" width="52"/></a>
                         <a href="#">
-                        <img src="http://macjake.net/gitupdates/img/1.png" width="262" alt="">
+                        <img src="img/1.png" alt="">
                         </a>
                         <h4>
                            <a href="#">Genting Highlands</a>
@@ -353,11 +411,11 @@
                            <p>Kuala Lumpur, Malaysia</p>
                         </a>
                      </div>
-                     <div class="col-sm-12 col-md-4 col-lg-3 product-card">
+                     <div class="col-sm-6 col-md-4 col-lg-4 product-card">
                         <p class="price">RM 999</p>
                         <a href="#"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/liang/128.jpg" class="img-circle user-thumb" width="52"/></a>
                         <a href="#">
-                        <img src="http://macjake.net/gitupdates/img/2.png" width="262" alt="">
+                        <img src="img/2.png" alt="">
                         </a>
                         <h4>
                            <a href="#">Genting Highlands</a>
@@ -366,11 +424,11 @@
                            <p>Kuala Lumpur, Malaysia</p>
                         </a>
                      </div>
-                     <div class="col-sm-12 col-md-4 col-lg-3 product-card">
+                     <div class="col-sm-6 col-md-4 col-lg-4 product-card">
                         <p class="price">RM 999</p>
                         <a href="#"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/rickyyean/128.jpg" class="img-circle user-thumb" width="52"/></a>
                         <a href="#">
-                        <img src="http://macjake.net/gitupdates/img/3.png" width="262" alt="">
+                        <img src="img/3.png" alt="">
                         </a>
                         <h4>
                            <a href="#">Genting Highlands</a>
@@ -379,11 +437,11 @@
                            <p>Kuala Lumpur, Malaysia</p>
                         </a>
                      </div>
-                     <div class="col-sm-12 col-md-4 col-lg-3 product-card">
+                     <div class="col-sm-6 col-md-4 col-lg-4 product-card">
                         <p class="price">RM 999</p>
                         <a href="#"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/jeanniehuang/128.jpg" class="img-circle user-thumb" width="52"/></a>
                         <a href="#">
-                        <img src="http://macjake.net/gitupdates/img/4.png" width="262" alt="">
+                        <img src="img/4.png" alt="">
                         </a>
                         <h4>
                            <a href="#">Genting Highlands</a>
@@ -392,11 +450,11 @@
                            <p>Kuala Lumpur, Malaysia</p>
                         </a>
                      </div>
-                     <div class="col-sm-12 col-md-4 col-lg-3 product-card">
+                     <div class="col-sm-6 col-md-4 col-lg-4 product-card">
                         <p class="price">RM 999</p>
                         <a href="#"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/jeanniehuang/128.jpg" class="img-circle user-thumb" width="52"/></a>
                         <a href="#">
-                        <img src="http://macjake.net/gitupdates/img/4.png" width="262" alt="">
+                        <img src="img/5.png" alt="">
                         </a>
                         <h4>
                            <a href="#">Genting Highlands</a>
@@ -405,11 +463,11 @@
                            <p>Kuala Lumpur, Malaysia</p>
                         </a>
                      </div>
-                     <div class="col-sm-12 col-md-4 col-lg-3 product-card">
+                     <div class="col-sm-6 col-md-4 col-lg-4 product-card">
                         <p class="price">RM 999</p>
                         <a href="#"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/jeanniehuang/128.jpg" class="img-circle user-thumb" width="52"/></a>
                         <a href="#">
-                        <img src="http://macjake.net/gitupdates/img/4.png" width="262" alt="">
+                        <img src="img/6.png" alt="">
                         </a>
                         <h4>
                            <a href="#">Genting Highlands</a>
@@ -418,32 +476,10 @@
                            <p>Kuala Lumpur, Malaysia</p>
                         </a>
                      </div>
-                     <div class="col-sm-12 col-md-4 col-lg-3 product-card">
-                        <p class="price">RM 999</p>
-                        <a href="#"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/jeanniehuang/128.jpg" class="img-circle user-thumb" width="52"/></a>
-                        <a href="#">
-                        <img src="http://macjake.net/gitupdates/img/4.png" width="262" alt="">
-                        </a>
-                        <h4>
-                           <a href="#">Genting Highlands</a>
-                        </h4>
-                        <a href="#">
-                           <p>Kuala Lumpur, Malaysia</p>
-                        </a>
-                     </div>
-                     <div class="col-sm-12 col-md-4 col-lg-3 product-card">
-                        <p class="price">RM 999</p>
-                        <a href="#"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/jeanniehuang/128.jpg" class="img-circle user-thumb" width="52"/></a>
-                        <a href="#">
-                        <img src="http://macjake.net/gitupdates/img/4.png" width="262" alt="">
-                        </a>
-                        <h4>
-                           <a href="#">Genting Highlands</a>
-                        </h4>
-                        <a href="#">
-                           <p>Kuala Lumpur, Malaysia</p>
-                        </a>
-                     </div>
+                     
+                     
+                     
+                     
                   </div>
                </div>
             </div>
@@ -462,7 +498,12 @@
       </a>
    </div>
    <div class="col-xs-12 col-sm-6 col-md-4 explorestacks">
-      <a  class="text-over" href="#">Kabukichō</a>
+<div class="explore-center-detail">
+      <a href=""><img src="https://s3.amazonaws.com/uifaces/faces/twitter/himani/128.jpg" width="56" class=" img-circle user-thumb-center"></a><br>
+      <a  class="text-over-center-user" href="#">John Connor</a><br>
+      <a  class="text-over-center-place" href="#">Kabukichō</a>
+      </div>
+
       <a href="#"  class="">
       <img class="" src="img/14.png" alt="">
       </a>
@@ -491,8 +532,15 @@
       <img class="" src="img/13.png" alt="">
       </a>
    </div>
+
+   
    <div class="col-xs-12 col-sm-6 col-md-4 explorestacks">
-      <a  class="text-over" href="#">Kabukichō</a>
+      <div class="explore-center-detail">
+      <a href=""><img src="https://s3.amazonaws.com/uifaces/faces/twitter/bellbells/128.jpg" width="56" class=" img-circle user-thumb-center"></a><br>
+      <a  class="text-over-center-user" href="#">John Connor</a><br>
+      <a  class="text-over-center-place" href="#">Kabukichō</a>
+      </div>
+      
       <a href="#"  class="">
       <img class="" src="img/14.png" alt="">
       </a>
