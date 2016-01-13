@@ -27,7 +27,7 @@
          padding-bottom: 80px;
          }
          .content-7 {
-         padding-top: 100px;
+         padding-top: 100px;    padding-bottom: 20px;
          }
          .product-card p.price {
          background: rgba(60,63,64,0.9);
@@ -103,6 +103,39 @@
          margin-top: 0px !important;    text-align: left;    width: 308px;
          }
          /*existing style*/
+		 
+		 		 /*content-8*/
+            .wide-text-over {
+            position: absolute;
+            top: 150px;
+            left: 320px;
+            z-index: 99;font-size:32px; color:#FFF; font-weight:bold;
+            }
+			.wide-text-over:hover {color:#000;}
+			
+			/* Portrait phones and smaller */
+@media (max-width: 480px) {
+ .wide-text-over {
+
+                top: 70px;
+    left: 90px;
+
+            }
+}
+
+			
+			.text-over {
+            position: absolute;
+            top: 150px;
+            left: 100px;
+            z-index: 99;
+			font-size:32px; color:#FFF; font-weight:bold;
+            }
+			.text-over:hover{ color:#000;}
+			.explorestacks { padding:15px 15px}
+		 /*content-8*/
+
+		 
       </style>
    </head>
    <body>
@@ -416,43 +449,58 @@
             </div>
          </section>
          <!-- content-8  -->
-         <style>
-            .text-overlay .wide-left a{
-            position: absolute;
-            top: 300px;
-            left: 180px;
-            z-index: 999;
-            }
-         </style>
-         <!--<section class="content-8 v-center">
+
+         <section class="content-8 v-center">
             <div>
                <div class="container">
                   <h3>Explore the world</h3>
                   <div class="row">
-                     
-                     <div class="col-lg-9">
-                     
-            <div class="wide-left">
-                     <a href="#">Perhentian Island</a>
-                  </div>
-                  <div class="overlay-bg"></div>
-                  <a href="#">
-                  <img class="img-responsive" src="http://placehold.it/655x344" alt="">
-                  </a>
-                        
-                     
-                     </div>
-                     
-                     <div class="col-lg-3">
-                  <a href="#"  class="">
-                  <img class="img-responsive" src="http://placehold.it/314x344" alt="">
-                  </a>
-                     </div>
-                     
-                  </div>
+   <div class="col-xs-12 col-sm-12 col-md-8 explorestacks">
+      <a  class="wide-text-over" href="#">Kabukichō</a>
+      <a href="#">
+      <img class="" src="img/12.png" alt="">
+      </a>
+   </div>
+   <div class="col-xs-12 col-sm-6 col-md-4 explorestacks">
+      <a  class="text-over" href="#">Kabukichō</a>
+      <a href="#"  class="">
+      <img class="" src="img/14.png" alt="">
+      </a>
+   </div>
+   <div class="col-xs-12 col-sm-6 col-md-4 explorestacks">
+      <a  class="text-over" href="#">Kabukichō</a>
+      <a href="#"  class="">
+      <img class="" src="img/15.jpg" alt="">
+      </a>
+   </div>
+   <div class="col-xs-12 col-sm-6 col-md-4 explorestacks">
+      <a  class="text-over" href="#">Kabukichō</a>
+      <a href="#"  class="">
+      <img class="" src="img/16.jpg" alt="">
+      </a>
+   </div>
+   <div class="col-xs-12 col-sm-6 col-md-4 explorestacks">
+      <a  class="text-over" href="#">Kabukichō</a>
+      <a href="#"  class="">
+      <img class="" src="img/17.png" alt="">
+      </a>
+   </div>
+   <div class="col-xs-12 col-sm-12 col-md-8 explorestacks">
+      <a class="wide-text-over" href="#">Kabukichō</a>
+      <a href="#">
+      <img class="" src="img/13.png" alt="">
+      </a>
+   </div>
+   <div class="col-xs-12 col-sm-6 col-md-4 explorestacks">
+      <a  class="text-over" href="#">Kabukichō</a>
+      <a href="#"  class="">
+      <img class="" src="img/14.png" alt="">
+      </a>
+   </div>
+</div>
                </div>
             </div>
-            </section>-->
+            </section>
          <!-- footer-3 -->
          <footer class="footer-3">
             <div class="container">
