@@ -14,9 +14,46 @@
       <!-- end -->
       <link rel="stylesheet" href="assets/samples/sample-04/css/style.css">
       <style>
-         /*new style*/
-         /*new style*/
+		.trending-list { width:235px; display:inline;}
+		.trending-list a{ border-bottom: 2px dashed #F4511E;
+		color: #F4511E;}
+		.select-trending {border-bottom: 1px dashed #30a0ff;}
+		ul.dropdown-menu {
+		background-color: #fff;
+		-webkit-background-clip: padding-box;
+		background-clip: padding-box;
+		border: 1px solid #ccc;
+		border: 1px solid rgba(0,0,0,.15);
+		border-radius: 1px;
+		-webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+		box-shadow: 0 6px 12px rgba(0,0,0,.175);
+		z-index: 999; width:200px;
+		}
+		.trending-list .dropdown-menu > li > a {
+		border-bottom: 1px solid rgba(0,0,0,.15);
+		color: #000; text-align:left;
+		}
+		section * {
+		z-index: inherit;
+		}
+		/*explore landing user center*/
+		.user-thumb-center { border:2px solid #FFF;}
+		.explore-center-detail { position:absolute; top: 130px;
+		left: 140px;}
+		.explore-center-detail a{ text-align:center; color:#FFF;}
+		.explore-center-detail .text-over-center-user{ font-size:14px; line-height:20px;}
+		.explore-center-detail .text-over-center-place{ font-size:24px;line-height:26px;}
+		/*explore landing user center*/
          /*existing style*/
+         .navbar .navbar-toggle {
+         margin: 26px 0 10px;
+         color: white;
+         background: none;
+         padding: 0;
+         width: 30px;
+         height: 30px;
+         background: url("../../../common-files/icons/menu-icon-header-8.png") 50% no-repeat;
+         }
          .header-10 {
          background:#FFF;
          }   
@@ -40,8 +77,8 @@
          }
          .user-thumb {
          position: absolute;
-             top: 320px;
-    left: 295px;
+         top: 320px;
+         left: 295px;
          }
          .product-card {
          margin-bottom: 20px;
@@ -103,39 +140,48 @@
          margin-top: 0px !important;    text-align: left;    width: 308px;
          }
          /*existing style*/
-		 
-		 		 /*content-8*/
-            .wide-text-over {
-            position: absolute;
-            top: 150px;
-            left: 320px;
-            z-index: 99;font-size:32px; color:#FFF; font-weight:bold;
-            }
-			.wide-text-over:hover {color:#000;}
-			
-			/* Portrait phones and smaller */
-@media (max-width: 480px) {
- .wide-text-over {
-
-                top: 70px;
-    left: 90px;
-
-            }
-}
-
-			
-			.text-over {
-            position: absolute;
-            top: 150px;
-            left: 100px;
-            z-index: 99;
-			font-size:32px; color:#FFF; font-weight:bold;
-            }
-			.text-over:hover{ color:#000;}
-			.explorestacks { padding:15px 15px}
-		 /*content-8*/
-
-		 
+         /*content-8*/
+         .wide-text-over {
+         position: absolute;
+         top: 150px;
+         left: 320px;
+         z-index: 99;font-size:32px; color:#FFF; font-weight:bold;
+         }
+         .wide-text-over:hover {color:#000;}
+         /* Portrait phones and smaller */
+         @media (max-width: 480px) {
+         .wide-text-over {
+         top: 70px;
+         left: 90px;
+         }
+         }
+         .text-over {
+         position: absolute;
+         top: 150px;
+         left: 100px;
+         z-index: 99;
+         font-size:32px; color:#FFF; font-weight:bold;
+         }
+         .text-over:hover{ color:#000;}
+         .explorestacks { padding:15px 15px}
+         /*content-8*/
+         .bottom-below-footer { margin-top:100px;}
+         .btn-currency { border-radius:1px; background:none;}
+         .btn-currency:hover,active {  background:none;}
+         .open > ul.currency-dropdown-menu {
+         margin-top: 0;
+         }
+         .open .dropdown-toggle.btn-default {
+         background: none;
+         }
+         /*nav profile*/
+         .header-10 .navbar .nav > li.nav-user-options a{    padding: 21px 0 19px; background:#FFF;}
+         .header-10 .navbar .nav > li.nav-user-options a:active {background:#FFF;}
+         .header-10 .navbar .nav > li.nav-user-options a img{margin-left: 20px;}
+         .open > ul.profile-nav-dropdown {margin-top: -1px !important;}
+         .open > ul.profile-nav-dropdown li {padding-left: 20px;}
+         .open > ul.profile-nav-dropdown li a:hover{ color:#000;}
+         /*nav profile*/
       </style>
    </head>
    <body>
@@ -144,7 +190,7 @@
          <header class="header-10">
             <div class="container">
                <div class="navbar col-sm-12" role="navigation">
-                  <div class="navbar-header">
+                  <div class="navbar-header nav-dark">
                      <button type="button" class="navbar-toggle"></button>
                      <a class="brand" href="#">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -295,7 +341,15 @@
                         </li>
                         <li><a href="#">Login</a></li>
                         <li><a href="#">Sign Up</a></li>
-                        <li><a class="" href="#"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/jeanniehuang/128.jpg" class="img-circle" width="40"/></a></li>
+                        <li class="dropdown nav-user-options">
+                           <a href="#"  onmouseover="javascript:stickDropdown(this);" class="dropdown-toggle usernavprofile"  data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sarah <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jeanniehuang/128.jpg" width="40" class="img-circle profile-nav"/></a>
+                           <ul class="dropdown-menu profile-nav-dropdown">
+                              <li><a href="#">Edit Profile</a></li>
+                              <li><a href="#">Invite Friends</a></li>
+                              <li><a href="#">Account Settings</a></li>
+                              <li><a href="#">Log Out</a></li>
+                           </ul>
+                        </li>
                      </ul>
                   </div>
                </div>
@@ -337,66 +391,29 @@
          <!-- content-7  -->
          <section class="content-7">
             <div>
-            <style>
-			
-			.trending-list { width:235px; display:inline;}
-			.trending-list a{ border-bottom: 2px dashed #F4511E;
-    color: #F4511E;}
-			.select-trending {border-bottom: 1px dashed #30a0ff;}
-			
-			ul.dropdown-menu {
-    background-color: #fff;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    border: 1px solid #ccc;
-    border: 1px solid rgba(0,0,0,.15);
-    border-radius: 1px;
-    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
-    box-shadow: 0 6px 12px rgba(0,0,0,.175);
-    z-index: 999; width:200px;
-			}
-			.trending-list .dropdown-menu > li > a {
-    border-bottom: 1px solid rgba(0,0,0,.15);
-    color: #000; text-align:left;
-}
-			
-			section * {
-    z-index: inherit;
-}
-
-/*explore landing user center*/
-.user-thumb-center { border:2px solid #FFF;}
-   .explore-center-detail { position:absolute; top: 130px;
-    left: 140px;}
-   .explore-center-detail a{ text-align:center; color:#FFF;}
-   .explore-center-detail .text-over-center-user{ font-size:14px; line-height:20px;}
-   .explore-center-detail .text-over-center-place{ font-size:24px;line-height:26px;}
-/*explore landing user center*/
-
-			</style>
-            
                <div class="container">
-                  <h3>Now trending in <div class="dropdown trending-list"> <a href="" data-toggle="dropdown" class="select-trending">Kuala Lumpur <span class="caret"></span></a>
-                  
-                   
-  
-  <ul class="dropdown-menu" aria-labelledby="">
-    <li><a href="">Johor</a></li>
-    <li><a href="">Kedah</a></li>
-    <li><a href="">Kelantan</a></li>
-    <li><a href="">Melaka</a></li>
-    <li><a href="">Negeri Sembilan</a></li>
-    <li><a href="">Pahang</a></li>
-    <li><a href="">Perak</a></li>
-    <li><a href="">Perlis</a></li>
-    <li><a href="">Pulau Pinang</a></li>
-    <li><a href="">Sabah</a></li>
-    <li><a href="">Sarawak</a></li>
-    <li><a href="">Selangor</a></li>
-    <li><a href="">Terengganu</a></li>
-    <li><a href="">Labuan</a></li>
-  </ul>
-</div></h3>
+                  <h3>
+                     Now trending in 
+                     <div class="dropdown trending-list">
+                        <a href="" data-toggle="dropdown" class="select-trending">Kuala Lumpur <span class="caret"></span></a>
+                        <ul class="dropdown-menu" aria-labelledby="">
+                           <li><a href="">Johor</a></li>
+                           <li><a href="">Kedah</a></li>
+                           <li><a href="">Kelantan</a></li>
+                           <li><a href="">Melaka</a></li>
+                           <li><a href="">Negeri Sembilan</a></li>
+                           <li><a href="">Pahang</a></li>
+                           <li><a href="">Perak</a></li>
+                           <li><a href="">Perlis</a></li>
+                           <li><a href="">Pulau Pinang</a></li>
+                           <li><a href="">Sabah</a></li>
+                           <li><a href="">Sarawak</a></li>
+                           <li><a href="">Selangor</a></li>
+                           <li><a href="">Terengganu</a></li>
+                           <li><a href="">Labuan</a></li>
+                        </ul>
+                     </div>
+                  </h3>
                   <div class="row">
                      <div class="col-sm-6 col-md-4 col-lg-4 product-card">
                         <p class="price">RM 999</p>
@@ -476,98 +493,124 @@
                            <p>Kuala Lumpur, Malaysia</p>
                         </a>
                      </div>
-                     
-                     
-                     
-                     
                   </div>
                </div>
             </div>
          </section>
          <!-- content-8  -->
-
          <section class="content-8 v-center">
             <div>
                <div class="container">
                   <h3>Explore the world</h3>
                   <div class="row">
-   <div class="col-xs-12 col-sm-12 col-md-8 explorestacks">
-      <a  class="wide-text-over" href="#">Kabukichō</a>
-      <a href="#">
-      <img class="" src="img/12.png" alt="">
-      </a>
-   </div>
-   <div class="col-xs-12 col-sm-6 col-md-4 explorestacks">
-<div class="explore-center-detail">
-      <a href=""><img src="https://s3.amazonaws.com/uifaces/faces/twitter/himani/128.jpg" width="56" class=" img-circle user-thumb-center"></a><br>
-      <a  class="text-over-center-user" href="#">John Connor</a><br>
-      <a  class="text-over-center-place" href="#">Kabukichō</a>
-      </div>
-
-      <a href="#"  class="">
-      <img class="" src="img/14.png" alt="">
-      </a>
-   </div>
-   <div class="col-xs-12 col-sm-6 col-md-4 explorestacks">
-      <a  class="text-over" href="#">Kabukichō</a>
-      <a href="#"  class="">
-      <img class="" src="img/15.jpg" alt="">
-      </a>
-   </div>
-   <div class="col-xs-12 col-sm-6 col-md-4 explorestacks">
-      <a  class="text-over" href="#">Kabukichō</a>
-      <a href="#"  class="">
-      <img class="" src="img/16.jpg" alt="">
-      </a>
-   </div>
-   <div class="col-xs-12 col-sm-6 col-md-4 explorestacks">
-      <a  class="text-over" href="#">Kabukichō</a>
-      <a href="#"  class="">
-      <img class="" src="img/17.png" alt="">
-      </a>
-   </div>
-   <div class="col-xs-12 col-sm-12 col-md-8 explorestacks">
-      <a class="wide-text-over" href="#">Kabukichō</a>
-      <a href="#">
-      <img class="" src="img/13.png" alt="">
-      </a>
-   </div>
-
-   
-   <div class="col-xs-12 col-sm-6 col-md-4 explorestacks">
-      <div class="explore-center-detail">
-      <a href=""><img src="https://s3.amazonaws.com/uifaces/faces/twitter/bellbells/128.jpg" width="56" class=" img-circle user-thumb-center"></a><br>
-      <a  class="text-over-center-user" href="#">John Connor</a><br>
-      <a  class="text-over-center-place" href="#">Kabukichō</a>
-      </div>
-      
-      <a href="#"  class="">
-      <img class="" src="img/14.png" alt="">
-      </a>
-   </div>
-</div>
+                     <div class="col-xs-12 col-sm-12 col-md-8 explorestacks">
+                        <a  class="wide-text-over" href="#">Kabukichō</a>
+                        <a href="#">
+                        <img class="" src="img/12.png" alt="">
+                        </a>
+                     </div>
+                     <div class="col-xs-12 col-sm-6 col-md-4 explorestacks">
+                        <div class="explore-center-detail">
+                           <a href=""><img src="https://s3.amazonaws.com/uifaces/faces/twitter/himani/128.jpg" width="56" class=" img-circle user-thumb-center"></a><br>
+                           <a  class="text-over-center-user" href="#">John Connor</a><br>
+                           <a  class="text-over-center-place" href="#">Kabukichō</a>
+                        </div>
+                        <a href="#"  class="">
+                        <img class="" src="img/14.png" alt="">
+                        </a>
+                     </div>
+                     <div class="col-xs-12 col-sm-6 col-md-4 explorestacks">
+                        <a  class="text-over" href="#">Kabukichō</a>
+                        <a href="#"  class="">
+                        <img class="" src="img/15.jpg" alt="">
+                        </a>
+                     </div>
+                     <div class="col-xs-12 col-sm-6 col-md-4 explorestacks">
+                        <a  class="text-over" href="#">Kabukichō</a>
+                        <a href="#"  class="">
+                        <img class="" src="img/16.jpg" alt="">
+                        </a>
+                     </div>
+                     <div class="col-xs-12 col-sm-6 col-md-4 explorestacks">
+                        <a  class="text-over" href="#">Kabukichō</a>
+                        <a href="#"  class="">
+                        <img class="" src="img/17.png" alt="">
+                        </a>
+                     </div>
+                     <div class="col-xs-12 col-sm-12 col-md-8 explorestacks">
+                        <a class="wide-text-over" href="#">Kabukichō</a>
+                        <a href="#">
+                        <img class="" src="img/13.png" alt="">
+                        </a>
+                     </div>
+                     <div class="col-xs-12 col-sm-6 col-md-4 explorestacks">
+                        <div class="explore-center-detail">
+                           <a href=""><img src="https://s3.amazonaws.com/uifaces/faces/twitter/bellbells/128.jpg" width="56" class=" img-circle user-thumb-center"></a><br>
+                           <a  class="text-over-center-user" href="#">John Connor</a><br>
+                           <a  class="text-over-center-place" href="#">Kabukichō</a>
+                        </div>
+                        <a href="#"  class="">
+                        <img class="" src="img/14.png" alt="">
+                        </a>
+                     </div>
+                  </div>
                </div>
             </div>
-            </section>
+         </section>
          <!-- footer-3 -->
          <footer class="footer-3">
             <div class="container">
                <div class="row v-center">
-                  <div class="col-sm-2">
-                     <a class="brand" href="#">Footer</a>
-                  </div>
-                  <div class="col-sm-7">
-                     <div class="additional-links">
-                        Be sure to take a look to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
+                  <!--bottom-footer-->
+                  <div class="col-md-3">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle btn-currency" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        MYR <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu currency-dropdown-menu">
+                           <li><a href="#">USD</a></li>
+                           <li><a href="#">SGD</a></li>
+                           <li><a href="#">INR</a></li>
+                        </ul>
                      </div>
                   </div>
-                  <div class="col-sm-3">
+                  <div class="col-md-7">
+                     <div class="col-md-2">
+                        <a href="#">About</a>
+                     </div>
+                     <div class="col-md-2">
+                        <a href="#">Contact</a>
+                     </div>
+                     <div class="col-md-3">
+                        <a href="#">Become a Vendor</a>
+                     </div>
+                     <div class="col-md-2">
+                        <a href="#">Blog</a>
+                     </div>
+                     <div class="col-md-2">
+                        <a href="#">FAQs</a>
+                     </div>
+                  </div>
+                  <div class="col-md-2">
+                     <a href=""><img src="img/Facebook.png" width="42"></a>
+                     <a href=""><img src="img/Twitter.png" width="42"></a>
+                     <a href=""> <img src="img/Instagram.png" width="42"></a>
+                  </div>
+               </div>
+               <div class="row v-center  bottom-below-footer">
+                  <!--bottom-footer-->
+                  <div class="col-md-6">
+                     <p class="pull-left"><a href="#" class="terms-footer">Terms and conditions </a>	<a href="#">Privacy policy</a></p>
+                  </div>
+                  <div class="col-md-6">
+                     <p class="pull-right">© 2016 want.my All rights reserved</p>
                   </div>
                </div>
             </div>
          </footer>
       </div>
       <!-- Placed at the end of the document so the pages load faster -->
+      <script src="assets/samples/sample-04/js/custom.js"></script>
       <script src="assets/common-files/js/jquery-1.10.2.min.js"></script>
       <script src="assets/flat-ui/js/bootstrap.min.js"></script>
       <script src="assets/common-files/js/modernizr.custom.js"></script>
