@@ -12,6 +12,43 @@
       <link rel="stylesheet" type="text/css" href="css/style.css">
       <link rel="stylesheet" type="text/css" href="css/custom.css">
       <!--/typehead-->
+           <!--Intergration purposes - just copy this to css u desire-->
+      <style>
+	  /* -----
+SVG Icons
+----- */
+
+.svg-icon {
+  width: 1em;
+  height: 1em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #4691f6;
+}
+
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
+/* -----
+SVG Icons
+----- */
+.icon-facebook{    position: absolute;
+    top: -2px;
+    left: 91px;
+    width: 20px;}
+.icon-facebook path{fill:#FFF;}
+.btn-facebook { background:#3b5999; border:0; border-radius:1px; color:#FFF;width: 380px;
+    height: 40px;     padding: 12px 121px;
+    margin-left: -15px;}
+	.btn-facebook:hover,active,focus { color:#FFF;}
+	.fb-btn-row { margin-top:40px;}
+
+	  </style>
+      <!--Intergration purposes - just copy this to css u desire-->
    </head>
    <body>
       <div class="header-gradient"></div>
@@ -186,6 +223,13 @@
                   </div>
                   <button type="submit" class="btn btn-default signup-btn">Submit</button>
                </form>
+               <div class="col-md-12 fb-btn-row">
+                  <a href="" class="btn-facebook">
+				  <svg class="svg-icon icon-facebook" viewBox="0 0 20 20">
+							<path fill="none" d="M11.344,5.71c0-0.73,0.074-1.122,1.199-1.122h1.502V1.871h-2.404c-2.886,0-3.903,1.36-3.903,3.646v1.765h-1.8V10h1.8v8.128h3.601V10h2.403l0.32-2.718h-2.724L11.344,5.71z"></path>
+						</svg>
+                         Sign In with Facebook</a>
+               </div>
                <div class="col-md-12 text-center">
                   <p class="signupToLogin">Already a member? <strong><a href="login.html">Login</a></strong></p>
                </div>

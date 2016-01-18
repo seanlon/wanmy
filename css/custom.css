@@ -354,12 +354,7 @@ a:active {
     background: #1f1f21;
     color: white
 }
-.navbar {
-    margin-bottom: 0;
-    background: none;
-    border: 0;
-    padding-top: 10px
-}
+
 .nav-cta {
     padding: 10px 40px;
     margin-left: 40px
@@ -447,7 +442,7 @@ input.form-control.name-form {
 .price {
     opacity: .79;
     background: #3c3d41;
-    width: 100px;
+    min-width: 100px;
     padding: 10px;
     color: #fff;
     font-size: 18px;
@@ -1501,13 +1496,6 @@ button:hover
     background-color: none;
  }
  
- .dropdown-menu.profile-nav-dropdown { margin:0;top: 59px;top: auto; margin-top:5px;}
-
-
- .profile-nav-dropdown>li>a {
-    display: block;
-    padding: 20px;
- }
 
 /*payment*/
 
@@ -1569,18 +1557,6 @@ p.totalprice{ font-size: 24px;font-weight: normal;line-height: 1.43;
 .nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
     background-color:transparent;
 
-}
-
-.dropdown-menu:before {
-    position: absolute;
-    top: -7px;
-    right: 15px;
-    display: inline-block;
-    border-right: 7px solid transparent;
-    border-bottom: 7px solid #ccc;
-    border-left: 7px solid transparent;
-    border-bottom-color: rgba(0,0,0,.2);
-    content: '';
 }
 
 

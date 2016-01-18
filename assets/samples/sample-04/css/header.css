@@ -1,0 +1,45 @@
+/* CSS Document */
+.header-10 .navbar .brand { margin-top: -9px;padding-top: 0;}
+ul.dropdown-menu {
+		background-color: #fff;
+		-webkit-background-clip: padding-box;
+		background-clip: padding-box;
+		border: 1px solid #ccc;
+		border: 1px solid rgba(0,0,0,.15);
+		border-radius: 1px;
+		-webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+		box-shadow: 0 6px 12px rgba(0,0,0,.175);
+		z-index: 999; width:200px;
+		}
+		ul.dropdown-menu {
+		background-color: #fff;
+		-webkit-background-clip: padding-box;
+		background-clip: padding-box;
+		border: 1px solid #ccc;
+		border: 1px solid rgba(0,0,0,.15);
+		border-radius: 1px;
+		-webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+		box-shadow: 0 6px 12px rgba(0,0,0,.175);
+		z-index: 999; width:200px;
+		}
+		.header-10 {
+         background:#FFF;
+         }   
+         .header-10 .navbar .nav > li > a { color:#333;}
+		 .header-10 .navbar .nav > li > a:hover {color: #FF5722;}
+		 
+         .header-10 .navbar .nav > li.nav-user-options a{    padding: 21px 0 19px; background:#FFF;}
+         .header-10 .navbar .nav > li.nav-user-options a:active {background:#FFF;}
+         .header-10 .navbar .nav > li.nav-user-options a img{margin-left: 20px;}
+         .open > ul.profile-nav-dropdown {margin-top: -1px !important;}
+         .open > ul.profile-nav-dropdown li {padding-left: 20px;}
+         .open > ul.profile-nav-dropdown li a:hover{ color:#000;}
+		 
+		 
+		 .navsearch {border: 1px solid #c4c4c4;}
+				  .navsearch-form {
+        position: absolute;
+    left: 141px;
+    top: -3px;
+    display: block;}
+
