@@ -12,6 +12,7 @@
       <!-- Using only with Flat-UI (free)-->
       <link rel="stylesheet" href="assets/common-files/css/icon-font.css">
       <!-- end -->
+      <link rel="stylesheet" type="text/css" href="assets/samples/sample-04/css/header.css">
       <link rel="stylesheet" href="assets/samples/sample-04/css/style.css">
             <script src="assets/common-files/js/jquery-1.10.2.min.js"></script>
 <!--The dropdown js-->
@@ -74,13 +75,14 @@
          height: 30px;
          background: url("../../../common-files/icons/menu-icon-header-8.png") 50% no-repeat;
          }
+			/*exist in header.css*/
 		 		.header-10 .navbar .brand { margin-top: -9px;padding-top: 0;}
 
          .header-10 {
          background:#FFF;
          }   
          .header-10 .navbar .nav > li > a {    color: #000;}
-		  
+		  /*exist in header.css*/
          .content-8 {
          padding-top: 40px;
          padding-bottom: 80px;
@@ -199,16 +201,7 @@
          .open .dropdown-toggle.btn-default {
          background: #FFF;
          }
-         /*nav profile*/
-		 .header-10 .navbar .nav > li > a:hover {color: #FF5722;}
-		 
-         .header-10 .navbar .nav > li.nav-user-options a{    padding: 21px 0 19px; background:#FFF;}
-         .header-10 .navbar .nav > li.nav-user-options a:active {background:#FFF;}
-         .header-10 .navbar .nav > li.nav-user-options a img{margin-left: 20px;}
-         .open > ul.profile-nav-dropdown {margin-top: -1px !important;}
-         .open > ul.profile-nav-dropdown li {padding-left: 20px;}
-         .open > ul.profile-nav-dropdown li a:hover{ color:#000;}
-         /*nav profile*/
+
 		 .btn-destination { padding:10px;    border:1px solid #c4c4c4;
     background: white; border-radius:1px;
     color: #565a5c;}
@@ -379,18 +372,21 @@
                         </li>
                         <li><a href="#">Login</a></li>
                         <li><a href="#">Sign Up</a></li>
+                       
                         
-                        
-                        
-                        <li class="dropdown nav-user-options">
-                           <a href="#" class="dropdown-toggle usernavprofile"  data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sarah <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jeanniehuang/128.jpg" width="40" class="img-circle profile-nav"/></a>
-                           <ul class="dropdown-menu profile-nav-dropdown">
+                        <!--dropdown x-->
+                        <li class="dropdown">
+                           <a href="#" class="dropdown-toggle dropdownselectactive" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sarah <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jeanniehuang/128.jpg" width="40" class="img-circle profile-nav"/></a>
+                <ul class="dropdown-menu">
                               <li><a href="#">Edit Profile</a></li>
                               <li><a href="#">Invite Friends</a></li>
                               <li><a href="#">Account Settings</a></li>
                               <li><a href="#">Log Out</a></li>
-                           </ul>
-                        </li>
+                </ul>
+              </li>
+                        <!--dropdown x-->
+                        
+                        
                      </ul>
                   </div>
                </div>
