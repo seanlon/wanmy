@@ -18,7 +18,7 @@
 		 
 		 
 		 
-		 .navsearch {border: 1px solid #c4c4c4;}
+		 .navsearch {border: 1px solid #c4c4c4;    border-radius: 1px;}
 				  .navsearch-form {
         position: absolute;
     left: 141px;
@@ -36,7 +36,16 @@
 	/*when it's clicked active*/
 						/*when it's hover dropdown*/
 						.open > .dropdown-menu {
-    margin-top: -1px !important;}
+    margin-top: -1px !important;
+	background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 1px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+	}
 						
 						.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus { border-radius: 0; color:#000; background:#fafafa;}
 						
