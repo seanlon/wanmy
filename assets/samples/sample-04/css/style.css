@@ -786,9 +786,9 @@ header .brand img:first-child {
   float: left;
   margin: -10px 15px 0 0;
 }
-section * {
+/*section * {
   z-index: 2;
-}
+}*/
 .background {
   position: absolute;
   left: 0;
