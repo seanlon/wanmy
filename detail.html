@@ -18,11 +18,133 @@
         <link rel="stylesheet" href="assets/samples/sample-04/css/style.css">
 		<link rel="stylesheet" type="text/css" href="assets/samples/sample-04/css/header.css">
 		 <!--need to be on top / dropdown hover / -->
-      <script src="assets/common-files/js/jquery-1.10.2.min.js"></script>
       <script src="assets/samples/sample-04/js/custom.js"></script>
 		 <!--need to be on top / dropdown hover / -->
+               <script src="assets/common-files/js/jquery-1.10.2.min.js"></script>
+         <!--gallery-->
          
+         <link href="assets/gallery4/dist/css/lightgallery.css" rel="stylesheet">
+        <style type="text/css">
+            .demo-gallery > ul {
+              margin-bottom: 0;
+            }
+            .demo-gallery > ul > li {
+                float: left;
+                margin-bottom: 15px;
+                margin-right: 20px;
+                width: 200px;
+            }
+            .demo-gallery > ul > li a {
+              border: 3px solid #FFF;
+              border-radius: 3px;
+              display: block;
+              overflow: hidden;
+              position: relative;
+              float: left;
+            }
+            .demo-gallery > ul > li a > img {
+              -webkit-transition: -webkit-transform 0.15s ease 0s;
+              -moz-transition: -moz-transform 0.15s ease 0s;
+              -o-transition: -o-transform 0.15s ease 0s;
+              transition: transform 0.15s ease 0s;
+              -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+              height: 100%;
+              width: 100%;
+            }
+            .demo-gallery > ul > li a:hover > img {
+              -webkit-transform: scale3d(1.1, 1.1, 1.1);
+              transform: scale3d(1.1, 1.1, 1.1);
+            }
+            .demo-gallery > ul > li a:hover .demo-gallery-poster > img {
+              opacity: 1;
+            }
+            .demo-gallery > ul > li a .demo-gallery-poster {
+              background-color: rgba(0, 0, 0, 0.1);
+              bottom: 0;
+              left: 0;
+              position: absolute;
+              right: 0;
+              top: 0;
+              -webkit-transition: background-color 0.15s ease 0s;
+              -o-transition: background-color 0.15s ease 0s;
+              transition: background-color 0.15s ease 0s;
+            }
+            .demo-gallery > ul > li a .demo-gallery-poster > img {
+              left: 50%;
+              margin-left: -10px;
+              margin-top: -10px;
+              opacity: 0;
+              position: absolute;
+              top: 50%;
+              -webkit-transition: opacity 0.3s ease 0s;
+              -o-transition: opacity 0.3s ease 0s;
+              transition: opacity 0.3s ease 0s;
+            }
+            .demo-gallery > ul > li a:hover .demo-gallery-poster {
+              background-color: rgba(0, 0, 0, 0.5);
+            }
+            .demo-gallery .justified-gallery > a > img {
+              -webkit-transition: -webkit-transform 0.15s ease 0s;
+              -moz-transition: -moz-transform 0.15s ease 0s;
+              -o-transition: -o-transform 0.15s ease 0s;
+              transition: transform 0.15s ease 0s;
+              -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+              height: 100%;
+              width: 100%;
+            }
+            .demo-gallery .justified-gallery > a:hover > img {
+              -webkit-transform: scale3d(1.1, 1.1, 1.1);
+              transform: scale3d(1.1, 1.1, 1.1);
+            }
+            .demo-gallery .justified-gallery > a:hover .demo-gallery-poster > img {
+              opacity: 1;
+            }
+            .demo-gallery .justified-gallery > a .demo-gallery-poster {
+              background-color: rgba(0, 0, 0, 0.1);
+              bottom: 0;
+              left: 0;
+              position: absolute;
+              right: 0;
+              top: 0;
+              -webkit-transition: background-color 0.15s ease 0s;
+              -o-transition: background-color 0.15s ease 0s;
+              transition: background-color 0.15s ease 0s;
+            }
+            .demo-gallery .justified-gallery > a .demo-gallery-poster > img {
+              left: 50%;
+              margin-left: -10px;
+              margin-top: -10px;
+              opacity: 0;
+              position: absolute;
+              top: 50%;
+              -webkit-transition: opacity 0.3s ease 0s;
+              -o-transition: opacity 0.3s ease 0s;
+              transition: opacity 0.3s ease 0s;
+            }
+            .demo-gallery .justified-gallery > a:hover .demo-gallery-poster {
+              background-color: rgba(0, 0, 0, 0.5);
+            }
+            .demo-gallery .video .demo-gallery-poster img {
+              height: 48px;
+              margin-left: -24px;
+              margin-top: -24px;
+              opacity: 0.8;
+              width: 48px;
+            }
+            .demo-gallery.dark > ul > li a {
+              border: 3px solid #04070a;
+            }
+            .home .demo-gallery {
+              padding-bottom: 80px;
+            }
+        </style>
+         <!--gallery-->
+
+
          <style>
+		 
 		 /*detail page only*/
 		 
 		 
@@ -516,30 +638,63 @@ input[type=checkbox].heart-checkbox {
                 <div>
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-7 detailpage-images-gallery">
+                            <div class="col-md-7 detailpage-images-gallery" >
                      <div class="col-md-6 topleftimg">                
-                        <a href="http://41.media.tumblr.com/f37ac708134914c471073e4c0b47328d/tumblr_mrn3dc10Wa1r1thfzo8_1280.jpg" data-toggle="lightbox" data-gallery="navigateTo" data-footer="Click">
+                        <a href="">
                         <img src="img/12.png" class="img-responsive"></a>
                      </div>
                      <div class="col-md-6 toprightimg">                
-                        <a href="http://41.media.tumblr.com/838b44224e39c30cd43490deb11b919d/tumblr_mrn3dc10Wa1r1thfzo1_1280.jpg" data-toggle="lightbox" data-gallery="navigateTo">
+                        <a href="">
                         <img src="img/13.png" class="img-responsive"></a>
                      </div>
                      <div class="col-md-4 bottomleftimg">                
-                        <a href="http://41.media.tumblr.com/e06a3513b0b36843f54bee99aeac689a/tumblr_mrn3dc10Wa1r1thfzo2_1280.jpg" data-toggle="lightbox" data-gallery="navigateTo">
+                        <a href="">
                         <img src="img/14.png" class="img-responsive"></a>
                      </div>
                      <div class="col-md-4 bottomcentreimg">                
-                        <a href="http://41.media.tumblr.com/f37ac708134914c471073e4c0b47328d/tumblr_mrn3dc10Wa1r1thfzo8_1280.jpg" data-toggle="lightbox" data-gallery="navigateTo" data-footer="Click">
-                        <img src="img/15.jpg" class="img-responsive"></a>
+                        <a href="">
+                        <img src="img/15.jpg" class="img-responsive">
+                        </a>
                      </div>
                      <div class="col-md-4 bottomrightimg">
-                        <a href="http://41.media.tumblr.com/838b44224e39c30cd43490deb11b919d/tumblr_mrn3dc10Wa1r1thfzo1_1280.jpg" data-toggle="lightbox" data-gallery="navigateTo" class="text-overlay-cover">See all 10 photos</a>
+                        <a href="" class="text-overlay-cover">See all 10 photos</a>
                         <div class="gallery-overlay-cover"></div>
                         <img src="img/16.jpg" class="img-responsive">
                      </div>
                   </div>
                         </div>
+                        
+                    <!--gallery-->    
+                        
+                        <div class="demo-gallery">
+            <div id="lightgallery" class="list-unstyled row">
+                <div class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/12.png" data-src="img/12.png" data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
+                    <a href="">
+                        <img class="img-responsive" src="img/12.png">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/13.png" data-src="img/13.png" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                    <a href="">
+                        <img class="img-responsive" src="img/13.png">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/14.png" data-src="img/14.png" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                    <a href="">
+                        <img class="img-responsive" src="img/14.png">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/15.png" data-src="img/15.png" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                    <a href="">
+                        <img class="img-responsive" src="assets/gallery4/demo/img/thumb-4.jpg">
+                    </a>
+                </div>
+            </div>
+        </div>
+              <!--gallery-->          
+                        
+                        
+                        
+                        
                     </div>
                 </div>
             </section>
@@ -810,11 +965,27 @@ input[type=checkbox].heart-checkbox {
          </footer>
         </div>
 
+
+ <!--Gallery-->
+        
+                <script type="text/javascript">
+        $(document).ready(function(){
+            $('#lightgallery').lightGallery();
+        });
+        </script>
+        <script src="assets/gallery4/dist/js/lightgallery.js"></script>
+        <script src="assets/gallery4/dist/js/lg-thumbnail.js"></script>
+
+        
+        <!--Gallery-->
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="assets/flat-ui/js/bootstrap.min.js"></script>
         <script src="assets/common-files/js/modernizr.custom.js"></script>
         <script src="assets/common-files/js/startup-kit.js"></script>
-        <script src="assets/samples/sample-04/js/jquery.backgroundvideo.min.js"></script>
         <script src="assets/samples/sample-04/js/script.js"></script>
+        
+       
+        
+        
     </body>
 </html>
