@@ -354,7 +354,12 @@ a:active {
     background: #1f1f21;
     color: white
 }
-
+.navbar {
+    margin-bottom: 0;
+    background: none;
+    border: 0;
+    padding-top: 10px
+}
 .nav-cta {
     padding: 10px 40px;
     margin-left: 40px
@@ -403,9 +408,6 @@ input.form-control.name-form {
     border-left: 1px solid #ccc;
     width: 250px
 }
-.full-height{
-    height:100%;
-}
 .search-btn {
     background: #2e71f0;
     color: #fff;
@@ -422,8 +424,7 @@ input.form-control.name-form {
 }
 .landing-content {
     padding: 40px 0;
-    border-top: solid 1px #e6e9e9;
-	    background: #FFF;
+    border-top: solid 1px #e6e9e9
 }
 .landing-content a {
     color: #333;
@@ -442,7 +443,7 @@ input.form-control.name-form {
 .price {
     opacity: .79;
     background: #3c3d41;
-    min-width: 100px;
+    width: 100px;
     padding: 10px;
     color: #fff;
     font-size: 18px;
@@ -789,7 +790,7 @@ a.view-more-btn:hover {
     filter: alpha(opacity=30)
 }
 .header-11-sub .background.mountain-empty {
-    background-image: url(../img/vacation.jpg);
+    background-image: url(../img/mountain.png);
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1231,7 +1232,7 @@ input[type=checkbox].heart-checkbox:checked+label:before {
 }
 .section-details.content {
     background-color: #f9f9f9;
-    min-height: 150px;    border: 1px solid #dce0e0;
+    min-height: 150px
 }
 .section-details.content .gallery-row {
     margin-top: 55px;
@@ -1403,8 +1404,7 @@ input[type=checkbox].heart-checkbox:checked+label:before {
 .navbar-white {
     border-bottom: 1px solid #dce0e0;
     height: 61px;
-    padding: 0;
-	    background: #FFF;
+    padding: 0
 }
 .navbar-nav>li>a {
     padding-top: 19px;
@@ -1413,7 +1413,7 @@ input[type=checkbox].heart-checkbox:checked+label:before {
 .search-white-nav {
     position: absolute;
     top: 13px;
-    left: 191px;
+    left: 91px;
     width: 500px;
     height: 40px;
 
@@ -1496,6 +1496,11 @@ button:hover
     background-color: none;
  }
  
+ .dropdown-menu { margin:0;top: 59px;}
+ .profile-nav-dropdown>li>a {
+    display: block;
+    padding: 20px;
+ }
 
 /*payment*/
 
@@ -1523,14 +1528,14 @@ button:hover
 	
 	.merchant-details {    padding-left: 50px;}
 	
-	.book-widget-detail-page { position:absolute; top: -108px;}
+	.book-widget-detail-page { position:absolute; top: -80px;}
 	
 	
 	.book-now-block {
     background-color: #fff;
     display: block;
     width: 300px;
-    min-height: 262px;
+    min-height: 250px;
     border: 1px solid #dce0e0;
     background-color: #fff;
     border-radius: 0;
@@ -1559,13 +1564,15 @@ p.totalprice{ font-size: 24px;font-weight: normal;line-height: 1.43;
 
 }
 
-
-
-.navbar-brand {
-    float: left;
-    height: 50px;
-    padding: 0;
-    font-size: 18px;
-    margin-top: -20px;
-    line-height: 20px;
+.dropdown-menu:before {
+    position: absolute;
+    top: -7px;
+    right: 15px;
+    display: inline-block;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #ccc;
+    border-left: 7px solid transparent;
+    border-bottom-color: rgba(0,0,0,.2);
+    content: '';
 }
+
