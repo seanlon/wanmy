@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+
+ 
+      <link rel="stylesheet" href="css/lib/bootstrap.css">
+      <link rel="stylesheet" href="css/lib/fontawesome.css">
+      <link rel="stylesheet" href="css/lib/beautycheckbox.css">
+      <link rel="stylesheet" href="css/lib/nouislider.min.css">
+      <link rel="stylesheet" href="css/lib/owlcarousel.css">
+      <link rel="stylesheet" href="css/galleryfullscreen.css">
+      <link rel="stylesheet" href="css/lib/datepicker.css">
+      <link rel="stylesheet" type="text/css" href="css/custom.css">
+  
+
+  <style type="text/css">
+  </style>
+
+      <!--need to be on top-->
+      <script src="js/lib/jquery.js"></script>
+      <script src="js/lib/bootstrap.js"></script>
+      <script src="js/lib/nouislider.min.js"></script>
+      <script src="js/lib/owlcarousel.js"></script>
+      <script src="js/lib/bootstrap-datepicker.js"></script>
+      <!--need to be on top-->
+      <script src="typeahead/demo/assets/js/jquery.mockjax.js"></script>
+      <script src="typeahead/src/bootstrap-typeahead.js"></script>
+  <title>OWL carousel with image preview in pagonation items by Gaziev</title>
+
+  
+
+
+<script type='text/javascript'>//<![CDATA[
+$(function(){
+var owl;
+
+$(document).ready(function () {
+
+    owl = $("#owl-gallery-fullscreen");
+
+    owl.owlCarousel({
+
+        navigation: false, // Show next and prev buttons
+        slideSpeed: 300,
+        paginationSpeed: 400,
+        singleItem: true,
+        afterInit: afterOWLinit // do some work after OWL init
+    });
+    
+    
+
+    
+    function afterOWLinit() {
+      //adding slide down hide event
+
+   
+
+        // adding A to div.owl-page
+        $('.owl-controls .owl-page').append('<a class="item-link" href="#"/>');
+
+        var pafinatorsLink = $('.owl-controls .item-link');
+
+        /**
+         * this.owl.userItems - it's your HTML <div class="item"><img src="http://www.ow...t of us"></div>
+         */
+        $.each(this.owl.userItems, function (i) {
+
+            $(pafinatorsLink[i])
+                // i - counter
+                // Give some styles and set background image for pagination item
+                .css({
+                    'background': 'url(' + $(this).find('img').attr('src') + ') center center no-repeat',
+                    '-webkit-background-size': 'cover',
+                    '-moz-background-size': 'cover',
+                    '-o-background-size': 'cover',
+                    'background-size': 'cover'
+                })
+                // set Custom Event for pagination item
+                .click(function () {
+                    owl.trigger('owl.goTo', i);
+                });
+
+        });
+
+
+
+        // add Custom PREV NEXT controls
+        $('.owl-pagination').prepend('<a href="#prev" class="prev-owl fa fa-chevron-left  "/> ');
+        $('.owl-pagination').append('<a href="#next" class="next-owl fa fa-chevron-right "/> ');
+
+
+        // set Custom event for NEXT custom control
+        $(".next-owl").click(function () {
+            owl.trigger('owl.next');
+        });
+
+        // set Custom event for PREV custom control
+        $(".prev-owl").click(function () {
+            owl.trigger('owl.prev');
+        });
+        $(".owl-controls").mouseover(function(e){          
+           $(".owl-page").show(); 
+             return false; 
+         });
+        $(".owl-controls").mouseout(function(e){  
+            $(".owl-page").hide();
+            return false; 
+         });    $(".owl-page").hide();
+
+
+    }
+
+});
+});//]]> 
+
+</script>
+
+  
+</head>
+
+<body>
+
+adsadas
+ 
+asdas
+<div class="fullscreen-gallery-overlay">
+
+  <div id="custom-pag-place"></div> 
+   <div id="owl-gallery-fullscreen" class="owl-carousel owl-gallery-fullscreen">
+
+       <div class="item"><img src="img/thumb1.jpg" style="width:350px"  alt="The Last of us"></div>
+       <div class="item"><img src="img/thumb2.jpg" style="width:650px"  alt="GTA V"></div>
+       <div class="item"><img src="img/thumb1.jpg" style="width:450px"  alt="Mirror Edge"></div>
+       <div class="item"><img src="img/thumb1.jpg"  style="width:250px" style="width:250px"alt="Mirror Edge"></div>
+       <div class="item"><img src="img/thumb2.jpg" style="width:550px" alt="Mirror Edge"></div>
+       <div class="item"><img src="img/thumb1.jpg" style="width:250px"  alt="Mirror Edge"></div>
+       <div class="item"><img src="img/thumb2.jpg" style="width:550px"  alt="Mirror Edge"></div>
+       <div class="item"><img src="img/thumb1.jpg" style="width:100px" alt="Mirror Edge"></div>
+       <div class="item"><img src="img/thumb2.jpg" style="width:400px" alt="Mirror Edge"></div>
+       <div class="item"><img src="img/thumb1.jpg" style="width:300px"  alt="Mirror Edge"></div> 
+
+   </div>
+     
+</div>
+
+</body>
+
+</html>
+

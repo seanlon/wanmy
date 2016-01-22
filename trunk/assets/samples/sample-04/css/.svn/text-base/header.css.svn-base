@@ -1,0 +1,70 @@
+/* CSS Document */
+
+/*the logo*/
+		 		.header-10 .navbar .brand { margin-top: -9px;padding-top: 0;}
+
+
+/*the whole header*/
+         .header-10 {
+         background:#FFF;
+         }   
+         .header-10 .navbar .nav > li > a {    color: #000;}
+		  
+
+
+/*the search bar*/
+         
+		 
+		 
+		 
+		 
+		 .navsearch {border: 1px solid #c4c4c4;    border-radius: 1px;}
+				  .navsearch-form {
+        position: absolute;
+    left: 141px;
+    top: -3px;
+    display: block;}
+
+
+/*dropdown start*/
+
+                        /*when it's clicked active*/
+						.dropdownselectactive img{ margin-left:20px;}
+						.header-10 .navbar .nav > li > a.dropdownselectactive {
+    padding: 20px 0 18px;
+    background: #FFF;}
+	/*when it's clicked active*/
+						/*when it's hover dropdown*/
+						.open > .dropdown-menu {
+    margin-top: -1px !important;
+	background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 1px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+	}
+						
+						.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus { border-radius: 0; color:#000; background:#fafafa;}
+						
+.dropdown-menu li:first-child > a {
+    border-radius: 0; padding: 15px 0 15px 15px;}
+	.dropdown-menu li:last-child > a {
+    border-radius: 0; padding: 15px 0 15px 15px;}
+	
+						.dropdown-menu li > a {
+    color: rgba(52, 73, 94, 0.75);
+    padding: 15px 0 15px 15px;}
+	
+	
+	
+                        /*when it's hover dropdown*/
+						
+						.dropdownx {margin-top: -17px !important;}
+						ul.dropdownx li { padding:}
+                        ul.dropdownx li a{ padding:15px 0;}
+						
+						
+						/*dropdown end*/
