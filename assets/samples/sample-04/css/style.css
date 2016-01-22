@@ -1,4 +1,16 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../fonts/ProximaNova-Regular.otf'); /* IE9 Compat Modes */
+  src: url('../fonts/ProximaNova-Regular.otf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/ProximaNova-Regular.otf2') format('otf2'), /* Super Modern Browsers */
+       url('../fonts/ProximaNova-Regular.otf') format('otf'), /* Pretty Modern Browsers */
+       url('../fonts/ProximaNova-Regular.otf')  format('opentype'), /* Safari, Android, iOS */
+       url('../fonts/ProximaNova-Regular.otf') format('svg'); /* Legacy iOS */
+	  
+}
+
 .dropdown-arrow-inverse {
   border-bottom-color: #34495e !important;
   border-top-color: #34495e !important;
@@ -6,7 +18,7 @@
 /* styles from flat-ui-free2.0.0-fix.less files */
 body {
   color: #34495e;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.231;
 }
@@ -14,7 +26,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
   font-size: 14px;
 }
 a {
@@ -514,7 +526,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
   color: #2c3e50;
 }
 h1 {
@@ -542,7 +554,7 @@ input[type="search"],
 input[type="tel"],
 input[type="color"],
 .uneditable-input {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: normal;
   color: #7f8c8d;
@@ -777,7 +789,7 @@ header .brand {
   font-size: 25px;
   font-weight: normal;
   color: #34495e;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
   font-weight: 800;
   letter-spacing: -1px;
   color: #2c3e50;
@@ -875,7 +887,7 @@ header .brand img:first-child {
   font-size: 25px;
   font-weight: normal;
   color: #ffffff;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
   font-weight: 600;
 }
 .header-10 .navbar .brand img:first-child {
@@ -988,14 +1000,14 @@ header .brand img:first-child {
   font-size: 45px;
   font-weight: normal;
   color: #ffffff;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
   font-weight: 300;
 }
 .header-10-sub .hero-unit p {
   font-size: 25px;
   font-weight: normal;
   color: #bdc3c7;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
   font-weight: 300;
   line-height: 37.5px;
 }
@@ -1004,7 +1016,7 @@ header .brand img:first-child {
     font-size: 36px;
     font-weight: normal;
     color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
     font-weight: 300;
   }
   .header-10-sub .hero-unit p {
@@ -1020,7 +1032,7 @@ header .brand img:first-child {
   font-weight: normal;
   color: #ffffff;
   font-weight: 500;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
   border: 8px solid white;
   display: inline-block;
   margin: 0;
@@ -1095,7 +1107,7 @@ header .brand img:first-child {
   font-size: 30px;
   font-weight: normal;
   color: #2c3e50;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
   margin-bottom: 80px;
   line-height: 42px;
   font-weight: 800;
@@ -1177,7 +1189,7 @@ header .brand img:first-child {
   font-size: 22px;
   font-weight: normal;
   color: #7f8c8d;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
   line-height: 32px;
   font-weight: 300;
 }
@@ -1232,7 +1244,7 @@ header .brand img:first-child {
   font-size: 30px;
   font-weight: normal;
   color: #34495e;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
   margin: 70px 0 35px;
 }
 .content-8 p {
@@ -1251,7 +1263,7 @@ header .brand img:first-child {
   font-weight: normal;
   color: #7f8c8d;
   font-weight: 500;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
   padding: 12px 28px 12px;
   color: #e74c3c;
 }
@@ -1325,7 +1337,7 @@ header .brand img:first-child {
   font-size: 24px;
   font-weight: normal;
   color: #34495e;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
   font-weight: 300;
 }
 .content-11 > .container {
@@ -1337,7 +1349,7 @@ header .brand img:first-child {
   font-weight: normal;
   color: #ffffff;
   font-weight: 500;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
 }
 @media (max-width: 480px) {
   .content-11 > .container > span {
@@ -1582,7 +1594,7 @@ header .brand img:first-child {
   font-size: 25px;
   font-weight: normal;
   color: #ffffff;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
   font-weight: 500;
 }
 .footer-3 .additional-links a {
