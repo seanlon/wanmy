@@ -44,6 +44,8 @@
          padding-bottom: 10px;
          border-bottom: 1px solid #eee;
          }
+		 p {
+    font-size: 14px;}
          /*
          * Top navigation
          * Hide default border to remove 1px line.
@@ -62,7 +64,7 @@
          @media (min-width: 768px) {
          .sidebar {
          position: fixed;
-         top: 101px;
+         top: 133px;
          bottom: 0;
          left: 0;
          z-index: 1000;
@@ -94,7 +96,7 @@
          * Main content
          */
          .main {
-         padding: 20px;    margin-top: 101px;
+         padding: 20px;    margin-top: 150px;
          }
          @media (min-width: 768px) {
          .main {
@@ -170,7 +172,7 @@
     background: linear-gradient(top,#f4f5f6,#eeeff0);
     -webkit-box-shadow: inset 0 1px 0 #F8F9F9,0 0 0 1px rgba(14, 16, 18, 0.1),0 1px 2px 0 rgba(14, 16, 18, 0.1);
     -moz-box-shadow: inset 0 1px 0 #F8F9F9,0 0 0 1px rgba(14, 16, 18, 0.1),0 1px 2px 0 rgba(14, 16, 18, 0.1);
-    box-shadow: inset 0 1px 0 #F8F9F9,0 0 0 1px rgba(14, 16, 18, 0.1),0 1px 2px 0 rgba(14, 16, 18, 0.1);    padding: 8px 0;min-height: 40px; z-index:10; top:80px; position:fixed; }
+    box-shadow: inset 0 1px 0 #F8F9F9,0 0 0 1px rgba(14, 16, 18, 0.1),0 1px 2px 0 rgba(14, 16, 18, 0.1);    padding: 7px 0;min-height: 40px; z-index:10; top:80px; position:fixed; }
          .nav-second-profile li.active {font-weight: bold; color:#000;}
          .nav-second-profile .navbar-nav>li>a {
          padding-top:8px;
@@ -181,9 +183,20 @@
          .add-photo-box {box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.1);border: 1px solid #dce0e0;
          background-color: #fff;
          border-radius: 0;padding: 62px 10px 52px; width:200px; height:250px}
-         .btn-upload {border-color: #c4c4c4;
-         background: white;
-         color: #565a5c;padding: 9px 27px;
+         .btn-upload {
+			 border: 1px solid;
+    border-radius: 2px;
+    color: #6A707D;
+    text-shadow: 0 1px 0 #FFF;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    border-color: rgba(204, 206, 210, 0.67) rgba(205, 206, 208, 0.78) rgba(182, 183, 185, 0.67);
+    background: #F4F4F5;
+    background: -webkit-linear-gradient(top,#FFF,#F6F7F8);
+    background: -ms-linear-gradient(top,#FFFFFF,#f9f9f9);
+    background: -moz-linear-gradient(top,#FFFFFF,#f9f9f9);
+    background: -o-linear-gradient(top,#FFFFFF,#f9f9f9);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF',endColorstr='#f9f9f9');
+			 padding: 9px 27px;
          font-size: 16px;}
          .fileUpload {
          position: relative;
@@ -206,9 +219,11 @@
          }
          .box-upload {width: 201px;
          height: 250px;
-         margin: 0;border: 1px solid #dce0e0;
+         margin: 0;
          background-color: #fff;
-         box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.1);
+         box-shadow: 0 2px 0px rgba(0, 0, 0, 0.015), 0 0 0 1px #DBDBDC;
+    -webkit-box-shadow: 0 2px 0px rgba(0, 0, 0, 0.015),0 0 0 1px #DBDBDC;
+    -moz-box-shadow: 0 2px 0px rgba(0, 0, 0, 0.015), 0 0 0 1px #DBDBDC;
          padding: 110px 80px 80px 80px;
          color: #000;
          }
@@ -217,12 +232,14 @@
          padding: 70px 20px; border-radius:2px;
          border: #dce0e0 1px solid;}
          .main .form-control {        border: 1px solid #c4c4c4;}
-         .btn-next {background: #2d5be3; color:#FFF;    padding: 10px 20px;margin-right: 154px;}
+         .btn-next {background: #F4511E; color:#FFF; padding: 10px 20px; border-radius:2px;}
          .btn-back {    color: #2d5be3;
          font-weight: bold;}
          .next-bottom { margin-bottom:20px;}
 		 
-		 
+		 .form-group {
+    margin-bottom: 20px;
+}
 		 
       </style>
       <!--For debugging and intergration-->
@@ -501,7 +518,7 @@
                      <a href="#" class="btn-back">Back</a>
                   </div>
                   <div class="col-xs-6">
-                     <a href="#" class="btn btn-next btn-large pull-right">See Next</a>
+                     <a href="#" class="btn btn-next pull-right">See Next</a>
                   </div>
                </div>
             </div>
@@ -535,7 +552,7 @@
                      <a href="#" class="btn-back">Back</a>
                   </div>
                   <div class="col-xs-6">
-                     <a href="#" class="btn btn-next btn-large pull-right">See Next</a>
+                     <a href="#" class="btn btn-next pull-right">See Next</a>
                   </div>
                </div>
             </div>
@@ -547,7 +564,7 @@
                   <hr>
                   <form>
                      <div class="form-group">
-                        <div class="fileUpload btn btn-large btn-upload">
+                        <div class="fileUpload btn btn-upload">
                            <span>Upload</span>
                            <input type="file" class="upload" />
                         </div>
@@ -581,7 +598,7 @@
                      <a href="#" class="btn-back">Back</a>
                   </div>
                   <div class="col-xs-6">
-                     <a href="#" class="btn btn-next btn-large pull-right">See Next</a>
+                     <a href="#" class="btn btn-next pull-right">See Next</a>
                   </div>
                </div>
             </div>
@@ -611,7 +628,7 @@
                      <a href="#" class="btn-back">Back</a>
                   </div>
                   <div class="col-xs-6">
-                     <a href="#" class="btn btn-next btn-large pull-right">See Next</a>
+                     <a href="#" class="btn btn-next pull-right">See Next</a>
                   </div>
                </div>
             </div>
@@ -649,7 +666,7 @@
                      <a href="#" class="btn-back">Back</a>
                   </div>
                   <div class="col-xs-6">
-                     <a href="#" class="btn btn-next btn-large pull-right">See Next</a>
+                     <a href="#" class="btn btn-next pull-right">See Next</a>
                   </div>
                </div>
             </div>
