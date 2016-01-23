@@ -5,7 +5,8 @@
 .header-10 {
 background:#FFF;border-bottom: 1px solid #EEEEEE;
 }   
-.header-10 .navbar .nav > li > a {    color: #000;}
+.header-10 .navbar .nav > li > a {    color: #757575;} 
+.header-10 .navbar .nav > li > a:hover{    color: #212121;}
 /*the search bar*/
 .navsearch {border: 1px solid #c4c4c4;    border-radius: 1px;}
 .navsearch-form {
@@ -70,6 +71,10 @@ font-size: 15px;
     border-radius: 50%;
     box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1);
 }
+/*----------------------------------------------------------DETAIL PAGE----------------------------------------------------------*/
+.date-book {    border-right: 0;}
+.detail-widget-dateform .input-group-addon { background:none;}
+.form-group.detail-widget-dateform {margin-bottom: 20px;}
 
 /*----------------------------------------------------------PAYMENT----------------------------------------------------------*/
 .section-details .btn.blue {
@@ -85,3 +90,7 @@ font-size: 15px;
     background-image: linear-gradient(to bottom,#75ad5e,#639b4e);
     text-shadow: 0 -1px 0 rgba(0,0,0,0.20); border-radius:
 2px;}
+
+.disclaimer { margin-top:40px;}
+.disclaimer p {    color: #6b6e76;
+    font-size: 12px;}

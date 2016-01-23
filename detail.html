@@ -154,16 +154,19 @@
          color: #34495e;
          border-radius: 2px;
          }
-         .btn-default { background:#E64A19; color:#FFF; border-radius:1px;}
-         .btn-default:hover {background:#BF360C;}
+         .btn-default {
+    background: #E64A19;
+    color: #FFF;
+    border-radius: 3px;
+    padding: 10px 40px;
+    border: 1px solid #BF360C;    font-size: 16px;
+}
+         .btn-default:hover {background:#BF360C;color: #FFF;}
          footer p {
          color: #FFF;
          }
          /*Overrighting original style.css, please change class name*/
          /*Overrighting original header.css*/
-         .navsearch-form {
-         top: 5px;
-         }
          .navbar-form .form-control {
          border-radius: 1px;
          }
@@ -533,9 +536,19 @@
                      </div>
                      <div class="productdetail">
                         <p><strong>When would you like to visit</strong></p>
+                        
+                        <form class="form-inline">
+  <div class="form-group  detail-widget-dateform">
+    <div class="input-group">
                         <input type="text" class="form-control date-book" placeholder="Date">
-                        <br>
-                        <button type="button" class="btn btn-block btn-default">Book Now</button>
+      <div class="input-group-addon"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></div>
+    </div>
+  </div>
+  
+  <button type="button" class="btn btn-block btn-default">Book Now</button>
+</form>
+                        
+                        
                      </div>
                   </div>
                </div>
