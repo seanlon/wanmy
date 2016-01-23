@@ -1026,9 +1026,13 @@ a.view-more-btn:hover {
 }
 .container-filter .filter-search .checkbox {
     margin-right: 10px;
-    background-color: #edefed;
-    border: 1px solid #dce0e0;
-    padding: 5px 20px
+    padding: 5px 20px 2px;
+    -webkit-box-shadow: inset 0 1px 0 #F8F9F9,0 0 0 1px rgba(14, 16, 18, 0.1),0 1px 2px 0 rgba(14, 16, 18, 0.1);
+    -moz-box-shadow: inset 0 1px 0 #F8F9F9,0 0 0 1px rgba(14, 16, 18, 0.1),0 1px 2px 0 rgba(14, 16, 18, 0.1);
+    box-shadow: inset 0 1px 0 #F8F9F9,0 0 0 1px rgba(14, 16, 18, 0.1),0 1px 2px 0 rgba(14, 16, 18, 0.1);
+    background: #f4f5f6;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4f5f6',endColorstr='#eeeff0');
+
 }
 @media (max-width: 991px) {
     .container-filter .filter-search .checkbox {
