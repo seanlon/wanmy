@@ -2,19 +2,18 @@
 <html lang="en">
    <head>
       <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <link rel="icon" href="../../favicon.ico">
-      <title>Profile</title>
+      <title>Product Detail</title>
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+      <link rel="shortcut icon" href="assets/flat-ui/images/favicon.ico">
       <link rel="stylesheet" href="css/lib/bootstrap.css">
       <link rel="stylesheet" href="css/lib/bootstrap-select.css">
-      <link rel="stylesheet" href="css/lib/fontawesome.css">
       <link rel="stylesheet" type="text/css" href="css/custom.css">
       
+      <link rel="stylesheet" href="assets/common-files/css/icon-font.css">
       <link rel="stylesheet" href="assets/samples/sample-04/css/style.css">
-		<link rel="stylesheet" type="text/css" href="assets/samples/sample-04/css/header.css">
+      <link rel="stylesheet" type="text/css" href="assets/samples/sample-04/css/header.css">
        <!--need to be on top-->
 		<script src="assets/common-files/js/jquery-1.10.2.min.js"></script>
       <script src="assets/samples/sample-04/js/custom.js"></script>
@@ -30,29 +29,54 @@
       <style>
          ul.sidebar {padding:0;}
          ul.sidebar li{ list-style:none;margin: 10px 0; }
-         ul.sidebar li a{ color:#adadad;}
+         ul.sidebar li a{ color: #000;
+    line-height: 22px;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 16px 15px 5px;}
          .profile-details {background-color: #FFF;
-         border:1px solid #e6e6e6; padding:40px 20px;}
+         border:1px solid #e6e6e6; padding:40px 40px 10px;}
          .profile-form input {background-color: #FFF;
          border:1px solid #adadad;
          }
          .profile-form select {background-color: #FFF;
          border:1px solid #adadad; width:100px;
          }
-         .btn-viewprofile { width:200px;color: #333;
-         background-color: #FFF;
-         border-color: #adadad; margin-top:20px;}
+         .btn-viewprofile { width:200px;border: 1px solid;
+    border-radius: 2px;
+    color: #6A707D;
+    text-shadow: 0 1px 0 #FFF;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    border-color: rgba(204, 206, 210, 0.67) rgba(205, 206, 208, 0.78) rgba(182, 183, 185, 0.67);
+    background: #F4F4F5;
+    background: -webkit-linear-gradient(top,#FFF,#F6F7F8);
+    background: -ms-linear-gradient(top,#FFFFFF,#f9f9f9);
+    background: -moz-linear-gradient(top,#FFFFFF,#f9f9f9);
+    background: -o-linear-gradient(top,#FFFFFF,#f9f9f9);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF',endColorstr='#f9f9f9');
+ margin-top:20px;}
          .birthdate .dropdown-menu {
          top: 33px;
          }
          .profile-details .dropdown-toggle {
-         width: 130px;
+         width: 130px;    border-radius: 2px;
          }
          .profile-page {
          padding-top: 40px;
          background: #fafafa;
          }
-         .nav-second-profile {    background: #DBDDDE; padding-top:0;    z-index: 99;margin-bottom: 0;}
+         .nav-second-profile {   
+		 background: #EEEFF0;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f5f6', endColorstr='#EEEFF0', GradientType=0);
+    background: -webkit-gradient(linear,left top,left bottom,from(#F4F5F6),to(#EEEFF0));
+    background: -webkit-linear-gradient(top,#F4F5F6,#EEEFF0);
+    background: -moz-linear-gradient(top,#f4f5f6,#eeeff0);
+    background: -o-linear-gradient(top,#f4f5f6,#eeeff0);
+    background: linear-gradient(top,#f4f5f6,#eeeff0);
+    -webkit-box-shadow: inset 0 1px 0 #F8F9F9,0 0 0 1px rgba(14, 16, 18, 0.1),0 1px 2px 0 rgba(14, 16, 18, 0.1);
+    -moz-box-shadow: inset 0 1px 0 #F8F9F9,0 0 0 1px rgba(14, 16, 18, 0.1),0 1px 2px 0 rgba(14, 16, 18, 0.1);
+    box-shadow: inset 0 1px 0 #F8F9F9,0 0 0 1px rgba(14, 16, 18, 0.1),0 1px 2px 0 rgba(14, 16, 18, 0.1);
+   z-index: 99;margin-bottom: 0;}
          .nav-second-profile li.active {font-weight: bold; color:#000;}
          .nav-second-profile .navbar-nav>li>a {
          padding-top: 15px;
@@ -64,7 +88,19 @@
 		 
 		 	.btn-profile {
     position: relative;
-    overflow: hidden;
+    overflow: hidden;border: 1px solid;
+    border-radius: 2px;
+    color: #6A707D;
+    text-shadow: 0 1px 0 #FFF;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    border-color: rgba(204, 206, 210, 0.67) rgba(205, 206, 208, 0.78) rgba(182, 183, 185, 0.67);
+    background: #F4F4F5;
+    background: -webkit-linear-gradient(top,#FFF,#F6F7F8);
+    background: -ms-linear-gradient(top,#FFFFFF,#f9f9f9);
+    background: -moz-linear-gradient(top,#FFFFFF,#f9f9f9);
+    background: -o-linear-gradient(top,#FFFFFF,#f9f9f9);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF',endColorstr='#f9f9f9');
+
 }
 .btn-profile input[type=file] {
     position: absolute;
@@ -86,6 +122,36 @@
     top: 10px;
     left: 178px;
     color: red;}
+	
+	.form-horizontal .form-group {
+    margin-bottom: 40px;
+}
+
+.panel-heading {
+    color: #333;
+    background: #F4F5F6;
+    border-bottom: 1px solid #E1E3E5;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.57);
+    font-weight: bold;
+    box-shadow: none;
+    font-size: 14px;
+    color: #5A626B;    padding: 15px 15px;
+}
+	.btn-save { background:#F4511E; color:#FFF; border:0; padding:10px 40px; border-radius:2px;}
+	
+	         /*Footer*/
+         .bottom-below-footer { margin-top:100px;}
+         .btn-currency { border-radius:1px; background:none; border:1px solid #999;}
+         .btn-currency:hover, focus, active {background:none;}
+         .btn-currency:hover,active {  background:none;}
+         .open > ul.currency-dropdown-menu {
+         margin-top: 0;
+         }
+         .open .dropdown-toggle.btn-default.btn-currency {
+         background: #000;
+         }
+         /*Footer*/
+
 		 
       </style>
       <!--For debugging and intergration-->
@@ -376,8 +442,8 @@
                               </div>
                            </div>
                            <div class="form-group">
-                              <div class="col-sm-offset-2 col-sm-10">
-                                 <button type="submit" class="btn btn-default">Save</button>
+                              <div class="col-sm-12">
+                                 <button type="submit" class="btn btn-default btn-save pull-right">Save</button>
                               </div>
                            </div>
                         </form>
@@ -386,47 +452,49 @@
                </div>
             </div>
          </section>
-         <footer class="footer-2 footer">
+         <footer class="footer-3">
             <div class="container">
-               <div class="col-md-3">
-                  <div class="btn-group">
-                     <button type="button" class="btn btn-default dropdown-toggle currency" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                     MYR <span class="caret"></span>
-                     </button>
-                     <ul class="dropdown-menu">
-                        <li><a href="#">USD</a></li>
-                        <li><a href="#">SGD</a></li>
-                        <li><a href="#">INR</a></li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="col-md-7">
-                  <div class="col-md-2">
-                     <a href="#">About</a>
-                  </div>
-                  <div class="col-md-2">
-                     <a href="#">Contact</a>
-                  </div>
+               <div class="row v-center">
+                  <!--bottom-footer-->
                   <div class="col-md-3">
-                     <a href="#">Become a Vendor</a>
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle btn-currency" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        MYR <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu currency-dropdown-menu">
+                           <li><a href="#">USD</a></li>
+                           <li><a href="#">SGD</a></li>
+                           <li><a href="#">INR</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-7">
+                     <div class="col-md-2">
+                        <a href="#">About</a>
+                     </div>
+                     <div class="col-md-2">
+                        <a href="#">Contact</a>
+                     </div>
+                     <div class="col-md-3">
+                        <a href="#">Become a Vendor</a>
+                     </div>
+                     <div class="col-md-2">
+                        <a href="#">Blog</a>
+                     </div>
+                     <div class="col-md-2">
+                        <a href="#">FAQs</a>
+                     </div>
                   </div>
                   <div class="col-md-2">
-                     <a href="#">Blog</a>
-                  </div>
-                  <div class="col-md-2">
-                     <a href="#">FAQs</a>
+                     <a href=""><img src="img/Facebook.png" width="42"></a>
+                     <a href=""><img src="img/Twitter.png" width="42"></a>
+                     <a href=""> <img src="img/Instagram.png" width="42"></a>
                   </div>
                </div>
-               <div class="col-md-2">
-                  <a href=""><img src="img/Facebook.png" width="42"></a>
-                  <a href=""><img src="img/Twitter.png" width="42"></a>
-                  <a href=""> <img src="img/Instagram.png" width="42"></a>
-               </div>
-            </div>
-            <div class="container">
-               <div class="col-md-12 bottom-footer">
+               <div class="row v-center  bottom-below-footer">
+                  <!--bottom-footer-->
                   <div class="col-md-6">
-                     <p class="pull-left"><a href="#" class="terms-footer">Terms and conditions </a>   <a href="#">Privacy policy</a></p>
+                     <p class="pull-left"><a href="#" class="terms-footer">Terms and conditions </a>	<a href="#">Privacy policy</a></p>
                   </div>
                   <div class="col-md-6">
                      <p class="pull-right">© 2016 want.my All rights reserved</p>

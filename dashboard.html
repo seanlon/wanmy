@@ -160,7 +160,17 @@
          padding-top: 40px;
          background: #fafafa;
          }
-         .nav-second-profile {    background: #DBDDDE; padding-top:0;min-height: 40px; z-index:10; top:80px; position:fixed; }
+		 
+         .nav-second-profile {  background: #EEEFF0;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f5f6', endColorstr='#EEEFF0', GradientType=0);
+    background: -webkit-gradient(linear,left top,left bottom,from(#F4F5F6),to(#EEEFF0));
+    background: -webkit-linear-gradient(top,#F4F5F6,#EEEFF0);
+    background: -moz-linear-gradient(top,#f4f5f6,#eeeff0);
+    background: -o-linear-gradient(top,#f4f5f6,#eeeff0);
+    background: linear-gradient(top,#f4f5f6,#eeeff0);
+    -webkit-box-shadow: inset 0 1px 0 #F8F9F9,0 0 0 1px rgba(14, 16, 18, 0.1),0 1px 2px 0 rgba(14, 16, 18, 0.1);
+    -moz-box-shadow: inset 0 1px 0 #F8F9F9,0 0 0 1px rgba(14, 16, 18, 0.1),0 1px 2px 0 rgba(14, 16, 18, 0.1);
+    box-shadow: inset 0 1px 0 #F8F9F9,0 0 0 1px rgba(14, 16, 18, 0.1),0 1px 2px 0 rgba(14, 16, 18, 0.1);    padding: 8px 0;min-height: 40px; z-index:10; top:80px; position:fixed; }
          .nav-second-profile li.active {font-weight: bold; color:#000;}
          .nav-second-profile .navbar-nav>li>a {
          padding-top:8px;
@@ -728,43 +738,16 @@
                </div>
             </div>
          </div>
-         <!--main-->
+
       </div>
-      <!-- /side-collapse-container  -->
-      <script>
-         function stickDropdown(_elem){
-            $(_elem).parent().removeClass('open').addClass('open');
-         }
-         
-         
-         function initResponsiveHeader() {
-              var sideslider = $('[data-toggle=collapse-side]');
-              var sel = sideslider.attr('data-target');
-              var sel2 = sideslider.attr('data-target-2');
-              sideslider.click(function(event) {
-                  $(sel).toggleClass('in');
-                  $(sel2).toggleClass('out');
-              });
-         
-          }
-         
-          $(window).load(function() {
-              $(document).ready(function() {
-         
-              initResponsiveHeader();
-              
-                  $('select').selectpicker({
-                      liveSearch: false,
-                      maxOptions: 1
-                  });
-         
-              });
-          });
-         
-         
-         
-         
-          
-      </script>
+      
+      
+      
+      </div>
+      
+      
+
+      
+	  
    </body>
 </html>
