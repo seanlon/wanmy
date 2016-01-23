@@ -65,3 +65,23 @@ font-weight: normal;
 font-size: 15px;
 }
 /*----------------------------------------------------------FOOTER----------------------------------------------------------*/
+/*----------------------------------------------------------GENERAL----------------------------------------------------------*/
+.img-circle {
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1);
+}
+
+/*----------------------------------------------------------PAYMENT----------------------------------------------------------*/
+.section-details .btn.blue {
+    border: 1px solid #568342;
+    border-top-color: #588446;
+    border-bottom-color: #3e6b32;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#75ad5e',endColorstr='#639b4e');
+    background-image: -webkit-linear-gradient(top,#75ad5e,#639b4e);
+    background-image: -moz-linear-gradient(top,#75ad5e,#639b4e);
+    background-image: -o-linear-gradient(top,#75ad5e,#639b4e);
+    background-image: -ms-linear-gradient(top,#75ad5e,#639b4e);
+    background-image: linear-gradient(to bottom,#75ad5e,#639b4e);
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.20); border-radius:
+2px;}

@@ -8,13 +8,12 @@
       <meta name="apple-mobile-web-app-status-bar-style" content="black" />
       <link rel="shortcut icon" href="assets/flat-ui/images/favicon.ico">
       <link rel="stylesheet" href="assets/flat-ui/bootstrap/css/bootstrap.css">
-      <link rel="stylesheet" href="assets/flat-ui/css/flat-ui.css">
-      <link rel="stylesheet" href="assets/common-files/css/icon-font.css">
+      
       <link rel="stylesheet" href="assets/samples/sample-04/css/style.css">
       <link rel="stylesheet" type="text/css" href="assets/samples/sample-04/css/header.css">
       <!--need to be on top / dropdown hover / -->
+		<script src="assets/common-files/js/jquery-1.10.2.min.js"></script>
       <script src="assets/samples/sample-04/js/custom.js"></script>
-      <script src="assets/common-files/js/jquery-1.10.2.min.js"></script>
             <!--need to be on top / dropdown hover / -->
       <!--gallery-->
       <link href="assets/gallery4/dist/css/lightgallery.css" rel="stylesheet">
@@ -561,58 +560,43 @@
             <div>
                <div class="container">
                   <div class="row">
-                     <div class="col-md-7 detailpage-images-gallery" >
-                        <div class="col-md-6 topleftimg">                
+                     <div id="lightgallery" class="col-md-7 detailpage-images-gallery" >
+                        <div class="col-md-6 topleftimg" data-responsive="img/12.png" data-src="img/12.png" data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">                
                            <a href="">
-                           <img src="img/12.png" class="img-responsive"></a>
+                           <img src="img/12.png" class="img-responsive">
+                           </a>
                         </div>
-                        <div class="col-md-6 toprightimg">                
+                        
+                        <div class="col-md-6 toprightimg" data-responsive="img/13.png" data-src="img/13.png" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">                
                            <a href="">
-                           <img src="img/13.png" class="img-responsive"></a>
+                           <img src="img/13.png" class="img-responsive">
+                           </a>
                         </div>
-                        <div class="col-md-4 bottomleftimg">                
+                        
+                        <div class="col-md-4 bottomleftimg" data-responsive="img/14.png" data-src="img/14.png" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">                
                            <a href="">
-                           <img src="img/14.png" class="img-responsive"></a>
+                           <img src="img/14.png" class="img-responsive">
+                           </a>
                         </div>
-                        <div class="col-md-4 bottomcentreimg">                
+                        
+                        <div class="col-md-4 bottomcentreimg" data-responsive="img/15.png" data-src="img/15.png" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">                
                            <a href="">
                            <img src="img/15.jpg" class="img-responsive">
                            </a>
                         </div>
-                        <div class="col-md-4 bottomrightimg">
+                        
+                        <div class="col-md-4 bottomrightimg" data-responsive="img/12.png" data-src="img/12.png" data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
                            <a href="" class="text-overlay-cover">See all 10 photos</a>
                            <div class="gallery-overlay-cover"></div>
                            <img src="img/16.jpg" class="img-responsive">
                         </div>
+                        
                      </div>
                   </div>
-                  <!--gallery-->    
-                  <div class="demo-gallery">
-                     <div id="lightgallery" class="list-unstyled row">
-                        <div class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/12.png" data-src="img/12.png" data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
-                           <a href="">
-                           <img class="img-responsive" src="img/12.png">
-                           </a>
-                        </div>
-                        <div class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/13.png" data-src="img/13.png" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
-                           <a href="">
-                           <img class="img-responsive" src="img/13.png">
-                           </a>
-                        </div>
-                        <div class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/14.png" data-src="img/14.png" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
-                           <a href="">
-                           <img class="img-responsive" src="img/14.png">
-                           </a>
-                        </div>
-                        <div class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/15.png" data-src="img/15.png" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
-                           <a href="">
-                           <img class="img-responsive" src="assets/gallery4/demo/img/thumb-4.jpg">
-                           </a>
-                        </div>
-                     </div>
-                  </div>
-                  <!--gallery-->          
-               </div>
+                  <!--gallery-->   
+                  
+                   
+                  
             </div>
          </section>
          <!-- Reviews  -->
