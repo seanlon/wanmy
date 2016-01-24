@@ -94,3 +94,7 @@ font-size: 15px;
 .disclaimer { margin-top:40px;}
 .disclaimer p {    color: #6b6e76;
     font-size: 12px;}
+	/*----------------------------------------------------------RESERVATIONS----------------------------------------------------------*/
+         .profile-photo p{ font-size: 14px;     color: #333; font-family:Arial, Helvetica, sans-serif;}
+.profile-photo p.accepted { color:#689F38; font-weight:bold;}
+
