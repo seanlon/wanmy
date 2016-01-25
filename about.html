@@ -2,27 +2,31 @@
 <html lang="en">
    <head>
       <meta charset="utf-8">
-      <title>Product Detail</title>
+      <title>About</title>
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
       <meta name="apple-mobile-web-app-status-bar-style" content="black" />
       <link rel="shortcut icon" href="assets/flat-ui/images/favicon.ico">
-      <link rel="stylesheet" href="assets/flat-ui/bootstrap/css/bootstrap.css">
+      <link rel="stylesheet" href="css/lib/bootstrap.css">
+      <link rel="stylesheet" href="css/lib/bootstrap-select.css">
+      <link rel="stylesheet" type="text/css" href="css/custom.css">
       
+      <link rel="stylesheet" href="assets/common-files/css/icon-font.css">
       <link rel="stylesheet" href="assets/samples/sample-04/css/style.css">
       <link rel="stylesheet" type="text/css" href="assets/samples/sample-04/css/header.css">
-      <!--need to be on top / dropdown hover / -->
+       <!--need to be on top-->
 		<script src="assets/common-files/js/jquery-1.10.2.min.js"></script>
       <script src="assets/samples/sample-04/js/custom.js"></script>
-            <!--need to be on top / dropdown hover / -->
-      <!--gallery-->
+    <!--need to be on top-->
+
+      <!--<script src="js/lib/jquery.js"></script>-->
+      <script src="js/lib/bootstrap.js"></script>
+      <script src="js/lib/bootstrap-select.js"></script>
 
    </head>
    <body>
-      <div class="page-wrapper">
-         <!-- header-10 -->
-         <!-- header  -->
-         <header class="header-10">
+      <!-- header  -->
+     <header class="header-10">
             <div class="container">
                <div class="navbar col-sm-12" role="navigation">
                   <div class="navbar-header nav-dark">
@@ -170,98 +174,82 @@
                      </a>
                   </div>
                   <div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">
-                     <form class="navbar-form navbar-right navsearch-form">
-                        <div class="form-group">
-                           <input type="text" class="form-control navsearch" placeholder="Search" style="width: 440px;">
-                        </div>
-                     </form>
+                  
+              
+<form class="navbar-form navbar-right navsearch-form">
+  <div class="form-group">
+    <input type="text" class="form-control navsearch" placeholder="Search" style="width: 440px;">
+  </div>
+</form>
+                  
+                  
                      <ul class="nav pull-left">
                         <li><a href="#">Become a Merchant
                            </a>
                         </li>
                         <li><a href="#">Login</a></li>
                         <li><a href="#">Sign Up</a></li>
-                        <!--dropdown x-->
+                        
+                        
+                        
+                          <!--dropdown x-->
                         <li class="dropdown">
                            <a href="#" class="dropdown-toggle dropdownselectactive" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sarah <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jeanniehuang/128.jpg" width="40" class="img-circle profile-nav"/></a>
-                           <ul class="dropdown-menu">
+                <ul class="dropdown-menu">
                               <li><a href="#">Edit Profile</a></li>
                               <li><a href="#">Invite Friends</a></li>
                               <li><a href="#">Account Settings</a></li>
                               <li><a href="#">Log Out</a></li>
-                           </ul>
-                        </li>
+                </ul>
+              </li>
                         <!--dropdown x-->
                      </ul>
                   </div>
                </div>
             </div>
-         </header>
-         <!-- /header  -->
-         <section class="header-10-sub v-center ">
-            <div class="background">
-               &nbsp;
+   </header>
+      <!-- Second navbar -->
+      <nav class="navbar navbar-static-top nav-second-profile subnav-dark">
+         <div class="container">
+            <div id="" class="">
+               <ul class="nav navbar-nav ">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Press</a></li>
+                  <li><a href="#">Career</a></li>
+                  <li><a href="#">Blog</a></li>
+               </ul>
             </div>
-            <div>
-               <div class="container">
-                        <div class="hero-unit">
-                            <h1>Earn up to $100 for everyone you invite.</h1>
-                            <p>
-                                Invite Your Email Contacts
-                            </p>
-                        </div>
-                    </div>
-            </div>
-         </section>
-         <!-- About Merchant  -->
-         <section class="content-7 invitefriends-content">
-            <div class="row">
-               <div class="col-md-10 col-xs-offset-2">
+            <!--/.nav-collapse -->
+         </div>
+      </nav>
+      <!-- /header  -->
+      <div class="side-collapse-container">
+         <section class="header-11-sub profile-page">
+            <div class="container">
+               <div class="row ">
+                  <div class="col-md-3">
+                     <ul class="sidebar">
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Founders</a></li>
+                     </ul>
+                  </div>
                   
-                  <h6>Send a friend $20 Travelog credit. You'll get $20 when they travel and $80 when they host. <a href="#">Learn More</a></h6>
-               <div class="col-md-12 text-center">
-<a href="">Referrals Terms and Conditions</a>
-</div>
+                  <div class="col-md-9 aboutus-content">
+                  
+                  <h4>About Us</h4>
 
-               <div class="col-md-6">
-<form class="form-inline">
-  
-  <div class="form-group">
-    <input type="password" class="form-control" id="" placeholder="Enter email addresses saperated by comma">
-  </div>
-  
-  <button type="submit" class="btn btn-shareemail">Send</button>
-</form>
-<h6> Import contacts from Gmail</h6>
-<p>Travelog stores these contacts so you can easily send anything to your friends. To remove them, visit your account settings.</p>
-</div>
-               <div class="col-md-6">
-<form class="form-inline">
-  
-  <div class="form-group">
-    <input type="password" class="form-control" id="" placeholder="www.travelog.com/c/macv3?s=8">
-  </div>
-  
-  <button type="submit" class="btn btn-sharefacebook">Facebook</button>
-</form>
-
-</div>
-
-
+<h6>Founded in August of 2008 and based in San Francisco, California, Airbnb is a trusted community marketplace for people to list, discover, and book unique accommodations around the world — online or from a mobile phone or tablet.<br>
+<br>
+Whether an apartment for a night, a castle for a week, or a villa for a month, Airbnb connects people to unique travel experiences, at any price point, in more than 34,000 cities and 190 countries. And with world-class customer service and a growing community of users, Airbnb is the easiest way for people to monetize their extra space and showcase it to an audience of millions.</h6>
                   
                   
+
+                     
+                     
+                  </div>
                </div>
-               <!--booking-->
-               
-               
-               <!--booking-->
             </div>
          </section>
-
-         
-
-         
-         <!-- footer-3 -->
          <footer class="footer-3">
             <div class="container">
                <div class="row v-center">
@@ -312,11 +300,9 @@
                </div>
             </div>
          </footer>
+         <!-- full-box-border -->
       </div>
-      <!-- Placed at the end of the document so the pages load faster -->
-      <script src="assets/flat-ui/js/bootstrap.min.js"></script>
-      <script src="assets/common-files/js/modernizr.custom.js"></script>
-      <script src="assets/common-files/js/startup-kit.js"></script>
-      <script src="assets/samples/sample-04/js/script.js"></script>
+      <!-- /side-collapse-container  -->
+      
    </body>
 </html>

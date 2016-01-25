@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>About</title>
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+      <link rel="shortcut icon" href="assets/flat-ui/images/favicon.ico">
+      <link rel="stylesheet" href="css/lib/bootstrap.css">
+      <link rel="stylesheet" href="css/lib/bootstrap-select.css">
+      <link rel="stylesheet" type="text/css" href="css/custom.css">
+      
+      <link rel="stylesheet" href="assets/common-files/css/icon-font.css">
+      <link rel="stylesheet" href="assets/samples/sample-04/css/style.css">
+      <link rel="stylesheet" type="text/css" href="assets/samples/sample-04/css/header.css">
+       <!--need to be on top-->
+		<script src="assets/common-files/js/jquery-1.10.2.min.js"></script>
+      <script src="assets/samples/sample-04/js/custom.js"></script>
+    <!--need to be on top-->
+
+      <!--<script src="js/lib/jquery.js"></script>-->
+      <script src="js/lib/bootstrap.js"></script>
+      <script src="js/lib/bootstrap-select.js"></script>
+
+   </head>
+   <body>
+      <!-- header  -->
+     <header class="header-10">
+            <div class="container">
+               <div class="navbar col-sm-12" role="navigation">
+                  <div class="navbar-header nav-dark">
+                     <button type="button" class="navbar-toggle"></button>
+                     <a class="brand" href="#">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                           width="150px" height="96px" viewBox="0 0 380 96" enable-background="new 0 0 380 96" xml:space="preserve">
+                           <polygon fill-rule="evenodd" clip-rule="evenodd" fill="#000001" points="155.824,33.686 155.824,77.865 146.504,77.865 
+                              146.504,33.686 129.771,33.686 129.771,25.393 173.292,25.393 173.292,33.686 "/>
+                           <g>
+                              <defs>
+                                 <rect id="SVGID_1_" width="380" height="96"/>
+                              </defs>
+                              <clipPath id="SVGID_2_">
+                                 <use xlink:href="#SVGID_1_"  overflow="visible"/>
+                              </clipPath>
+                              <path clip-path="url(#SVGID_2_)" fill-rule="evenodd" clip-rule="evenodd" fill="#000001" d="M185.926,47.85
+                                 c-1.602-1.076-3.351-1.615-5.26-1.615c-2.079,0-3.926,0.942-5.54,2.837c-1.615,1.885-2.422,4.195-2.422,6.924v21.869h-8.954V39.484
+                                 h8.954v3.522c2.507-2.837,5.846-4.256,10.005-4.256c3.058,0,5.394,0.465,7.021,1.407L185.926,47.85z"/>
+                              <path clip-path="url(#SVGID_2_)" fill-rule="evenodd" clip-rule="evenodd" fill="#000001" d="M210.585,74.036
+                                 c-0.808,1.334-2.226,2.436-4.244,3.291c-2.019,0.845-4.122,1.272-6.323,1.272c-4.122,0-7.376-1.04-9.736-3.107
+                                 c-2.361-2.066-3.548-5.003-3.548-8.807c0-4.452,1.664-7.938,4.991-10.445s8.06-3.767,14.188-3.767c1.053,0,2.287,0.171,3.72,0.513
+                                 c0-4.5-2.851-6.752-8.551-6.752c-3.363,0-6.188,0.563-8.452,1.689l-1.933-6.972c3.083-1.468,6.752-2.202,11.009-2.202
+                                 c5.847,0,10.141,1.333,12.867,4c2.729,2.666,4.085,7.706,4.085,15.142v8.207c0,5.113,1.028,8.33,3.083,9.639
+                                 c-0.746,1.309-1.565,2.104-2.471,2.409s-1.945,0.453-3.119,0.453c-1.297,0-2.458-0.477-3.486-1.443
+                                 C211.638,76.201,210.939,75.163,210.585,74.036 M209.704,59.738c-1.528-0.294-2.666-0.439-3.437-0.439
+                                 c-7.058,0-10.58,2.336-10.58,6.996c0,3.462,1.994,5.186,5.969,5.186c5.369,0,8.048-2.715,8.048-8.134V59.738z"/>
+                              <polygon clip-path="url(#SVGID_2_)" fill-rule="evenodd" clip-rule="evenodd" fill="#000001" points="238.383,78.6 235.153,78.6 
+                                 217.834,39.483 227.668,39.483 236.805,62.968 246.676,39.483 256.143,39.483 	"/>
+                              <path clip-path="url(#SVGID_2_)" fill-rule="evenodd" clip-rule="evenodd" fill="#000001" d="M290.115,61.427h-27.423
+                                 c0.171,3.058,1.224,5.443,3.156,7.143c1.933,1.7,4.538,2.545,7.816,2.545c4.097,0,7.204-1.053,9.332-3.156l3.474,6.825
+                                 c-3.156,2.544-7.852,3.816-14.115,3.816c-5.847,0-10.47-1.713-13.883-5.149c-3.4-3.426-5.1-8.22-5.1-14.36
+                                 c0-6.054,1.871-10.959,5.602-14.714c3.743-3.755,8.219-5.626,13.454-5.626c5.566,0,10.03,1.663,13.394,4.99
+                                 s5.052,7.559,5.052,12.696C290.874,57.537,290.616,59.2,290.115,61.427 M263.06,54.675h18.788c-0.624-5.626-3.719-8.44-9.284-8.44
+                                 C267.463,46.235,264.295,49.049,263.06,54.675"/>
+                              <path clip-path="url(#SVGID_2_)" fill-rule="evenodd" clip-rule="evenodd" fill="#000001" d="M293.72,25.197l8.953-2.153v43.127
+                                 c0,4.722,1.419,7.535,4.257,8.452c-1.382,2.654-3.755,3.976-7.106,3.976c-4.073,0-6.104-2.825-6.104-8.465V25.197z"/>
+                              <path clip-path="url(#SVGID_2_)" fill-rule="evenodd" clip-rule="evenodd" fill="#000001" d="M306.042,58.589
+                                 c0-5.859,1.688-10.629,5.063-14.311c3.376-3.681,7.841-5.528,13.382-5.528c5.822,0,10.335,1.773,13.563,5.308
+                                 c3.218,3.535,4.832,8.378,4.832,14.531c0,6.116-1.639,10.984-4.917,14.592c-3.291,3.608-7.779,5.418-13.479,5.418
+                                 c-5.835,0-10.36-1.821-13.589-5.467C307.656,69.487,306.042,64.631,306.042,58.589 M315.362,58.589
+                                 c0,8.452,3.046,12.672,9.125,12.672c2.788,0,4.99-1.101,6.629-3.291c1.627-2.201,2.446-5.332,2.446-9.381
+                                 c0-8.33-3.021-12.5-9.075-12.5c-2.801,0-5.015,1.1-6.654,3.29C316.182,51.58,315.362,54.65,315.362,58.589"/>
+                              <path clip-path="url(#SVGID_2_)" fill-rule="evenodd" clip-rule="evenodd" fill="#000001" d="M344.789,87.712l5.663-6.984
+                                 c3.131,2.887,6.617,4.33,10.47,4.33c2.581,0,4.709-0.392,6.386-1.162c1.675-0.771,2.507-1.835,2.507-3.18
+                                 c0-2.288-1.848-3.437-5.554-3.437c-1.015,0-2.507,0.122-4.488,0.366s-3.475,0.366-4.489,0.366c-6.164,0-9.247-2.214-9.247-6.641
+                                 c0-1.26,0.514-2.508,1.529-3.731c1.027-1.223,2.214-2.116,3.571-2.69c-4.379-2.825-6.567-6.837-6.567-12.023
+                                 c0-4.098,1.504-7.486,4.524-10.164c3.021-2.679,6.728-4.012,11.132-4.012c3.448,0,6.336,0.648,8.659,1.932l3.522-4.061l6.214,5.59
+                                 l-4.281,3.107c1.48,2.238,2.227,4.88,2.227,7.926c0,4.354-1.333,7.828-4,10.433c-2.68,2.606-6.042,3.914-10.115,3.914
+                                 c-0.648,0-1.505-0.061-2.581-0.171l-1.479-0.196c-0.159,0-0.796,0.257-1.896,0.771c-1.101,0.525-1.651,1.052-1.651,1.602
+                                 c0,0.966,0.819,1.444,2.472,1.444c0.746,0,1.993-0.185,3.729-0.551c1.749-0.367,3.241-0.551,4.489-0.551
+                                 c8.721,0,13.088,3.511,13.088,10.52c0,3.877-1.749,6.923-5.235,9.137c-3.499,2.213-7.706,3.314-12.635,3.314
+                                 C354.867,92.91,349.547,91.173,344.789,87.712 M353.742,52.938c0,2.251,0.636,4.062,1.896,5.419c1.26,1.357,2.96,2.042,5.088,2.042
+                                 c2.141,0,3.779-0.659,4.941-1.993c1.149-1.321,1.725-3.144,1.725-5.468c0-1.907-0.624-3.534-1.859-4.855
+                                 c-1.235-1.333-2.838-1.993-4.807-1.993c-2.067,0-3.743,0.635-5.039,1.92C354.391,49.281,353.742,50.932,353.742,52.938"/>
+                              <path clip-path="url(#SVGID_2_)" fill-rule="evenodd" clip-rule="evenodd" fill="#F6911E" d="M308.222,30.591
+                                 c0-0.745,0.26-1.379,0.786-1.9c0.525-0.526,1.159-0.786,1.909-0.786c0.751,0,1.385,0.26,1.91,0.786
+                                 c0.526,0.521,0.787,1.155,0.787,1.9c0,0.751-0.261,1.389-0.787,1.915c-0.525,0.526-1.159,0.792-1.91,0.792
+                                 c-0.75,0-1.384-0.266-1.909-0.792C308.481,31.98,308.222,31.342,308.222,30.591"/>
+                              <path clip-path="url(#SVGID_2_)" fill-rule="evenodd" clip-rule="evenodd" fill="#F6911E" d="M329.469,15.941l-1.841,3.21
+                                 c-1.012-0.94-2.363-1.411-4.062-1.411c-1.629,0-2.917,0.541-3.863,1.629c-0.947,1.088-1.418,2.593-1.418,4.516
+                                 c0,3.875,1.841,5.815,5.528,5.815c1.593,0,2.999-0.529,4.216-1.587l1.581,3.387c-1.252,0.781-2.346,1.281-3.281,1.487
+                                 c-0.935,0.206-2.04,0.311-3.31,0.311c-2.853,0-5.099-0.828-6.744-2.492c-1.647-1.658-2.47-3.97-2.47-6.921
+                                 c0-2.911,0.899-5.263,2.705-7.056c1.799-1.793,4.257-2.687,7.366-2.687C326.023,14.142,327.888,14.741,329.469,15.941"/>
+                              <path clip-path="url(#SVGID_2_)" fill-rule="evenodd" clip-rule="evenodd" fill="#F6911E" d="M329.587,23.679
+                                 c0-2.816,0.812-5.11,2.435-6.88c1.623-1.77,3.769-2.657,6.433-2.657c2.799,0,4.969,0.853,6.521,2.552
+                                 c1.546,1.699,2.322,4.027,2.322,6.985c0,2.94-0.788,5.28-2.364,7.015c-1.581,1.735-3.739,2.605-6.479,2.605
+                                 c-2.805,0-4.98-0.877-6.532-2.629C330.363,28.917,329.587,26.583,329.587,23.679 M334.067,23.679c0,4.063,1.464,6.092,4.387,6.092
+                                 c1.341,0,2.399-0.53,3.187-1.582c0.783-1.058,1.177-2.563,1.177-4.51c0-4.004-1.453-6.009-4.363-6.009
+                                 c-1.347,0-2.41,0.529-3.198,1.582C334.462,20.31,334.067,21.786,334.067,23.679"/>
+                              <path clip-path="url(#SVGID_2_)" fill-rule="evenodd" clip-rule="evenodd" fill="#F6911E" d="M370.692,32.945V21.379
+                                 c0-2.428-1.088-3.639-3.263-3.639c-0.641,0-1.264,0.188-1.864,0.57c-0.6,0.376-1.018,0.817-1.259,1.311v13.324h-4.304V20.704
+                                 c0-0.905-0.282-1.629-0.847-2.164s-1.358-0.799-2.382-0.799c-0.541,0-1.129,0.199-1.77,0.605c-0.636,0.406-1.1,0.847-1.388,1.335
+                                 v13.265h-4.305V14.495h2.964l0.882,1.623c1.194-1.318,2.74-1.976,4.634-1.976c2.451,0,4.293,0.67,5.532,2.011
+                                 c0.541-0.612,1.294-1.1,2.259-1.464c0.971-0.365,1.935-0.547,2.898-0.547c2.059,0,3.658,0.588,4.798,1.764
+                                 c1.147,1.181,1.717,2.799,1.717,4.857v12.183H370.692z"/>
+                              <path clip-path="url(#SVGID_2_)" fill-rule="evenodd" clip-rule="evenodd" fill="#000001" d="M43.775,26.932
+                                 c4.414-2.885,9.28-4.53,14.189-5.022c-0.387,1.341-0.977,3.324-1.463,4.696c-3.566,0.615-7.066,1.952-10.287,4.057
+                                 c-0.481,0.314-0.948,0.642-1.402,0.98c-0.73-1.082-1.914-2.518-2.612-3.613C42.711,27.651,43.236,27.284,43.775,26.932
+                                 M82.979,30.424c-0.585,1.084-1.474,2.647-2.268,4.023c1.213,1.246,2.325,2.625,3.312,4.136c4.127,6.313,5.304,13.703,3.871,20.543
+                                 c-1.433,6.841-5.478,13.137-11.792,17.264c-6.313,4.127-13.703,5.305-20.544,3.872c-6.84-1.433-13.136-5.477-17.263-11.79
+                                 s-5.305-13.704-3.872-20.545c0.115-0.547,0.247-1.09,0.394-1.629l-4.298-1.177c-0.172,0.626-0.324,1.256-0.457,1.892
+                                 c-1.667,7.958-0.298,16.554,4.502,23.897c4.8,7.344,12.123,12.047,20.081,13.713c7.958,1.667,16.553,0.298,23.896-4.502
+                                 c7.344-4.799,12.047-12.123,13.714-20.081c1.668-7.958,0.299-16.553-4.501-23.896C86.36,34.011,84.753,32.102,82.979,30.424"/>
+                              <path clip-path="url(#SVGID_2_)" fill-rule="evenodd" clip-rule="evenodd" fill="#000001" d="M38.758,50.82
+                                 c1.236-3.191,4.713-1.892,8.445-0.496c2.103,0.786,4.33,1.619,5.302,1.364l-0.002-0.007c2.415-0.64,6.204-3.867,8.607-5.913
+                                 c1.436-1.221,2.475-2.108,3.238-2.235l1.241,0.233c4.077,2.378,5.281,7.033,4.352,11.867c-0.398,2.074-1.194,4.188-2.322,6.15
+                                 c-1.122,1.95-2.585,3.769-4.324,5.263c-4.49,3.863-10.738,5.565-17.663,2.01c-1.538-0.79-2.86-1.819-3.953-3.085
+                                 c-1.085-1.257-1.935-2.728-2.542-4.408c-0.715-1.976-1.109-3.852-1.183-5.623C37.878,54.106,38.146,52.397,38.758,50.82
+                                 M65.458,42.91c4.097,1.127,8.265,0.486,11.69-1.462c3.425-1.948,6.106-5.201,7.233-9.3c1.126-4.097,0.485-8.265-1.462-11.69
+                                 c-1.948-3.424-5.202-6.106-9.301-7.232c-4.097-1.127-8.264-0.485-11.688,1.462l-0.127,0.078c-3.366,1.958-5.996,5.181-7.106,9.221
+                                 c-1.128,4.098-0.487,8.266,1.462,11.691l0.079,0.126C58.195,39.169,61.418,41.799,65.458,42.91 M31.63,29.378
+                                 c-2.685-0.738-5.46,0.84-6.198,3.525c-0.738,2.684,0.84,5.46,3.525,6.198c2.685,0.738,5.461-0.84,6.198-3.525
+                                 C35.895,32.891,34.315,30.115,31.63,29.378 M67.479,21.746c3.567,0.981,5.662,4.666,4.682,8.232
+                                 c-0.981,3.566-4.666,5.662-8.232,4.682c-3.566-0.981-5.662-4.666-4.682-8.232C60.228,22.861,63.914,20.765,67.479,21.746
+                                 M30.584,47.583c3.411,0.937,6.882,0.403,9.732-1.217c2.85-1.621,5.084-4.331,6.021-7.741c0.938-3.411,0.403-6.882-1.218-9.732
+                                 c-1.62-2.85-4.33-5.085-7.741-6.022c-3.41-0.938-6.881-0.403-9.731,1.218s-5.084,4.331-6.021,7.741
+                                 c-0.936,3.405-0.401,6.875,1.222,9.729l-0.005,0.003C24.464,44.411,27.173,46.646,30.584,47.583 M38.447,43.078
+                                 c2.009-1.141,3.583-3.051,4.244-5.456c0.661-2.405,0.285-4.852-0.857-6.861c-1.143-2.008-3.053-3.582-5.459-4.244
+                                 c-2.404-0.661-4.851-0.284-6.859,0.858c-2.009,1.142-3.582,3.052-4.244,5.458c-0.663,2.41-0.289,4.855,0.85,6.858l0.003,0.004
+                                 l0.004-0.003c1.142,2.009,3.052,3.583,5.458,4.244C33.992,44.597,36.439,44.221,38.447,43.078 M75.28,38.162
+                                 c-2.583,1.469-5.727,1.952-8.82,1.101c-3.054-0.84-5.485-2.815-6.956-5.339l-0.06-0.116c-1.468-2.582-1.952-5.725-1.101-8.818
+                                 c0.84-3.054,2.816-5.485,5.339-6.956l0.116-0.06c2.582-1.47,5.726-1.952,8.819-1.102c3.092,0.85,5.547,2.873,7.015,5.455
+                                 c1.47,2.582,1.952,5.726,1.102,8.818C79.884,34.238,77.862,36.694,75.28,38.162 M45.894,53.809
+                                 c-1.942-0.726-3.568-1.874-3.659-1.64c-0.429,1.108-0.617,2.316-0.563,3.623c0.057,1.372,0.379,2.871,0.966,4.493
+                                 c0.458,1.267,1.08,2.353,1.858,3.255c0.777,0.899,1.727,1.637,2.841,2.209c5.316,2.729,10.103,1.431,13.539-1.525
+                                 c1.404-1.206,2.597-2.694,3.523-4.305c0.921-1.6,1.567-3.312,1.887-4.977c0.566-2.95,0.097-5.741-1.742-7.368
+                                 c-0.208,0.241-0.512,0.591-1.025,1.026c-2.66,2.266-6.856,5.838-10.054,6.685l-0.003-0.006
+                                 C51.331,55.843,48.535,54.797,45.894,53.809"/>
+                              <path clip-path="url(#SVGID_2_)" fill-rule="evenodd" clip-rule="evenodd" fill="#000001" d="M87.016,28.579
+                                 c0.505-1.623-3.038-0.75-2.506-2.222c5.637-15.591,12.692-22.885,19.21-25.082c7.613-2.569,14.404,1.503,17.855,7.68
+                                 c3.396,6.078,3.535,14.242-2.059,20.025c-3.728,3.855-10.033,6.59-19.659,6.716c-4.355,0.057,1.057-2.159-4.727-3.305
+                                 c-1.265-0.248-7.211-1.101-6.964-2.367C88.193,29.887,86.967,28.705,87.016,28.579 M105.198,5.693
+                                 c-5.6,1.89-11.844,8.861-17.032,24.33c15.128,2.566,23.795,0.06,27.99-4.277c3.996-4.132,3.84-10.066,1.347-14.527
+                                 C115.066,6.858,110.371,3.95,105.198,5.693"/>
+                              <path clip-path="url(#SVGID_2_)" fill-rule="evenodd" clip-rule="evenodd" fill="#000001" d="M32.523,55.443
+                                 c-0.984,0.972,0.657,0.732-0.303,1.521c-7.496,6.139-14.272,6.876-19.568,4.955c-5.855-2.123-9.793-7.573-10.913-12.618
+                                 C0.461,43.552,2.526,38.247,8.961,37.64c4.722-0.446,12.151,2.192,22.747,10.442c1.087,0.847,0.267,2.808,1.424,3.778
+                                 c0.987,0.824,0.513,0.99-0.313,1.979C32.748,53.925,32.604,55.37,32.523,55.443 M14.246,57.534
+                                 c4.061,1.474,9.483,0.658,15.795-4.829C19.893,44.546,13.265,41.911,9.389,42.277c-2.91,0.275-3.77,3.021-3.103,6.017
+                                 C7.108,51.995,9.982,55.988,14.246,57.534"/>
+                              <path clip-path="url(#SVGID_2_)" fill-rule="evenodd" clip-rule="evenodd" fill="#000001" d="M108.283,80.094
+                                 c-1.251-0.297-2.023-1.553-1.726-2.804c0.298-1.251,1.553-2.023,2.804-1.726l5.103,1.197c2.098,0.492,4.166,0.978,6.054,1.437
+                                 c-5.357-7.692-9.199-15.733-9.213-15.763c-0.559-1.16-0.072-2.555,1.087-3.113c1.16-0.56,2.555-0.073,3.114,1.087
+                                 c0.017,0.033,5.731,11.994,12.762,20.262c0.555,0.606,0.772,1.49,0.489,2.324c-0.413,1.22-1.738,1.875-2.959,1.461
+                                 c-2.258-0.771-7.235-1.938-12.393-3.146C112.333,81.059,111.303,80.817,108.283,80.094"/>
+                              <path clip-path="url(#SVGID_2_)" fill-rule="evenodd" clip-rule="evenodd" fill="#F6911E" d="M91.528,27.37
+                                 c7.211,6.609,10.703,16.011,10.774,25.591c0.036,4.897-0.819,9.838-2.524,14.467c-1.712,4.646-4.29,9.001-7.692,12.715
+                                 c-6.308,6.882-15.408,11.497-27.034,11.584l-0.019-4.723c10.173-0.075,18.102-4.078,23.572-10.046
+                                 c2.961-3.23,5.217-7.056,6.728-11.16c1.518-4.119,2.279-8.497,2.247-12.817c-0.061-8.328-3.056-16.464-9.236-22.129L91.528,27.37z"
+                                 />
+                              <path clip-path="url(#SVGID_2_)" fill-rule="evenodd" clip-rule="evenodd" fill="#F6911E" d="M99.44,31.267
+                                 c7.057,6.468,10.475,15.669,10.544,25.042c0.035,4.791-0.801,9.624-2.469,14.152c-1.675,4.545-4.197,8.807-7.526,12.44
+                                 c-6.172,6.733-15.076,11.252-26.452,11.336l-0.019-4.723c9.922-0.072,17.655-3.978,22.99-9.798
+                                 c2.888-3.15,5.088-6.882,6.563-10.885c1.48-4.019,2.222-8.289,2.191-12.504c-0.059-8.123-2.979-16.057-9.006-21.581L99.44,31.267z"
+                                 />
+                              <path clip-path="url(#SVGID_2_)" fill-rule="evenodd" clip-rule="evenodd" fill="#000001" d="M52.145,81.326
+                                 c0.993,1.332,2.093,2.61,3.3,3.822c6.856,6.885,15.856,10.34,24.863,10.359c9.007,0.019,18.021-3.398,24.907-10.255
+                                 c6.885-6.856,10.341-15.856,10.359-24.863c0.019-9.007-3.397-18.021-10.254-24.907c-6.146-6.171-14.013-9.587-22.065-10.242
+                                 c0.001,1.731-0.152,3.282-0.461,4.653c7.009,0.552,13.862,3.516,19.213,8.889c5.946,5.971,8.909,13.788,8.892,21.598
+                                 c-0.016,7.81-3.012,15.613-8.984,21.56c-5.971,5.947-13.788,8.909-21.597,8.893c-7.482-0.016-14.96-2.767-20.803-8.251
+                                 L52.145,81.326z"/>
+                           </g>
+                        </svg>
+                     </a>
+                  </div>
+                  <div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">
+                  
+              
+<form class="navbar-form navbar-right navsearch-form">
+  <div class="form-group">
+    <input type="text" class="form-control navsearch" placeholder="Search" style="width: 440px;">
+  </div>
+</form>
+                  
+                  
+                     <ul class="nav pull-left">
+                        <li><a href="#">Become a Merchant
+                           </a>
+                        </li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Sign Up</a></li>
+                        
+                        
+                        
+                          <!--dropdown x-->
+                        <li class="dropdown">
+                           <a href="#" class="dropdown-toggle dropdownselectactive" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sarah <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jeanniehuang/128.jpg" width="40" class="img-circle profile-nav"/></a>
+                <ul class="dropdown-menu">
+                              <li><a href="#">Edit Profile</a></li>
+                              <li><a href="#">Invite Friends</a></li>
+                              <li><a href="#">Account Settings</a></li>
+                              <li><a href="#">Log Out</a></li>
+                </ul>
+              </li>
+                        <!--dropdown x-->
+                     </ul>
+                  </div>
+               </div>
+            </div>
+   </header>
+      <!-- Second navbar -->
+      <nav class="navbar navbar-static-top nav-second-profile subnav-dark">
+         <div class="container">
+            <div id="" class="">
+               <ul class="nav navbar-nav ">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Press</a></li>
+                  <li><a href="#">Career</a></li>
+                  <li><a href="#">Blog</a></li>
+               </ul>
+            </div>
+            <!--/.nav-collapse -->
+         </div>
+      </nav>
+      <!-- /header  -->
+      <div class="side-collapse-container">
+         <section class="header-11-sub profile-page">
+            <div class="container">
+               <div class="row ">
+                  
+                  
+                  <div class="col-md-12 terms-content">
+                  
+                  <h4>Terms of Service</h4>
+
+<p>
+PLEASE READ THESE TERMS OF SERVICE CAREFULLY AS THEY CONTAIN IMPORTANT INFORMATION REGARDING YOUR LEGAL RIGHTS, REMEDIES AND OBLIGATIONS. THESE INCLUDE VARIOUS LIMITATIONS AND EXCLUSIONS, A CLAUSE THAT GOVERNS THE JURISDICTION AND VENUE OF DISPUTES, AND OBLIGATIONS TO COMPLY WITH APPLICABLE LAWS AND REGULATIONS.
+<br>
+IN PARTICULAR, HOSTS SHOULD UNDERSTAND HOW THE LAWS WORK IN THEIR RESPECTIVE CITIES. SOME CITIES HAVE LAWS THAT RESTRICT THEIR ABILITY TO HOST PAYING GUESTS FOR SHORT PERIODS. THESE LAWS ARE OFTEN PART OF A CITY'S ZONING OR ADMINISTRATIVE CODES. IN MANY CITIES, HOSTS MUST REGISTER, GET A PERMIT, OR OBTAIN A LICENSE BEFORE LISTING A PROPERTY OR ACCEPTING GUESTS. CERTAIN TYPES OF SHORT-TERM BOOKINGS MAY BE PROHIBITED ALTOGETHER. LOCAL GOVERNMENTS VARY GREATLY IN HOW THEY ENFORCE THESE LAWS. PENALTIES MAY INCLUDE FINES OR OTHER ENFORCEMENT. HOSTS SHOULD REVIEW LOCAL LAWS BEFORE LISTING A SPACE ON AIRBNB.<br>
+<br>
+Last Updated: July 6, 2015<br>
+<br>
+TERMS OF SERVICE<br>
+<br>
+If you are using the Site, Application or Services and you reside in the USA, you are contracting with Airbnb, Inc. with respect to use of the Airbnb Site, Application or Services, and with Airbnb Payments, Inc. with respect to any payments or payouts from or to you conducted through the Site, Application or Services. If you reside outside of the USA, you are contracting with Airbnb Ireland with respect to use of the Airbnb Site, Application or Services, and with Airbnb Payments UK Ltd. with respect to any payments or payouts from or to you conducted through the Site, Application or Services. If you initially reside in the USA and contract with Airbnb, Inc. and/or Airbnb Payments, Inc., but subsequently change your residence to outside of the USA, you will contract with Airbnb Ireland from the date on which your place of residence changes, and vice versa. (Airbnb, Inc., Airbnb Ireland, Airbnb Payments UK Ltd. and Airbnb Payments, Inc. (the last two solely with respect to payments and payouts related activity) are each hereinafter referred to as "Airbnb", "we", "us", or "our"). Airbnb Payments, Inc. and Airbnb Payments UK Ltd. shall individually and collectively, as appropriate, be referred to herein as "Airbnb Payments".
+<br>
+Airbnb provides an online platform that connects hosts who have accommodations to rent with guests seeking to rent such accommodations (collectively, the "Services"), which Services are accessible at http://www.airbnb.com and any other websites through which Airbnb makes the Services available (collectively, the "Site") and as applications for mobile devices (the "Application"). By using the Site or Application, you agree to comply with and be legally bound by the terms and conditions of these Terms of Service ("Terms"), whether or not you become a registered user of the Services. These Terms govern your access to and use of the Site, Application and Services and all Collective Content (defined below), and your participation in the Referral Program (defined below), and constitute a binding legal agreement between you and Airbnb. Please also read carefully our Privacy Policy at http://www.airbnb.com/terms/privacy_policy. If you do not agree to these Terms, you have no right to obtain information from or otherwise continue using the Site, Application or Services. Failure to use the Site, Application or Services in accordance with these Terms may subject you to civil and criminal penalties.
+<br>
+THE SITE, APPLICATION AND SERVICES COMPRISE AN ONLINE PLATFORM THROUGH WHICH HOSTS MAY CREATE LISTINGS FOR ACCOMMODATIONS AND GUESTS MAY LEARN ABOUT AND BOOK ACCOMMODATIONS DIRECTLY WITH THE HOSTS. YOU UNDERSTAND AND AGREE THAT AIRBNB IS NOT A PARTY TO ANY AGREEMENTS ENTERED INTO BETWEEN HOSTS AND GUESTS, NOR IS AIRBNB A REAL ESTATE BROKER, AGENT OR INSURER. AIRBNB HAS NO CONTROL OVER THE CONDUCT OF HOSTS, GUESTS AND OTHER USERS OF THE SITE, APPLICATION AND SERVICES OR ANY ACCOMMODATIONS, AND DISCLAIMS ALL LIABILITY IN THIS REGARD TO THE MAXIMUM EXTENT PERMITTED BY LAW.<br>
+<br>
+Key Terms<br>
+<br>
+"Airbnb Content" means all Content that Airbnb makes available through the Site, Application, or Services, including any Content licensed from a third party, but excluding Member Content.  <br>
+"Booking Request Period" means the time period starting from the time when a booking is requested by a Guest (as determined by Airbnb in its sole discretion), within which a Host may decide whether to confirm or reject that booking request, as stated on the Site, Application or Services. Different Booking Request Periods may apply in different places.  
+"Collective Content" means Member Content and Airbnb Content.  <br>
+"Content" means text, graphics, images, music, software (excluding the Application), audio, video, information or other materials.  
+"Guest" means a Member who requests from a Host a booking of an Accommodation via the Site, Application or Services, or a Member who stays at an Accommodation and is not the Host for such Accommodation.  <br>
+"Host" means a Member who creates a Listing via the Site, Application and Services. <br> 
+"Listing" means an Accommodation that is listed by a Host as available for rental via the Site, Application, and Services.  
+"Member" means a person who completes Airbnb's account registration process, including but not limited to Hosts and Guests, as described under "Account Registration" below.  <br>
+"Member Content" means all Content that a Member posts, uploads, publishes, submits, transmits, or includes in their Listing or Member profile to be made available through the Site, Application or Services.  
+"Tax" or "Taxes" mean any sales taxes, value added taxes (VAT), goods and services taxes (GST), transient occupancy taxes, tourist or other visitor taxes, accommodation or lodging taxes, fees (such as convention center fees) that accommodation providers may be required by law to collect and remit to governmental agencies, and other similar municipal, state, federal and national indirect or other withholding and personal or corporate income taxes.<br>
+<br>
+Certain areas of the Site and Application (and your access to or use of certain aspects of the Services or Collective Content) may have different terms and conditions posted or may require you to agree with and accept additional terms and conditions. If there is a conflict between these Terms and terms and conditions posted for a specific area of the Site, Application, Services, or Collective Content, the latter terms and conditions will take precedence with respect to your use of or access to that area of the Site, Application, Services, or Collective Content.<br>
+<br>
+YOU ACKNOWLEDGE AND AGREE THAT, BY ACCESSING OR USING THE SITE, APPLICATION OR SERVICES OR BY DOWNLOADING OR POSTING ANY CONTENT FROM OR ON THE SITE, VIA THE APPLICATION OR THROUGH THE SERVICES, YOU ARE INDICATING THAT YOU HAVE READ, AND THAT YOU UNDERSTAND AND AGREE TO BE BOUND BY THESE TERMS, WHETHER OR NOT YOU HAVE REGISTERED WITH THE SITE AND APPLICATION. IF YOU DO NOT AGREE TO THESE TERMS, THEN YOU HAVE NO RIGHT TO ACCESS OR USE THE SITE, APPLICATION, SERVICES, OR COLLECTIVE CONTENT. If you accept or agree to these Terms on behalf of a company or other legal entity, you represent and warrant that you have the authority to bind that company or other legal entity to these Terms and, in such event, "you" and "your" will refer and apply to that company or other legal entity.
+<br>
+Modification<br>
+<br>
+Airbnb reserves the right, at its sole discretion, to modify the Site, Application or Services or to modify these Terms, including the Service Fees, at any time and without prior notice. If we modify these Terms, we will either post the modification on the Site or via the Application or otherwise provide you with notice of the modification. We will also update the "Last Updated Date" at the top of these Terms. By continuing to access or use the Site, Application or Services after we have posted a modification on the Site or via the Application or have provided you with notice of a modification, you are indicating that you agree to be bound by the modified Terms. If the modified Terms are not acceptable to you, your only recourse is to cease using the Site, Application and Services.
+<br>
+Eligibility<br>
+<br>
+The Site, Application and Services are intended solely for persons who are 18 or older. Any access to or use of the Site, Application or Services by anyone under 18 is expressly prohibited. By accessing or using the Site, Application or Services you represent and warrant that you are 18 or older.
+<br>
+How the Site, Application and Services Work<br>
+<br>
+The Site, Application and Services can be used to facilitate the listing and booking of residential and other properties ("Accommodations"). Such Accommodations are included in Listings on the Site, Application and Services by Hosts. You may view Listings as an unregistered visitor to the Site, Application and Services; however, if you wish to book an Accommodation or create a Listing, you must first register to create an Airbnb Account (defined below).
+
+As stated above, Airbnb makes available an online platform or marketplace with related technology for Guests and Hosts to meet online and arrange for bookings of Accommodations directly with each other. Airbnb is not an owner or operator of properties, including, but not limited to, hotel rooms, motel rooms, other lodgings or Accommodations, nor is it a provider of properties, including, but not limited to, hotel rooms, motel rooms, other lodgings or Accommodations and Airbnb does not own, sell, resell, furnish, provide, rent, re-rent, manage and/or control properties, including, but not limited to, hotel rooms, motel rooms, other lodgings or Accommodations or transportation or travel services. Unless explicitly specified otherwise in the Airbnb platform, Airbnb's responsibilities are limited to: (i) facilitating the availability of the Site, Application and Services and (ii) serving as the limited payment collection agent of each Host for the purpose of accepting payments from Guests on behalf of the Host.
+
+PLEASE NOTE THAT, AS STATED ABOVE, THE SITE, APPLICATION AND SERVICES ARE INTENDED TO BE USED TO FACILITATE HOSTS AND GUESTS CONNECTING AND BOOKING ACCOMMODATIONS DIRECTLY WITH EACH OTHER. AIRBNB CANNOT AND DOES NOT CONTROL THE CONTENT CONTAINED IN ANY LISTINGS AND THE CONDITION, LEGALITY OR SUITABILITY OF ANY ACCOMMODATIONS. AIRBNB IS NOT RESPONSIBLE FOR AND DISCLAIMS ANY AND ALL LIABILITY RELATED TO ANY AND ALL LISTINGS AND ACCOMMODATIONS. ACCORDINGLY, ANY BOOKINGS WILL BE MADE OR ACCEPTED AT THE MEMBER'S OWN RISK.
+
+Account Registration
+
+In order to access certain features of the Site and Application, and to book an Accommodation or create a Listing, you must register to create an account ("Airbnb Account") and become a Member. You may register to join the Services directly via the Site or Application or as described in this section.
+
+You can also register to join by logging into your account with certain third-party social networking sites ("SNS") (including, but not limited to, Facebook; each such account, a "Third-Party Account"), via our Site or Application, as described below. As part of the functionality of the Site, Application and Services, you may link your Airbnb Account with Third-Party Accounts, by either: (i) providing your Third-Party Account login information to Airbnb through the Site, Services or Application; or (ii) allowing Airbnb to access your Third-Party Account, as permitted under the applicable terms and conditions that govern your use of each Third-Party Account. You represent that you are entitled to disclose your Third-Party Account login information to Airbnb and/or grant Airbnb access to your Third-Party Account (including, but not limited to, for use for the purposes described herein), without breach by you of any of the terms and conditions that govern your use of the applicable Third-Party Account and without obligating Airbnb to pay any fees or making Airbnb subject to any usage limitations imposed by such third-party service providers. By granting Airbnb access to any Third-Party Accounts, you understand that Airbnb will access, make available and store (if applicable) any Content that you have provided to and stored in your Third-Party Account ("SNS Content") so that it is available on and through the Site, Services and Application via your Airbnb Account and Airbnb Account profile page. Unless otherwise specified in these Terms, all SNS Content, if any, will be considered to be Member Content for all purposes of these Terms. Depending on the Third-Party Accounts you choose and subject to the privacy settings that you have set in such Third-Party Accounts, personally identifiable information that you post to your Third-Party Accounts will be available on and through your Airbnb Account on the Site, Services and Application. Please note that if a Third-Party Account or associated service becomes unavailable or Airbnb's access to such Third-Party Account is terminated by the third-party service provider, then SNS Content will no longer be available on and through the Site, Services and Application. You have the ability to disable the connection between your Airbnb Account and your Third-Party Accounts, at any time, by accessing the "Settings" section of the Site and Application. PLEASE NOTE THAT YOUR RELATIONSHIP WITH THE THIRD-PARTY SERVICE PROVIDERS ASSOCIATED WITH YOUR THIRD-PARTY ACCOUNTS IS GOVERNED SOLELY BY YOUR AGREEMENT(S) WITH SUCH THIRD-PARTY SERVICE PROVIDERS. Airbnb makes no effort to review any SNS Content for any purpose, including but not limited to for accuracy, legality or non-infringement and Airbnb is not responsible for any SNS Content.
+
+Your Airbnb Account and your Airbnb Account profile page will be created for your use of the Site and Application based upon the personal information you provide to us or that we obtain via an SNS as described above. You may not have more than one (1) active Airbnb Account. You agree to provide accurate, current and complete information during the registration process and to update such information to keep it accurate, current and complete. Airbnb reserves the right to suspend or terminate your Airbnb Account and your access to the Site, Application and Services if you create more than one (1) Airbnb Account, or if any information provided during the registration process or thereafter proves to be inaccurate, fraudulent, not current or incomplete. You are responsible for safeguarding your password. You agree that you will not disclose your password to any third party and that you will take sole responsibility for any activities or actions under your Airbnb Account, whether or not you have authorized such activities or actions. You will immediately notify Airbnb of any unauthorized use of your Airbnb Account.
+
+Accommodation Listings
+
+As a Member, you may create Listings. To create a Listing, you will be asked a variety of questions about the Accommodation to be listed, including, but not limited to, the location, capacity, size, features, and availability of the Accommodation and pricing and related rules and financial terms. In order to be featured in Listings via the Site, Application and Services, all Accommodations must have valid physical addresses. Listings will be made publicly available via the Site, Application and Services. Other Members will be able to book your Accommodation via the Site, Application and Services based upon the information provided in your Listing. You understand and agree that once a Guest requests a booking of your Accommodation, you may not request the Guest to pay a higher price than in the booking request.
+
+You acknowledge and agree that you alone are responsible for any and all Listings and Member Content you post. Accordingly, you represent and warrant that any Listing you post and the booking of, or a Guest's stay at, an Accommodation in a Listing you post (i) will not breach any agreements you have entered into with any third parties, such as homeowners association, condominium, lease or rental agreements, and (ii) will (a) be in compliance with all applicable laws (such as zoning laws and laws governing rentals of residential and other properties), Tax requirements, and rules and regulations that may apply to any Accommodation included in a Listing you post (including having all required permits, licenses and registrations), and (b) not conflict with the rights of third parties. Please note that Airbnb assumes no responsibility for a Host's compliance with any agreements with or duties to third parties, applicable laws, rules and regulations. Airbnb reserves the right, at any time and without prior notice, to remove or disable access to any Listing for any reason, including Listings that Airbnb, in its sole discretion, considers to be objectionable for any reason, in violation of these Terms or Airbnb's then-current Policies and Community Guidelines, or otherwise harmful to the Site, Application or Services.
+
+If you are a Host, you understand and agree that Airbnb does not act as an insurer or as your contracting agent. If a Guest requests a booking of your Accommodation and stays at your Accommodation, any agreement you enter into with such Guest is between you and the Guest and Airbnb is not a party to it. Notwithstanding the foregoing, Airbnb Payments serves as the limited authorized payment collection agent of the Host for the purpose of accepting, on behalf of the Host, payments from Guests of such amounts stipulated by the Host (including cleaning or other fees and/or Taxes).
+
+When you create a Listing, you may also choose to include certain requirements which must be met by the Members who are eligible to request a booking of your Accommodation, such as requiring Members to have a profile picture or verified phone number, in order to book your Accommodation. Any Member wishing to book Accommodations included in Listings with such requirements must meet these requirements. More information on how to set such requirements is available via the "Hosting" section of the Site, Application and Services.
+
+If you are a Host, Airbnb makes certain tools available to you to help you to make informed decisions about which Members you choose to confirm or preapprove for booking for your Accommodation. You acknowledge and agree that, as a Host, you are responsible for your own acts and omissions and are also responsible for the acts and omissions of any individuals who reside at or are otherwise present at the Accommodation at your request or invitation, excluding the Guest (and the individuals the Guest invites to the Accommodation, if applicable.)
+
+Airbnb recommends that Hosts obtain appropriate insurance for their Accommodations. Please review any insurance policy that you may have for your Accommodation carefully, and in particular please make sure that you are familiar with and understand any exclusions to, and any deductibles that may apply for, such insurance policy, including, but not limited to, whether or not your insurance policy will cover the actions or inactions of Guests (and the individuals the Guest invites to the Accommodation, if applicable) while at your Accommodation.
+
+Airbnb may offer Hosts the option of having photographers take photographs of their Accommodations. If you as a Host choose to have a photographer do this, the photographs taken will be made available to you to include in your Listing with a watermark or tag bearing the words "Airbnb.com Verified Photo" or similar wording ("Verified Images"). You agree that you alone are responsible for ensuring that your Listing is accurately represented in the Verified Images. You alone are responsible for using the Verified Images and you warrant that you will cease to use the Verified Images or any other images if such images cease to accurately represent your Listing. All images, materials and content created by these photographers, including Verified Images, constitute Airbnb Content, regardless of whether you include them in your Listing. You agree that Airbnb may use the Verified Images for advertising, marketing, commercial and other business purposes in any media or platform, whether in relation to your Listing or otherwise, without further notice or compensation.
+
+No Endorsement
+
+Airbnb does not endorse any Member or any Accommodation. You understand that Verified Images are intended only to indicate a photographic representation of the Accommodation at the time the photograph was taken. Verified Images are therefore not an endorsement by Airbnb of any Member or any Accommodation. Members are required by these Terms to provide accurate information, and although Airbnb may undertake additional checks and processes designed to help verify or check the identities or backgrounds of users, we do not make any representations about, confirm, or endorse any Member or the Member's purported identity or background.
+
+Any references in the Site, Application or Services to a Member being "verified" or "connected" (or similar language) only indicate that the Member has completed a relevant verification process, and does not represent anything else. Any such description is not an endorsement, certification or guarantee by Airbnb about any Member, including of the Member's identity and whether the Member is trustworthy, safe or suitable. Instead, any such description is intended to be useful information for you to evaluate when you make your own decisions about the identity and suitability of others whom you contact or interact with via the Site, Application and Services. We therefore recommend that you always exercise due diligence and care when deciding whether to stay with a Host or to accept a booking request from a Guest, or to have any other interaction with any other Member. Except as provided in the Airbnb Host Guarantee Terms and Conditions ("Airbnb Host Guarantee"), which is an agreement between Airbnb and Hosts, we are not responsible for any damage or harm resulting from your interactions with other Members.
+
+By using the Site, Application or Services, you agree that any legal remedy or liability that you seek to obtain for actions or omissions of other Members or other third parties will be limited to a claim against the particular Members or other third parties who caused you harm. You agree not to attempt to impose liability on or seek any legal remedy from Airbnb with respect to such actions or omissions. Accordingly, we encourage you to communicate directly with other Members on the Site and Services regarding any bookings or Listings made by you. This limitation shall not apply to any claim by a Host against Airbnb regarding the remittance of payments received from a Guest by Airbnb on behalf of a Host, which instead shall be subject to the limitations described in the section below entitled "Limitation of Liability".
+
+Bookings and Financial Terms
+
+Key definitions
+
+"Accommodation Fees" means the amounts that are due and payable by a Guest in exchange for that Guest's stay in an Accommodation. The Host alone, and not Airbnb, is responsible for the Accommodation Fees for his or her Listing. The Host may in his or her sole discretion decide to include in these amounts (i) a cleaning fee or any other fee permitted on the Airbnb platform, or (ii) Taxes that the Host determines that he or she has to collect.  
+"Guest Fees" means the fee that Airbnb charges a Guest for the use of the Services, which is calculated as a percentage of the applicable Accommodation Fees. The Guest Fees will be displayed to the Guest when the Guest is asked whether to send a booking request to a Host.  
+"Host Fees" means the fee that Airbnb charges a Host for the use of the Services, which is calculated as a percentage of the applicable Accommodation Fees. The Host Fees will be displayed to the Host when the Host is asked whether to confirm or reject a booking request from a prospective Guest.  
+"Service Fees" means collectively the Guest Fees and the Host Fees.  
+"Total Fees" means collectively the Accommodation Fees and the Guest Fees plus any Taxes.
+
+Bookings and Financial Terms for Hosts and Guests
+
+If you are a Host and a booking is requested for your Accommodation via the Site, Application or Services, you will be required to either confirm or reject the booking request within the Booking Request Period, otherwise the booking request will automatically expire. When a booking is requested via the Site, Application or Services, we will share with you (i) the first and last name of the Guest who has requested the booking, (ii) a link to the Guest's Airbnb Account profile page, (iii) if the Guest and Host have both connected their Airbnb accounts to SNS, the names of any members of an SNS with whom you are "friends" or associated on the SNS if such individuals are also "friends" or associated with the Guest on such SNS, and (iv) an indication of whether or not the Guest has provided other information to Airbnb, such as a verified email address, connection to SNSs, or a government ID. If you are unable to confirm or decide to reject a booking request within the Booking Request Period, any amounts collected by Airbnb for the requested booking will be refunded to the applicable Guest's credit card and any pre-authorization of such credit card will be released. When you confirm a booking requested by a Guest, Airbnb will send you an email, text message or message via the Application confirming such booking, depending on the selections you make via the Site, Application and Services.
+
+Airbnb Payments will collect the Total Fees at the time of booking confirmation (i.e. when the Host confirms the booking request) and will initiate payment of the Accommodation Fees (less Airbnb's Host Fees and any Taxes in respect of the Host Fees, such as VAT in Europe) to the Host within 24 hours of when the Guest arrives at the applicable Accommodation (except to the extent that a refund is due to the Guest). The time it takes for the Host to receive payouts may depend upon the payout method chosen by the Host. Some methods involve the use of third-party payment processors, who may impose their own additional charges for the use of their services on the Host, including by deducting their charges from the payout amount.
+
+If you owe or agree to pay any amount via Airbnb Payments to Airbnb (whether as a result of your bookings or actions as a Guest or otherwise), then Airbnb Payments may (but is not obliged to) withhold the amount owing to Airbnb from any payout amounts due to you as a Host, and use the withheld amount to setoff the amount owed by you to Airbnb. If Airbnb Payments does so, then your obligation to pay Airbnb will be extinguished to the extent of the amount withheld by Airbnb Payments, and Airbnb will cease to owe to you any obligations (including, but not limited to, any obligation to pay you) with respect to the amount withheld. In addition to the amount due, if your account is delinquent or you otherwise have chargebacks on your account, you may be charged fees that are incidental to our collection of these delinquent amounts and chargebacks. Such fees or charges may include collection fees, convenience fees, or other third party charges. You hereby explicitly agree that all communication in relation to delinquent accounts will be made by electronic mail or by phone, as provided to Airbnb by you. Such communication may be made by Airbnb or by anyone on its behalf, including but not limited to a third party collection agent.
+
+Appointment of Airbnb Payments as Limited Payment Collection Agent for Host
+
+Each Host hereby appoints Airbnb Payments as the Host's limited payment collection agent solely for the purpose of accepting the Accommodation Fees from Guests.
+
+Each Host agrees that payment made by a Guest through Airbnb Payments, shall be considered the same as a payment made directly to the Host, and the Host will make the Accommodation available to the Guest in the agreed-upon manner as if the Host has received the Accommodation Fees. Each Host agrees that Airbnb may, in accordance with the cancellation policy selected by the Host and reflected in the relevant Listing, (i) permit the Guest to cancel the booking and (ii) refund (via Airbnb Payments) to the Guest that portion of the Accommodation Fees specified in the applicable cancellation policy. Each Host understands that as Airbnb Payments accepts payments from Guests as the Host's limited payment collection agent and that Airbnb Payments' obligation to pay the Host is subject to and conditional upon successful receipt of the associated payments from Guests. Airbnb does not guarantee payments to Hosts for amounts that have not been successfully received by Airbnb Payments from Guests. In accepting appointment as the limited authorized agent of the Host, Airbnb Payments assumes no liability for any acts or omissions of the Host.
+
+Please note that Airbnb does not currently charge fees for the creation of Listings. However, you as a Host acknowledge and agree that Airbnb reserves the right, in its sole discretion, to charge you for and collect fees from you for the creation of Listings. Please note that Airbnb will provide notice of any Listing fee collection via the Site, Application and Services, prior to implementing such a Listing fee feature.
+
+Bookings and Financial Terms for Guests
+
+The Hosts, not Airbnb, are solely responsible for honoring any confirmed bookings and making available any Accommodations reserved through the Site, Application and Services. If you, as a Guest, choose to enter into a transaction with a Host for the booking of an Accommodation, you agree and understand that you will be required to enter into an agreement with the Host and you agree to accept any terms, conditions, rules and restrictions associated with such Accommodation imposed by the Host. You acknowledge and agree that you, and not Airbnb, will be responsible for performing the obligations of any such agreements, that Airbnb is not a party to such agreements, and that, with the exception of its payment obligations hereunder, Airbnb disclaims all liability arising from or related to any such agreements. You acknowledge and agree that, notwithstanding the fact that Airbnb is not a party to the agreement between you and the Host, Airbnb Payments acts as the Host's payment collection agent for the limited purpose of accepting payments from you on behalf of the Host. Upon your payment of the Total Fees to Airbnb Payments, your payment obligation to the Host for the Accommodation Fees is extinguished, and Airbnb Payments is responsible for remitting the Accommodation Fees (less the Host Fees and any Taxes in respect of the Host Fees, such as VAT in Europe), in the manner described in these Terms. In the event that Airbnb Payments does not remit any such amounts as described in these Terms, such Host will have recourse only against such Airbnb entity.
+
+The Total Fees payable will be displayed to a Guest before the Guest sends a booking request to a Host. As noted above, the Host is required to either confirm or reject the booking request within the Booking Request Period; otherwise, the requested booking will be automatically cancelled. If a requested booking is cancelled (i.e. not confirmed by the applicable Host), any amounts collected by Airbnb Payments will be refunded to such Guest, depending on the selections the Guest makes via the Site and Application, and any pre-authorization of such Guest's credit card will be released, if applicable.
+
+You as a Guest agree to pay Airbnb for the Total Fees for any booking requested in connection with your Airbnb Account if such requested bookings are confirmed by the applicable Host. In order to establish a booking pending the applicable Host's confirmation of your requested booking, you understand and agree that Airbnb Payments, on behalf of the Host, reserve the right, in its sole discretion, to (i) obtain a pre-authorization via your credit card for the Total Fees or (ii) charge your credit card a nominal amount, not to exceed one dollar ($1), or a similar sum in the currency in which you are transacting (e.g. one euro or one British pound), to verify your credit card. As a general rule, Airbnb Payments will collect the Total Fees due once Airbnb receives confirmation of your booking from the applicable Host; if necessary, Total Fees may instead be collected at a later point. Please note that Airbnb cannot control any fees that may be charged to a Guest by his or her bank related to Airbnb's collection of the Total Fees, and Airbnb disclaims all liability in this regard.
+
+In connection with your requested booking, you will be asked to provide customary billing information such as name, billing address and credit card information either to Airbnb Payments or its third-party payment processor(s). You agree to pay Airbnb Payments for any confirmed bookings made in connection with your Airbnb Account in accordance with these Terms by one of the methods described on the Site or Application, e.g. by PayPal or credit card. You hereby authorize the collection of such amounts by charging the credit card provided as part of requesting the booking, either directly by Airbnb Payments or indirectly, via a third-party online payment processor or by one of the payment methods described on the Site or Application. You also authorize Airbnb Payments to charge your credit card in the event of damage caused at an Accommodation as contemplated under "Damage to Accommodations" below and for Security Deposits, if applicable. If you are directed to Airbnb Payments' third-party payment processor(s), you may be subject to terms and conditions governing use of that third party's service and that third party's personal information collection practices. Please review such terms and conditions and privacy policy before using the services. Once your confirmed booking transaction is complete you will receive a confirmation email summarizing your confirmed booking.
+
+Security Deposits
+
+Hosts may choose to include security deposits in their Listings ("Security Deposits"). Each Listing will describe whether a Security Deposit is required for the applicable Accommodation. If a Security Deposit is included in a Listing for a confirmed booking of an Accommodation, and a Host makes a claim against such Security Deposit, Airbnb Payments will, in its capacity as the payment collection agent of the Host, use its commercially reasonable efforts to charge the Guest's payment method in the amount of the Security Deposit, within a reasonable period of time after the Guest's check-out from the Host's Accommodation. Airbnb will also use its commercially reasonable efforts to address Hosts' requests and claims related to Security Deposits, but Airbnb is not responsible for administering or accepting any claims by Hosts related to Security Deposits, and disclaims any and all liability in this regard.
+
+Service Fees
+
+In consideration for the use of Airbnb's online marketplace and platform, Airbnb charges the Service Fees. Where applicable, Taxes (such as VAT in Europe) may also be charged in respect of the Host Fees and Guest Fees. Airbnb Payments deducts the Host Fees from the Accommodation Fees before remitting the balance to the Host as described in these Terms. Guest Fees are, as noted above, included in the Total Fees.
+
+Balances will be remitted by Airbnb Payments to Hosts via check, PayPal, direct deposit or other payment methods, as described on the Site or via the Application, in the Host's currency of choice, depending upon the selections the Host makes via the Site, Application and Services. Amounts may be rounded up or down as described the "Rounding Off" section below.
+
+Please note that Airbnb Payments, may impose or deduct foreign currency processing costs on or from any payments or payouts by Airbnb in currencies other than U.S. dollars. More information on any such costs or deductions will be available via the Site and Application. More information on Services Fees can be found at www.airbnb.com/help. Except as otherwise provided herein, Service Fees are non-refundable.
+
+General Booking and Financial Terms
+
+Cancellations and Refunds
+
+If, as a Guest, you cancel your requested booking before the requested booking is confirmed by a Host, Airbnb Payments will cancel any pre-authorization to your credit card and/or refund any nominal amounts charged to your credit card in connection with the requested booking within a commercially reasonable time. If, as a Guest, you wish to cancel a confirmed booking made via the Site, Application and Services, either prior to or after arriving at the Accommodation, the cancellation policy of the Host contained in the applicable Listing will apply to such cancellation. Our ability to refund the Accommodation Fees and other amounts charged to you will depend upon the terms of the applicable cancellation policy. Details regarding refunds and cancellation policies are available via the Site and Application. The Guest Fee is non-refundable regardless of the cancellation policy selected by the Host.
+
+If a Host cancels a confirmed booking made via the Site, Services, and Application, (i) Airbnb Payments will refund the Total Fees for such booking to the applicable Guest within a commercially reasonable time of the cancellation and (ii) the Guest will receive an email or other communication from Airbnb containing alternative Listings and other related information. If the Guest requests a booking from one of the alternative Listings and the Host associated with such alternative Listing confirms the Guest's requested booking, then the Guest agrees to pay Airbnb the Total Fees relating to the confirmed booking for the Accommodation in the alternative Listing, in accordance with these Terms. If a Host cancelled a confirmed booking and you, as a Guest, have not received an email or other communication from Airbnb, please contact Airbnb.
+
+If, as a Host, you cancel a confirmed booking, you agree that Airbnb may apply penalties or consequences to you or your Listing, including (i) publishing an automated review on your Listing indicating that a reservation was cancelled, (ii) keeping the calendar for your Listing unavailable or blocked for the dates of the cancelled booking, or (iii) imposing a cancellation fee (to be withheld from your future payouts or charged to the credit card on file in your Airbnb Account). You will be notified of the situations in which a cancellation fee applies before you decide to cancel.
+
+In certain circumstances, Airbnb may decide, in its sole discretion, that it is necessary or desirable to cancel a confirmed booking made via the Site, Application and Services. This may be for reasons set forth in Airbnb's Extenuating Circumstances policy or for any other reason. Airbnb Payments may also determine, in its sole discretion, to refund to the Guest part or all of the amounts charged to the Guest in accordance with the Guest Refund Policy. You agree that Airbnb and the relevant Guest or Host will not have any liability for such cancellations or refunds.
+
+If, as a Host, your Guest cancels a confirmed booking or Airbnb decides that it is necessary to cancel a confirmed booking, and Airbnb issues a refund to the Guest in accordance with the Guest Refund Policy or other applicable cancellation policies, you agree that in the event you have already been paid Airbnb shall be entitled to recover the amount of any such Guest refund from you, including by subtracting such refund amount out from any future Accommodation Fees due to you.
+
+Recurring Payments
+
+In some instances, Guests may be required to make recurring, incremental payments toward the Total Fees owed for a confirmed booking before beginning his or her stay at the applicable Accommodation (collectively, "Recurring Payments"). More information on Recurring Payments will be made available via the Site, Application and Services, if applicable. If Recurring Payments apply to a confirmed booking, then the Guest authorizes Airbnb Payments, on behalf of the Host, to collect the Total Fees and the Host agrees that such Airbnb entity will initiate payouts to the Host, in the increments and at the frequency associated with the applicable Recurring Payments, each as identified on the Site, Application and Services.
+
+Rounding Off
+
+Airbnb may, in its sole discretion, round up or round down amounts that are payable from or to Guests or Hosts to the nearest whole functional base unit in which the currency is denominated (e.g. to the nearest dollar, euro or other supported currency); for example, Airbnb will round up an amount of $101.50 to $102.00, and $101.49 to $101.00.
+
+Some currencies are denominated in large numbers. In those cases, Airbnb may determine the functional base unit in which those currencies are denominated to be 10, 100 or 1,000 of the currency; the corresponding examples for such currencies would be for Airbnb to round up an amount of 1,045 up to 1,050 and 1,044 down to 1,040, or 35,450 up to 35,500 and 35,449 down to 35,400, or 837,500 up to 838,000 and 837,499 down to 837,000.
+
+Payment Processing Errors
+
+We will take steps to rectify any payment processing errors that we become aware of. These steps may include crediting or debiting (as appropriate) the same payment method used for the original payout to or payment by you, so that you end up receiving or paying the correct amount. 
+
+Donations
+
+Some Hosts may pledge to donate a portion of the funds they receive from confirmed bookings made via the Site, Application and Services to a particular cause or charity. We do not take any responsibility or liability for whether the Host does in fact make the donation he or she pledged to make. In such cases, the Host in question is responsible for his or her own compliance with all laws and regulations applicable to such pledges and/or fund-raising.
+
+Taxes
+
+Tax regulations may require us to collect appropriate tax information from our Hosts, or to withhold taxes from payouts to Hosts, or both. For instance, IRS regulations stipulate that we must collect an IRS Form W-9 from our US Hosts, and an appropriate IRS Form W-8 (e.g. Form W-8BEN) from non-US hosts with at least one Listing in the US. You as a Host are solely responsible for keeping the information in your tax forms current, complete and accurate. If you as a Host fail to provide us with documentation that we determine to be sufficient to alleviate our obligation (if any) to withhold taxes from payments to you (e.g. where you are a US Host and you fail to provide us with a completed IRS Form W-9), we reserve the right in our sole discretion to freeze all payouts to you until resolution, to withhold such amounts as required by law, or to do both.
+
+You as a Host understand and agree that you are solely responsible for determining (i) your applicable Tax reporting requirements, and (ii) the Taxes that should be included, and for including Taxes to be collected or obligations relating to applicable Taxes in Listings. You are also solely responsible for remitting to the relevant authority any Taxes included or received by you. Airbnb cannot and does not offer Tax-related advice to any Members.
+
+Where applicable, or based upon request from a Host, Airbnb may issue a valid VAT invoice to such Host.
+
+You understand and acknowledge that appropriate governmental agencies, departments or authorities (the "Tax Authority") where your Accommodation is located may require Taxes to be collected from Guests or Hosts on the amount paid for the right to use and/or occupancy of accommodations, and to be remitted to the respective Tax Authority. The laws in jurisdictions may vary, but these taxes may be required to be collected and remitted as a percentage of the rent or Accommodation Fees set by Hosts, a set amount per day, or other variations, and are sometimes called "occupancy taxes," "hotel taxes," "lodging taxes," "transient taxes," "sales and use taxes," "value added taxes," "room taxes" or "tourist taxes" (hereafter, "Occupancy Taxes").
+
+Occupancy Tax Collection and Remittance
+
+In certain jurisdictions, Airbnb may decide in its sole discretion to facilitate collection and remittance of Occupancy Taxes from or on behalf of Guests or Hosts, in accordance with your directions in this Agreement ("Collection and Remittance") if such tax jurisdiction asserts Airbnb or Hosts have a tax collection and remittance obligation. In any jurisdiction in which we decide to facilitate direct Collection and Remittance, whether you are a Guest or Host, in lieu of the Host collecting Occupancy taxes from Guests and remitting to the Tax Authority, you hereby instruct and authorize Airbnb to collect Occupancy Taxes from Guests on the Host's behalf at the time Accommodation Fees are collected, and to remit such Occupancy Taxes to the Tax Authority. When Airbnb facilitates Collection and Remittance of Occupancy Taxes in a jurisdiction for the first time, Airbnb will provide notice to existing Hosts with Listings for Accommodations in such jurisdictions. When a new listing is created in a jurisdiction where Airbnb facilitates Collection and Remittance of Occupancy Taxes, the Host will be notified in the listing creation flow.  
+
+The amount of Occupancy Taxes, if any, collected and remitted by Airbnb will be visible to and separately stated to both Guests and Hosts on their respective transaction documents. Where Airbnb is directly facilitating Collection and Remittance, Guests and Hosts agree that Hosts are not permitted to attempt collection, or collect any Occupancy Taxes relating to their Accommodations on Airbnb in that such jurisdiction. You expressly agree to release, defend, indemnify, and hold Airbnb and its affiliates and subsidiaries, and their officers, directors, employees and agents, harmless from and against any claims, liabilities, damages, losses, debts, obligations, and expenses, including, without limitation, reasonable legal and/or accounting fees, arising out of or in any way related to Occupancy Taxes, including, without limitation, the applicability of, calculation, collection or remittance of Occupancy Taxes in any amount or at all as to your transactions or Accommodations.   For any jurisdiction in which we facilitate Collection and Remittance, Hosts and Guests expressly grant us permission, without further notice, to store, transfer and disclose data and other information relating to them or to their Transactions, Bookings, Accommodations and Occupancy Taxes, including, but not limited to, personally identifiable information such as Host or Guest's name, listing addresses, transaction dates and amounts, tax identification number(s), the amount of taxes collected from Guests or allegedly due, contact information and similar information, to the relevant Tax Authority.
+
+Opt-in to Host Remittance of Taxes
+
+In other jurisdictions, Airbnb may decide in its sole discretion to facilitate Occupancy Tax collection on behalf of Hosts and Guests in accordance with a Host's direction to opt in to a specific Occupancy Tax line item in the booking process, in which the Host directs that Occupancy Taxes from Guests be sent directly to the Host so that the Host will remit such taxes directly to Tax Authority -(-"Opt-in for Host Remittance"). In any jurisdiction in which we decide to facilitate Collection by Opt-in for Host Remittance, whether you are a Guest or Host, you hereby instruct and authorize Airbnb to send Occupancy Taxes received from Guests at the time Accommodation Fees are collected to the Host who is obligated to send such taxes to the Tax Authority directly. If Airbnb offers and a Host selects Opt-in for Host Remittance in any jurisdiction, Hosts and Guests remain solely responsible and liable for the payment and remittance of any and all taxes that may apply to Accommodations; you agree and understand that Airbnb is not responsible for, and will not send any such Occupancy Taxes to the Tax Authority under Opt-in to Host Remittance of Taxes.  You hereby agree that through third party payment processors, Airbnb is merely processing Your election and direction to have Occupancy Taxes from Guests sent directly to the Host for remittance by the Host to the Tax Authority, and that You will remit all amounts collected from Guests as Occupancy Taxes to such Tax Authority.  You expressly agree to release, defend, indemnify, and hold Airbnb and its affiliates and subsidiaries, and their officers, directors, employees and agents, harmless from and against any claims, liabilities, damages, losses, debts, obligations, and expenses, including, without limitation, reasonable legal and/or accounting fees, arising out of or in any way related to Occupancy Taxes,  including, without limitation, the applicability of, calculation of, collection of Occupancy Taxes in any amount or at all as to your transactions or Accommodations.  For any jurisdiction in which we facilitate Opt-in for Host Remittance, Hosts and Guests expressly grant us permission, without further notice, to store, transfer and disclose data and other information relating to them or to their Transactions, Bookings, Accommodations and Occupancy Taxes, including, but not limited to, personally identifiable information such as Host or Guest's name, listing addresses, transaction dates and amounts, tax identification number(s), the amount of taxes received by Hosts from Guests, or allegedly due, contact information and similar information, to the relevant Tax Authority.
+
+Miscellaneous Occupancy Tax Provisions
+
+Whether you are a Guest or Host, you agree that any claim or cause of action relating to Airbnb's facilitation of Opt-in Remittance or Collection and Remittance of Taxes shall not extend to any supplier or vendor that may be used by Airbnb in connection with facilitation of Opt-in Remittance or Collection and Remittance of Occupancy Taxes, if any. Guests and Hosts agree that we may seek additional amounts from You in the event that the Taxes collected and/or remitted are insufficient to fully discharge your obligations to the Tax Authority, and agree that your sole remedy for Occupancy Taxes collected is a refund of Occupancy Taxes collected by Airbnb from the applicable Tax Authority in accordance with applicable procedures set by that Tax Authority.
+
+In any jurisdiction in which we have not provided notice of, or are not facilitating (or are no longer facilitating) the collection or remittance of Occupancy Taxes by Collection and Remittance, Opt-in for Host Remittance or any other means or method, in your jurisdiction, Hosts and Guests remain solely responsible and liable for the collection and/or remittance of any and all Occupancy Taxes that may apply to Accommodations.
+
+Hosts and Guests acknowledge and agree that in some jurisdictions, Airbnb may decide not to facilitate collection or remittance of Occupancy Taxes or may not be able to facilitate the collection and/or remittance of Occupancy Taxes, and nothing contained in this Agreement is a representation or guarantee that Airbnb will facilitate collection and/or remittance of Occupancy Tax anywhere at all, including in any specific jurisdiction, or that Airbnb will continue to facilitate any collection or remittance of Occupancy Tax in any specific jurisdiction in which it may have been offered. Airbnb reserves the right, in its sole determination, to cease any facilitation of any collection and remittance of Occupancy Tax (regardless of method used or to be used in the future) for any reason or no reason at all, provided that it will give Hosts reasonable notice in any jurisdiction in which Airbnb determines to cease any such facilitation.  
+
+Damage to Accommodations
+
+As a Guest, you are responsible for leaving the Accommodation in the condition it was in when you arrived. You acknowledge and agree that, as a Guest, you are responsible for your own acts and omissions and are also responsible for the acts and omissions of any individuals whom you invite to, or otherwise provide access to, the Accommodation. In the event that a Host claims otherwise and provides evidence of damage, including but not limited to photographs, you agree to pay the cost of replacing the damaged items with equivalent items. After being notified of the claim and given forty eight (48) hours to respond, the payment will be charged to and taken from the credit card on file in your Airbnb Account. Airbnb also reserves the right to charge the credit card on file in your Airbnb Account, or otherwise collect payment from you and pursue any avenues available to Airbnb in this regard, including using Security Deposits, in situations in which you have been determined, in Airbnb's sole discretion, to have damaged any Accommodation, including, but not limited to, in relation to any payment requests made by Hosts under the Airbnb Host Guarantee, and in relation to any payments made by Airbnb to Hosts. If we are unable to charge the credit card on file or otherwise collect payment from you, you agree to remit payment for any damage to the Accommodation to the applicable Host or to Airbnb (if applicable).
+
+Both Guests and Hosts agree to cooperate with and assist Airbnb in good faith, and to provide Airbnb with such information and take such actions as may be reasonably requested by Airbnb, in connection with any complaints or claims made by Members relating to Accommodations or any personal or other property located at an Accommodation (including, without limitation, payment requests made under the Airbnb Host Guarantee) or with respect to any investigation undertaken by Airbnb or a representative of Airbnb regarding use or abuse of the Site, Application or the Services. If you are a Guest, upon Airbnb's reasonable request, and to the extent you are reasonably able to do so, you agree to participate in mediation or similar resolution process with a Host, at no cost to you, which process will be conducted by Airbnb or a third party selected by Airbnb or its insurer, with respect to losses for which the Host is requesting payment from Airbnb under the Airbnb Host Guarantee.
+
+If you are a Guest, you understand and agree that Airbnb may make a claim under your homeowner's, renter's or other insurance policy related to any damage or loss that you may have caused or been responsible for or to an Accommodation or any personal or other property located at an Accommodation (including without limitation amounts paid by Airbnb under the Airbnb Host Guarantee). You agree to cooperate with and assist Airbnb in good faith, and to provide Airbnb with such information as may be reasonably requested by Airbnb, in order to make a claim under your homeowner's, renter's or other insurance policy, including, but not limited to, executing documents and taking such further acts as Airbnb may reasonably request to assist Airbnb in accomplishing the foregoing.
+
+Overstaying without the Host's Consent
+
+Guests agree that a confirmed reservation is merely a license granted by the Host to the Guest to enter and use the Listing for the limited duration of the confirmed reservation and in accordance with the Guest's agreement with the Host. Guests further agree to leave the Accommodation no later than the checkout time that the Host specifies in the Listing or such other time as mutually agreed upon between the Host and Guest. If a Guest stays past the agreed upon checkout time without the Host's consent, they no longer have a license to stay in the Listing and the Host is entitled to make the Guest leave. In addition, Guests agree that the Host can charge the Guest, for each 24 hour period that the Guest stays over the agreed period without the Host's consent, an additional nightly fee of two times the average nightly Accommodation Fee originally paid by the Guest to cover the inconvenience suffered by the Host, plus all applicable Service Fees, Taxes, and any legal expenses incurred by the Host to make the Guest leave (collectively, "Additional Sums"). Guests agree that Airbnb Payments, in its role as limited collection agent for the Host, shall charge the Guest's credit card or other payment methods it has on file to collect these Additional Sums. In addition, Airbnb Payments may recover any costs and expenses it incurs in collecting the Additional Sums by charging the Guest's credit card or other payment method on file.
+
+Foreign Currency
+
+Airbnb's online platform facilitates bookings between Guests and Hosts who may prefer to pay and to receive payments in different currencies, which may require foreign currency conversions to accommodate these differing currency preferences. Although the Airbnb platform allows users to view the price of Listings in a number of currencies, the currencies available for users to make and receive payments may be limited, and may not include the default currency in any given geographic location.
+
+Each foreign currency conversion is processed at a foreign currency conversion rate. This rate generally refers to the amount of one currency that must be paid to buy a certain amount of another currency at a given time. For example, if it costs US$125.00 to buy €100.00, the currency conversion rate of US dollars to Euros would be 1.25, and the currency conversion rate from Euros to US dollars would be 0.8. Currency conversion rates will vary from time to time.
+
+Key definitions
+
+"Display Currency" means the currency in which users view Listing prices on the Airbnb platform. Guests may choose and change the Display Currency in order to view the pricing for a Listing in a number of different supported currencies.  
+"Booking Currency" means the currency in which a Guest has to pay for his or her booking. At the time the Guest submits a booking request, the Airbnb platform will select the Booking Currency, based on the Guest's country of origin and the payment methods available for that country. Airbnb supports only a certain number of currencies as Booking Currencies. The Booking Currency for a booking may be different from the relevant Listing Currency.  
+"Listing Currency" means the currency in which a Listing's price is set. The Listing Currency is set by the Host.  
+"Payout Currency" means the currency in which a Host's payout will be paid to the Host. The Payout Currency is set by the Host.  
+"Base Exchange Rate" means a system-wide rate used by Airbnb for foreign currency conversion that is in effect at the time the foreign currency conversion is processed, and does not include any fee or mark-up by Airbnb. Airbnb establishes the Base Exchange Rate using data from one or more third parties such as OANDA (http://www.oanda.com).  
+"Adjusted Exchange Rate" means a rate for foreign currency conversion that is calculated by adding a mark-up to the Base Exchange Rate. This mark-up represents a charge imposed by Airbnb for its holding costs and foreign currency risks.
+
+Foreign currency conversions on the Airbnb platform
+
+Airbnb Payments will process a foreign currency conversion in the following situations:
+
+
+The Display Currency is different from the Listing Currency when a user views a Listing: Airbnb will calculate the estimated Total Fees in the Display Currency, by applying either the Base Exchange Rate or the Adjusted Exchange Rate at the time of the view to the estimated Total Fees in the Listing Currency. The Adjusted Exchange Rate will be applied if the Display Currency is a supported Booking Currency, and it is different from the Listing Currency. Otherwise, the Base Exchange Rate will be applied.
+
+The Booking Currency is different from the Listing Currency when a Guest submits a booking request for a Listing: Airbnb will calculate the Total Fees in the Booking Currency, by applying either the Base Exchange Rate or the Adjusted Exchange Rate at the time of the booking request to the Total Fees in the Listing Currency. The Guest will be able to view the actual exchange rate applied. The Guest Fee, which is a percentage of the applicable Accommodation Fees, will be calculated based on the Accommodation Fees in the Booking Currency (i.e. after conversion from the Listing Currency). The Adjusted Exchange Rate will be applied if the Display Currency is the same as the Booking Currency, and it is different from the Listing Currency for the Listing. Otherwise, the Base Exchange Rate will be applied.
+
+The Payout Currency is different from the Listing Currency when Airbnb initiates a payout: generally, Airbnb will calculate the payout to the Host, by applying the Base Exchange Rate on the date that Airbnb initiates the payout to the Accommodation Fees (less Airbnb's Host Fees and any Taxes in respect of the Host Fees, such as VAT in Europe) in the Listing Currency. The Host will be able to view the actual exchange rate applied in his or her transaction history in the Site or Application. In some cases where the payout method selected by the Host involves certain third-party payment processors (such as Western Union), (i) Airbnb will send the payout amount to the processor in a major currency (e.g. US dollars), by applying the relevant Base Exchange Rate for the Listing Currency to that major currency, (ii) the Host will be able to view the payout amount sent by Airbnb in that major currency in his or her transaction history in the Site or Application, and (iii) the processor will calculate the actual payout to the Host by applying its own foreign currency conversion rate for that major currency to the Payout Currency.
+
+When a confirmed booking is modified or cancelled, and there had been a foreign currency conversion when the booking was submitted: the foreign currency conversion for any additional payments required of the Guest or any refund to the Guest will be processed at the same rate as applied to the earlier payment by the Guest.
+
+When you as a Guest submit a booking request for a Listing, you will be able to view the actual exchange rate used to calculate the Total Fees in the Booking Currency. Where the Adjusted Exchange Rate is applied, you will be able to view the mark-up included in the rate. The actual exchange rate (and any mark-up included in the rate) will also be stated in the billing receipt for your booking.
+
+Airbnb updates the Base Exchange Rate on a regular basis, but not on a real-time basis. In particular, Airbnb does not always change the Base Exchange Rate immediately when its costs of foreign exchange change. Accordingly, the Base Exchange Rate may not be identical to the applicable market rate in effect at the specific time a foreign currency conversion is processed.
+
+Please note that your payment company (for example, your credit or bank card issuer) will use a currency conversion rate for and may impose a currency conversion fee on your payment or payout, if your card or bank account is denominated in a currency that is different from the Booking Currency or the Payout Currency respectively. Similarly, third-party payment processors may also use a currency conversion rate for or impose a currency conversion fee on your payment or payout. All of these currency conversion rates and fees are not controlled by or known to Airbnb.
+
+User Conduct
+
+You understand and agree that you are solely responsible for compliance with any and all laws, rules, regulations, and Tax obligations that may apply to your use of the Site, Application, Services and Collective Content. In connection with your use of the Site, Application, Services and Collective Content, you may not and you agree that you will not:
+
+
+violate any local, state, provincial, national, or other law or regulation, or any order of a court, including, without limitation, zoning restrictions and Tax regulations;
+
+use manual or automated software, devices, scripts, robots, backdoors or other means or processes to access, "scrape," "crawl" or "spider" any web pages or other services contained in the Site, Application, Services or Collective Content;
+
+access or use our Site, Application, Services or the Airbnb API to use, expose, or allow to be used or exposed, any Airbnb Content: (i) that is not publicly displayed by Airbnb in its search results pages or listing pages before a booking is confirmed; (ii) in any way that is inconsistent with the Airbnb Privacy Policy or Terms of Service; or (iii) in any way that otherwise violates the privacy rights or any other rights of Airbnb's users or any other third party;
+
+use the Site, Application, Services or Collective Content for any commercial or other purposes that are not expressly permitted by these Terms;
+
+copy, store or otherwise access or use any information contained on the Site, Application, Services or Collective Content for purposes not expressly permitted by these Terms;
+
+infringe the rights of any person or entity, including without limitation, their intellectual property, privacy, publicity or contractual rights;
+
+interfere with or damage our Site, Application or Services, including, without limitation, through the use of viruses, cancel bots, Trojan horses, harmful code, flood pings, denial-of-service attacks, backdoors, packet or IP spoofing, forged routing or electronic mail address information or similar methods or technology;
+
+use our Site, Application or Services to transmit, distribute, post or submit any information concerning any other person or entity, including without limitation, photographs of others without their permission, personal contact information or credit, debit, calling card or account numbers;
+
+use our Site, Application, Services or Collective Content in connection with the distribution of unsolicited commercial email ("spam") or advertisements unrelated to lodging in a private residence;
+
+"stalk" or harass any other user of our Site, Application, Services or Collective Content, or collect or store any personally identifiable information about any other user other than for purposes of transacting as an Airbnb Guest or Host;
+
+offer, as a Host, any Accommodation that you do not yourself own or have permission to rent as a residential or other property (without limiting the foregoing, you will not list Accommodations as a Host if you are serving in the capacity of a rental agent or listing agent for a third party);
+
+offer, as a Host, any Accommodation that may not be rented or subleased pursuant to the terms and conditions of an agreement with a third party, including, but not limited to, a property rental agreement;
+
+register for more than one Airbnb Account or register for an Airbnb Account on behalf of an individual other than yourself;
+
+unless Airbnb explicitly permits otherwise, request or book a stay at any Accommodation if you will not actually be staying at the Accommodation yourself;
+
+contact a Host for any purpose other than asking a question related to a booking, such Host's Accommodations or Listings;
+
+contact a Guest for any purpose other than asking a question related to a booking or such Guest's use of the Site, Application and Services;
+
+recruit or otherwise solicit any Host or other Member to join third-party services or websites that are competitive to Airbnb, without Airbnb's prior written approval;
+
+impersonate any person or entity, or falsify or otherwise misrepresent yourself or your affiliation with any person or entity;
+
+use automated scripts to collect information from or otherwise interact with the Site, Application, Services or Collective Content;
+
+use the Site, Application, Services or Collective Content to find a Host or Guest and then complete a booking of an Accommodation independent of the Site, Application or Services, in order to circumvent the obligation to pay any Service Fees related to Airbnb's provision of the Services or for any other reasons;
+
+as a Host, submit any Listing with false or misleading price information, or submit any Listing with a price that you do not intend to honor;
+
+post, upload, publish, submit or transmit any Content that: (i) infringes, misappropriates or violates a third party's patent, copyright, trademark, trade secret, moral rights or other intellectual property rights, or rights of publicity or privacy; (ii) violates, or encourages any conduct that would violate, any applicable law or regulation or would give rise to civil liability; (iii) is fraudulent, false, misleading or deceptive; (iv) is defamatory, obscene, pornographic, vulgar or offensive; (v) promotes discrimination, bigotry, racism, hatred, harassment or harm against any individual or group; (vi) is violent or threatening or promotes violence or actions that are threatening to any other person; or (vii) promotes illegal or harmful activities or substances;
+
+systematically retrieve data or other content from our Site, Application or Services to create or compile, directly or indirectly, in single or multiple downloads, a collection, compilation, database, directory or the like, whether by manual methods, through the use of bots, crawlers, or spiders, or otherwise;
+
+use, display, mirror or frame the Site, Application, Services or Collective Content, or any individual element within the Site, Application, Services or Collective Content, Airbnb's name, any Airbnb trademark, logo or other proprietary information, or the layout and design of any page or form contained on a page in the Site, Application or Services, without Airbnb's express written consent;
+
+access, tamper with, or use non-public areas of the Site, Application or Services, Airbnb's computer systems, or the technical delivery systems of Airbnb's providers;
+
+attempt to probe, scan, or test the vulnerability of any Airbnb system or network or breach any security or authentication measures;
+
+avoid, bypass, remove, deactivate, impair, descramble, or otherwise circumvent any technological measure implemented by Airbnb or any of Airbnb's providers or any other third party (including another user) to protect the Site, Services, Application or Collective Content;
+
+forge any TCP/IP packet header or any part of the header information in any email or newsgroup posting, or in any way use the Site, Services, Application or Collective Content to send altered, deceptive or false source-identifying information;
+
+attempt to decipher, decompile, disassemble or reverse engineer any of the software used to provide the Site, Services, Application or Collective Content; or
+
+advocate, encourage, or assist any third party in doing any of the foregoing.
+
+accept or make a payment for Accommodation Fees outside Airbnb Payments. If you do so, you acknowledge and agree that you: (i) would be in breach of these Terms; (ii) accept all risks and responsibility for such payment, and (iii) hold Airbnb harmless from any liability for such payment.
+
+Airbnb has the right to investigate and prosecute violations of any of the above to the fullest extent of the law.
+
+Airbnb may access, preserve and disclose any of your information if we are required to do so by law, or if we believe in good faith that it is reasonably necessary to (i) respond to claims asserted against Airbnb or to comply with legal process (for example, subpoenas or warrants), (ii) enforce or administer our agreements with users, such as these Terms and the Airbnb Host Guarantee, (iii) for fraud prevention, risk assessment, investigation, customer support, product development and de-bugging purposes, or (iv) protect the rights, property or safety of Airbnb, its users, or members of the public. You acknowledge that Airbnb has no obligation to monitor your access to or use of the Site, Application, Services or Collective Content or to review or edit any Member Content, but has the right to do so for the purpose of operating and improving the Site, Application and Services (including without limitation for fraud prevention, risk assessment, investigation and customer support purposes), to ensure your compliance with these Terms, to comply with applicable law or the order or requirement of a court, administrative agency or other governmental body, to respond to content that it determines is otherwise objectionable or as set forth in these Terms. Airbnb reserves the right, at any time and without prior notice, to remove or disable access to any Collective Content that Airbnb, at its sole discretion, considers to be objectionable for any reason, in violation of these Terms or otherwise harmful to the Site, Application or Services.
+
+Privacy
+
+You agree that Airbnb's Privacy Policy (as may be updated from time to time) governs Airbnb's collection and use of your personal information.
+
+Ownership
+
+The Site, Application, Services, and Collective Content are protected by copyright, trademark, and other laws of the United States and foreign countries. You acknowledge and agree that the Site, Application, Services and Collective Content, including all associated intellectual property rights, are the exclusive property of Airbnb and its licensors. You will not remove, alter or obscure any copyright, trademark, service mark or other proprietary rights notices incorporated in or accompanying the Site, Application, Services, or Collective Content.
+
+Additional Terms
+
+Our Services have different products and offerings, so sometimes additional terms or product requirements may apply to your use of those products. For example, additional terms apply if you refer new users to Airbnb ("Referral Program") or participate in our Home Safety program. If additional terms are available for the relevant product or Services you use, those additional terms become part of these Terms.
+
+Specific Terms Regarding Airbnb Travel Credits
+
+Airbnb Travel Credits may only be redeemed for confirmed bookings via the Site, Application and Services and after you accrue Airbnb Travel Credits, such Airbnb Travel Credits will be automatically applied to your next confirmed booking made via the Site, Application and Services. Airbnb Travel Credits are credit only and have no cash value nor can they be refunded or exchanged for cash. You may only redeem Airbnb Travel Credits after the Airbnb Travel Credits are reflected in your Airbnb Account. The scope, variety, and type of services and products that you may obtain by redeeming Airbnb Travel Credits can change at any time.
+
+Airbnb Travel Credits expire three (3) years from the date that any Airbnb Travel Credits are last accrued in your Airbnb Account. Airbnb will notify you at the email address you provided during Account registration within thirty (30) days of when the Airbnb Travel Credits in your Airbnb Account are scheduled to expire. If for some reason you believe that there is a discrepancy regarding your balance of Airbnb Travel Credits, please contact us. Airbnb may require you to submit additional information in order to make a determination regarding your balance. All decisions regarding your balance will be final and at Airbnb's sole discretion. You are responsible for any Tax consequences, if any, that may result from your redemption or use of Airbnb Travel Credits. Where applicable, Airbnb may be required to account for VAT on any services for which the Airbnb Travel Credits are redeemed.
+
+Without limiting any other terms of these Terms and subject to applicable law, all Airbnb Travel Credits are forfeited if your Airbnb Account is terminated or suspended for any reason, in Airbnb's sole discretion, or if Airbnb discontinues providing the Site, Application, Services or the Referral Program.
+
+Application License
+
+Subject to your compliance with these Terms, Airbnb grants you a limited non-exclusive, non-transferable license to download and install a copy of the Application on each mobile device or computer that you own or control and run such copy of the Application solely for your own personal use. Furthermore, with respect to any App Store Sourced Application (defined below), you will only use the App Store Sourced Application (i) on an Apple-branded product that runs the iOS (Apple's proprietary operating system) and (ii) as permitted by the "Usage Rules" set forth in the Apple App Store Terms of Service. Airbnb reserves all rights in the Application not expressly granted to you by these Terms.
+
+Airbnb Content and Member Content License
+
+Subject to your compliance with the terms and conditions of these Terms, Airbnb grants you a limited, non-exclusive, non-transferable license, to (i) access and view any Airbnb Content solely for your personal and non-commercial purposes and (ii) access and view any Member Content to which you are permitted access, solely for your personal and non-commercial purposes. You have no right to sublicense the license rights granted in this section.
+
+You will not use, copy, adapt, modify, prepare derivative works based upon, distribute, license, sell, transfer, publicly display, publicly perform, transmit, broadcast or otherwise exploit the Site, Application, Services, or Collective Content, except as expressly permitted in these Terms. No licenses or rights are granted to you by implication or otherwise under any intellectual property rights owned or controlled by Airbnb or its licensors, except for the licenses and rights expressly granted in these Terms.
+
+Member Content
+
+We may, in our sole discretion, permit you to post, upload, publish, submit or transmit Member Content. By making available any Member Content on or through the Site, Application and Services, you hereby grant to Airbnb a worldwide, irrevocable, perpetual (or for the term of the protection), non-exclusive, transferable, royalty-free license, with the right to sublicense, to use, view, copy, adapt, modify, distribute, license, sell, transfer, publicly display, publicly perform, transmit, stream, broadcast, access, view, and otherwise exploit such Member Content on, through, by means of or to promote or market the Site, Application and Services. Airbnb does not claim any ownership rights in any such Member Content and nothing in these Terms will be deemed to restrict any rights that you may have to use and exploit any such Member Content.
+
+You acknowledge and agree that you are solely responsible for all Member Content that you make available through the Site, Application and Services. Accordingly, you represent and warrant that: (i) you either are the sole and exclusive owner of all Member Content that you make available through the Site, Application and Services or you have all rights, licenses, consents and releases that are necessary to grant to Airbnb the rights in such Member Content, as contemplated under these Terms; and (ii) neither the Member Content nor your posting, uploading, publication, submission or transmittal of the Member Content or Airbnb's use of the Member Content (or any portion thereof) on, through or by means of the Site, Application and the Services will infringe, misappropriate or violate a third party's patent, copyright, trademark, trade secret, moral rights or other proprietary or intellectual property rights, or rights of publicity or privacy, or result in the violation of any applicable law or regulation.
+
+Links
+
+The Site, Application and Services may contain links to third-party websites or resources. You acknowledge and agree that Airbnb is not responsible or liable for: (i) the availability or accuracy of such websites or resources; or (ii) the content, products, or services on or available from such websites or resources. Links to such websites or resources do not imply any endorsement by Airbnb of such websites or resources or the content, products, or services available from such websites or resources. You acknowledge sole responsibility for and assume all risk arising from your use of any such websites or resources or the Content, products or services on or available from such websites or resources.
+
+Some portions of the Airbnb platform implement Google Maps/Earth mapping services, including Google Maps API(s). Your use of Google Maps/Earth is subject to Google's terms of use.
+
+Proprietary Rights Notices
+
+All trademarks, service marks, logos, trade names and any other proprietary designations of Airbnb used herein are trademarks or registered trademarks of Airbnb. Any other trademarks, service marks, logos, trade names and any other proprietary designations are the trademarks or registered trademarks of their respective parties.
+
+Feedback
+
+We welcome and encourage you to provide feedback, comments and suggestions for improvements to the Site, Application and Services ("Feedback"). You may submit Feedback by emailing us, through the "Contact" section of the Site and Application, or by other means of communication. You acknowledge and agree that all Feedback you give us will be the sole and exclusive property of Airbnb and you hereby irrevocably assign to Airbnb and agree to irrevocably assign to Airbnb all of your right, title, and interest in and to all Feedback, including without limitation all worldwide patent, copyright, trade secret, moral and other proprietary or intellectual property rights therein, and waive any moral rights you may have in such Feedback. At Airbnb's request and expense, you will execute documents and take such further acts as Airbnb may reasonably request to assist Airbnb to acquire, perfect, and maintain its intellectual property rights and other legal protections for the Feedback.
+
+Copyright Policy
+
+Airbnb respects copyright law and expects its users to do the same. It is Airbnb's policy to terminate in appropriate circumstances the Airbnb Accounts of Members or other account holders who repeatedly infringe or are believed to be repeatedly infringing the rights of copyright holders. Please see Airbnb's Copyright Policy for further information.
+
+Suspension, Termination and Airbnb Account Cancellation
+
+We may, in our discretion and without liability to you, with or without cause, with or without prior notice and at any time, decide to limit, suspend, deactivate or cancel your Airbnb Account. If we exercise our discretion under these Terms to do so, any or all of the following can occur with or without prior notice or explanation to you: (a) your Airbnb Account will be deactivated or suspended, your password will be disabled, and you will not be able to access the Site, Application, Services, your Airbnb Account, your Member Content, or receive assistance from Airbnb Customer Service, (b) any pending or accepted future bookings as either Host or Guest will be immediately terminated, (c) we may communicate to your Guests or Hosts that a potential or confirmed booking has been cancelled, (d) we may refund your Guests in full for any and all confirmed reservations, irrespective of preexisting cancellation policies, (e) we may contact your Guests to inform them about potential alternate Accommodations with other Hosts that may be available on the Site, Application and Services, and (f) you will not be entitled to any compensation for reservations or bookings (even if confirmed) that were cancelled as a result of a suspension, deactivation or termination of your Airbnb Account. You may cancel your Airbnb Account at any time via the "Cancel Account" feature of the Services or by sending us an email. Please note that if your Airbnb Account is cancelled, we do not have an obligation to delete or return to you any Content you have posted to the Site, Application and Services, including, but not limited to, any reviews or Feedback.
+
+Disclaimers
+
+IF YOU CHOOSE TO USE THE SITE, APPLICATION, SERVICES OR COLLECTIVE CONTENT OR PARTICIPATE IN THE REFERRAL PROGRAM, YOU DO SO AT YOUR SOLE RISK. YOU ACKNOWLEDGE AND AGREE THAT AIRBNB DOES NOT HAVE AN OBLIGATION TO CONDUCT BACKGROUND OR REGISTERED SEX OFFENDER CHECKS ON ANY MEMBER, INCLUDING, BUT NOT LIMITED TO, GUESTS AND HOSTS, BUT MAY CONDUCT SUCH BACKGROUND OR REGISTERED SEX OFFENDER CHECKS IN ITS SOLE DISCRETION. THE SITE, APPLICATION, SERVICES, COLLECTIVE CONTENT AND REFERRAL PROGRAM ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED. WITHOUT LIMITING THE FOREGOING, AIRBNB EXPLICITLY DISCLAIMS ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT OR NON-INFRINGEMENT, AND ANY WARRANTIES ARISING OUT OF COURSE OF DEALING OR USAGE OF TRADE. AIRBNB MAKES NO WARRANTY THAT THE SITE, APPLICATION, SERVICES, COLLECTIVE CONTENT, INCLUDING, BUT NOT LIMITED TO, THE LISTINGS OR ANY ACCOMMODATIONS, OR THE REFERRAL PROGRAM WILL MEET YOUR REQUIREMENTS OR BE AVAILABLE ON AN UNINTERRUPTED, SECURE, OR ERROR-FREE BASIS. AIRBNB MAKES NO WARRANTY REGARDING THE QUALITY OF ANY LISTINGS, ACCOMMODATIONS, HOSTS, GUESTS, YOUR ACCRUAL OF AIRBNB TRAVEL CREDITS, THE SERVICES OR COLLECTIVE CONTENT OR THE ACCURACY, TIMELINESS, TRUTHFULNESS, COMPLETENESS OR RELIABILITY OF ANY COLLECTIVE CONTENT OBTAINED THROUGH THE SITE, APPLICATION, SERVICES OR REFERRAL PROGRAM.
+
+NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED FROM AIRBNB OR THROUGH THE SITE, APPLICATION, SERVICES OR COLLECTIVE CONTENT, WILL CREATE ANY WARRANTY NOT EXPRESSLY MADE HEREIN.
+
+YOU ARE SOLELY RESPONSIBLE FOR ALL OF YOUR COMMUNICATIONS AND INTERACTIONS WITH OTHER USERS OF THE SITE, APPLICATION OR SERVICES AND WITH OTHER PERSONS WITH WHOM YOU COMMUNICATE OR INTERACT AS A RESULT OF YOUR USE OF THE SITE, APPLICATION OR SERVICES, INCLUDING, BUT NOT LIMITED TO, ANY HOSTS OR GUESTS. YOU UNDERSTAND THAT AIRBNB DOES NOT MAKE ANY ATTEMPT TO VERIFY THE STATEMENTS OF USERS OF THE SITE, APPLICATION OR SERVICES OR TO REVIEW OR VISIT ANY ACCOMMODATIONS. AIRBNB MAKES NO REPRESENTATIONS OR WARRANTIES AS TO THE CONDUCT OF USERS OF THE SITE, APPLICATION OR SERVICES OR THEIR COMPATIBILITY WITH ANY CURRENT OR FUTURE USERS OF THE SITE, APPLICATION OR SERVICES. YOU AGREE TO TAKE REASONABLE PRECAUTIONS IN ALL COMMUNICATIONS AND INTERACTIONS WITH OTHER USERS OF THE SITE, APPLICATION OR SERVICES AND WITH OTHER PERSONS WITH WHOM YOU COMMUNICATE OR INTERACT AS A RESULT OF YOUR USE OF THE SITE, APPLICATION OR SERVICES, INCLUDING, BUT NOT LIMITED TO, GUESTS AND HOSTS, PARTICULARLY IF YOU DECIDE TO MEET OFFLINE OR IN PERSON REGARDLESS OF WHETHER SUCH MEETINGS ARE ORGANIZED BY AIRBNB. NOTWITHSTANDING AIRBNB'S APPOINTMENT AS THE LIMITED PAYMENT COLLECTION AGENT OF THE HOSTS FOR THE PURPOSE OF ACCEPTING PAYMENTS FROM GUESTS ON BEHALF OF THE HOSTS, AIRBNB EXPLICITLY DISCLAIMS ALL LIABILITY FOR ANY ACT OR OMISSION OF ANY GUEST OR OTHER THIRD PARTY.
+
+Limitation of Liability
+
+YOU ACKNOWLEDGE AND AGREE THAT, TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE ENTIRE RISK ARISING OUT OF YOUR ACCESS TO AND USE OF THE SITE, APPLICATION, SERVICES AND COLLECTIVE CONTENT, YOUR LISTING OR BOOKING OF ANY ACCOMMODATIONS VIA THE SITE, APPLICATION AND SERVICES, YOUR PARTICIPATION IN THE REFERRAL PROGRAM, AND ANY CONTACT YOU HAVE WITH OTHER USERS OF AIRBNB WHETHER IN PERSON OR ONLINE REMAINS WITH YOU. NEITHER AIRBNB NOR ANY OTHER PARTY INVOLVED IN CREATING, PRODUCING, OR DELIVERING THE SITE, APPLICATION, SERVICES, COLLECTIVE CONTENT OR THE REFERRAL PROGRAM WILL BE LIABLE FOR ANY INCIDENTAL, SPECIAL, EXEMPLARY OR CONSEQUENTIAL DAMAGES, INCLUDING LOST PROFITS, LOSS OF DATA OR LOSS OF GOODWILL, SERVICE INTERRUPTION, COMPUTER DAMAGE OR SYSTEM FAILURE OR THE COST OF SUBSTITUTE PRODUCTS OR SERVICES, OR FOR ANY DAMAGES FOR PERSONAL OR BODILY INJURY OR EMOTIONAL DISTRESS ARISING OUT OF OR IN CONNECTION WITH THESE TERMS, FROM THE USE OF OR INABILITY TO USE THE SITE, APPLICATION, SERVICES OR COLLECTIVE CONTENT, FROM ANY COMMUNICATIONS, INTERACTIONS OR MEETINGS WITH OTHER USERS OF THE SITE, APPLICATION, OR SERVICES OR OTHER PERSONS WITH WHOM YOU COMMUNICATE OR INTERACT AS A RESULT OF YOUR USE OF THE SITE, APPLICATION, SERVICES, OR YOUR PARTICIPATION IN THE REFERRAL PROGRAM OR FROM YOUR LISTING OR BOOKING OF ANY ACCOMMODATION VIA THE SITE, APPLICATION AND SERVICES, WHETHER BASED ON WARRANTY, CONTRACT, TORT (INCLUDING NEGLIGENCE), PRODUCT LIABILITY OR ANY OTHER LEGAL THEORY, AND WHETHER OR NOT AIRBNB HAS BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGE, EVEN IF A LIMITED REMEDY SET FORTH HEREIN IS FOUND TO HAVE FAILED OF ITS ESSENTIAL PURPOSE.
+
+EXCEPT FOR OUR OBLIGATIONS TO PAY AMOUNTS TO APPLICABLE HOSTS PURSUANT TO THESE TERMS OR AN APPROVED PAYMENT REQUEST UNDER THE AIRBNB HOST GUARANTEE, IN NO EVENT WILL AIRBNB'S AGGREGATE LIABILITY ARISING OUT OF OR IN CONNECTION WITH THESE TERMS AND YOUR USE OF THE SITE, APPLICATION AND SERVICES INCLUDING, BUT NOT LIMITED TO, FROM YOUR LISTING OR BOOKING OF ANY ACCOMMODATION VIA THE SITE, APPLICATION AND SERVICES, OR FROM THE USE OF OR INABILITY TO USE THE SITE, APPLICATION, SERVICES, OR COLLECTIVE CONTENT OR YOUR PARTICIPATION IN THE REFERRAL PROGRAM AND IN CONNECTION WITH ANY ACCOMMODATION OR INTERACTIONS WITH ANY OTHER MEMBERS, EXCEED THE AMOUNTS YOU HAVE PAID OR OWE FOR BOOKINGS VIA THE SITE, APPLICATION AND SERVICES AS A GUEST IN THE TWELVE (12) MONTH PERIOD PRIOR TO THE EVENT GIVING RISE TO THE LIABILITY, OR IF YOU ARE A HOST, THE AMOUNTS PAID BY AIRBNB TO YOU IN THE TWELVE (12) MONTH PERIOD PRIOR TO THE EVENT GIVING RISE TO THE LIABILITY, OR ONE HUNDRED U.S. DOLLARS (US$100), IF NO SUCH PAYMENTS HAVE BEEN MADE, AS APPLICABLE. THE LIMITATIONS OF DAMAGES SET FORTH ABOVE ARE FUNDAMENTAL ELEMENTS OF THE BASIS OF THE BARGAIN BETWEEN AIRBNB AND YOU. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES, SO THE ABOVE LIMITATION MAY NOT APPLY TO YOU.
+
+Indemnification
+
+You agree to release, defend, indemnify, and hold Airbnb and its affiliates and subsidiaries, and their officers, directors, employees and agents, harmless from and against any claims, liabilities, damages, losses, and expenses, including, without limitation, reasonable legal and accounting fees, arising out of or in any way connected with (a) your access to or use of the Site, Application, Services, or Collective Content or your violation of these Terms; (b) your Member Content; (c) your (i) interaction with any Member, (ii) booking of an Accommodation, or (iii) creation of a Listing; (d) the use, condition or rental of an Accommodation by you, including but not limited to any injuries, losses, or damages (compensatory, direct, incidental, consequential or otherwise) of any kind arising in connection with or as a result of a rental, booking or use of a Accommodation; and (e) your participation in the Referral Program or your accrual of any Airbnb Travel Credits.
+
+Export Control and Restricted Countries
+
+You may not use, export, re-export, import, or transfer the Application except as authorized by United States law, the laws of the jurisdiction in which you obtained the Application, and any other applicable laws. In particular, but without limitation, the Application may not be exported or re-exported: (a) into any United States embargoed countries; or (b) to anyone on the U.S. Treasury Department's list of Specially Designated Nationals or the U.S. Department of Commerce's Denied Persons List or Entity List. By using the Site, Application and Services, you represent and warrant that (i) neither you nor your listed Accommodation is located in a country that is subject to a U.S. Government embargo, or that has been designated by the U.S. Government as a "terrorist supporting" country and (ii) you are not listed on any U.S. Government list of prohibited or restricted parties. You also will not use the Site, Application and Services for any purpose prohibited by U.S. law, including the development, design, manufacture or production of missiles, or nuclear, chemical or biological weapons. Airbnb does not permit Listings associated with certain countries due to U.S. embargo restrictions.
+
+Accessing and Downloading the Application from iTunes
+
+The following applies to any Application accessed through or downloaded from the Apple App Store ("App Store Sourced Application"):
+
+
+You acknowledge and agree that (i) these Terms are concluded between you and Airbnb only, and not Apple, and (ii) Airbnb, not Apple, is solely responsible for the App Store Sourced Application and content thereof. Your use of the App Store Sourced Application must comply with the App Store Terms of Services.
+
+You acknowledge that Apple has no obligation whatsoever to furnish any maintenance and support services with respect to the App Store Sourced Application.
+
+In the event of any failure of the App Store Sourced Application to conform to any applicable warranty, you may notify Apple, and Apple will refund the purchase price for the App Store Sourced Application to you and to the maximum extent permitted by applicable law, Apple will have no other warranty obligation whatsoever with respect to the App Store Sourced Application. As between Airbnb and Apple, any other claims, losses, liabilities, damages, costs or expenses attributable to any failure to conform to any warranty will be the sole responsibility of Airbnb.
+
+You and Airbnb acknowledge that, as between Airbnb and Apple, Apple is not responsible for addressing any claims you have or any claims of any third party relating to the App Store Sourced Application or your possession and use of the App Store Sourced Application, including, but not limited to: (i) product liability claims; (ii) any claim that the App Store Sourced Application fails to conform to any applicable legal or regulatory requirement; and (iii) claims arising under consumer protection or similar legislation.
+
+You and Airbnb acknowledge that, in the event of any third-party claim that the App Store Sourced Application or your possession and use of that App Store Sourced Application infringes that third party's intellectual property rights, as between Airbnb and Apple, Airbnb, not Apple, will be solely responsible for the investigation, defense, settlement and discharge of any such intellectual property infringement claim to the extent required by these Terms.
+
+You and Airbnb acknowledge and agree that Apple, and Apple's subsidiaries, are third-party beneficiaries of these Terms as related to your license of the App Store Sourced Application, and that, upon your acceptance of the terms and conditions of these Terms, Apple will have the right (and will be deemed to have accepted the right) to enforce these Terms as related to your license of the App Store Sourced Application against you as a third-party beneficiary thereof.
+
+Without limiting any other terms of these Terms, you must comply with all applicable third-party terms of agreement when using the App Store Sourced Application.
+
+Reporting Misconduct
+
+If you stay with or host anyone who you feel is acting or has acted inappropriately, including but not limited to anyone who (i) engages in offensive, violent or sexually inappropriate behavior, (ii) you suspect of stealing from you, or (iii) engages in any other disturbing conduct, you should immediately report such person to the appropriate authorities and then to Airbnb by contacting us with your police station and report number; provided that your report will not obligate us to take any action beyond that required by law (if any) or cause us to incur any liability to you.
+
+Entire Agreement
+
+These Terms constitute the entire and exclusive understanding and agreement between Airbnb and you regarding the Site, Application, Services, Collective Content, and any bookings or Listings of Accommodations made via the Site, Application and Services, and these Terms supersede and replace any and all prior oral or written understandings or agreements between Airbnb and you regarding bookings or listings of Accommodations, the Site, Application, Services, and Collective Content.
+
+Assignment
+
+You may not assign or transfer these Terms, by operation of law or otherwise, without Airbnb's prior written consent. Any attempt by you to assign or transfer these Terms, without such consent, will be null and of no effect. Airbnb may assign or transfer these Terms, at its sole discretion, without restriction. Subject to the foregoing, these Terms will bind and inure to the benefit of the parties, their successors and permitted assigns.
+
+Notices
+
+Any notices or other communications permitted or required hereunder, including those regarding modifications to these Terms, will be in writing and given by Airbnb (i) via email (in each case to the address that you provide) or (ii) by posting to the Site or via the Application. For notices made by e-mail, the date of receipt will be deemed the date on which such notice is transmitted.
+
+Controlling Law and Jurisdiction
+
+These Terms and your use of the Services will be interpreted in accordance with the laws of the State of California and the United States of America, without regard to its conflict-of-law provisions. You and we agree to submit to the personal jurisdiction of a state court located in San Francisco County, San Francisco, California or a United States District Court, Northern District of California located in San Francisco, California for any actions for which the parties retain the right to seek injunctive or other equitable relief in a court of competent jurisdiction to prevent the actual or threatened infringement, misappropriation or violation of a party's copyrights, trademarks, trade secrets, patents, or other intellectual property rights, as set forth in the Dispute Resolution provision below.
+
+Dispute Resolution
+
+You and Airbnb agree that any dispute, claim or controversy arising out of or relating to these Terms or the breach, termination, enforcement, interpretation or validity thereof, or to the use of the Services or use of the Site or Application (collectively, "Disputes") will be settled by binding arbitration, except that each party retains the right to seek injunctive or other equitable relief in a court of competent jurisdiction to prevent the actual or threatened infringement, misappropriation or violation of a party's copyrights, trademarks, trade secrets, patents, or other intellectual property rights. You acknowledge and agree that you and Airbnb are each waiving the right to a trial by jury or to participate as a plaintiff or class member in any purported class action or representative proceeding. Further, unless both you and Airbnb otherwise agree in writing, the arbitrator may not consolidate more than one person's claims, and may not otherwise preside over any form of any class or representative proceeding. If this specific paragraph is held unenforceable, then the entirety of this "Dispute Resolution" section will be deemed void. Except as provided in the preceding sentence, this "Dispute Resolution" section will survive any termination of these Terms.
+
+Arbitration Rules and Governing Law. The arbitration will be administered by the American Arbitration Association ("AAA") in accordance with the Commercial Arbitration Rules and the Supplementary Procedures for Consumer Related Disputes (the "AAA Rules") then in effect, except as modified by this "Dispute Resolution" section. (The AAA Rules are available at www.adr.org/arb_med or by calling the AAA at 1-800-778-7879.) The Federal Arbitration Act will govern the interpretation and enforcement of this section.
+
+Arbitration Process. A party who desires to initiate arbitration must provide the other party with a written Demand for Arbitration as specified in the AAA Rules. (The AAA provides a form Demand for Arbitration and a separate form for California residents) The arbitrator will be either a retired judge or an attorney licensed to practice law in the state of California and will be selected by the parties from the AAA's roster of consumer dispute arbitrators. If the parties are unable to agree upon an arbitrator within seven (7) days of delivery of the Demand for Arbitration, then the AAA will appoint the arbitrator in accordance with the AAA Rules.
+
+Arbitration Location and Procedure. Unless you and Airbnb otherwise agree, the arbitration will be conducted in the county where you reside. If your claim does not exceed $10,000, then the arbitration will be conducted solely on the basis of documents you and Airbnb submit to the arbitrator, unless you request a hearing or the arbitrator determines that a hearing is necessary. If your claim exceeds $10,000, your right to a hearing will be determined by the AAA Rules. Subject to the AAA Rules, the arbitrator will have the discretion to direct a reasonable exchange of information by the parties, consistent with the expedited nature of the arbitration.
+
+Arbitrator's Decision. The arbitrator will render an award within the time frame specified in the AAA Rules. The arbitrator's decision will include the essential findings and conclusions upon which the arbitrator based the award. Judgment on the arbitration award may be entered in any court having jurisdiction thereof. The arbitrator's award damages must be consistent with the terms of the "Limitation of Liability" section above as to the types and the amounts of damages for which a party may be held liable. The arbitrator may award declaratory or injunctive relief only in favor of the claimant and only to the extent necessary to provide relief warranted by the claimant's individual claim. If you prevail in arbitration you will be entitled to an award of attorneys' fees and expenses, to the extent provided under applicable law. Airbnb will not seek, and hereby waives all rights it may have under applicable law to recover, attorneys' fees and expenses if it prevails in arbitration.
+
+Fees. Your responsibility to pay any AAA filing, administrative and arbitrator fees will be solely as set forth in the AAA Rules. However, if your claim for damages does not exceed $75,000, Airbnb will pay all such fees unless the arbitrator finds that either the substance of your claim or the relief sought in your Demand for Arbitration was frivolous or was brought for an improper purpose (as measured by the standards set forth in Federal Rule of Civil Procedure 11(b)).
+
+Changes. Notwithstanding the provisions of the "Modification" section above, if Airbnb changes this "Dispute Resolution" section after the date you first accepted these Terms (or accepted any subsequent changes to these Terms), you may reject any such change by sending us written notice (including by email) within 30 days of the date such change became effective, as indicated in the "Last Updated Date" above or in the date of Airbnb's email to you notifying you of such change. By rejecting any change, you are agreeing that you will arbitrate any Dispute between you and Airbnb in accordance with the provisions of this "Dispute Resolution" section as of the date you first accepted these Terms (or accepted any subsequent changes to these Terms).
+
+General
+
+The failure of Airbnb to enforce any right or provision of these Terms will not constitute a waiver of future enforcement of that right or provision. The waiver of any such right or provision will be effective only if in writing and signed by a duly authorized representative of Airbnb. Except as expressly set forth in these Terms, the exercise by either party of any of its remedies under these Terms will be without prejudice to its other remedies under these Terms or otherwise. If for any reason an arbitrator or a court of competent jurisdiction finds any provision of these Terms invalid or unenforceable, that provision will be enforced to the maximum extent permissible and the other provisions of these Terms will remain in full force and effect.
+
+Third party beneficiary
+
+These Terms do not and are not intended to confer any rights or remedies upon any person other than the parties. Notwithstanding the foregoing, the parties agree that the payment card networks are third party beneficiaries of these Terms for purposes of enforcing provisions related to payments, but that their consent or agreement is not necessary for any changes or modifications to these Terms.
+
+Additional Clauses for Users Contracting with Airbnb Ireland
+
+The following paragraphs will apply if you are contracting with Airbnb Ireland.
+
+The final sentence in the Suspension, Termination and Airbnb Account Cancellation clause shall be removed and replaced with the following:  
+"Please note that if your Airbnb Account is cancelled, we do not have an obligation to return to you any Content you have posted to the Site, Application and Services, including, but not limited to, any reviews or Feedback."
+
+The Controlling Law and Jurisdiction clause shall be removed and replaced with the following: "Controlling Law and Jurisdiction These Terms will be interpreted in accordance with Irish law. You and we agree to submit to the non-exclusive jurisdiction of the Irish courts for resolving any dispute between the parties. If Airbnb wishes to enforce any of its rights against you, we may elect to do so in the Irish courts or in the courts of the jurisdiction in which you are resident."
+
+The Dispute Resolution clause shall be removed and is not applicable.
+
+The Export Control and Restricted Countries clause shall be amended by the following: "Export Control and Restricted Countries In addition to complying with the main Export Control and Restricted Countries clause, you must also comply with any relevant export control laws in your local jurisdiction."
+
+The Bookings and Financial Terms for Guests clause shall be amended by the following: "Bookings and Financial Terms for Guests In addition to complying with the main Bookings and Financial Terms for Guests clause, you also acknowledge that if your Airbnb account is located in Brazil and you are paying by credit card, you may pay for your booking in multiple installments as long as your credit card supports installments and is issued in Brazil. The number of installments may vary, but will be presented to you before you complete your booking transaction. You also acknowledge that the Total Fees may be increased in case you choose to pay for your booking using credit card installments."
+
+Contacting Airbnb
+
+If you have any questions about these Terms or any App Store Sourced Application, please contact Airbnb.</p>
+                  
+                  
+
+                     
+                     
+                  </div>
+               </div>
+            </div>
+         </section>
+         <footer class="footer-3">
+            <div class="container">
+               <div class="row v-center">
+                  <!--bottom-footer-->
+                  <div class="col-md-3">
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle btn-currency" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        MYR <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu currency-dropdown-menu">
+                           <li><a href="#">USD</a></li>
+                           <li><a href="#">SGD</a></li>
+                           <li><a href="#">INR</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-7">
+                     <div class="col-md-2">
+                        <a href="#">About</a>
+                     </div>
+                     <div class="col-md-2">
+                        <a href="#">Contact</a>
+                     </div>
+                     <div class="col-md-3">
+                        <a href="#">Become a Vendor</a>
+                     </div>
+                     <div class="col-md-2">
+                        <a href="#">Blog</a>
+                     </div>
+                     <div class="col-md-2">
+                        <a href="#">FAQs</a>
+                     </div>
+                  </div>
+                  <div class="col-md-2">
+                     <a href=""><img src="img/Facebook.png" width="42"></a>
+                     <a href=""><img src="img/Twitter.png" width="42"></a>
+                     <a href=""> <img src="img/Instagram.png" width="42"></a>
+                  </div>
+               </div>
+               <div class="row v-center  bottom-below-footer">
+                  <!--bottom-footer-->
+                  <div class="col-md-6">
+                     <p class="pull-left"><a href="#" class="terms-footer">Terms and conditions </a>	<a href="#">Privacy policy</a></p>
+                  </div>
+                  <div class="col-md-6">
+                     <p class="pull-right">© 2016 want.my All rights reserved</p>
+                  </div>
+               </div>
+            </div>
+         </footer>
+         <!-- full-box-border -->
+      </div>
+      <!-- /side-collapse-container  -->
+      
+   </body>
+</html>
