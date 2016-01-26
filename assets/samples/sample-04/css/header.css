@@ -326,6 +326,19 @@ font-size: 15px;
          }
          /*Footer*/
 
+	/*----------------------------------------------------------PAYMENT----------------------------------------------------------*/
+
+
+.table.table-payment {
+    border-bottom:0px !important;
+}
+.table.table-payment th, .table td {
+    border: 0px !important;
+}
+.fixed-table-container {
+    border:0px !important;
+}
+
 
 	/*----------------------------------------------------------ABOUT----------------------------------------------------------*/
 
