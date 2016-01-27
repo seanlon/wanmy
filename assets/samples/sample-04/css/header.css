@@ -216,6 +216,8 @@ font-size: 15px;
 	.invitefriends-form { margin-top:40px;}
 	.invitefriends-form .form-control {    width: 300px;    padding: 20px 10px;}
 	
+	.friendslist { margin-top:80px; padding-top:80px; border-top:1px solid #E0E0E0;}
+	
 	
 	
 	/*----------------------------------------------------------PROFILE----------------------------------------------------------*/
@@ -377,6 +379,10 @@ font-size: 15px;
 .header-10-sub .hero-unit .termssmall { font-size:14px; color:#FFF;}
 
 .hero-unit.userinvitehero h1 { margin:0;}
+
+.inviteuserprofileimg {    border: solid 3px #FFF;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.25);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.25); margin-bottom:40px;}
 
 	/*----------------------------------------------------------ABOUT----------------------------------------------------------*/
 
