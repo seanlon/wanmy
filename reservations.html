@@ -2,148 +2,17 @@
 <html lang="en">
    <head>
       <meta charset="utf-8">
-      <title>Product Detail</title>
+      <title>Reservations</title>
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
       <meta name="apple-mobile-web-app-status-bar-style" content="black" />
       <link rel="shortcut icon" href="assets/flat-ui/images/favicon.ico">
       <link rel="stylesheet" href="css/lib/bootstrap.css">
-      <link rel="stylesheet" href="css/lib/bootstrap-select.css">
-      <link rel="stylesheet" type="text/css" href="css/custom.css">
-      <link rel="stylesheet" href="assets/common-files/css/icon-font.css">
       <link rel="stylesheet" href="assets/samples/sample-04/css/style.css">
       <link rel="stylesheet" type="text/css" href="assets/samples/sample-04/css/header.css">
-      <!--need to be on top-->
       <script src="assets/common-files/js/jquery-1.10.2.min.js"></script>
       <script src="assets/samples/sample-04/js/custom.js"></script>
-      <!--need to be on top-->
-      <!--Places form-->
-      <!--/Places form-->
-      <!--typehead-->
-      <!--need to be on top-->
-      <!--<script src="js/lib/jquery.js"></script>-->
       <script src="js/lib/bootstrap.js"></script>
-      <script src="js/lib/bootstrap-select.js"></script>
-      <!--For debugging and intergration-->
-      <style>
-         ul.sidebar {padding:0;}
-         ul.sidebar li{ list-style:none;margin: 10px 0; }
-         ul.sidebar li a{ color: #000;
-         line-height: 22px;
-         font-size: 14px;
-         font-weight: normal;
-         padding: 16px 15px 5px;}
-         .profile-details {background-color: #FFF;
-         border:1px solid #e6e6e6; padding:40px 40px 10px;}
-         .profile-form input {background-color: #FFF;
-         border:1px solid #adadad;
-         }
-         .profile-form select {background-color: #FFF;
-         border:1px solid #adadad; width:100px;
-         }
-         .btn-viewprofile { width:200px;border: 1px solid;
-         border-radius: 2px;
-         color: #6A707D;
-         text-shadow: 0 1px 0 #FFF;
-         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-         border-color: rgba(204, 206, 210, 0.67) rgba(205, 206, 208, 0.78) rgba(182, 183, 185, 0.67);
-         background: #F4F4F5;
-         background: -webkit-linear-gradient(top,#FFF,#F6F7F8);
-         background: -ms-linear-gradient(top,#FFFFFF,#f9f9f9);
-         background: -moz-linear-gradient(top,#FFFFFF,#f9f9f9);
-         background: -o-linear-gradient(top,#FFFFFF,#f9f9f9);
-         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF',endColorstr='#f9f9f9');
-         margin-top:20px;}
-         .birthdate .dropdown-menu {
-         top: 33px;
-         }
-         .profile-details .dropdown-toggle {
-         width: 130px;    border-radius: 2px;
-         }
-         .profile-page {
-         padding-top: 40px;
-         background: #fafafa;
-         }
-         .nav-second-profile {   
-         background: #EEEFF0;
-         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f5f6', endColorstr='#EEEFF0', GradientType=0);
-         background: -webkit-gradient(linear,left top,left bottom,from(#F4F5F6),to(#EEEFF0));
-         background: -webkit-linear-gradient(top,#F4F5F6,#EEEFF0);
-         background: -moz-linear-gradient(top,#f4f5f6,#eeeff0);
-         background: -o-linear-gradient(top,#f4f5f6,#eeeff0);
-         background: linear-gradient(top,#f4f5f6,#eeeff0);
-         -webkit-box-shadow: inset 0 1px 0 #F8F9F9,0 0 0 1px rgba(14, 16, 18, 0.1),0 1px 2px 0 rgba(14, 16, 18, 0.1);
-         -moz-box-shadow: inset 0 1px 0 #F8F9F9,0 0 0 1px rgba(14, 16, 18, 0.1),0 1px 2px 0 rgba(14, 16, 18, 0.1);
-         box-shadow: inset 0 1px 0 #F8F9F9,0 0 0 1px rgba(14, 16, 18, 0.1),0 1px 2px 0 rgba(14, 16, 18, 0.1);
-         z-index: 99;margin-bottom: 0;}
-         .nav-second-profile li.active {font-weight: bold; color:#000;}
-         .nav-second-profile .navbar-nav>li>a {
-         padding-top: 15px;
-         color: #777;
-         }
-         .btn-profile {
-         position: relative;
-         overflow: hidden;border: 1px solid;
-         border-radius: 2px;
-         color: #6A707D;
-         text-shadow: 0 1px 0 #FFF;
-         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-         border-color: rgba(204, 206, 210, 0.67) rgba(205, 206, 208, 0.78) rgba(182, 183, 185, 0.67);
-         background: #F4F4F5;
-         background: -webkit-linear-gradient(top,#FFF,#F6F7F8);
-         background: -ms-linear-gradient(top,#FFFFFF,#f9f9f9);
-         background: -moz-linear-gradient(top,#FFFFFF,#f9f9f9);
-         background: -o-linear-gradient(top,#FFFFFF,#f9f9f9);
-         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF',endColorstr='#f9f9f9');
-         }
-         .btn-profile input[type=file] {
-         position: absolute;
-         top: 0;
-         right: 0;
-         min-width: 100%;
-         min-height: 100%;
-         font-size: 100px;
-         text-align: right;
-         filter: alpha(opacity=0);
-         opacity: 0;
-         outline: none;
-         background: white;
-         cursor: inherit;
-         display: block;
-         }
-         .profileholder { background:#fafafa;padding: 10px;}
-         .remove-profile { position:absolute;    position: absolute;
-         top: 10px;
-         left: 178px;
-         color: red;}
-         .form-horizontal .form-group {
-         margin-bottom: 40px;
-         }
-         .panel-heading {
-         color: #333;
-         background: #F4F5F6;
-         border-bottom: 1px solid #E1E3E5;
-         text-shadow: 0 1px 0 rgba(255, 255, 255, 0.57);
-         font-weight: bold;
-         box-shadow: none;
-         font-size: 14px;
-         color: #5A626B;    padding: 15px 15px;
-         }
-         .btn-save { background:#F4511E; color:#FFF; border:0; padding:10px 40px; border-radius:2px;}
-         /*Footer*/
-         .bottom-below-footer { margin-top:100px;}
-         .btn-currency { border-radius:1px; background:none; border:1px solid #999;}
-         .btn-currency:hover, focus, active {background:none;}
-         .btn-currency:hover,active {  background:none;}
-         .open > ul.currency-dropdown-menu {
-         margin-top: 0;
-         }
-         .open .dropdown-toggle.btn-default.btn-currency {
-         background: #000;
-         }
-         /*Footer*/
-      </style>
-      <!--For debugging and intergration-->
    </head>
    <body>
       <!-- header  -->
@@ -325,7 +194,7 @@
       <!-- Second navbar -->
       <nav class="navbar navbar-static-top nav-second-profile">
          <div class="container">
-            <div id="" class="">
+
                <ul class="nav navbar-nav">
                   <li><a href="#">Dashboard</a></li>
                   <li><a href="#">Inbox</a></li>
@@ -334,7 +203,6 @@
                   <li class="active"><a href="#">Profile</a></li>
                   <li><a href="#">Accounts</a></li>
                </ul>
-            </div>
             <!--/.nav-collapse -->
          </div>
       </nav>
@@ -344,7 +212,7 @@
             <div class="container">
                <div class="row ">
                   <div class="col-md-3">
-                     <ul class="sidebar">
+                     <ul class="sidebar-static">
                         <li><a href="">Your Listing</a></li>
                         <li><a href="">Your Reservations</a></li>
                         <li><a href="">Reservations Requirements</a></li>
@@ -355,14 +223,14 @@
                      <div class="panel panel-default profile-photo">
                         <div class="panel-heading"><strong>Your Reservations</strong></div>
                         <div class="panel-body">
-                           <div class="col-md-12">
+                           <div class="col-md-12 paddingzero">
                               <table class="table table-bordered">
                                  <thead>
-                                    <tr>
-                                       <th width="12%">Status</th>
-                                       <th width="19%">Date & Locations</th>
-                                       <th width="36%">Guest</th>
-                                       <th width="33%">Details</th>
+                                    <tr class="reservation-table-title">
+                                       <th width="12%"><p>Status</p></th>
+                                       <th width="19%"><p>Date & Locations</p></th>
+                                       <th width="36%"><p>Guest</p></th>
+                                       <th width="33%"><p>Details</p></th>
                                     </tr>
                                  </thead>
                                  <tbody>
@@ -370,7 +238,7 @@
                                        <th scope="row">
                                           <p class="accepted">Accepted</p>
                                           <div class="dropdown">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+  <button class="btn btn-default dropdown-toggle btn-status" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
     Change Status
     <span class="caret"></span>
   </button>
@@ -409,7 +277,7 @@
                                        <th scope="row">
                                           <p class="pending">Pending</p>
                                           <div class="dropdown">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+  <button class="btn btn-default dropdown-toggle btn-status" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
     Change Status
     <span class="caret"></span>
   </button>
@@ -448,7 +316,7 @@
                                        <th scope="row">
                                           <p class="reject">Reject</p>
                                           <div class="dropdown">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+  <button class="btn btn-default dropdown-toggle btn-status" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
     Change Status
     <span class="caret"></span>
   </button>

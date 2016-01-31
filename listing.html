@@ -1,254 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>product page</title>
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-        <link rel="shortcut icon" href="assets/flat-ui/images/favicon.ico">
-        <link rel="stylesheet" href="assets/flat-ui/bootstrap/css/bootstrap.css">
-
-        
-        <link rel="stylesheet" href="assets/samples/sample-04/css/style.css">
-		<link rel="stylesheet" type="text/css" href="assets/samples/sample-04/css/header.css">
-		 <!--need to be on top / dropdown hover / -->
+   <head>
+      <meta charset="utf-8">
+      <title>Listing</title>
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+      <link rel="shortcut icon" href="assets/flat-ui/images/favicon.ico">
+      <link rel="stylesheet" href="css/lib/bootstrap.css">
+      <link rel="stylesheet" href="assets/samples/sample-04/css/style.css">
+      <link rel="stylesheet" type="text/css" href="assets/samples/sample-04/css/header.css">
       <script src="assets/common-files/js/jquery-1.10.2.min.js"></script>
       <script src="assets/samples/sample-04/js/custom.js"></script>
-		 <!--need to be on top / dropdown hover / -->
-         
-         <style>
-		 /*detail page only*/
-		 
-		 
-		 
-		 
-		 /*Overrighting original style.css, please change class name*/ 
-		 .paddingzero { padding:0;}
-		 .header-10-sub .background {
-  background-image: url("img/vacation.jpg");
-  opacity: 85;
-  filter: alpha(opacity=8500);
-  opacity: 0.85;
-  filter: alpha(opacity=85);
-}
-.header-10-sub {
-    height: 400px !important;
-}
-
-
-.form-control {
-    border: 1px solid #bdc3c7;
-    color: #34495e;
-    border-radius: 2px;
-}
-.btn-default { background:#E64A19; color:#FFF; border-radius:1px;}
-.btn-default:hover {background:#BF360C;}
-footer p {
-    color: #FFF;
-}
-/*Overrighting original style.css, please change class name*/
-/*Overrighting original header.css*/
-.navsearch-form {
-    top: 5px;
-}
-.navbar-form .form-control {
-    border-radius: 1px;
-}
-/*Overrighting original header.css*/
-
-.titledistance { margin-bottom:40px;}
-
-p {    font-size: 14px;
-    color: #000;}
-	
-	a {   
-    color: #000;}
-	
-	.content-8 p {
-    font-size: 14px;
-    font-weight: normal;
-    color: #000;
-    margin-bottom: 43px;margin-bottom: 0;
-}
-	
-	.content-8 h4 {
-    font-weight: normal;
-    margin-top: 0;
-}
-
-.content-7 h4{
-    font-weight: normal;
-    margin-top: 0;
-}
-
-
-
-
-.book-now-block {
-    background-color: #fff;
-    display: block;
-    width: 300px;
-    min-height: 225px;
-    border: 1px solid #dce0e0;
-    border-radius: 0;
-	z-index:999;
-}
-.book-widget-detail-page {
-    position: absolute;
-        top: -94px;opacity: 0.9;
-}
-
-.productdetail {
-    position: absolute;
-    padding: 10px 20px 20px 43px;
-}
-
-
-.book-widget-detail-page p { font-weight:normal;font-size: 16px;}
-.widget-title {
-       background: rgba(0, 0, 0, 0.8);
-        padding: 10px 40px;
-    margin: 0;
-    opacity: 1.5;
-    display: block;
-    width: 300px;
-    border: 1px solid #000;
-}
-.widget-title p { color:#FFF; font-weight:300; font-size:18px;margin: 0;}
-
-
-.greysection {
-    background-color: #f9f9f9;
-    min-height: 150px;
-    border: 1px solid #dce0e0;
-}
-
-
-/*1 - about merchant*/
-.aboutmerchant {    padding-top: 40px;
-    padding-bottom: 40px;text-align: left;}
-
-/*1 - about merchant*/
-/*2 - about product*/
-.aboutproduct {    padding-top: 40px;
-    padding-bottom: 40px;text-align: left;}
-
-/*2 - about product*/
-/*3 - gallery*/
-.gallery {    padding-top: 40px;
-    padding-bottom: 40px;}
-
-/*3 - gallery*/
-/*4 - reviews*/
-.reviews {    padding-top: 40px;
-    padding-bottom: 40px;text-align: left;}
-
-/*4 - reviews*/
-/*5 - merchant detail*/
-.merchantdetail {    padding-top: 40px;
-    padding-bottom: 40px;text-align: left;}
-
-/*5 - merchant detail*/
-
-
-
-
-
-
-
-		 /*detail page only*/
-		 
-		 /*detail page gallery*/
-         .detailpage-images-gallery {}
-         .topleftimg { padding:0 2px 2px 0;}
-         .toprightimg {padding:0 0 2px 2px;}
-         .bottomleftimg {padding:2px 2px 0 0;} 
-         .bottomcentreimg {padding:2px 2px 0 2px;}
-         .bottomrightimg {padding:2px 0  0 2px;}
-         .gallery-overlay-cover {    background: #000;
-         opacity: 0.3; width:215px; height:215px; position:absolute;}
-         .text-overlay-cover { position:absolute; top: 100px;
-         left: 40px; z-index:99; color:#FFF; font-size:16px; font-weight:bold;}
-         .text-overlay-cover:hover {color:#F4511E; }
-         /*detail page gallery*/
-		 
-		 /*Footer*/
-         .bottom-below-footer { margin-top:100px;}
-		 
-         .btn-currency { border-radius:1px; background:none; border:1px solid #999;}
-         .btn-currency:hover, focus, active {background:none;}
-		 .btn-currency:hover,active {  background:none;}
-         .open > ul.currency-dropdown-menu {
-         margin-top: 0;
-         }
-		  .open .dropdown-toggle.btn-default.btn-currency {
-    	background: #000;
-		}
-		 
-		 /*Footer*/
-		 
-		 /*suggestions*/
-		 
-		 .portfolio-item {
-    margin-bottom: 40px
-}
-.portfolio-item h4{
-    color: #333;    margin-top: 20px;
-
-}
-.portfolio-item a{
-    color: #333;
-}
-.portfolio-item p{
-    color: #333;
-}
-
-.user-thumb {
-    position: absolute;
-    top: 220px;
-    left: 205px;
-}
-
-.price {
-    opacity: .79;
-    background: #3c3d41;
-    min-width: 100px;
-    padding: 10px;
-    color: #fff;
-    font-size: 18px;
-    position: absolute;
-    top: 180px
-}
-.heart-wrapper {
-    position: absolute;
-    top: 5px;
-    left: 235px;
-}
-.glyphicon-star {
-    color: #ffcd00;
-}
-.starratings { padding-top:5px;}
-.star-rating .icon-star {
-    display: inline;
-    color: #d8d8d8;
-    font-size: 16px;
-}
-
-/*hearts*/
-input[type=checkbox].heart-checkbox {
-    display: none;
-}
-		 
-		 
-		 </style>
-    </head>
-
-    <body>
-        <div class="page-wrapper">
-            <!-- header-10 -->
-            
-            <!-- header  -->
+      <script src="js/lib/bootstrap.js"></script>
+   </head>
+   <body>
+      <!-- header  -->
       <header class="header-10">
          <div class="container">
             <div class="navbar col-sm-12" role="navigation">
@@ -424,25 +191,112 @@ input[type=checkbox].heart-checkbox {
             </div>
          </div>
       </header>
+      <!-- Second navbar -->
+      <nav class="navbar navbar-static-top nav-second-profile">
+         <div class="container">
+
+               <ul class="nav navbar-nav">
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Inbox</a></li>
+                  <li><a href="#">Listing</a></li>
+                  <li><a href="#">Trips</a></li>
+                  <li class="active"><a href="#">Profile</a></li>
+                  <li><a href="#">Accounts</a></li>
+               </ul>
+            <!--/.nav-collapse -->
+         </div>
+      </nav>
       <!-- /header  -->
-            
-            <section class="header-10-sub v-center ">
-                <div class="">
-       <img src="img/howitworks.png" width="100%">           
-                </div>
-                
-                
-            </section>
+      <div class="side-collapse-container">
+         <section class="header-11-sub profile-page">
+            <div class="container">
+               <div class="row ">
+                  <div class="col-md-3">
+                     <ul class="sidebar-static">
+                        <li><a href="">Your Listing</a></li>
+                        <li><a href="">Your Reservations</a></li>
+                        <li><a href="">Reservations Requirements</a></li>
+                     </ul>
+                     <a href="" class="btn btn-block btn-viewprofile">Add New Listing</a>
+                  </div>
+                  <div class="col-md-9">
+                     <div class="panel panel-default profile-photo">
+                        <div class="panel-heading"><strong>Unlisted</strong></div>
+                        <div class="panel-body">
+                           <div class="col-md-12 paddingzero">
+                              
+                              <div class="row">
+  <div class="col-md-12">
+  <div class="col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="http://placehold.it/200x200" alt="...">
+    </a>
+  </div>
+  
+   <div class="col-md-7">
+<h5>Room, for traveller in Kuala Lumpur</h5>
+<p>Manage Listing and Calendar</p>
+  </div>
+
+   <div class="col-md-2">
+    <select class=" form-control" title="
+    Dropdown">
+    <option value="1">Listed</option>
+    <option value="2">Unlisted</option> 
+    </select> 
+
+  </div>
+
+  
+  
+
+  
+  
+  
+  </div>
+  <hr>
+<div class="col-md-12">
+  <div class="col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="http://placehold.it/200x200" alt="...">
+    </a>
+  </div>
+  
+   <div class="col-md-7">
+<h5>Room, for traveller in Kuala Lumpur</h5>
+<p>Manage Listing and Calendar</p>
+  </div>
+
+   <div class="col-md-2">
+
+  
+  <button class="btn btn-default btn-list" type="button">
+    6 Steps to list
+  </button>
+
+  </div>
+
+  
+  
+
+  
+  
+  
+  </div>
 
 
-
-            
-
-
-     
-     
-            <!-- footer-3 -->
-            <footer class="footer-3">
+</div>
+                              
+                              
+                              
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <footer class="footer-3">
             <div class="container">
                <div class="row v-center">
                   <!--bottom-footer-->
@@ -492,12 +346,8 @@ input[type=checkbox].heart-checkbox {
                </div>
             </div>
          </footer>
-        </div>
-
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="assets/flat-ui/js/bootstrap.min.js"></script>
-        <script src="assets/common-files/js/modernizr.custom.js"></script>
-        <script src="assets/common-files/js/startup-kit.js"></script>
-        <script src="assets/samples/sample-04/js/script.js"></script>
-    </body>
+         <!-- full-box-border -->
+      </div>
+      <!-- /side-collapse-container  -->
+   </body>
 </html>
