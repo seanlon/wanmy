@@ -2,7 +2,7 @@
 
 dir
 0
-https://github.com:443/seanlon/wanmy.git/assets/samples/sample-04/fonts
+https://github.com:443/seanlon/wanmy.git/css/fonts
 https://github.com:443/seanlon/wanmy.git
 add
 
@@ -26,7 +26,7 @@ has-prop-mods
 
 71967237-d2ca-476c-85de-ce57b7db7bff
 
-ProximaNova-RegularItalic.otf
+glyphicons-halflings-regular.ttf
 file
 
 
@@ -40,7 +40,7 @@ add
 has-props
 has-prop-mods
 
-ProximaNova-LightItalic.otf
+fontawesome-webfont.eot
 file
 
 
@@ -54,7 +54,7 @@ add
 has-props
 has-prop-mods
 
-ProximaNova-Semibold.otf
+glyphicons-halflings-regular.svg
 file
 
 
@@ -68,7 +68,7 @@ add
 has-props
 has-prop-mods
 
-ProximaNovaCond-SemiboldIt.otf
+glyphicons-halflings-regular.woff
 file
 
 
@@ -82,7 +82,7 @@ add
 has-props
 has-prop-mods
 
-ProximaNova-Regular.otf
+fontawesome-webfont.ttf
 file
 
 
@@ -96,7 +96,14 @@ add
 has-props
 has-prop-mods
 
-ProximaNovaCond-RegularIt.otf
+fontawesome-webfont.svg
+file
+
+
+
+add
+
+icomoon.eot
 file
 
 
@@ -110,7 +117,7 @@ add
 has-props
 has-prop-mods
 
-ProximaNovaCond-Semibold.otf
+fontawesome-webfont.woff
 file
 
 
@@ -124,49 +131,7 @@ add
 has-props
 has-prop-mods
 
-ProximaNova-RegItalic.otf
-file
-
-
-
-add
-
-
-
-
-
-has-props
-has-prop-mods
-
-ProximaNovaCond-Regular.otf
-file
-
-
-
-add
-
-
-
-
-
-has-props
-has-prop-mods
-
-ProximaNova-Light.otf
-file
-
-
-
-add
-
-
-
-
-
-has-props
-has-prop-mods
-
-ProximaNovaCond-LightIt.otf
+icomoon.ttf
 file
 
 
@@ -194,7 +159,7 @@ add
 has-props
 has-prop-mods
 
-ProximaNovaCond-Light.otf
+icomoon.svg
 file
 
 
@@ -208,7 +173,7 @@ add
 has-props
 has-prop-mods
 
-ProximaNova-Black.otf
+icomoon.woff
 file
 
 
@@ -222,7 +187,7 @@ add
 has-props
 has-prop-mods
 
-ProximaNova-BoldIt.otf
+glyphicons-halflings-regular.woff2
 file
 
 
@@ -236,7 +201,7 @@ add
 has-props
 has-prop-mods
 
-ProximaNova-Bold.otf
+glyphicons-halflings-regular.eot
 file
 
 
@@ -250,7 +215,7 @@ add
 has-props
 has-prop-mods
 
-ProximaNova-Extrabold.otf
+fontawesome-webfont.woff2
 file
 
 
@@ -264,7 +229,7 @@ add
 has-props
 has-prop-mods
 
-ProximaNova-SemiboldItalic.otf
+FontAwesome.otf
 file
 
 
