@@ -2493,33 +2493,8 @@ h3.title-detailspage {
     background: -webkit-linear-gradient(to left, #c02425, #f0cb35);
     background: linear-gradient(to left, #c02425, #f0cb35)
 }
-.signup-page {
-    height: 600px
-}
-.signup-page .form-control {
-    border: 1px solid #ccc
-}
-.signup-btn {
-    width: 380px;
-    height: 40px;
-    background: #2e71f0;
-    border: 1px solid #2e71f0;
-    color: #fff;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    -webkit-transition: all .3s ease-out;
-    transition: all .3s ease-out
-}
-.signup-btn:hover {
-    background: #007aff;
-    color: #fff;
-    border: 1px solid #2e71f0
-}
-.signupToLogin {
-    margin-top: 100pxs;
-    font-size: 14px
-}
+
+
 .content-7.signupLogin-content {
     padding: 60px 190px;
 }
@@ -2589,59 +2564,39 @@ active {
     background: -webkit-linear-gradient(to left, #c02425, #f0cb35);
     background: linear-gradient(to left, #c02425, #f0cb35);
 }
-.signup-page {
-    height: 600px
-}
-.signup-page h3 {
-    margin-bottom: 40px;
-    margin-left: -60px;
-}
+
+
 /* Landscape tablets and medium desktops */
 
 @media (min-width: 992px) and (max-width: 1199px) {
-    .signup-page .form-control {
-        width: 450px;
-    }
+    
+	
 }
 /* Portrait tablets and small desktops */
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .signup-page .form-control {
-        width: 450px;
-    }
+    
+	
 }
 /* Landscape phones and portrait tablets */
 
 @media (max-width: 767px) {
-    .signup-page .form-control {
-        width: 450px;
-    }
+   
 }
 /* Portrait phones and smaller */
 
 @media (max-width: 480px) {
-    .signup-page {
-        padding: 30px;
-    }
-    .signup-page .form-control {
-        width: 354px;
-    }
-    .signin-btn {
-        width: 354px;
-    }
-    .btn-facebook {
-        width: 354px;
-    }
+    
+    
+	
 }
-.signup-page .form-control {
-    border: 1px solid #ccc;
-    width: 450px;
-}
-.signin-btn {
-    width: 449px;
-    margin-top: 24px;
+
+.access-btn {
+    width: 100%;
+    height: 46px;
+    margin-top: 10px;
     background: #2e71f0;
-    border: 1px solid #2e71f0;
+    border: 1px solid #0D47A1;
     color: #fff;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -2649,16 +2604,38 @@ active {
     -webkit-transition: all .3s ease-out;
     transition: all .3s ease-out
 }
-.signin-btn:hover {
+.access-btn:hover {
     background: #007aff;
     color: #fff;
-    border: 1px solid #2e71f0
+    border: 1px solid #0D47A1
+}
+.access-page { padding:60px 0}
+
+.access-page label {
+    font-weight: normal;
+    color: #565a5c;
+    font-size: 16px;
 }
 
-.signup-page .form-control {
-    border: 1px solid #ccc;
+.access-page .form-control {
+    border: 1px solid #ccc;    height: 42px;
     border-radius: 1px;
 }
+
+
+.btn-fb-access {background: #3b5999;
+    border: 0;
+    border-radius: 1px;
+    color: #FFF;
+    width: 100%; margin-top: 28px; margin-bottom: 28px;padding-top: 11px;
+    height: 46px;}
+.btn-fb-access:hover,
+active,
+focus {
+    color: #FFF;
+    background: #1A237E;
+}
+
 /* -----
          SVG Icons
          ----- */
@@ -2773,44 +2750,30 @@ active {
 /* Landscape tablets and medium desktops */
 
 @media (min-width: 992px) and (max-width: 1199px) {
-    .signin-page .form-control {
-        width: 450px;
-    }
+    
+	
 }
 /* Portrait tablets and small desktops */
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .signin-page .form-control {
-        width: 450px;
-    }
+    
+	
 }
 /* Landscape phones and portrait tablets */
 
 @media (max-width: 767px) {
-    .signin-page .form-control {
-        width: 450px;
-    }
+    
+	
 }
 /* Portrait phones and smaller */
 
 @media (max-width: 480px) {
-    .signin-page {
-        padding: 30px;
-    }
-    .signin-page .form-control {
-        width: 354px;
-    }
-    .signin-btn {
-        width: 354px;
-    }
-    .btn-facebook {
-        width: 354px;
-    }
+    
+	
+	
 }
-.signin-page .form-control {
-    border: 1px solid #ccc;
-    width: 450px;
-}
+
+
 .signin-btn {
     width: 449px;
     margin-top: 24px;

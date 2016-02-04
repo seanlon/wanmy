@@ -2,18 +2,20 @@
 <html lang="en">
    <head>
       <meta charset="utf-8">
-      <title>signup</title>
+      <title>Sign Up</title>
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
       <meta name="apple-mobile-web-app-status-bar-style" content="black" />
       <link rel="shortcut icon" href="assets/flat-ui/images/favicon.ico">
       <link rel="stylesheet" href="assets/flat-ui/bootstrap/css/bootstrap.css">
+      <!-- end -->
       <link rel="stylesheet" href="assets/samples/sample-04/css/style.css">
       <link rel="stylesheet" type="text/css" href="assets/samples/sample-04/css/header.css">
       <!--need to be on top / dropdown hover / -->
       <script src="assets/common-files/js/jquery-1.10.2.min.js"></script>
       <script src="assets/samples/sample-04/js/custom.js"></script>
       <!--need to be on top / dropdown hover / -->
+     
    </head>
    <body>
       <div class="header-gradient"></div>
@@ -24,7 +26,6 @@
             <div class="container">
                <div class="navbar col-sm-12" role="navigation">
                   <div class="navbar-header nav-dark">
-                     <button type="button" class="navbar-toggle"></button>
                      <a class="brand" href="#">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                            width="150px" height="96px" viewBox="0 0 380 96" enable-background="new 0 0 380 96" xml:space="preserve">
@@ -171,12 +172,16 @@
             </div>
          </header>
          <!-- /header  -->
-         <section class="content-7 signupLogin-content">
-            <div class="row">
-               <div class="col-xs-12 col-sm-4 col-md-6 col-md-offset-4 signup-page text-center">
-                  <h3>Let's get you on board!</h3>
-                  <br>
-                  <form class="text-left">
+         <section class="content-7 v-center">
+                <div>
+
+                    <div class="container">
+
+                        <div class="row">
+                            
+                            <div class="col-sm-6 col-sm-offset-3 access-page text-center">
+                        <h4>Let's get you on board!</h4>
+                            <form class="text-left">
                      <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label>
                         <input type="email" class="form-control" id="" placeholder="Email">
@@ -189,29 +194,32 @@
                         <label for="exampleInputPassword1">Confirm Password</label>
                         <input type="password" class="form-control" id="" placeholder="Password">
                      </div>
-                     <button type="submit" class="btn btn-default signin-btn">Sign Up</button>
+                     
+                     <button type="submit" class="btn btn-default access-btn">Sign Up</button>
                   </form>
-				<div class="col-xs-12 col-sm-12 col-md-12 fb-btn-row text-center">
-
-                     <a href="" class="btn btn-default btn-facebook">
+                                
+                            
+                            <a href="" class="btn btn-default btn-fb-access">
                         <svg class="svg-icon icon-facebook" viewBox="0 0 20 20">
                            <path fill="none" d="M11.344,5.71c0-0.73,0.074-1.122,1.199-1.122h1.502V1.871h-2.404c-2.886,0-3.903,1.36-3.903,3.646v1.765h-1.8V10h1.8v8.128h3.601V10h2.403l0.32-2.718h-2.724L11.344,5.71z"></path>
                         </svg>
-                        Sign Up with Facebook
+                        Log In with Facebook
                      </a>
-                  </div>
-               <div class="col-md-12 col-md-offset-2 text-center">
-                     <p class="signinToLogin">Already a member? <strong><a href="signup.html">Sign In</a></strong></p>
-                  </div>
-               </div>
-            </div>
-         </section>
+                     
+                      <p class="">Already a member? <strong><a href="signup.html">Sign In</a></strong></p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
          <!-- footer-3 -->
          <footer class="footer-3">
             <div class="container">
-               <div class="row v-center">
+               <div class="row">
                   <!--bottom-footer-->
-                  <div class="col-md-3">
+                  <div class="col-sm-12 col-sm-3 col-md-3">
                      <div class="btn-group">
                         <button type="button" class="btn btn-default dropdown-toggle btn-currency" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         MYR <span class="caret"></span>
@@ -223,36 +231,39 @@
                         </ul>
                      </div>
                   </div>
-                  <div class="col-md-7">
-                     <div class="col-md-2">
-                        <a href="#">About</a>
-                     </div>
-                     <div class="col-md-2">
-                        <a href="#">Contact</a>
-                     </div>
-                     <div class="col-md-3">
-                        <a href="#">Become a Vendor</a>
-                     </div>
-                     <div class="col-md-2">
-                        <a href="#">Blog</a>
-                     </div>
-                     <div class="col-md-2">
-                        <a href="#">FAQs</a>
-                     </div>
+                  <div class="col-sm-12 col-sm-3 col-md-3">
+                  <ul>
+
+                  <li><a href="#">About</a></li><br>
+                  <li><a href="#">How it Works</a></li><br>
+                  <li><a href="#">Blog</a></li><br>
+                  <li><a href="#">Career</a></li>
+                  
+</ul>
                   </div>
-                  <div class="col-md-2">
+                  <div class="col-sm-12 col-sm-3 col-md-3">
+                  <ul>
+
+                  <li><a href="#">Help</a></li><br>
+                  <li><a href="#">Press</a></li><br>
+                  <li><a href="#">Policies</a></li><br>
+                  <li><a href="#">Terms</a></li>
+                  
+</ul>
+                  </div>
+                 <div class="col-sm-12 col-sm-3 col-md-3 social-footer">
                      <a href=""><img src="img/Facebook.png" width="42"></a>
                      <a href=""><img src="img/Twitter.png" width="42"></a>
                      <a href=""> <img src="img/Instagram.png" width="42"></a>
                   </div>
                </div>
-               <div class="row v-center  bottom-below-footer">
+               <div class="row bottom-below-footer">
                   <!--bottom-footer-->
-                  <div class="col-md-6">
-                     <p class="pull-left"><a href="#" class="terms-footer">Terms and conditions </a>	<a href="#">Privacy policy</a></p>
+                  <div class="col-sm-12 col-sm-6 col-md-6">
+                     <p class="footerleft"><a href="#" class="terms-footer">Terms and conditions </a>	<a href="#">Privacy policy</a></p>
                   </div>
-                  <div class="col-md-6">
-                     <p class="pull-right">© 2016 want.my All rights reserved</p>
+                  <div class="col-sm-12 col-sm-6 col-md-6">
+                     <p class="footerright">© 2016 want.my All rights reserved</p>
                   </div>
                </div>
             </div>
@@ -262,5 +273,9 @@
       <script src="assets/flat-ui/js/bootstrap.min.js"></script>
       <script src="assets/common-files/js/modernizr.custom.js"></script>
       <script src="assets/common-files/js/startup-kit.js"></script>
-   </body>
+      
+        <script src="assets/common-files/js/script.js"></script>
+      
+      
+</body>
 </html>
