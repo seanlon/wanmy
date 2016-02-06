@@ -177,9 +177,7 @@
                         </div>
                      </form>
                      <ul class="nav pull-left">
-                        <li><a href="#">Become a Merchant
-                           </a>
-                        </li>
+                        <li class="hidden-xs hidden-sm"><a href="#">Become a Merchant</a></li>
                         <li><a href="#">Login</a></li>
                         <li><a href="#">Sign Up</a></li>
                         <!--dropdown x-->
@@ -213,6 +211,33 @@
          <!-- About Merchant  -->
          <section class="aboutmerchant">
             <div class="row">
+         <!-- Show up on responsive small  -->
+            <div class="col-md-4 hidden-lg hidden-md hidden-sm visible-xs visible-sm">
+                  <div class="book-now-block-small book-widget-detail-page-small">
+                     <div class="widget-title-small">
+                        <p>$ 8888.00</p>
+                     </div>
+                     <div class="productdetail-booking">
+                        <p><strong>When would you like to visit</strong></p>
+                        
+                        <form class="form-inline">
+  <div class="form-group  detail-widget-dateform">
+    <div class="input-group">
+                        <input type="text" class="form-control date-book" placeholder="Date">
+      <div class="input-group-addon"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></div>
+    </div>
+  </div>
+  
+  <button type="button" class="btn btn-block btn-book">Book Now</button>
+</form>
+                        
+                        
+                     </div>
+                  </div>
+               </div>
+         <!-- Show up on responsive small  -->
+            
+            
                <div class="col-md-7 col-md-offset-1">
                   <div class="col-md-2">
                      <a href="#"><img src="img/winnie.jpg" class="img-circle" width="90"></a>
@@ -232,7 +257,7 @@
                </div>
                <!--booking-->
                <div class="col-md-4">
-                  <div class="book-now-block book-widget-detail-page">
+                  <div class="book-now-block book-widget-detail-page hidden-xs hidden-sm">
                      <div class="widget-title">
                         <p>$ 8888.00</p>
                      </div>
@@ -276,25 +301,26 @@
                <div class="container">
                   <div class="row">
                      <div id="lightgallery" class="col-md-7 detailpage-images-gallery" >
-                        <div class="col-md-6 topleftimg" data-responsive="img/12.png" data-src="img/12.png" data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">                
+                     
+                        <div class="col-md-6 topleftimg hidden-xs hidden-sm" data-responsive="img/12.png" data-src="img/12.png" data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">                
                            <a href="">
                            <img src="img/12.png" class="img-responsive">
                            </a>
                         </div>
                         
-                        <div class="col-md-6 toprightimg" data-responsive="img/13.png" data-src="img/13.png" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">                
+                        <div class="col-md-6 toprightimg hidden-xs hidden-sm" data-responsive="img/13.png" data-src="img/13.png" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">                
                            <a href="">
                            <img src="img/13.png" class="img-responsive">
                            </a>
                         </div>
                         
-                        <div class="col-md-4 bottomleftimg" data-responsive="img/14.png" data-src="img/14.png" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">                
+                        <div class="col-md-4 bottomleftimg hidden-xs hidden-sm" data-responsive="img/14.png" data-src="img/14.png" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">                
                            <a href="">
                            <img src="img/14.png" class="img-responsive">
                            </a>
                         </div>
                         
-                        <div class="col-md-4 bottomcentreimg" data-responsive="img/15.png" data-src="img/15.png" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">                
+                        <div class="col-md-4 bottomcentreimg hidden-xs hidden-sm" data-responsive="img/15.png" data-src="img/15.png" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">                
                            <a href="">
                            <img src="img/15.jpg" class="img-responsive">
                            </a>
@@ -354,7 +380,7 @@
                      </div>
                   </div>
                   <div class="row">
-                     <div class="col-md-6 col-xs-offset-1">
+                     <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-1">
                         <h4>Post a recommendation</h4>
                         <br>
                         <textarea class="form-control testimonials" rows="3"></textarea>
@@ -398,7 +424,7 @@
                   <div class="col-md-12 text-right content-title">
                      <p> 12 attractions, Petaling Jaya</p>
                   </div>
-                  <div class="col-xs-12 col-sm-6 col-md-3 portfolio-item">
+                  <div class="col-xs-12 col-sm-6 col-md-3">
                      <p class="price">$ 99.99</p>
                      <p class="heart-wrapper ">
                         <input id="heart8" type="checkbox" class="heart-checkbox" />
@@ -406,7 +432,7 @@
                      </p>
                      <a href="#"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/nuraika/128.jpg" class="img-circle user-thumb" width="52" /></a>
                      <a href="#">
-                     <img class="" src="img/1.png" width="262" alt="">
+                     <img class="" src="img/1.png" width="" alt="">
                      </a>
                      <h4>
                         <a href="#">Genting Highlands</a>
@@ -424,7 +450,7 @@
                      </a>
                      <p></p>
                   </div>
-                  <div class="col-xs-12 col-sm-6 col-md-3 portfolio-item">
+                  <div class="col-xs-12 col-sm-6 col-md-3">
                      <p class="price">$ 99.99</p>
                      <p class="heart-wrapper ">
                         <input id="heart2" type="checkbox" class="heart-checkbox" />
@@ -432,7 +458,7 @@
                      </p>
                      <a href="#"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/liang/128.jpg" class="img-circle user-thumb" width="52" /></a>
                      <a href="#">
-                     <img class="" src="img/2.png" width="262" alt="">
+                     <img class="" src="img/2.png" width="" alt="">
                      </a>
                      <h4>
                         <a href="#">Genting Highlands</a>
@@ -448,7 +474,7 @@
                         </p>
                      </a>
                   </div>
-                  <div class="col-xs-12 col-sm-6 col-md-3 portfolio-item">
+                  <div class="col-xs-12 col-sm-6 col-md-3">
                      <p class="price">$ 99.99</p>
                      <p class="heart-wrapper ">
                         <input id="heart3" type="checkbox" class="heart-checkbox" />
@@ -456,7 +482,7 @@
                      </p>
                      <a href="#"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/rickyyean/128.jpg" class="img-circle user-thumb" width="52" /></a>
                      <a href="#">
-                     <img class="" src="img/3.png" width="262" alt="">
+                     <img class="" src="img/3.png" width="" alt="">
                      </a>
                      <h4>
                         <a href="#">Genting Highlands</a>
@@ -472,7 +498,7 @@
                         </p>
                      </a>
                   </div>
-                  <div class="col-xs-12 col-sm-6 col-md-3 portfolio-item">
+                  <div class="col-xs-12 col-sm-6 col-md-3">
                      <p class="price pull-right text-right"><span class="discount">from <strike><em>$</em> 999.99</STRIKE></span><br><em>$</em> 888.88</p>
                      <p class="heart-wrapper ">
                         <input id="heart4" type="checkbox" class="heart-checkbox" />
@@ -480,7 +506,7 @@
                      </p>
                      <a href="#"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/jeanniehuang/128.jpg" class="img-circle user-thumb" width="52" /></a>
                      <a href="#">
-                     <img class="" src="img/4.png" width="262" alt="">
+                     <img class="" src="img/4.png" width="" alt="">
                      </a>
                      <h4>
                         <a href="#">Genting Highlands</a>
@@ -505,11 +531,11 @@
             </div>
          </section>
          <!-- footer-3 -->
-         <footer class="footer-3">
+<footer class="footer-3">
             <div class="container">
-               <div class="row v-center">
+               <div class="row">
                   <!--bottom-footer-->
-                  <div class="col-md-3">
+                  <div class="col-sm-12 col-sm-3 col-md-3">
                      <div class="btn-group">
                         <button type="button" class="btn btn-default dropdown-toggle btn-currency" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         MYR <span class="caret"></span>
@@ -521,41 +547,43 @@
                         </ul>
                      </div>
                   </div>
-                  <div class="col-md-7">
-                     <div class="col-md-2">
-                        <a href="#">About</a>
-                     </div>
-                     <div class="col-md-2">
-                        <a href="#">Contact</a>
-                     </div>
-                     <div class="col-md-3">
-                        <a href="#">Become a Vendor</a>
-                     </div>
-                     <div class="col-md-2">
-                        <a href="#">Blog</a>
-                     </div>
-                     <div class="col-md-2">
-                        <a href="#">FAQs</a>
-                     </div>
+                  <div class="col-sm-12 col-sm-3 col-md-3">
+                  <ul>
+
+                  <li><a href="#">About</a></li><br>
+                  <li><a href="#">How it Works</a></li><br>
+                  <li><a href="#">Blog</a></li><br>
+                  <li><a href="#">Career</a></li>
+                  
+</ul>
                   </div>
-                  <div class="col-md-2">
+                  <div class="col-sm-12 col-sm-3 col-md-3">
+                  <ul>
+
+                  <li><a href="#">Help</a></li><br>
+                  <li><a href="#">Press</a></li><br>
+                  <li><a href="#">Policies</a></li><br>
+                  <li><a href="#">Terms</a></li>
+                  
+</ul>
+                  </div>
+                  <div class="col-sm-12 col-sm-3 col-md-3 social-footer">
                      <a href=""><img src="img/Facebook.png" width="42"></a>
                      <a href=""><img src="img/Twitter.png" width="42"></a>
                      <a href=""> <img src="img/Instagram.png" width="42"></a>
                   </div>
                </div>
-               <div class="row v-center  bottom-below-footer">
+               <div class="row bottom-below-footer">
                   <!--bottom-footer-->
-                  <div class="col-md-6">
-                     <p class="pull-left"><a href="#" class="terms-footer">Terms and conditions </a>	<a href="#">Privacy policy</a></p>
+                  <div class="col-sm-12 col-sm-6 col-md-6">
+                     <p class="footerleft"><a href="#" class="terms-footer">Terms and conditions </a>	<a href="#">Privacy policy</a></p>
                   </div>
-                  <div class="col-md-6">
-                     <p class="pull-right">© 2016 want.my All rights reserved</p>
+                  <div class="col-sm-12 col-sm-6 col-md-6">
+                     <p class="footerright">© 2016 want.my All rights reserved</p>
                   </div>
                </div>
             </div>
-         </footer>
-      </div>
+         </footer>      </div>
       <!--Gallery-->
       <script type="text/javascript">
          $(document).ready(function(){
@@ -568,5 +596,8 @@
       <!-- Placed at the end of the document so the pages load faster -->
       <script src="assets/flat-ui/js/bootstrap.min.js"></script>
       <script src="assets/samples/sample-04/js/script.js"></script>
+      
+
+
    </body>
 </html>

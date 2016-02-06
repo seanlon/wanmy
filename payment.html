@@ -3,7 +3,9 @@
    <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      <meta name="apple-mobile-web-app-status-bar-style" content="black" />
       <link rel="stylesheet" href="css/lib/bootstrap.css">
       <link rel="stylesheet" href="css/lib/bootstrap-select.css">
       <link rel="stylesheet" href="css/lib/fontawesome.css">
@@ -171,9 +173,7 @@
                      </div>
                   </form>
                   <ul class="nav pull-left">
-                     <li><a href="#">Become a Merchant
-                        </a>
-                     </li>
+                        <li class="hidden-xs hidden-sm"><a href="#">Become a Merchant</a></li>
                      <li><a href="#">Login</a></li>
                      <li><a href="#">Sign Up</a></li>
                      <!--dropdown x-->
@@ -634,9 +634,9 @@
          </section>
          <footer class="footer-3">
             <div class="container">
-               <div class="row v-center">
+               <div class="row">
                   <!--bottom-footer-->
-                  <div class="col-md-3">
+                  <div class="col-sm-12 col-sm-3 col-md-3">
                      <div class="btn-group">
                         <button type="button" class="btn btn-default dropdown-toggle btn-currency" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         MYR <span class="caret"></span>
@@ -648,36 +648,39 @@
                         </ul>
                      </div>
                   </div>
-                  <div class="col-md-7">
-                     <div class="col-md-2">
-                        <a href="#">About</a>
-                     </div>
-                     <div class="col-md-2">
-                        <a href="#">Contact</a>
-                     </div>
-                     <div class="col-md-3">
-                        <a href="#">Become a Vendor</a>
-                     </div>
-                     <div class="col-md-2">
-                        <a href="#">Blog</a>
-                     </div>
-                     <div class="col-md-2">
-                        <a href="#">FAQs</a>
-                     </div>
+                  <div class="col-sm-12 col-sm-3 col-md-3">
+                  <ul>
+
+                  <li><a href="#">About</a></li><br>
+                  <li><a href="#">How it Works</a></li><br>
+                  <li><a href="#">Blog</a></li><br>
+                  <li><a href="#">Career</a></li>
+                  
+</ul>
                   </div>
-                  <div class="col-md-2">
+                  <div class="col-sm-12 col-sm-3 col-md-3">
+                  <ul>
+
+                  <li><a href="#">Help</a></li><br>
+                  <li><a href="#">Press</a></li><br>
+                  <li><a href="#">Policies</a></li><br>
+                  <li><a href="#">Terms</a></li>
+                  
+</ul>
+                  </div>
+                  <div class="col-sm-12 col-sm-3 col-md-3 social-footer">
                      <a href=""><img src="img/Facebook.png" width="42"></a>
                      <a href=""><img src="img/Twitter.png" width="42"></a>
                      <a href=""> <img src="img/Instagram.png" width="42"></a>
                   </div>
                </div>
-               <div class="row v-center  bottom-below-footer">
+               <div class="row bottom-below-footer">
                   <!--bottom-footer-->
-                  <div class="col-md-6">
-                     <p class="pull-left"><a href="#" class="terms-footer">Terms and conditions </a>	<a href="#">Privacy policy</a></p>
+                  <div class="col-sm-12 col-sm-6 col-md-6">
+                     <p class="footerleft"><a href="#" class="terms-footer">Terms and conditions </a>	<a href="#">Privacy policy</a></p>
                   </div>
-                  <div class="col-md-6">
-                     <p class="pull-right">© 2016 want.my All rights reserved</p>
+                  <div class="col-sm-12 col-sm-6 col-md-6">
+                     <p class="footerright">© 2016 want.my All rights reserved</p>
                   </div>
                </div>
             </div>
