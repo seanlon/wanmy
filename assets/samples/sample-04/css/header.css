@@ -8,6 +8,7 @@ a:hover {
 }
 .header-10-sub {
     height: 400px !important;
+	z-index: 1;
 }
 .form-control {
     border: 1px solid #bdc3c7;
@@ -1187,12 +1188,50 @@ span.caret .pull-right {
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
-
+.result-content-suggestions .user-thumb {
+    position: absolute;
+    top: 317px;
+    left: 288px;
+    z-index: 99;
+}
+.price {
+    opacity: .79;
+    background: #3c3d41;
+    min-width: 100px;
+    padding: 10px;
+    font-size: 18px;
+    position: absolute;
+    top: 245px;
+}
+.heart-wrapper {
+    position: absolute;
+    top: 24px;
+    left: 309px;
+}
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
-
+.result-content-suggestions .user-thumb {
+    position: absolute;
+    top: 317px;
+    left: 288px;
+    z-index: 99;
+}
+.price {
+    opacity: .79;
+    background: #3c3d41;
+    min-width: 100px;
+    padding: 10px;
+    font-size: 18px;
+    position: absolute;
+    top: 245px;
+}
+.heart-wrapper {
+    position: absolute;
+    top: 24px;
+    left: 309px;
+}
 }
 
 /* Portrait phones and smaller */
@@ -1256,7 +1295,7 @@ span.caret .pull-right {
 .merchantdetail h5 {
     color: #212121;
 }
-.merchantdetail price p {
+.merchantdetail p.price {
     color: #FFF;
 }
 
@@ -1622,6 +1661,10 @@ a {
 .bottomrightimg {
     padding: 2px 0 0 2px;
 }
+
+
+
+
 .gallery-overlay-cover {
     background: #000;
     opacity: 0.3;
@@ -1709,11 +1752,58 @@ input[type=checkbox].heart-checkbox {
 /*----------------------------------------------------------PAYMENT----------------------------------------------------------*/
 /*payment*/
 
+
+
+.validthru { padding:0 5px 0 0;}
+.year { padding:0 5px 0 5px}
+.securitycode { padding:0 0 0 5px;}
+.firstname { padding:0 10px 0 0}
+.lastname { padding:0 0px}
+.postalcode { padding:0 10px 0 0}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+	
+.validthru { padding:0;}
+.year { padding:0;}
+.securitycode { padding:0;}
+.firstname { padding:0;}
+.lastname { padding:0;}
+.postalcode { padding:0;}
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+.validthru { padding:0;}
+.year { padding:0;}
+.securitycode { padding:0;}
+.firstname { padding:0;}
+.lastname { padding:0;}
+.postalcode { padding:0;}
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+.validthru { padding:0;}
+.year { padding:0;}
+.securitycode { padding:0;}
+.firstname { padding:0;}
+.lastname { padding:0;}
+.postalcode { padding:0;}
+}
+
+
+
 .payment-page {
-    padding-top: 140px;
+    padding-top: 40px;
     background: #fafafa;
     padding-bottom: 100px;
 }
+.payment-page {
+	font-size:14px;	
+}
+
 .billing .form-control {
     height: 36px;
     background-color: #fff;
@@ -1736,9 +1826,10 @@ label {
     padding: 0;
 }
 .billing h3 {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: normal;
     color: #565a5c;
+	margin-bottom:20px;
 }
 .btn-pay:hover {
     background: #BF360C;
@@ -1752,6 +1843,7 @@ label {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.20);
     border-radius: 2px;
+	width: 100%;
 }
 .merchant-details {
     padding-left: 50px;
@@ -1769,12 +1861,31 @@ label {
     background-color: #fff;
     border-radius: 0;
 }
+
+.book-now-block-smxs {
+    background-color: #fff;
+    display: block;
+    width: 100%;
+    min-height: 262px;
+    border: 1px solid #dce0e0;
+    background-color: #fff;
+    border-radius: 0;
+	margin-bottom: 40px;
+}
+
 .book-now-block img {
     border-radius: 0;
 }
 .productdetail {
     padding: 10px 20px 20px 16px;
     width: 306px;
+    border-radius: 0;
+    min-height: 600px;
+}
+
+.productdetail-smxs{
+    padding: 10px 20px 20px 16px;
+    width: 100%;
     border-radius: 0;
     min-height: 600px;
 }
@@ -2162,6 +2273,8 @@ active {
     background: #000;
 }
 /*----------------------------------------------------------PAYMENT----------------------------------------------------------*/
+.table-payment {    color: #000;}
+
 .table-payment.table>thead>tr>th {
     border-bottom: 0;
 }
@@ -2495,6 +2608,22 @@ h3.title-detailspage {
 @media (max-width: 767px) {
 .btn-testimonials {
     width: 100%;
+}
+.text-overlay-cover {
+    position: absolute;
+    top: 110px;
+    left: 55px;
+    z-index: 99;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: bold;
+}
+.gallery-overlay-cover {
+    background: #000;
+    opacity: 0.3;
+    width: 238px;
+    height: 238px;
+    position: absolute;
 }
 }
 
