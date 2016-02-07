@@ -1256,8 +1256,12 @@ span.caret .pull-right {
 .merchantdetail h5 {
     color: #212121;
 }
+.merchantdetail price p {
+    color: #FFF;
+}
+
 .merchantdetail p {
-    color: #212121;
+    color: #000;
 }
 .demo-gallery > ul {
     margin-bottom: 0;
@@ -1376,6 +1380,48 @@ span.caret .pull-right {
 /*detail page only*/
 /*Overrighting original style.css, please change class name*/
 
+
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+.productdetail-booking-small{
+    padding: 10px 20px 20px 16px;
+    border-radius: 0;
+}
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+.productdetail-booking-small{
+    padding: 10px 20px 20px 16px;
+    border-radius: 0;
+}
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+.productdetail-booking-small{
+    padding: 10px 20px 20px 16px;
+    border-radius: 0;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
 .paddingzero {
     padding: 0;
 }
@@ -1449,6 +1495,9 @@ a {
     opacity: 0.9;
 }
 .book-widget-detail-page-small {
+	    top: -93px;
+    position: inherit;
+    z-index: 99;
     
 }
 .book-widget-detail-page-small p {
@@ -1460,7 +1509,7 @@ a {
     background-color: #fff;
     display: block;
     width: 90%;
-    margin: 0 20px 40px;
+    margin: 0 20px;
     min-height: 262px;
     border: 1px solid #dce0e0;
     background-color: #fff;
@@ -1475,6 +1524,7 @@ a {
     display: block;
     width: 100%;
     border: 1px solid #000;
+	z-index:999;
 }
 .widget-title-small p {
     color: #FFF;
@@ -1636,7 +1686,6 @@ active {
     background: #3c3d41;
     min-width: 100px;
     padding: 10px;
-    color: #fff;
     font-size: 18px;
     position: absolute;
     top: 180px;
@@ -2431,11 +2480,23 @@ h3.title-detailspage {
     margin-bottom: 40px;
 }
 .testimonials {
-    width: 555px;
     border: 1px solid #c4c4c4;
     border-radius: 2px;
 }
 
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+.btn-testimonials {
+    width: 100%;
+}
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+.btn-testimonials {
+    width: 100%;
+}
+}
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
@@ -2657,7 +2718,7 @@ h3.title-detailspage {
         width: 355px
     }
 }
-/*detail page only*/
+/*------------------------------------------detail page only----------------------------------------------*/
 /*Overrighting original header.css*/
 
 p {
