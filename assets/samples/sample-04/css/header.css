@@ -3902,6 +3902,50 @@ ul.sidebar li a {
     padding: 10px 40px;
     border-radius: 2px;
 }
+
+/*----------------------------------------------------------CITIES----------------------------------------------------------*/
+
+.city-title { margin:40px 0;}
+
+.city-package {    display: block;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 2px;height: 650px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;}
+.city-package .caption{    padding: 5px;}
+
+.highlight-list { padding:10px 0; border-bottom:1px solid #EEEEEE; }
+
+.city-info { position:absolute;top: 262px;
+    left: 21px; display:block;}
+
+.city-price {    position: absolute;
+        top: 302px;
+    left: 210px; display:block;
+     }
+
+.city-price h4 { color:#000; background:#FFF; padding:5px;border: 1px solid #BDBDBD;    width: 160px;}
+.city-price p { color:#FFF;}
+
+
+
+
+.city-info h4 { color:#FFF;}
+.city-info p { color:#FFF;}
+.city-info .days {    background: #F4511E;
+    width: 70px;padding: 2px 8px;}
+	
+	.banner-city-info {     background: rgba(0, 0, 0, 0.9);
+    opacity: 0.5;
+    position: absolute;
+    top: -200px;
+    left: 1px;
+    height: 400px;}
+	.banner-city-info h1 {color:#FFF; z-index:99;}
+	.banner-city-info h4 {color:#FFF; z-index:99;font-size: 18px;}
+	.banner-city-info p {color:#FFF; z-index:99;    line-height: normal;}
+	.banner-city-info h5 {color:#FFF; z-index:99;font-size: 14px;}
 /*----------------------------------------------------------ABOUT----------------------------------------------------------*/
 
 .subnav-dark .navbar-nav>li>a {
