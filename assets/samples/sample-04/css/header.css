@@ -455,11 +455,14 @@ ul.dropdownx li a {
 	/* Large desktops and laptops */
 @media (min-width: 1200px) {
 
+
+.location-search .form-control { border:0;}
+
 .location-search .input-location {
        width: 352px;
     margin-left: -40px;
     margin-bottom: 10px;
-    height: 42px;
+    height: 42px;border-right:0;box-shadow: none;
 }
 
 
@@ -481,9 +484,9 @@ ul.dropdownx li a {
     font-size: 30px;
 	}
 .location-search .input-location {
-    width: 100%;
+    width: 100%;border-right:0;
    /* margin-left: -40px;*/
-    margin-bottom: 10px;
+    margin-bottom: 10px;box-shadow: none;
     height: 42px;
 }
 .form-control.input-global {
@@ -555,8 +558,8 @@ ul.dropdownx li a {
 .location-search .input-location {
         width: 274px;
     margin-left: -15px;
-    margin-bottom: 10px;
-    height: 42px;
+    margin-bottom: 10px;    border: 0;
+    height: 42px; box-shadow: none;
 }
 .input-global {
            height: 42px;
@@ -835,11 +838,7 @@ active {
 .dropdown-menu li > a:focus {
     color: #000;
 }
-.location-search .open > .dropdown-menu {
-    margin-top: -1px !important;
-    text-align: left;
-    width: 351px;
-}
+
 .location-search {
     margin-top: 1px;
 }
@@ -852,11 +851,52 @@ active {
 .dropdown-menu li > a:focus {
     color: #000;
 }
+
+
 .location-search .open > .dropdown-menu {
-    margin-top: -1px !important;
+    margin-top: -10px !important;
     text-align: left;
-    width: 351px;
+    width: 391px;
+    left: -40px;
+    border: 0;
 }
+
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+.location-search .open > .dropdown-menu {
+    margin-top: -10px !important;
+    text-align: left;
+    width: 578px;
+    left: 0;
+    border: 0;
+}
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+.location-search .open > .dropdown-menu {
+    margin-top: -10px !important;
+    text-align: left;
+    width: 578px;
+    left: 0;
+    border: 0;
+}
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+.location-search .open > .dropdown-menu {
+    margin-top: -10px !important;
+    text-align: left;
+    width: 273px;
+    left: -15px;
+    border: 0;
+}
+}
+
+
+
 /*existing style*/
 /*content-8*/
 
