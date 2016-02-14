@@ -3945,7 +3945,23 @@ ul.sidebar li a {
 
 /*----------------------------------------------------------CITIES----------------------------------------------------------*/
 
+.header-10-sub .background.citiesbg {
+    background-image: url(../img/cities.jpg);
+    opacity: 85;
+    filter: alpha(opacity=8500);
+    opacity: 0.85;
+    filter: alpha(opacity=85);
+}
+
+.fbsharebtn { padding:5px; background:#3b5999; color:#FFF; border-radius:1px; z-index:999}
+.fbsharebtn:hover {background:#3b5999; color:#FFF; }
+
+
 .city-title { margin:40px 0;}
+
+.tourtypes {margin:40px 0;}
+.tourtypes a { padding-right:20px; opacity:0.5;}
+.tourtypes a:hover { opacity:1.0;}
 
 .city-package {    display: block;
     background-color: #ffffff;
