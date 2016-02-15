@@ -8,15 +8,13 @@
       <meta name="apple-mobile-web-app-status-bar-style" content="black" />
       <link rel="shortcut icon" href="assets/flat-ui/images/favicon.ico">
       <link rel="stylesheet" href="assets/flat-ui/bootstrap/css/bootstrap.css">
-      
       <link rel="stylesheet" href="assets/samples/sample-04/css/style.css">
       <link rel="stylesheet" type="text/css" href="assets/samples/sample-04/css/header.css">
       <!--need to be on top / dropdown hover / -->
-		<script src="assets/common-files/js/jquery-1.10.2.min.js"></script>
+      <script src="assets/common-files/js/jquery-1.10.2.min.js"></script>
       <script src="assets/samples/sample-04/js/custom.js"></script>
-            <!--need to be on top / dropdown hover / -->
+      <!--need to be on top / dropdown hover / -->
       <!--gallery-->
-
    </head>
    <body>
       <div class="page-wrapper">
@@ -170,7 +168,7 @@
                      </a>
                   </div>
                   <div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">
-                     <form class="navbar-form navbar-right navsearch-form">
+                     <form class="navbar-form navbar-right navsearch-form hidden-xs hidden-sm">
                         <div class="form-group">
                            <input type="text" class="form-control navsearch" placeholder="Search" style="width: 440px;">
                         </div>
@@ -181,8 +179,15 @@
                         </li>
                         <li><a href="#">Login</a></li>
                         <li><a href="#">Sign Up</a></li>
+
+						<li class="visible-xs visible-sm"><a href="#">Edit Profile</a></li>
+                              <li class="visible-xs visible-sm"><a href="#">Invite Friends</a></li>
+                              <li class="visible-xs visible-sm"><a href="#">Account Settings</a></li>
+                              <li class="visible-xs visible-sm"><a href="#">Log Out</a></li>
+
+                        
                         <!--dropdown x-->
-                        <li class="dropdown">
+                        <li class="dropdown hidden-xs hidden-sm">
                            <a href="#" class="dropdown-toggle dropdownselectactive" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sarah <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jeanniehuang/128.jpg" width="40" class="img-circle profile-nav"/></a>
                            <ul class="dropdown-menu">
                               <li><a href="#">Edit Profile</a></li>
@@ -198,224 +203,190 @@
             </div>
          </header>
          <!-- /header  -->
-         
-         
          <section class="header-10-sub v-center ">
             <div class="background citiesbg">
-               &nbsp;
+
             </div>
             <div>
                <div class="container">
-            <div class="row">
-        <div class="col-md-3 banner-city-info">
-        
-        <h1>Hong Kong<br>
-Tour<br>
-Packages</h1>
-        
-        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-        Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-        Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-        
-        <h4>Popular Cities</h4>
-        <h5>Hong Kong</h5>
-        
-        <a href="" class="fbsharebtn">Share on Facebook</a>
-        
-                  </div>
+                  <div class="row">
+                     <div class="col-md-3 banner-city-info">
+                        <h1>Hong Kong<br>
+                           Tour<br>
+                           Packages
+                        </h1>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                           Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                           Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                        </p>
+                        <h4>Popular Cities</h4>
+                        <h5>Hong Kong</h5>
+                        <a href="" class="fbsharebtn">Share on Facebook</a>
+                     </div>
                   </div>
                </div>
             </div>
          </section>
-         
-         
          <section class="content-7">
-         
             <div class=" container">
-            <div class="row">
-        <div class="col-md-12 text-center city-title">
-            <h2>Select a tour package</h2>
-  </div>          
-            
-        <div class="col-md-12 tourtypes">
-   <div class="col-sm-6 col-md-10 col-md-offset-1">
-<a href="#"><img src="assets/samples/sample-04/img/sightseeing.png" width="100" class="img-circle"></a>
-<a href="#"><img src="assets/samples/sample-04/img/food.png" width="100" class="img-circle"></a>
-<a href="#"><img src="assets/samples/sample-04/img/shoppingmarkets.png" width="100" class="img-circle"></a>
-<a href="#"><img src="assets/samples/sample-04/img/landmarks.png" width="100" class="img-circle"></a>
-<a href="#"><img src="assets/samples/sample-04/img/museums.png" width="100" class="img-circle"></a>
-<a href="#"><img src="assets/samples/sample-04/img/nightlife.png" width="100" class="img-circle"></a>
-<a href="#"><img src="assets/samples/sample-04/img/events.png" width="100" class="img-circle"></a>
- 
-</div>
-
-
-  </div>          
-            
-            
-            
-            
-        
-        <div class="row">
-   <div class="col-sm-6 col-md-4">
-      <div class="city-package">
-<img src="http://placehold.it/370x370" class="img-responsive"> 
-         <div class="col-md-6 city-info">
-            <p class="days">4 Days</p>
-            <h4>Hongkong City Macau</h4>
-            <p class="location-city">Hong Kong</p>
-</div>
-
-<div class="col-md-6 city-price">
-            <p>Per Person</p>
-            <h4>MYR 8888.88</h4>
-</div>
-
-         <div class="col-md-12 highlight-list">
-
-
-
-           <div class="col-sm-3">
-        <img src="img/chloe.jpg" width="60" class="img-circle">
+               <div class="row">
+                  <div class="col-md-12 text-center city-title">
+                     <h2>Select a tour package</h2>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-12 tourtypes">
+                  
+                     <div class="col-xs-6 col-sm-4 col-md-1 col-md-offset-2 text-center">
+                     
+                        <a href="#"><img src="assets/samples/sample-04/img/sightseeing.png" width="100" class="img-circle"></a>
+                        <br>
+                        <a href="#">Sightseeing</a>
+                     </div>
+                     <div class="col-xs-6 col-sm-4 col-md-1 text-center">
+                        <a href="#"><img src="assets/samples/sample-04/img/food.png" width="100" class="img-circle"></a>
+                        <br>
+                        <a href="#">Food</a>
+                    </div>            
+                     <div class="col-xs-6 col-sm-4 col-md-1 text-center">
+                        <a href="#"><img src="assets/samples/sample-04/img/shoppingmarkets.png" width="100" class="img-circle"></a>
+                       <br>
+                        <a href="#">Shopping</a>
+                    </div>            
+                     <div class="col-xs-6 col-sm-4 col-md-1 text-center">
+                        <a href="#"><img src="assets/samples/sample-04/img/landmarks.png" width="100" class="img-circle"></a>
+                        <br>
+                        <a href="#">Landmarks</a>
+                    </div>            
+                     <div class="col-xs-6 col-sm-4 col-md-1 text-center">
+                        <a href="#"><img src="assets/samples/sample-04/img/museums.png" width="100" class="img-circle"></a>
+                       <br>
+                        <a href="#">Museums</a>
+                    </div>            
+                     <div class="col-xs-6 col-sm-4 col-md-1 text-center">
+                        <a href="#"><img src="assets/samples/sample-04/img/nightlife.png" width="100" class="img-circle"></a>
+                       <br>
+                        <a href="#">Nightlife</a>
+                    </div>            
+                     <div class="col-xs-6 col-sm-4 col-md-1 text-center">
+                        <a href="#"><img src="assets/samples/sample-04/img/events.png" width="100" class="img-circle"></a>
+                       <br>
+                        <a href="#">Events</a>
+                    </div>            
+                    
+                    
+                    
+                                
+                        
+                        
+                     </div>
+                     
+                     
+                     
+                  </div>
+                  <div class="row">
+                  
+                     <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="city-package">
+                           <img src="http://placehold.it/370x370" class="img-responsive"> 
+                           <div class="col-xs-6 col-sm-6 col-md-6 city-info">
+                              <p class="days">4 Days</p>
+                              <h4>Hongkong City Macau</h4>
+                              <p class="location-city">Hong Kong</p>
+                           </div>
+                           <div class="col-xs-6 col-sm-6 col-md-6 city-price">
+                              <p>Per Person</p>
+                              <h4>MYR 8888.88</h4>
+                           </div>
+                           <div class="col-xs-12 col-sm-12 col-md-12 highlight-list">    <div class="col-xs-3 col-sm-3 col-md-3">
+    <img src="img/chloe.jpg" width="60" class="img-circle">
+    </div>
+    <div class="col-xs-9 col-sm-9 col-md-9">
+    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+    </div></div>
+                           <div class="col-xs-12 col-sm-12 col-md-12 highlight-list">    <div class="col-xs-3 col-sm-3 col-md-3">
+    <img src="img/chloe.jpg" width="60" class="img-circle">
+    </div>
+    <div class="col-xs-9 col-sm-9 col-md-9">
+    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+    </div></div>
+                           <div class="col-xs-12 col-sm-12 col-md-12 highlight-list">    <div class="col-xs-3 col-sm-3 col-md-3">
+    <img src="img/chloe.jpg" width="60" class="img-circle">
+    </div>
+    <div class="col-xs-9 col-sm-9 col-md-9">
+    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+    </div></div>
+                        </div>
+                     </div>
+                     
+                     <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="city-package">
+                           <img src="http://placehold.it/370x370" class="img-responsive"> 
+                           <div class="col-xs-6 col-sm-6 col-md-6 city-info">
+                              <p class="days">4 Days</p>
+                              <h4>Hongkong City Macau</h4>
+                              <p class="location-city">Hong Kong</p>
+                           </div>
+                           <div class="col-xs-6 col-sm-6 col-md-6 city-price">
+                              <p>Per Person</p>
+                              <h4>MYR 8888.88</h4>
+                           </div>
+                           <div class="col-xs-12 col-sm-12 col-md-12 highlight-list">    <div class="col-xs-3 col-sm-3 col-md-3">
+    <img src="img/chloe.jpg" width="60" class="img-circle">
+    </div>
+    <div class="col-xs-9 col-sm-9 col-md-9">
+    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+    </div></div>
+                           <div class="col-xs-12 col-sm-12 col-md-12 highlight-list">    <div class="col-xs-3 col-sm-3 col-md-3">
+    <img src="img/chloe.jpg" width="60" class="img-circle">
+    </div>
+    <div class="col-xs-9 col-sm-9 col-md-9">
+    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+    </div></div>
+                           <div class="col-xs-12 col-sm-12 col-md-12 highlight-list">    <div class="col-xs-3 col-sm-3 col-md-3">
+    <img src="img/chloe.jpg" width="60" class="img-circle">
+    </div>
+    <div class="col-xs-9 col-sm-9 col-md-9">
+    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+    </div></div>
+                        </div>
+                     </div>
+                     
+                     <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="city-package">
+                           <img src="http://placehold.it/370x370" class="img-responsive"> 
+                           <div class="col-xs-6 col-sm-6 col-md-6 city-info">
+                              <p class="days">4 Days</p>
+                              <h4>Hongkong City Macau</h4>
+                              <p class="location-city">Hong Kong</p>
+                           </div>
+                           <div class="col-xs-6 col-sm-6 col-md-6 city-price">
+                              <p>Per Person</p>
+                              <h4>MYR 8888.88</h4>
+                           </div>
+                           <div class="col-xs-12 col-sm-12 col-md-12 highlight-list">    <div class="col-xs-3 col-sm-3 col-md-3">
+    <img src="img/chloe.jpg" width="60" class="img-circle">
+    </div>
+    <div class="col-xs-9 col-sm-9 col-md-9">
+    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+    </div></div>
+                           <div class="col-xs-12 col-sm-12 col-md-12 highlight-list">    <div class="col-xs-3 col-sm-3 col-md-3">
+    <img src="img/chloe.jpg" width="60" class="img-circle">
+    </div>
+    <div class="col-xs-9 col-sm-9 col-md-9">
+    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+    </div></div>
+                           <div class="col-xs-12 col-sm-12 col-md-12 highlight-list">    <div class="col-xs-3 col-sm-3 col-md-3">
+    <img src="img/chloe.jpg" width="60" class="img-circle">
+    </div>
+    <div class="col-xs-9 col-sm-9 col-md-9">
+    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+    </div></div>
+                        </div>
+                     </div>
+                     
+                  </div>
+               </div>
             </div>
-           <div class="col-sm-9">
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-            </div>
-            </div>
-
-         <div class="col-md-12 highlight-list">
-           <div class="col-sm-3">
-        <img src="img/chloe.jpg" width="60" class="img-circle">
-            </div>
-           <div class="col-sm-9">
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-            </div>
-            </div>
-
-         <div class="col-md-12 highlight-list">
-
-           <div class="col-sm-3">
-        <img src="img/chloe.jpg" width="60" class="img-circle">
-            </div>
-           <div class="col-sm-9">
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-            </div>
-
-            </div>
-
-            
-         </div>
-      </div>
-   <div class="col-sm-6 col-md-4">
-      <div class="city-package">
-<img src="http://placehold.it/370x370" class="img-responsive"> 
-         <div class="col-md-6 city-info">
-            <p class="days">4 Days</p>
-            <h4>Hongkong City Macau</h4>
-            <p class="location-city">Hong Kong</p>
-</div>
-
-<div class="col-md-6 city-price">
-            <p>Per Person</p>
-            <h4>MYR 8888.88</h4>
-</div>
-
-         <div class="col-md-12 highlight-list">
-
-
-
-           <div class="col-sm-3">
-        <img src="img/chloe.jpg" width="60" class="img-circle">
-            </div>
-           <div class="col-sm-9">
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-            </div>
-            </div>
-
-         <div class="col-md-12 highlight-list">
-           <div class="col-sm-3">
-        <img src="img/chloe.jpg" width="60" class="img-circle">
-            </div>
-           <div class="col-sm-9">
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-            </div>
-            </div>
-
-         <div class="col-md-12 highlight-list">
-
-           <div class="col-sm-3">
-        <img src="img/chloe.jpg" width="60" class="img-circle">
-            </div>
-           <div class="col-sm-9">
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-            </div>
-
-            </div>
-
-            
-         </div>
-      </div>
-   <div class="col-sm-6 col-md-4">
-      <div class="city-package">
-<img src="http://placehold.it/370x370" class="img-responsive"> 
-         <div class="col-md-6 city-info">
-            <p class="days">4 Days</p>
-            <h4>Hongkong City Macau</h4>
-            <p class="location-city">Hong Kong</p>
-</div>
-
-<div class="col-md-6 city-price">
-            <p>Per Person</p>
-            <h4>MYR 8888.88</h4>
-</div>
-
-         <div class="col-md-12 highlight-list">
-
-
-
-           <div class="col-sm-3">
-        <img src="img/chloe.jpg" width="60" class="img-circle">
-            </div>
-           <div class="col-sm-9">
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-            </div>
-            </div>
-
-         <div class="col-md-12 highlight-list">
-           <div class="col-sm-3">
-        <img src="img/chloe.jpg" width="60" class="img-circle">
-            </div>
-           <div class="col-sm-9">
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-            </div>
-            </div>
-
-         <div class="col-md-12 highlight-list">
-
-           <div class="col-sm-3">
-        <img src="img/chloe.jpg" width="60" class="img-circle">
-            </div>
-           <div class="col-sm-9">
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-            </div>
-
-            </div>
-
-            
-         </div>
-      </div>
-   </div>
-</div>
-        
-        
-      </div>
-      
-      
          </section>
-
-         
-
-         
          <!-- footer-3 -->
          <footer class="footer-3">
             <div class="container">
@@ -434,24 +405,26 @@ Packages</h1>
                      </div>
                   </div>
                   <div class="col-sm-12 col-sm-3 col-md-3">
-                  <ul>
-
-                  <li><a href="#">About</a></li><br>
-                  <li><a href="#">How it Works</a></li><br>
-                  <li><a href="#">Blog</a></li><br>
-                  <li><a href="#">Career</a></li>
-                  
-</ul>
+                     <ul>
+                        <li><a href="#">About</a></li>
+                        <br>
+                        <li><a href="#">How it Works</a></li>
+                        <br>
+                        <li><a href="#">Blog</a></li>
+                        <br>
+                        <li><a href="#">Career</a></li>
+                     </ul>
                   </div>
                   <div class="col-sm-12 col-sm-3 col-md-3">
-                  <ul>
-
-                  <li><a href="#">Help</a></li><br>
-                  <li><a href="#">Press</a></li><br>
-                  <li><a href="#">Policies</a></li><br>
-                  <li><a href="#">Terms</a></li>
-                  
-</ul>
+                     <ul>
+                        <li><a href="#">Help</a></li>
+                        <br>
+                        <li><a href="#">Press</a></li>
+                        <br>
+                        <li><a href="#">Policies</a></li>
+                        <br>
+                        <li><a href="#">Terms</a></li>
+                     </ul>
                   </div>
                   <div class="col-sm-12 col-sm-3 col-md-3 social-footer">
                      <a href=""><img src="img/Facebook.png" width="42"></a>

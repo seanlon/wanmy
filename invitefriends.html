@@ -8,15 +8,13 @@
       <meta name="apple-mobile-web-app-status-bar-style" content="black" />
       <link rel="shortcut icon" href="assets/flat-ui/images/favicon.ico">
       <link rel="stylesheet" href="assets/flat-ui/bootstrap/css/bootstrap.css">
-      
       <link rel="stylesheet" href="assets/samples/sample-04/css/style.css">
       <link rel="stylesheet" type="text/css" href="assets/samples/sample-04/css/header.css">
       <!--need to be on top / dropdown hover / -->
-		<script src="assets/common-files/js/jquery-1.10.2.min.js"></script>
+      <script src="assets/common-files/js/jquery-1.10.2.min.js"></script>
       <script src="assets/samples/sample-04/js/custom.js"></script>
-            <!--need to be on top / dropdown hover / -->
+      <!--need to be on top / dropdown hover / -->
       <!--gallery-->
-
    </head>
    <body>
       <div class="page-wrapper">
@@ -181,8 +179,15 @@
                         </li>
                         <li><a href="#">Login</a></li>
                         <li><a href="#">Sign Up</a></li>
+
+						<li class="visible-xs visible-sm"><a href="#">Edit Profile</a></li>
+                              <li class="visible-xs visible-sm"><a href="#">Invite Friends</a></li>
+                              <li class="visible-xs visible-sm"><a href="#">Account Settings</a></li>
+                              <li class="visible-xs visible-sm"><a href="#">Log Out</a></li>
+
+                        
                         <!--dropdown x-->
-                        <li class="dropdown">
+                        <li class="dropdown hidden-xs hidden-sm">
                            <a href="#" class="dropdown-toggle dropdownselectactive" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sarah <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jeanniehuang/128.jpg" width="40" class="img-circle profile-nav"/></a>
                            <ul class="dropdown-menu">
                               <li><a href="#">Edit Profile</a></li>
@@ -204,77 +209,56 @@
             </div>
             <div>
                <div class="container">
-                        <div class="hero-unit invitefriends">
-                            <h1>Earn up to $100 for everyone you invite.</h1>
-                            
-                            
-                            <a href="#"><p>
-                                Invite Your Email Contacts
-                            </p></a>
-
-                            <a href="#"><img src="assets/samples/sample-04/img/inviteemail.png" width="80"></a>
-
-                        </div>
-                    </div>
+                  <div class="hero-unit invitefriends">
+                     <h1>Earn up to $100 for everyone you invite.</h1>
+                     <a href="#">
+                        <p>
+                           Invite Your Email Contacts
+                        </p>
+                     </a>
+                     <a href="#"><img src="assets/samples/sample-04/img/inviteemail.png" width="80"></a>
+                  </div>
+               </div>
             </div>
          </section>
          <!-- About Merchant  -->
          <section class="invitefriends-content">
             <div class="row">
                <div class="col-md-12 text-center">
-                  
                   <h6>Send a friend $20 Travelog credit. You'll get $20 when they travel and $80 when they host. <a href="#">Learn More</a></h6>
-               <div class="col-md-12 text-center">
-<a href="">Referrals Terms and Conditions</a>
-</div>
-               <div class="col-md-12 invitefriends-form">
-               <div class="col-md-5 col-md-offset-1">
-<form class="form-inline">
-  
-  <div class="form-group">
-    <input type="password" class="form-control" id="" placeholder="Enter email addresses saperated by comma">
-  </div>
-  
-  <button type="submit" class="btn btn-shareemail">Send</button>
-</form>
-</div>
-               <div class="col-md-5">
-<form class="form-inline">
-  
-  <div class="form-group">
-    <input type="password" class="form-control" id="" placeholder="www.travelog.com/c/macv3?s=8">
-  </div>
-  
-  <button type="submit" class="btn btn-sharefacebook">Facebook</button>
-</form>
-</div>
-</div>
-
-<hr>
-
-               <div class="col-md-12 friendslist">
-               
-               <h4>You have $0 travel credit to spend.</h4> <a href="#">Learn More</a>
-               <br>
-               <p>You’ve earned a total of $0, with $300 pending, Invite more friends to earn more credit!</p>
-
-
-</div>
-
-
-                  
-                  
+                  <div class="col-md-12 text-center">
+                     <a href="">Referrals Terms and Conditions</a>
+                  </div>
+                  <div class="col-md-12 invitefriends-form">
+                     <div class="col-md-5 col-md-offset-1">
+                        <form class="form-inline">
+                           <div class="form-group">
+                              <input type="password" class="form-control" id="" placeholder="Enter email addresses saperated by comma">
+                           </div>
+                           <button type="submit" class="btn btn-shareemail">Send</button>
+                        </form>
+                     </div>
+                     <div class="col-md-5">
+                        <form class="form-inline">
+                           <div class="form-group">
+                              <input type="password" class="form-control" id="" placeholder="www.travelog.com/c/macv3?s=8">
+                           </div>
+                           <button type="submit" class="btn btn-sharefacebook">Facebook</button>
+                        </form>
+                     </div>
+                  </div>
+                  <hr>
+                  <div class="col-md-12 friendslist">
+                     <h4>You have $0 travel credit to spend.</h4>
+                     <a href="#">Learn More</a>
+                     <br>
+                     <p>You’ve earned a total of $0, with $300 pending, Invite more friends to earn more credit!</p>
+                  </div>
                </div>
                <!--booking-->
-               
-               
                <!--booking-->
             </div>
          </section>
-
-         
-
-         
          <!-- footer-3 -->
          <footer class="footer-3">
             <div class="container">

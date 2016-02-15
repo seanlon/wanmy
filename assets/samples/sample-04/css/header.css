@@ -3959,30 +3959,142 @@ ul.sidebar li a {
 
 .city-title { margin:40px 0;}
 
-.tourtypes {margin:40px 0;}
-.tourtypes a { padding-right:20px; opacity:0.5;}
+.tourtypes {margin-bottom:40px;}
+.tourtypes a {  opacity:0.5; font-size:14px; color:#000;}
+
+.tourtypes a img{  margin-bottom:20px;}
+
+
 .tourtypes a:hover { opacity:1.0;}
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+.tourtypes a img{  opacity:0.5; margin-top:20px; margin-bottom:20px;}
+.tourtypes a { font-size:16px;}
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+.tourtypes a img{  opacity:0.5; margin-top:20px; margin-bottom:20px;}
+.tourtypes a { font-size:16px;}
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+.tourtypes a img{  opacity:0.5; margin-top:20px; margin-bottom:20px;}
+.tourtypes a { font-size:20px;}
+}
+
+
+
 
 .city-package {    display: block;
     background-color: #ffffff;
     border: 1px solid #dddddd;
-    border-radius: 2px;height: 650px;
+    border-radius: 2px;height: 604px;
     -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;}
+    transition: all 0.2s ease-in-out; margin-bottom:40px;}
 .city-package .caption{    padding: 5px;}
 
-.highlight-list { padding:10px 0; border-bottom:1px solid #EEEEEE; }
 
-.city-info { position:absolute;top: 262px;
-    left: 21px; display:block;}
 
-.city-price {    position: absolute;
-        top: 302px;
-    left: 210px; display:block;
+
+
+
+
+
+
+
+.highlight-list { padding:10px 0; border-bottom:1px solid #EEEEEE; display:block; }
+
+
+.city-price { position: absolute;
+        top: 293px;
+    left: 200px; display:block;
+	z-index:99;
+	
      }
 
-.city-price h4 { color:#000; background:#FFF; padding:5px;border: 1px solid #BDBDBD;    width: 160px;}
+.city-price h4 { color:#000; background:#FFF; padding:5px;border: 1px solid #BDBDBD;    width: 160px; z-index:99;}
 .city-price p { color:#FFF;}
+
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+.city-info { position:absolute;top: 262px;
+    left: 21px; display:block;}
+	
+	.city-price { position: absolute;
+        top: 293px;
+    left: 200px; display:block;
+	z-index:99;
+	
+     }
+
+	
+}
+
+
+
+
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+.city-info {
+    position: absolute;
+    top: 203px;
+    left: 21px;
+    display: block;
+}
+.city-price {
+    position: absolute;
+    top: 257px;
+    left: 200px;
+    display: block;
+    z-index: 99;
+}
+.city-price h4 { color:#000; font-size:18px; background:#FFF; padding:5px;border: 1px solid #BDBDBD; width: 135px; z-index:99;}
+.city-price p { color:#FFF;}
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+	.city-info {
+    position: absolute;
+    top: 203px;
+    left: 21px;
+    display: block;
+}
+.city-price {
+    position: absolute;
+    top: 257px;
+    left: 200px;
+    display: block;
+    z-index: 99;
+}
+.city-price h4 { color:#000; font-size:18px; background:#FFF; padding:5px;border: 1px solid #BDBDBD; width: 135px; z-index:99;}
+.city-price p { color:#FFF;}
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+.city-price {
+    position: absolute;
+    top: 257px;
+    left: 200px;
+    display: block;
+    z-index: 99;
+}
+.city-price h4 { color:#000; font-size:18px; background:#FFF; padding:5px;border: 1px solid #BDBDBD; width: 135px; z-index:99;}
+.city-price p { color:#FFF;}
+
+}
+
+
+
+
 
 
 
@@ -3998,6 +4110,26 @@ ul.sidebar li a {
     top: -200px;
     left: 1px;
     height: 400px;}
+	
+	/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+.banner-city-info {     background: rgba(0, 0, 0, 0.9);
+    opacity: 0.5;
+    position: absolute;
+    top: -217px;
+    left: 1px;
+    height: 400px;}
+	
+
+}
+
+	
+	
+	
+	
+	
+	
 	.banner-city-info h1 {color:#FFF; z-index:99;}
 	.banner-city-info h4 {color:#FFF; z-index:99;font-size: 18px;}
 	.banner-city-info p {color:#FFF; z-index:99;    line-height: normal;}
@@ -4020,3 +4152,30 @@ ul.sidebar li a {
 .terms-content p {
     color: #212121;
 }
+
+/*----------------------------------------------------------RECEIPT----------------------------------------------------------*/
+
+
+         .receipt-bg {background-color: #fafafa}
+         .receipt-content { padding:20px; margin:20px 40px 40px 40px; background-color: #fff;
+         border: 1px solid #ddd;}
+         .receipt-form {}
+         .receipt-form.table>tbody>tr>td {border: 0;}
+         .receipt-form.table>thead>tr>th {border: 0;}
+         .receipt-form.table>tbody>tr>th{border: 0;}
+         .biz-add {    padding-left: 9px;}
+         .print-btn-receipt {    margin-top: 73px;}
+         .receipt-header {padding: 20px;
+         margin: 40px 40px -30px 40px;}
+		 
+		          /*nav profile*/
+				           .navbar .navbar-toggle {
+         margin: 26px 0 10px;
+         color: white;
+         background: none;
+         padding: 0;
+         width: 30px;
+         height: 30px;
+         background: url("../../../common-files/icons/menu-icon-header-8.png") 50% no-repeat;
+         }
+         
