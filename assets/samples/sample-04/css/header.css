@@ -1536,7 +1536,13 @@ span.caret .pull-right {
 }
 /*Overrighting original style.css, please change class name*/
 /*Overrighting original header.css*/
-
+@media (min-width: 768px) {
+.navbar-form .form-control {
+    display: inline-block;
+    width: 440px;
+    vertical-align: middle;
+}
+}
 .navbar-form .form-control {
     border-radius: 1px;
 }
