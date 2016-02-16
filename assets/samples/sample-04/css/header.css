@@ -368,6 +368,7 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 .navsearch {
     border: 1px solid #c4c4c4;
     border-radius: 1px;
+	    width: 440px;
 }
 .navsearch-form {
     position: absolute;
@@ -377,6 +378,12 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 }
 /*dropdown start*/
 /*when it's clicked active*/
+
+.sidebarprofile img {
+    margin-left: 0; margin-right: 10px; border: 1px solid #E0E0E0;
+	    width: 40px;
+    height: 40px;
+}
 
 .dropdownselectactive img {
     margin-left: 20px;border: 1px solid #E0E0E0;
