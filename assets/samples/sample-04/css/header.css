@@ -1767,6 +1767,7 @@ active {
 .price {
     opacity: .79;
     background: #3c3d41;
+	color:#FFF;
     min-width: 100px;
     padding: 10px;
     font-size: 18px;
@@ -2107,6 +2108,8 @@ p.totalprice {
 }
 /*----------------------------------------------------------INVITE FRIENDS----------------------------------------------------------*/
 
+.email-invites { margin-bottom:20px;}
+
 .header-10-sub .background.invitefriendsbg {
     background-image: url(../img/friends.jpg);
     opacity: 85;
@@ -2144,6 +2147,35 @@ p.totalprice {
     font-size: 16px;
     padding: 9px;
 }
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+.btn-sharefacebook {
+    background: #3b5999;
+    border-radius: 1px;
+    margin-left: -4px;
+    color: #FFF;
+    width: 150px;
+    font-size: 16px;
+    padding: 9px;
+	width:100%;
+}
+.btn-shareemail {
+    background: #DC4E41;
+    border-radius: 1px;
+    margin-left: -4px;
+    color: #FFF;
+    width: 150px;
+    font-size: 16px;
+    padding: 9px;
+	width:100%;
+}
+
+.email-invites.form-control {width:325px;}
+
+}
+
+
 .btn-sharefacebook:hover {
     color: #FFF;
 }
@@ -2161,6 +2193,16 @@ p.totalprice {
     width: 300px;
     padding: 20px 10px;
 }
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+.invitefriends-form .form-control {
+    width: 100%;
+    padding: 20px 10px;
+}
+}
+
+
 .friendslist {
     margin-top: 80px;
     padding-top: 80px;
@@ -2330,6 +2372,9 @@ active {
     opacity: 0.85;
     filter: alpha(opacity=85);
 }
+
+.hero-unit.userinvitehero { margin-bottom:40px;}
+
 .hero-unit.userinvitehero p {
     color: #FFF;
     font-size: 16px;
