@@ -3965,7 +3965,7 @@ ul.sidebar li a {
 .tourtypes a img{  margin-bottom:20px;}
 
 
-.tourtypes a:hover { opacity:1.0;}
+.tourtypes a:hover { opacity: initial;}
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
 .tourtypes a img{  opacity:0.5; margin-top:20px; margin-bottom:20px;}
@@ -3990,10 +3990,21 @@ ul.sidebar li a {
 .city-package {    display: block;
     background-color: #ffffff;
     border: 1px solid #dddddd;
-    border-radius: 2px;height: 604px;
+    border-radius: 2px;
     -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out; margin-bottom:40px;}
+    transition: all 0.2s ease-in-out; margin-bottom:40px;
+	width: 350px;
+  height: 350px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+	}
+	
+	.city-package img {
+    max-width: inherit;
+	}
+	
 .city-package .caption{    padding: 5px;}
+.glyphicon-star-empty {color: #ffcd00;}
 
 
 
@@ -4021,12 +4032,12 @@ ul.sidebar li a {
 
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
-.city-info { position:absolute;top: 262px;
+.city-info { position:absolute;top: 192px;
     left: 21px; display:block;}
 	
 	.city-price { position: absolute;
-        top: 293px;
-    left: 200px; display:block;
+        top: 269px;
+    left: 190px; display:block;
 	z-index:99;
 	
      }
@@ -4042,13 +4053,13 @@ ul.sidebar li a {
 @media (min-width: 768px) and (max-width: 991px) {
 .city-info {
     position: absolute;
-    top: 203px;
+    top: 192px;
     left: 21px;
     display: block;
 }
 .city-price {
     position: absolute;
-    top: 257px;
+    top: 269px;
     left: 200px;
     display: block;
     z-index: 99;
@@ -4062,13 +4073,13 @@ ul.sidebar li a {
 @media (max-width: 767px) {
 	.city-info {
     position: absolute;
-    top: 203px;
+    top: 192px;
     left: 21px;
     display: block;
 }
 .city-price {
     position: absolute;
-    top: 257px;
+    top: 269px;
     left: 200px;
     display: block;
     z-index: 99;
@@ -4082,7 +4093,7 @@ ul.sidebar li a {
 
 .city-price {
     position: absolute;
-    top: 257px;
+    top: 269px;
     left: 200px;
     display: block;
     z-index: 99;
