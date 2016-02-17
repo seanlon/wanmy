@@ -2,7 +2,7 @@
 <html lang="en">
    <head>
       <meta charset="utf-8">
-      <title>Product Detail</title>
+      <title>Profile</title>
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
       <meta name="apple-mobile-web-app-status-bar-style" content="black" />
@@ -15,17 +15,8 @@
        <!--need to be on top-->
 		<script src="assets/common-files/js/jquery-1.10.2.min.js"></script>
       <script src="assets/samples/sample-04/js/custom.js"></script>
-    <!--need to be on top-->
-      <!--Places form-->
-      <!--/Places form-->
-      <!--typehead-->
-      <!--need to be on top-->
-      <!--<script src="js/lib/jquery.js"></script>-->
       <script src="js/lib/bootstrap.js"></script>
       <script src="js/lib/bootstrap-select.js"></script>
-      <!--For debugging and intergration-->
-      
-      <!--For debugging and intergration-->
    </head>
    <body>
       <!-- header  -->
@@ -233,7 +224,7 @@
          <section class="header-11-sub profile-page">
             <div class="container">
                <div class="row ">
-                  <div class="col-md-3">
+                  <div class="col-xs-12 col-sm-3 col-md-3 sidebar-profile-dashboard">
                      <ul class="sidebar-static">
                         <li><a href="">Edit Profile</a></li>
                         <li><a href="">Photo Symbol Video</a></li>
@@ -241,20 +232,20 @@
                         <li><a href="">Reviews</a></li>
                         <li><a href="">References</a></li>
                      </ul>
-                     <a href="" class="btn btn-block btn-viewprofile">View Profile</a>
+                     <a href="" class="btn btn-viewprofile">View Profile</a>
                   </div>
                   
-                  <div class="col-md-9">
+                  <div class="col-xs-12 col-sm-9 col-md-9">
                   <div class="panel panel-default profile-photo">
   <div class="panel-heading">Profile Photo</div>
   <div class="panel-body">
     
-                  <div class="col-md-3 profileholder">
+                  <div class="col-xs-12 col-sm-3 col-md-3 profileholder">
                   <a class="remove-profile" href="#"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
     <img src="http://placehold.it/150x150" class="img-circle">
    </div> 
    
-    <div class="col-md-9">
+    <div class="col-xs-12 col-sm-9 col-md-9">
     <p>Clear frontal face photos are an important way for hosts and guests to learn about each other. It’s not much fun to host a landscape! Please upload a photo that clearly shows your face.</p>
      
      <span class="btn btn-default btn-profile">
@@ -270,49 +261,62 @@
                      <div class="profile-details">
                         <form class="form-horizontal profile-form">
                            <div class="form-group">
-                              <label for="" class="col-sm-2 control-label">First name</label>
-                              <div class="col-sm-10">
+                              <label for="" class="col-xs-12 col-sm-12 control-label">First name</label>
+                              <div class="col-xs-12 col-sm-12 col-md-8">
                                  <input type="text" class="form-control" id="" placeholder="">
                               </div>
                            </div>
                            <div class="form-group">
-                              <label for="" class="col-sm-2 control-label">Last Name</label>
-                              <div class="col-sm-10">
+                              <label for="" class="col-xs-12 col-sm-12 control-label">Last Name</label>
+                              <div class="col-xs-12 col-sm-12 col-md-8">
                                  <input type="text" class="form-control" id="" placeholder="">
                               </div>
                            </div>
                            <div class="form-group">
-                              <label for="" class="col-sm-2 control-label">I Am</label>
-                              <div class="col-sm-10">
+                              <label for="" class="col-xs-12 col-sm-12 control-label">I Am</label>
+                              <div class="col-xs-12 col-sm-12 col-md-8">
                                  <select class="form-control">
                                     <option>Male</option>
                                     <option>Female</option>
                                  </select>
                               </div>
                            </div>
-                           <div class="form-group birthdate">
-                              <label for="" class="col-sm-2 control-label">Birth Date</label>
-                              <div class="col-sm-10">
-                                 <div class="col-md-3 paddingzero">
-                                    <select class="form-control">
-                                       <option>Day</option>
-                                       <option>-</option>
-                                    </select>
-                                 </div>
-                                 <div class="col-md-3 paddingzero">
-                                    <select class="form-control">
-                                       <option>Month</option>
-                                       <option>-</option>
-                                    </select>
-                                 </div>
-                                 <div class="col-md-3 paddingzero">
-                                    <select class="form-control">
-                                       <option>Year</option>
-                                       <option>-</option>
-                                    </select>
-                                 </div>
+                           
+                           <h6>Birthday</h6>
+                           
+<div class="form-group">
+                              <label for="" class="col-xs-12 col-sm-12 control-label">Day</label>
+                              <div class="col-xs-12 col-sm-12 col-md-8">
+                                 <select class="form-control">
+                                    <option>Day</option>
+                                    <option></option>
+                                 </select>
+                              </div>
+                           </div>                           
+<div class="form-group">
+                              <label for="" class="col-xs-12 col-sm-12 control-label">Month</label>
+                              <div class="col-xs-12 col-sm-12 col-md-8">
+                                 <select class="form-control">
+                                    <option>Month</option>
+                                    <option></option>
+                                 </select>
                               </div>
                            </div>
+<div class="form-group">
+                              <label for="" class="col-xs-12 col-sm-12 control-label">Year</label>
+                              <div class="col-xs-12 col-sm-12 col-md-8">
+                                 <select class="form-control">
+                                    <option>Year</option>
+                                    <option></option>
+                                 </select>
+                              </div>
+                           </div>                           
+                           
+                           
+                           
+                           
+                           
+                           
                            <div class="form-group">
                               <div class="col-sm-12">
                                  <button type="submit" class="btn btn-default btn-save pull-right">Save</button>
@@ -320,15 +324,22 @@
                            </div>
                         </form>
                      </div>
+                     
+                     
+                     
+                     
+                     
+                     
+                     
                   </div>
                </div>
             </div>
          </section>
          <footer class="footer-3">
             <div class="container">
-               <div class="row v-center">
+               <div class="row">
                   <!--bottom-footer-->
-                  <div class="col-md-3">
+                  <div class="col-sm-12 col-sm-3 col-md-3">
                      <div class="btn-group">
                         <button type="button" class="btn btn-default dropdown-toggle btn-currency" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         MYR <span class="caret"></span>
@@ -340,75 +351,44 @@
                         </ul>
                      </div>
                   </div>
-                  <div class="col-md-7">
-                     <div class="col-md-2">
-                        <a href="#">About</a>
-                     </div>
-                     <div class="col-md-2">
-                        <a href="#">Contact</a>
-                     </div>
-                     <div class="col-md-3">
-                        <a href="#">Become a Vendor</a>
-                     </div>
-                     <div class="col-md-2">
-                        <a href="#">Blog</a>
-                     </div>
-                     <div class="col-md-2">
-                        <a href="#">FAQs</a>
-                     </div>
+                  <div class="col-sm-12 col-sm-3 col-md-3">
+                  <ul>
+
+                  <li><a href="#">About</a></li><br>
+                  <li><a href="#">How it Works</a></li><br>
+                  <li><a href="#">Blog</a></li><br>
+                  <li><a href="#">Career</a></li>
+                  
+</ul>
                   </div>
-                  <div class="col-md-2">
+                  <div class="col-sm-12 col-sm-3 col-md-3">
+                  <ul>
+
+                  <li><a href="#">Help</a></li><br>
+                  <li><a href="#">Press</a></li><br>
+                  <li><a href="#">Policies</a></li><br>
+                  <li><a href="#">Terms</a></li>
+                  
+</ul>
+                  </div>
+                  <div class="col-sm-12 col-sm-3 col-md-3 social-footer">
                      <a href=""><img src="img/Facebook.png" width="42"></a>
                      <a href=""><img src="img/Twitter.png" width="42"></a>
                      <a href=""> <img src="img/Instagram.png" width="42"></a>
                   </div>
                </div>
-               <div class="row v-center  bottom-below-footer">
+               <div class="row bottom-below-footer">
                   <!--bottom-footer-->
-                  <div class="col-md-6">
-                     <p class="pull-left"><a href="#" class="terms-footer">Terms and conditions </a>	<a href="#">Privacy policy</a></p>
+                  <div class="col-sm-12 col-sm-6 col-md-6">
+                     <p class="footerleft"><a href="#" class="terms-footer">Terms and conditions </a>	<a href="#">Privacy policy</a></p>
                   </div>
-                  <div class="col-md-6">
-                     <p class="pull-right">© 2016 want.my All rights reserved</p>
+                  <div class="col-sm-12 col-sm-6 col-md-6">
+                     <p class="footerright">© 2016 want.my All rights reserved</p>
                   </div>
                </div>
             </div>
          </footer>
          <!-- full-box-border -->
-      <script>
-         function stickDropdown(_elem){
-            $(_elem).parent().removeClass('open').addClass('open');
-         }
-         
-         
-         function initResponsiveHeader() {
-              var sideslider = $('[data-toggle=collapse-side]');
-              var sel = sideslider.attr('data-target');
-              var sel2 = sideslider.attr('data-target-2');
-              sideslider.click(function(event) {
-                  $(sel).toggleClass('in');
-                  $(sel2).toggleClass('out');
-              });
-         
-          }
-         
-          $(window).load(function() {
-              $(document).ready(function() {
-         
-              initResponsiveHeader();
-              
-                  $('select').selectpicker({
-                      liveSearch: false,
-                      maxOptions: 1
-                  });
-         
-              });
-          });
-         
-         
-         
-         
-          
-      </script>
+      
    </body>
 </html>
