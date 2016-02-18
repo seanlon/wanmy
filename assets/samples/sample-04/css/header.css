@@ -839,7 +839,40 @@ active {
 .location-search .dropdown-menu {
     background-color: #FFF;
     border-radius: 0;
+	width:391px;
+	    margin-left: -40px; margin-top:0;
 }
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+.location-search .dropdown-menu {
+    background-color: #FFF;
+    border-radius: 0;
+	width:579px; text-align:left;
+	        margin-left: -1px; margin-top:0;
+}
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+.location-search .dropdown-menu {
+    background-color: #FFF;
+    border-radius: 0;
+	width:579px; text-align:left;
+	     margin-left: -1px; margin-top:0;
+}
+}
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+.location-search .dropdown-menu {
+    background-color: #FFF;
+    border-radius: 0;
+	width:313px;
+	    margin-left: -15px; margin-top:0;
+}
+}
+
+
 .location-search .dropdown-menu li > a:hover,
 .dropdown-menu li > a:active,
 .dropdown-menu li > a:focus {
@@ -849,10 +882,7 @@ active {
 .location-search {
     margin-top: 1px;
 }
-.location-search .dropdown-menu {
-    background-color: #FFF;
-    border-radius: 0;
-}
+
 .location-search .dropdown-menu li > a:hover,
 .dropdown-menu li > a:active,
 .dropdown-menu li > a:focus {
