@@ -839,9 +839,18 @@ active {
 .location-search .dropdown-menu {
     background-color: #FFF;
     border-radius: 0;
-	width:391px;
+	width:391px;text-align:left;
 	    margin-left: -40px; margin-top:0;
 }
+
+
+.global-search .dropdown-menu {
+    background-color: #FFF;
+    border-radius: 0;
+	    width: 303px;text-align:left;
+    margin-left: -187px; margin-top:0;
+}
+
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -851,6 +860,16 @@ active {
 	width:579px; text-align:left;
 	        margin-left: -1px; margin-top:0;
 }
+
+.global-search .dropdown-menu {
+     background-color: #FFF;
+    border-radius: 0;
+    width: 581px;
+    text-align: left;
+    margin-left: -1px;
+    margin-top: 0;
+}
+
 }
 
 /* Landscape phones and portrait tablets */
@@ -861,6 +880,16 @@ active {
 	width:579px; text-align:left;
 	     margin-left: -1px; margin-top:0;
 }
+
+.global-search .dropdown-menu {
+     background-color: #FFF;
+    border-radius: 0;
+    width: 581px;
+    text-align: left;
+    margin-left: -1px;
+    margin-top: 0;
+}
+
 }
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
@@ -870,6 +899,16 @@ active {
 	width:313px;
 	    margin-left: -15px; margin-top:0;
 }
+
+.global-search .dropdown-menu {
+     background-color: #FFF;
+    border-radius: 0;
+    width: 313px;
+    text-align: left;
+    margin-left: -1px;
+    margin-top: 0;
+}
+
 }
 
 
@@ -894,7 +933,6 @@ active {
     margin-top: -10px !important;
     text-align: left;
     width: 391px;
-    left: -40px;
     border: 0;
 }
 
@@ -904,8 +942,8 @@ active {
 .location-search .open > .dropdown-menu {
     margin-top: -10px !important;
     text-align: left;
-    width: 578px;
-    left: 0;
+        width: 578px;
+    left: 1px;
     border: 0;
 }
 }
@@ -915,8 +953,8 @@ active {
 .location-search .open > .dropdown-menu {
     margin-top: -10px !important;
     text-align: left;
-    width: 578px;
-    left: 0;
+        width: 578px;
+    left: 1px;
     border: 0;
 }
 }
@@ -927,7 +965,7 @@ active {
     margin-top: -10px !important;
     text-align: left;
     width: 273px;
-    left: -15px;
+    left:0px;
     border: 0;
 }
 }
