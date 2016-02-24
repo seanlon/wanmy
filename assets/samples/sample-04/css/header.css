@@ -1030,6 +1030,9 @@ active {
 /*content-8*/
 /*------------------------------------------------------Footer------------------------------------------------------*/
 
+.norton {    padding: 0;
+    margin-top: 10px;}
+
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
 .footerright { float:right}
@@ -1093,9 +1096,10 @@ active {
 
 
 .bottom-below-footer p {
-    color: #ffffff;
+        color: #666;
     font-weight: normal;
     font-size: 15px;
+    margin-right: 35px;
 }
 .btn-currency {
     border-radius: 1px;
