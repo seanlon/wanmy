@@ -1696,7 +1696,7 @@ p {
     padding-top: 40px;
     padding-bottom: 40px;
     text-align: left;
-	height:400px;
+	height:520px;
 }
 }
 
@@ -3037,13 +3037,15 @@ h3.title-detailspage {
     
 }
 
-.poster-info-xssm {
+.poster-info-xs {
     position: absolute;
     top: 200px;
+    
+	height: 520px;
 }
 
-.poster-info-xssm img { width:35px; height:35px;}
-.poster-info-xssm h4 { margin-top:0;}
+.poster-info-xs img { width:80px; height:80px;margin-left: 130px;margin-bottom: 40px;}
+.poster-info-xs h4 { margin-top:0;margin-left:-29px;}
 
 
 .productdetail-booking-small a.btn-book { width:100%; border-radius:2px;    padding: 15px 30px;}
