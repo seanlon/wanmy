@@ -410,7 +410,7 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 /*when it's clicked active*/
 /*when it's hover dropdown*/
 
-.open > .dropdown-menu {
+.trending-list.open > .dropdown-menu {
     margin-top: -1px !important;
     background-color: #fff;
     -webkit-background-clip: padding-box;
@@ -420,12 +420,14 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
     border-radius: 1px;
     -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
     box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+	z-index: 999;
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
     border-radius: 0;
     color: #000;
     background: #fafafa;
+	z-index: 999;
 }
 .dropdown-menu li:first-child > a {
     border-radius: 0;
@@ -695,7 +697,7 @@ ul.dropdown-menu {
     text-align: left;
 }
 section * {
-    z-index: inherit;
+    z-index: auto;
 }
 /*explore landing user center*/
 
