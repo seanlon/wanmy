@@ -1,3 +1,16 @@
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../fonts/ProximaNova-Regular.otf'); /* IE9 Compat Modes */
+  src: url('../fonts/ProximaNova-Regular.otf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/ProximaNova-Regular.otf2') format('otf2'), /* Super Modern Browsers */
+       url('../fonts/ProximaNova-Regular.otf') format('otf'), /* Pretty Modern Browsers */
+       url('../fonts/ProximaNova-Regular.otf')  format('opentype'), /* Safari, Android, iOS */
+       url('../fonts/ProximaNova-Regular.otf') format('svg'); /* Legacy iOS */
+	  
+}
+
+
 /*Overrighting original style.css, please change class name*/
 
 .paddingzero {
@@ -779,7 +792,7 @@ section * {
     font-size: 20px;
     font-weight: normal;
     color: #34495e;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
     margin-top: 70px;
 }
 .product-card h4 {
@@ -1325,6 +1338,7 @@ span.caret .pull-right {
     font-size: 18px;
     position: absolute;
     top: 245px;
+	z-index: 99;
 }
 .heart-wrapper {
     position: absolute;
@@ -1349,6 +1363,7 @@ span.caret .pull-right {
     font-size: 18px;
     position: absolute;
     top: 245px;
+	z-index: 99;
 }
 .heart-wrapper {
     position: absolute;
@@ -1916,6 +1931,7 @@ active {
     font-size: 18px;
     position: absolute;
     top: 180px;
+	z-index: 99;
 }
 .glyphicon-star {
     color: #ffcd00;
