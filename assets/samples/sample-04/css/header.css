@@ -2907,7 +2907,30 @@ h3.title-detailspage {
 
 
 
+.contacthost-btn { 
+    color: #FFF;
+    padding: 10px 30px;
+	border-radius:2px;
+    background: #F4511E;
+    border: 1px solid #BF360C;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.20);
+}
 
+.about-host h4 {
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+.about-host { margin-bottom:80px; margin-top:0;}
+
+.about-host p{    color: #000;
+    line-height: 20px;
+    margin-bottom: 30px;}
+
+.about-host img{    width: 90px;
+    height: 90px;
+    border: 1px solid #E0E0E0;}
 
 
 /* Portrait tablets and small desktops */
@@ -2960,6 +2983,11 @@ h3.title-detailspage {
 
 
 
+.about-host img{    width: 60px;
+    height: 60px;
+    border: 1px solid #E0E0E0;
+	}
+
 }
 
 /* Landscape phones and portrait tablets */
@@ -3009,6 +3037,11 @@ h3.title-detailspage {
 .poster-info-xssm { position:absolute; top: 260px;}
 
 
+.about-host img{    width: 60px;
+    height: 60px;
+    border: 1px solid #E0E0E0;
+	}
+
 }
 
 /* Portrait phones and smaller */
@@ -3037,18 +3070,36 @@ h3.title-detailspage {
     
 }
 
-.poster-info-xs {
+.result-content-suggestions .content-title p {
+    margin-bottom: 20px;
+	text-align:center;
+}
+
+.poster-info-xssm {
     position: absolute;
     top: 200px;
     
 	height: 520px;
 }
 
-.poster-info-xs img { width:80px; height:80px;margin-left: 130px;margin-bottom: 40px;}
-.poster-info-xs h4 { margin-top:0;margin-left:-29px;}
-
+.poster-info-xssm img { width:80px; height:80px;margin-left: 130px;margin-bottom: 40px;}
+.poster-info-xssm h4 { margin-top:0; margin-left: -19px;
+    padding: 0 20px;
+    font-size: 20px;}
+.poster-info-xssm p { text-align:center;}
+.poster-info-xssm .starratings { text-align:center;}
 
 .productdetail-booking-small a.btn-book { width:100%; border-radius:2px;    padding: 15px 30px;}
+
+
+.about-host img{    width: 90px;
+    height: 90px;
+    border: 1px solid #E0E0E0;    margin-left: 120px;}
+	
+	
+	.about-host-title { text-align:center;}
+	.about-host-img { text-align:center; margin-bottom:20px;}
+	.about-host-detail { text-align:center;}
 
 }
 
