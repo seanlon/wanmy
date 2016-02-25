@@ -207,21 +207,21 @@
                      <form class="form-inline">
                         <div class="col-md-4 col-md-offset-2 location-search">
                            <div class="input-group">
-                              <input type="text" class="form-control input-location" placeholder="Search for places">
+                              <input type="text" class="form-control input-location" placeholder="Search for places" id="search-location">
                               <div class="input-group-btn">
                                  <button type="button" class="btn btn-default dropdown-toggle drop-places" data-toggle="dropdown">
                                  <span class="caret"></span>
                                  </button>
                                  <ul id="color-dropdown-menu" class="dropdown-menu dropdown-menu-right" role="menu">
-                                    <li class="input"><a href="#">Kuala Lumpur</a></li>
-                                    <li class="input"><a href="#">Perhentian</a></li>
-                                    <li class="input"><a href="#">Sarawak</a></li>
+                                    <li class="input"><a href="#">Pulau Perhentian</a></li>
+                                    <li class="input"><a href="#">Pulau Pangkor</a></li>
+                                    <li class="input"><a href="#">Mount Santubong</a></li>
                                  </ul>
                               </div>
                            </div>
                         </div>
-                        <div class="form-group">
-                           <input type="text" class="form-control input-global" id="" placeholder="Search for interest">
+                        <div class="form-group global-search">
+                           <input type="text" class="form-control input-global" id="free-text" placeholder="Search for interest">
                         </div>
                         <button type="submit" class="btn btn-success btn-search">Search</button>
                      </form>
@@ -438,58 +438,72 @@
          </section>
          <!-- footer-3 -->
          <footer class="footer-3">
-            <div class="container">
-               <div class="row">
-                  <!--bottom-footer-->
-                  <div class="col-sm-12 col-sm-3 col-md-3">
-                     <div class="btn-group">
-                        <button type="button" class="btn btn-default dropdown-toggle btn-currency" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        MYR <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu currency-dropdown-menu">
-                           <li><a href="#">USD</a></li>
-                           <li><a href="#">SGD</a></li>
-                           <li><a href="#">INR</a></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="col-sm-12 col-sm-3 col-md-3">
-                  <ul>
-
-                  <li><a href="#">About</a></li><br>
-                  <li><a href="#">How it Works</a></li><br>
-                  <li><a href="#">Blog</a></li><br>
-                  <li><a href="#">Career</a></li>
-                  
-</ul>
-                  </div>
-                  <div class="col-sm-12 col-sm-3 col-md-3">
-                  <ul>
-
-                  <li><a href="#">Help</a></li><br>
-                  <li><a href="#">Press</a></li><br>
-                  <li><a href="#">Policies</a></li><br>
-                  <li><a href="#">Terms</a></li>
-                  
-</ul>
-                  </div>
-                  <div class="col-sm-12 col-sm-3 col-md-3 social-footer">
-                     <a href=""><img src="img/Facebook.png" width="42"></a>
-                     <a href=""><img src="img/Twitter.png" width="42"></a>
-                     <a href=""> <img src="img/Instagram.png" width="42"></a>
-                  </div>
-               </div>
-               <div class="row bottom-below-footer">
-                  <!--bottom-footer-->
-                  <div class="col-sm-12 col-sm-6 col-md-6">
-                     <p class="footerleft"><a href="#" class="terms-footer">Terms and conditions </a>	<a href="#">Privacy policy</a></p>
-                  </div>
-                  <div class="col-sm-12 col-sm-6 col-md-6">
-                     <p class="footerright">© 2016 want.my All rights reserved</p>
-                  </div>
-               </div>
-            </div>
-         </footer>
+      <div class="container">
+      <div class="row">
+      <!--bottom-footer-->
+      <div class="col-sm-12 col-sm-3 col-md-3">
+      <div class="btn-group">
+      <button type="button" class="btn btn-default dropdown-toggle btn-currency" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      MYR <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu currency-dropdown-menu">
+      <li><a href="#">USD</a></li>
+      <li><a href="#">SGD</a></li>
+      <li><a href="#">INR</a></li>
+      <li><a href="#">TWD</a></li>
+      <li><a href="#">THB</a></li>
+      <li><a href="#">MYR</a></li>
+      <li><a href="#">PHP</a></li>
+      <li><a href="#">JPY</a></li>
+      <li><a href="#">AUD</a></li>
+      <li><a href="#">GBP</a></li>
+      <li><a href="#">EUR</a></li>
+      </ul>
+      </div>
+      </div>
+      <div class="col-sm-12 col-sm-3 col-md-3">
+      <ul>
+      <li><a href="#">About</a></li><br>
+      <li><a href="#">How it Works</a></li><br>
+      <li><a href="#">Blog</a></li><br>
+      <li><a href="#">Career</a></li>
+      </ul>
+      </div>
+      <div class="col-sm-12 col-sm-3 col-md-3">
+      <ul>
+      <li><a href="#">Help</a></li><br>
+      <li><a href="#">Press</a></li><br>
+      <li><a href="#">Policies</a></li><br>
+      <li><a href="#">Terms</a></li>
+      </ul>
+      </div>
+      
+      <div class="col-sm-12 col-sm-3 col-md-3 social-footer">
+      <a href=""><img src="img/Facebook.png" width="42"></a>
+      <a href=""><img src="img/Twitter.png" width="42"></a>
+      <a href=""> <img src="img/Instagram.png" width="42"></a>
+      <br>
+      <div class="col-sm-12 col-sm-12 col-md-12 norton">
+      <script type="text/javascript" src="https://seal.websecurity.norton.com/getseal?host_name=www.travelog.com&amp;size=S&amp;use_flash=NO&amp;use_transparent=YES&amp;lang=en"></script><br />
+<a href="http://www.symantec.com/ssl-certificates" target="_blank"  style="color:#fff; text-decoration:none; font:bold 7px verdana,sans-serif; letter-spacing:.5px; text-align:center; margin:0px; padding:0px;">ABOUT SSL CERTIFICATES</a>
+      </div>
+      
+      </div>
+      
+      </div>
+      
+      <div class="row bottom-below-footer">
+      <!--bottom-footer-->
+      <div class="col-sm-12 col-sm-6 col-md-6">
+      <!--<p class="footerleft"><a href="#" class="terms-footer">Terms and conditions </a>	<a href="#">Privacy policy</a></p>-->
+      </div>
+      <div class="col-sm-12 col-sm-6 col-md-6">
+      <p class="footerright">© 2016 want.my All rights reserved</p>
+      </div>
+      </div>
+      
+      </div>
+      </footer>
       </div>
       <!-- Placed at the end of the document so the pages load faster -->
       <script src="assets/flat-ui/js/bootstrap.min.js"></script>
@@ -497,5 +511,23 @@
       <script src="assets/common-files/js/startup-kit.js"></script>
       <script src="assets/samples/sample-04/js/jquery.backgroundvideo.min.js"></script>
       <script src="assets/samples/sample-04/js/script.js"></script>
+      <script src="assets/flat-ui/js/bootstrap-typeahead.js"></script>
    </body>
 </html>
+
+<script>
+
+   function displayResult(item) {
+     $('.alert').show().html('You selected <strong>' + item.value + '</strong>: <strong>' + item.text + '</strong>');
+   }
+      
+   $('#free-text').typeahead({
+     source: ["Flying", "Tickets", "Tour", "Watersport", "Adventure", "Discover"],
+     onSelect: displayResult
+   });
+
+   $('#search-location').typeahead({
+      source: ["Malaysia", "Subang Jaya", "Kuala Lumpur", "Bb", "Kota Kinabalu", "Genting Highlands"],
+      onSelect: displayResult,
+   });
+</script>

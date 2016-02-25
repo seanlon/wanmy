@@ -472,6 +472,16 @@ ul.dropdownx li a {
 
 
 
+.img-holder-wide { width:750px; height:344px;    overflow-y: hidden;
+    overflow-x: hidden;
+    border: 1px solid #F5F5F5;
+	box-shadow: 0 2px 0px rgba(0, 0, 0, 0.01), 0 0 0 1px #DBDBDC;
+    -webkit-box-shadow: 0 2px 0px rgba(0, 0, 0, 0.01), 0 0 0 1px #DBDBDC;
+    -moz-box-shadow: 0 2px 0px rgba(0, 0, 0, 0.01), 0 0 0 1px #DBDBDC;}
+.img-holder-wide img{     height: auto;
+    max-width: inherit;
+    position: relative;}
+
 
 	
 	/* Large desktops and laptops */
@@ -521,27 +531,6 @@ ul.dropdownx li a {
 }
 	
 	
-	
-	
-/* Landscape phones and portrait tablets */
-/*@media (max-width: 767px) {
-.content-23 .hero-unit h1 {
-    margin: 0 10px 50px 0px;
-    font-size: 34px;}
-
-
-.location-search .input-location {
-    width: 250px;
-    height: 42px;
-}
-
-.form-control.input-global {
-           height: 42px;    height: 42px;
-    width: 260px;
-	}
-
-}*/
-
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
@@ -610,7 +599,6 @@ ul.dropdownx li a {
 	overflow-y: hidden;
     overflow-x: hidden;
     border: 1px solid #F5F5F5;
-    overflow: hidden;
     box-shadow: 0 2px 0px rgba(0, 0, 0, 0.01), 0 0 0 1px #DBDBDC;
     -webkit-box-shadow: 0 2px 0px rgba(0, 0, 0, 0.01), 0 0 0 1px #DBDBDC;
     -moz-box-shadow: 0 2px 0px rgba(0, 0, 0, 0.01), 0 0 0 1px #DBDBDC;
@@ -1069,6 +1057,8 @@ active {
 }
 .open > ul.currency-dropdown-menu {
     margin-top: 0;
+	height: 163px;
+    overflow-y: scroll;
 }
 .open .dropdown-toggle.btn-default.btn-currency {
     background: #000;
@@ -4627,6 +4617,6 @@ ul.sidebar li a {
          padding: 0;
          width: 30px;
          height: 30px;
-         background: url("../../../common-files/icons/menu-icon-header-8.png") 50% no-repeat;
+         /*background: url("../../../common-files/icons/menu-icon-header-8.png") 50% no-repeat;*/
          }
          
