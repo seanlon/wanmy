@@ -1313,62 +1313,11 @@ span.caret .pull-right {
 
 
 
-.content-suggestions { width:262px; height:262px;    overflow-y: hidden;
+.content-suggestions {     width: 100%;
+    height: 269px;
+    overflow-y: hidden;
     overflow-x: hidden;}
-.content-suggestions img {    max-width: inherit;}
-
-
-/* Portrait tablets and small desktops */
-@media (min-width: 768px) and (max-width: 991px) {
-.result-content-suggestions .user-thumb {
-    position: absolute;
-    top: 317px;
-    left: 288px;
-    z-index: 99;
-}
-.price {
-    opacity: .79;
-    background: #3c3d41;
-    min-width: 100px;
-    padding: 10px;
-    font-size: 18px;
-    position: absolute;
-    top: 245px;
-	z-index: 99;
-}
-.heart-wrapper {
-    position: absolute;
-    top: 24px;
-    left: 309px;
-}
-}
-
-/* Landscape phones and portrait tablets */
-@media (max-width: 767px) {
-.result-content-suggestions .user-thumb {
-    position: absolute;
-    top: 317px;
-    left: 288px;
-    z-index: 99;
-}
-.price {
-    opacity: .79;
-    background: #3c3d41;
-    min-width: 100px;
-    padding: 10px;
-    font-size: 18px;
-    position: absolute;
-    top: 245px;
-	z-index: 99;
-}
-.heart-wrapper {
-    position: absolute;
-    top: 24px;
-    left: 309px;
-}
-}
-
-
+.content-suggestions img { width: 100%;}
 
 
 
@@ -1384,6 +1333,81 @@ span.caret .pull-right {
     z-index: 99;
 }
 
+.result-content-suggestions .price {
+    opacity: 0.79;
+    background: #3c3d41;
+    color: #FFF;
+    padding: 5px 14px 5px 15px;
+    font-size: 14px;
+    position: absolute;
+    top: 182px;
+    z-index: 99;
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+	.content-suggestions {     width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;}
+	
+.result-content-suggestions .user-thumb {
+    position: absolute;
+    top: 317px;
+    left: 288px;
+    z-index: 99;
+}
+.result-content-suggestions .price {
+    opacity: 0.79;
+    background: #3c3d41;
+    color: #FFF;
+    padding: 5px 14px 5px 15px;
+    font-size: 14px;
+    position: absolute;
+    top: 182px;
+    z-index: 99;
+}
+.result-content-suggestions .heart-wrapper {
+    position: absolute;
+    top: 14px;
+    left: 85%;
+}
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+	
+	.content-suggestions {     width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;}
+	
+.result-content-suggestions .user-thumb {
+    position: absolute;
+    top: 317px;
+    left: 288px;
+    z-index: 99;
+}
+.result-content-suggestions .price {
+    opacity: 0.79;
+    background: #3c3d41;
+    color: #FFF;
+    padding: 5px 14px 5px 15px;
+    font-size: 14px;
+    position: absolute;
+    top: 182px;
+    z-index: 99;
+}
+.result-content-suggestions .heart-wrapper {
+    position: absolute;
+    top: 14px;
+    left: 85%;
+}
+}
+
+
+
+
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
 .result-content-suggestions .user-thumb {
@@ -1393,17 +1417,25 @@ span.caret .pull-right {
     z-index: 99;
 }
 
-.merchantdetail .content-suggestions { width:100%; height:100%;    overflow-y: hidden;
+.content-suggestions {     width: 100%;
+    height: 100%;
+    overflow-y: hidden;
     overflow-x: hidden;}
-.merchantdetail .heart-wrapper {
+.result-content-suggestions .heart-wrapper {
     position: absolute;
-    top: 24px;
-    left: 306px;
+    top: 4%;
+    left: 82%;
 }
 
-.merchantdetail p.price {
+.result-content-suggestions .price {
+    opacity: 0.79;
+    background: #3c3d41;
     color: #FFF;
-    top: 270px;
+    padding: 5px 14px 5px 15px;
+    font-size: 14px;
+    position: absolute;
+    top: 285px;
+    z-index: 99;
 }
 
 }
@@ -1918,17 +1950,7 @@ active {
 .portfolio-item p {
     color: #333;
 }
-.price {
-    opacity: .79;
-    background: #3c3d41;
-	color:#FFF;
-    min-width: 100px;
-    padding: 10px;
-    font-size: 18px;
-    position: absolute;
-    top: 180px;
-	z-index: 99;
-}
+
 .glyphicon-star {
     color: #ffcd00;
 }
@@ -2563,71 +2585,6 @@ active {
     margin-bottom: 40px;
 }
 /*----------------------------------------------------------RESULT----------------------------------------------------------*/
-
-/* Landscape tablets and medium desktops */
-@media (min-width: 992px) and (max-width: 1199px) {
-
-}
-
-
-/* Portrait tablets and small desktops */
-@media (min-width: 768px) and (max-width: 991px) {
-.result-content .heart-wrapper {
-    position: absolute;
-    top: 24px;
-    left: 310px;
-}
-.result-content .user-thumb {
-    position: absolute;
-    top: 317px;
-    left: 288px;
-
-}
-}
-
-/* Landscape phones and portrait tablets */
-@media (max-width: 767px) {
-
-}
-
-/* Portrait phones and smaller */
-@media (max-width: 480px) {
-	.merchant-nav { display:hidden;}
-	
-	
-.result-content .heart-wrapper {
-    top: 24px;
-    left: 314px;
-}
-
-.result-content.user-thumb {
-    position: absolute;
-    top: 322px;
-    left: 293px;
-
-}
-}
-.result-content .user-thumb {
-    position: absolute;
-       top: 234px;
-    left: 216px;
-
-}
-
-.star-rating .icon-star {
-    display: inline;
-    color: #d8d8d8;
-    font-size: 16px
-}
-.star-rating .icon-star.selected {
-    color: #ffcd00
-}
-.heart-wrapper {
-    position: absolute;
-    top: 14px;
-    left: 236px;
-}
-
 .result-content {
     min-height: 1000px;
 }
@@ -2650,6 +2607,123 @@ active {
     font-size: 16px;
     padding: 5px 15px;
 }
+
+.result-content .price {
+    opacity: 0.79;
+    background: #3c3d41;
+    color: #FFF;
+    padding: 5px 14px 5px 15px;
+    font-size: 14px;
+    position: absolute;
+    top: 182px;
+    z-index: 99;
+}
+
+
+.result-content .user-thumb {
+    position: absolute;
+       top: 234px;
+    left: 216px;
+
+}
+
+.star-rating .icon-star {
+    display: inline;
+    color: #d8d8d8;
+    font-size: 16px
+}
+.star-rating .icon-star.selected {
+    color: #ffcd00
+}
+.heart-wrapper {
+    position: absolute;
+    top: 14px;
+    left: 236px;
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+.result-content .heart-wrapper {
+    position: absolute;
+    top: 24px;
+    left: 310px;
+}
+.result-content .user-thumb {
+    position: absolute;
+    top: 318px;
+    left: 288px;
+}
+
+.result-content .price {
+    opacity: 0.79;
+    background: #3c3d41;
+    color: #FFF;
+    padding: 5px 14px 5px 15px;
+    font-size: 14px;
+    position: absolute;
+    top: 284px;
+    z-index: 99;
+}
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+.result-content .user-thumb {
+    position: absolute;
+    top: 318px;
+    left: 288px;
+}
+
+.result-content .price {
+    opacity: 0.79;
+    background: #3c3d41;
+    color: #FFF;
+    padding: 5px 14px 5px 15px;
+    font-size: 14px;
+    position: absolute;
+    top: 284px;
+    z-index: 99;
+}
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+	.merchant-nav { display:hidden;}
+	
+	
+.result-content .heart-wrapper {
+    top: 24px;
+    left: 314px;
+}
+
+.result-content.user-thumb {
+    position: absolute;
+     top: 318px;
+    left: 288px;
+
+}
+
+.result-content .price {
+    opacity: 0.79;
+    background: #3c3d41;
+    color: #FFF;
+    padding: 5px 14px 5px 15px;
+    font-size: 14px;
+    position: absolute;
+    top: 284px;
+    z-index: 99;
+}
+
+}
+
+
 .search-box-wrapper {
     padding-top: 80px;
 }
