@@ -1312,6 +1312,21 @@ span.caret .pull-right {
 /*----------------------------------------------------------DETAIL PAGE----------------------------------------------------------*/
 
 
+.order-row {
+    padding: 10px 5px;
+	height: 155px;
+    margin-bottom: 20px;
+}
+.order-row p { font-size:12px;}
+
+
+.varient-options .input-group .btn-minus{    padding: 7px 10px;}
+.varient-options .input-group .btn-add{    padding: 7px 10px;}
+
+
+.varient-options .input-group .input-varient {    padding: 5px 0 9px; width: 38px;}
+.varient-row {padding: 10px 0px 50px 0px;}
+
 
 .content-suggestions {     width: 100%;
     height: 269px;
@@ -1471,7 +1486,6 @@ span.caret .pull-right {
     background: none;
 }
 .form-group.detail-widget-dateform {
-    margin-bottom: 20px;
     margin-top: 20px;
 }
 .merchantdetail h1 {
@@ -2074,7 +2088,7 @@ label {
     background-color: #fff;
     display: block;
     width: 300px;
-    min-height: 262px;
+    min-height: 530px;
     border: 1px solid #dce0e0;
     background-color: #fff;
     border-radius: 0;
@@ -3048,7 +3062,6 @@ h3.title-detailspage {
     border-radius: 0;
 }
 
-.poster-info-xssm { position:absolute;    top: 260px;}
 
 
 
@@ -3057,6 +3070,8 @@ h3.title-detailspage {
     height: 60px;
     border: 1px solid #E0E0E0;
 	}
+
+.poster-info-mdlg { display:none;}
 
 }
 
@@ -3104,13 +3119,16 @@ h3.title-detailspage {
     border-radius: 0;
 }
 
-.poster-info-xssm { position:absolute; top: 260px;}
 
 
 .about-host img{    width: 60px;
     height: 60px;
     border: 1px solid #E0E0E0;
 	}
+
+
+.poster-info-mdlg { display:none !important;}
+
 
 }
 
@@ -3145,16 +3163,11 @@ h3.title-detailspage {
 	text-align:center;
 }
 
-.poster-info-xssm {
-    position: absolute;
-    top: 200px;
-    
-	height: 520px;
-}
+
 
 .poster-info-xssm img { width:80px; height:80px;margin-left: 130px;margin-bottom: 40px;}
 .poster-info-xssm h4 { margin-top:0; margin-left: -19px;
-    padding: 0 20px;
+    padding: 0 20px; text-align:center;
     font-size: 20px;}
 .poster-info-xssm p { text-align:center;}
 .poster-info-xssm .starratings { text-align:center;}
@@ -3173,15 +3186,7 @@ h3.title-detailspage {
 
 }
 
-.book-now-block {
-    background-color: #fff;
-    display: block;
-    width: 300px;
-    min-height: 225px;
-    border: 1px solid #dce0e0;
-    border-radius: 0;
-    z-index: 999;
-}
+
 .book-widget-detail-page {
     position: absolute;
     top: -94px;
@@ -3194,7 +3199,7 @@ h3.title-detailspage {
 
 .book-widget-detail-page p {
     font-weight: normal;
-    font-size: 16px;
+    font-size: 14px;
 }
 .widget-title {
     background: rgba(0, 0, 0, 0.8);
